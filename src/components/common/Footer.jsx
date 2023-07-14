@@ -1,10 +1,19 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
+
 export default function Footer() {
-  const FooterLeft = () => {
-    return (
-      <div className="left w-90 auto h-100 flex column gap-4">
+  const [formdata, setFormData] = useState({
+    user_email: "",
+    user_name: "",
+    message: "",
+    subject: "",
+  });
+
+  return (
+    <FooterWrapper id="contact">
+        <div className="left w-90 auto h-100 flex column gap-4">
         <div className="flex top item-center w-85 auto">
           <div className="w-100 flex column gap-2">
             <h2 className="text-grey w-100 family1 fs-45">
@@ -118,12 +127,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    );
-  };
-
-  return (
-    <FooterWrapper id="contact">
-      <FooterLeft />
     </FooterWrapper>
   );
 }
