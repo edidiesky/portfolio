@@ -28,6 +28,12 @@ const LayoutWrapper = styled.div`
   .social {
     svg {
       font-size: 16px;
+      transition: all .5s ease;
+      color: var(--grey-1);
+      &:hover {
+        transform: translateY(-10px);
+        color: var(--secondary);
+      }
       @media (max-width: 780px) {
         font-size: 16px;
       }
@@ -115,21 +121,21 @@ export default function Layout() {
             target="_blank"
             className="social"
           >
-            <BsGithub color="var(--grey-1)" />
+            <BsGithub />
           </Link>
           <Link
             to={"https://twitter.com/edidiesky"}
             target="_blank"
             className="social"
           >
-            <BsTwitter color="var(--grey-1)" />
+            <BsTwitter />
           </Link>
           <Link
             to={"https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"}
             target="_blank"
             className="social"
           >
-            <FaLinkedinIn color="var(--grey-1)" />
+            <FaLinkedinIn />
           </Link>
         </div>
         <Message />
