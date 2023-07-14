@@ -215,7 +215,7 @@ const FooterWrapper = styled.div`
     background-color: rgb(206, 181, 139);
     color: var(--dark-1);
     &:hover {
-      transform: translateY(10px);
+      transform: translateY(-10px);
       box-shadow: 0 4px 13px rgba(0, 0, 0, 0.3);
     }
     .text-2 {

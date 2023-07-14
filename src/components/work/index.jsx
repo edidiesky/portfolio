@@ -87,7 +87,7 @@ export default function WorkIndex() {
                     className="card_content flex-1 flex py-2 column gap-4"
                   >
                     <div className="w-90 auto card_content_wrapper flex column gap-2">
-                      <h5 className="fs-20 text-secondary family2">Featured Project {index + 1}</h5>
+                      <h5 className="fs-18 text-secondary family2">Featured Project {index + 1}</h5>
 
                       <h3 className="fs-30 text-grey">{x.text}</h3>
                       <h5
@@ -169,7 +169,7 @@ const SkillsWrapper = styled.div`
         position: absolute;
         content: "";
         top: 50%;
-        transform: translate(10%, -50%);
+        transform: translate(-10%, -50%);
         width: 0.4rem;
         height: 0.4rem;
         border-radius: 50%;
