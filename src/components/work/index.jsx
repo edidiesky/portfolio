@@ -73,7 +73,7 @@ export default function WorkIndex() {
               <div className="card flex item-center gap-2">
                 <div
                   data-aos="fade-up"
-                  data-aos-duration="1200"
+                  data-aos-duration="1000"
                   data-aos-delay="200"
                   className="flex-1"
                 >
