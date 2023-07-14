@@ -1,19 +1,47 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
-
 export default function Footer() {
-  const [formdata, setFormData] = useState({
-    user_email: "",
-    user_name: "",
-    message: "",
-    subject: "",
-  });
+  const [user_email, setUser_Email] = useState("");
+  const [user_name, setUser_Name] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+
+  const form = useRef();
+  // console.log(form.current)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!user_email || !subject || !user_name || !message) {
+      alert("Fill in the required form data");
+    } else {
+      emailjs
+        .sendForm(
+          "service_h971wyz",
+          "template_c7w87nw",
+          form.current,
+          "QWKTEx5C0Fp0YpDNp"
+        )
+        .then(
+          (result) => {
+            setUser_Email("");
+            setUser_Name("");
+            setMessage("");
+            setSubject("");
+            alert("Message has been delivered");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+
+    // dispatch(loginCustomer(formdata));
+  };
 
   return (
     <FooterWrapper id="contact">
-        <div className="left w-90 auto h-100 flex column gap-4">
+      <div className="left w-90 auto h-100 flex column gap-4">
         <div className="flex top item-center w-85 auto">
           <div className="w-100 flex column gap-2">
             <h2 className="text-grey w-100 family1 fs-45">
@@ -25,11 +53,13 @@ export default function Footer() {
             style={{ justifyContent: "flex-end" }}
           >
             {" "}
-            <img src="./profile.jpg" alt="" className="image" />
+            <img src="./profile.jfif" alt="" className="image" />
           </div>
         </div>
         <div className="grid_wrapper w-85 auto" style={{ paddingTop: "4rem" }}>
-          <div
+          <form
+            ref={form}
+            onSubmit={handleSubmit}
             className="flex column relative"
             style={{ position: "relative" }}
           >
@@ -38,44 +68,56 @@ export default function Footer() {
               <div className="flex">
                 <h4>01</h4>
               </div>
-              <div className="flex column w-100 gap-2">
+              <label htmlFor="user_name" className="flex column w-100 gap-2">
                 <h3 className="fs-24 family3 text-grey">What's your name?</h3>
                 <input
                   type="text"
+                  id="user_name"
+                  name="user_name"
+                  onChange={(e) => setUser_Name(e.target.value)}
+                  value={user_name}
                   placeholder="John Doe *"
                   className="input family3"
                 />
-              </div>
+              </label>
             </div>{" "}
             {/* email */}
             <div className="form w-100 flex item-start gap-2">
               <div className="flex">
                 <h4>02</h4>
               </div>
-              <div className="flex column w-100 gap-2">
+              <label htmlFor="user_email" className="flex column w-100 gap-2">
                 <h3 className="fs-24 family3 text-grey">What's your email?</h3>
                 <input
                   type="text"
+                  id="user_email"
+                  name="user_email"
+                  onChange={(e) => setUser_Email(e.target.value)}
+                  value={user_email}
                   placeholder="JohnDoe@gmail.com *"
                   className="input family3"
                 />
-              </div>
+              </label>
             </div>{" "}
             {/* services */}
             <div className="form w-100 flex item-start gap-2">
               <div className="flex">
                 <h4>03</h4>
               </div>
-              <div className="flex column w-100 gap-2">
+              <label htmlFor="subject" className="flex column w-100 gap-2">
                 <h3 className="fs-24 family3 text-grey">
                   What services are you looking for?
                 </h3>
                 <input
                   type="text"
+                  id="subject"
+                  name="subject"
+                  onChange={(e) => setSubject(e.target.value)}
+                  value={subject}
                   placeholder="Web Development"
                   className="input family3"
                 />
-              </div>
+              </label>
             </div>{" "}
             {/* message */}
             <div
@@ -85,21 +127,27 @@ export default function Footer() {
               <div className="flex">
                 <h4>04</h4>
               </div>
-              <div className="flex column w-100 gap-2">
+              <label htmlFor="message" className="flex column w-100 gap-2">
                 <h3 className="fs-24 family3 text-grey">Your message</h3>
                 <textarea
+                  onChange={(e) => setMessage(e.target.value)}
+                  value={message}
+                  id="message"
                   type="text"
                   placeholder="Hello Edidiong, can you help me with.... *"
                   className="input family3"
                 />
-              </div>
+              </label>
             </div>
-            <div className="cardw fs-20 text-grey family3">
+            <div
+              onClick={handleSubmit}
+              className="cardw fs-20 text-grey family3"
+            >
               <div className="text-1">Send It</div>
 
               <div className="text-2">Send It</div>
             </div>
-          </div>
+          </form>
           {/* contact list */}
           <div className="flex column w-100 gap-4">
             <div className="flex column gap-2">
@@ -275,9 +323,10 @@ const FooterWrapper = styled.div`
     }
   }
   .image {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
+    object-fit: cover;
   }
   h2 {
     font-weight: light;
