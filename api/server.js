@@ -22,6 +22,7 @@ const __dirname = path.resolve();
 //   }
 // );
 // production mode process
+// console.log(path.join(__dirname, "../dist/index.html"))
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../dist")));
 
@@ -34,6 +35,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.listen(5000, () => {
+app.listen(6000, () => {
   console.log("server is listening on port 5000");
 });

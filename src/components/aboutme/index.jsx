@@ -33,7 +33,7 @@ export default function AboutMeIndex() {
           <h2 className="family3 fs-60 text-grey">
             <TextIndex
               x={
-                "  I am a full stack web developer with a keen focus in helping organizations products stand distinctively by producing high quality product and an impactful user experience"
+                "  I am a full stack web developer with a keen focus in helping organization's products stand distinctively by producing high quality product and an impactful user experience"
               }
             />
           </h2>
@@ -67,7 +67,7 @@ const SkillsWrapper = styled.div`
   }
 
   h2 {
-    font-size: 56px;
+    font-size: 50px;
     line-height: 1;
     font-weight: 700;
     @media (max-width: 980px) {
