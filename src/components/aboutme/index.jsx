@@ -1,20 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Head } from "../common";
-import Input from "../forms/Input";
-import { BiChevronRight } from "react-icons/bi";
 import TextIndex from "../common/Text";
 
 export default function AboutMeIndex() {
   return (
     <SkillsWrapper id="about" className="flex item-center justify-center gap-2">
-      {/* <div className="imageWrapper">
-        <img
-          src="https://minhpham.design/assets/images/planet-1-1.png"
-          className="w-100 h-100"he
-          alt=""
-        />
-      </div> */}
       <div className="left w-85 auto h-100 flex column gap-4">
         <div className="w-100">
           <h4
@@ -72,13 +62,13 @@ const SkillsWrapper = styled.div`
     font-weight: 700;
     @media (max-width: 980px) {
       font-size: 50px;
-    } @media (max-width: 480px) {
+    }
+    @media (max-width: 480px) {
       font-size: 40px;
     }
     @media (max-width: 380px) {
       font-size: 36px;
     }
-    
   }
 
   .text1,
