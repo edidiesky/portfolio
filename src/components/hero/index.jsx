@@ -102,8 +102,8 @@ const WorkWrapper = styled.div`
       width: 90%;
     }
     @media (max-width: 390px) {
-      line-height: 70px;
-      font-size: 100px;
+      line-height: 75px;
+      font-size: 86px;
       width: 100%;
       font-weight: normal;
     }

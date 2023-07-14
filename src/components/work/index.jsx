@@ -9,7 +9,7 @@ const workdata = [
       "https://kalanidhithemes.com/live-preview/landing-page/delici/img/p5.jpg",
     description:
       "This is a clone of streaming platform. It houses a client side and a server side built with the tools below",
-    tools: ["NEXT.JS", "CSS", "styled-components"],
+    tools: ["NEXT.JS", "styled-components"],
     link1: "",
     link2: "https://github.com/edidiesky/airbnb",
     text: "Restaurant Landing Page",
@@ -18,14 +18,7 @@ const workdata = [
     image: "./cloning_2.jpg",
     description:
       "This is a clone of the  rental platform, Airbnb. It houses a client side and a server side built with the tools below. ",
-    tools: [
-      "REACT.JS",
-      "CSS",
-      "styled-components",
-      "NODEJS",
-      "EXPRESSJS",
-      "MONGODB",
-    ],
+    tools: ["REACT.JS", "styled-components", "NODEJS", "EXPRESSJS", "MONGODB"],
     link1: "https://airbnb-wa21.onrender.com",
     link2: "https://github.com/edidiesky/airbnb",
     text: "Airbnb",
@@ -34,14 +27,7 @@ const workdata = [
     image: "./fiverr.png",
     description:
       "This is a clone of streaming platform. It houses a client side and a server side built with the tools below",
-    tools: [
-      "REACT.JS",
-      "CSS",
-      "styled-components",
-      "NODEJS",
-      "EXPRESSJS",
-      "MONGODB",
-    ],
+    tools: ["REACT.JS", "styled-components", "NODEJS", "EXPRESSJS", "MONGODB"],
     link1: "",
     link2: "https://github.com/edidiesky/fiverrClone_1-",
     text: "Fiverr",
@@ -52,7 +38,7 @@ const workdata = [
   //     "This is a clone of streaming platform. It houses a client side and a server side built with the tools below",
   //   tools: [
   //     "NEXT.JS",
-  //     "CSS",
+  //
   //     "styled-components",
   //     "NODEJS",
   //     "EXPRESSJS",
@@ -117,7 +103,7 @@ export default function WorkIndex() {
                                 fontSize: "1.2rem",
                                 letterSpacing: "4px",
                               }}
-                              className="fs-12 text-light text-grey family3 uppercase text-light"
+                              className="fs-12 text-light tools text-grey family3 uppercase text-light"
                             >
                               {x}
                             </div>
@@ -173,20 +159,20 @@ const SkillsWrapper = styled.div`
   transform-style: inherit;
   .tagwrapper {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     z-index: 30000;
     justify-content: flex-end;
-    .btn {
-      padding: 0.5rem 1rem;
-      color: #fff;
-      font-size: 9px;
-      z-index: 30000;
-      letter-spacing: 2px;
-      &:hover {
-        color: var(--dark-1);
-      }
-      @media (max-width: 480px) {
-        font-size: 10px;
+    .tools {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        transform: translate(10%, -50%);
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        background-color: var(--secondary);
       }
     }
   }
@@ -227,7 +213,8 @@ const SkillsWrapper = styled.div`
     &:nth-of-type(even) {
       flex-direction: row-reverse;
 
-      .btnWrapper,.tagwrapper {
+      .btnWrapper,
+      .tagwrapper {
         padding: 1.5rem 0;
         justify-content: flex-start;
       }

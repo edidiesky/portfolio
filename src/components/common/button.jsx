@@ -45,7 +45,7 @@ const ButtonWrapper = styled.button`
     top: 50%;
   }
   &:is(:hover, :focus-visible) .text-1 {
-    transform: translateY(-100%);
+    top: -100%;
   }
   &::before {
     content: "";
@@ -71,6 +71,15 @@ const ButtonWrapper = styled.button`
     min-width: max-content;
     color: #000;
   }
+  .text-1 {
+    /* position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    color: #000;
+    transition: all 0.3s; */
+  }
   &.active {
     background-color: var(--grey-1);
     color: #222;
@@ -81,27 +90,6 @@ const ButtonWrapper = styled.button`
     /* &:is(:hover, :focus-visible) {
     background-color: transparent;
   } */
-    &:is(:hover, :focus-visible) .text-2 {
-      top: 50%;
-      z-index: 10;
-      color: var(--dark-1);
-    }
-    &:is(:hover, :focus-visible) .text-1 {
-      transform: translateY(-100%);
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 200%;
-      height: 200%;
-      border-radius: 50%;
-      background-color: #000;
-      transition: all 0.4s;
-      z-index: 5;
-    }
   }
 `;
 
