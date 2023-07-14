@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import styled from "styled-components";
 import Button from "../common/button";
 
@@ -83,11 +82,13 @@ export default function WorkIndex() {
                 <div className="flex-1 hidden">
                   <div
                     data-aos="fade-up"
-                    data-aos-duration="2400"
+                    data-aos-duration="1600"
                     data-aos-delay={"300"}
                     className="card_content flex-1 flex py-2 column gap-4"
                   >
                     <div className="w-90 auto card_content_wrapper flex column gap-2">
+                      <h5 className="fs-20 text-secondary family2">Featured Project {index + 1}</h5>
+
                       <h3 className="fs-30 text-grey">{x.text}</h3>
                       <h5
                         style={{ lineHeight: "1.4" }}
