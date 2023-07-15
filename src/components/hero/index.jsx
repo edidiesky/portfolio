@@ -61,6 +61,9 @@ const WorkWrapper = styled.div`
   @media (max-width: 780px) {
     padding: 8rem 0;
   }
+  .left {
+    gap: 20px;
+  }
 
   .char {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
