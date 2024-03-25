@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap') */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bold";
+  src: url("./assets/fonts/Montreal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: url("./assets/fonts/Montreal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold1";
+  src: url("./assets/fonts/Manrope-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Agency_Extended";
+  src: url("./assets/fonts/MonumentExtended-Regular.ttf") format("truetype");
+}
+body {
+  background-color: #e1dfdd;
+}
+html {
+  font-size: 62.5%;
+}
+.hide {
+  overflow: hidden;
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
