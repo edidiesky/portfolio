@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap') */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bold";
+  src: url("../assets/fonts/Montreal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: url("../assets/fonts/Montreal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold1";
+  src: url("../assets/fonts/Manrope-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Agency_Extended";
+  src: url("../assets/fonts/Bold.ttf") format("truetype");
+}
+body, html {
+  background-color: #e1dfdd;   
+  cursor: none;
+  font-weight: 500;
+  /* transform-style:  preserve-3d; */
+  -webkit-font-smoothing: antialiased;
+  font-family: "SemiBold", apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;                
+}
+/* html {
+  font-size: 62.5%;
+} */
+.hide {
+  overflow: hidden;
+}
+html.lenis,
+html.lenis body {
+  height: auto; 
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.slider {
+  left: 0;
+  /* top:0; */
+}
+
+.line {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px;
+}
+.titleRef .line{
+  row-gap: 20px !important;
+  column-gap: 20px !important;
+}
+ h4 .line {
+  row-gap: 12px !important;
+  column-gap: 12px !important;
+}
+.hero_text_3 .line {
+  justify-content: flex-end !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #000;
+}
