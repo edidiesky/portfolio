@@ -66,11 +66,11 @@ export default function Hero() {
       >
         <div className="w-[90%] mx-auto  px-2 max-w-custom_1">
           <div className="flex flex-col mx-auto justify-between gap-y-12 gap-x-20">
-            <div className="flex w-full  lg:w-[90%] flex-col gap-8">
+            <div className="flex w-full  lg:w-[80%] flex-col gap-8">
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-normal  flex flex-wrap gap-[8px] text-text_dark_1 text-start uppercase text-sm w-full leading-[1] font-portfolio_bold"
+                className="font-normal  flex flex-wrap gap-[8px] text-text_dark_1 text-start text-4xl w-full leading-[1] font-portfolio_bold"
               >
                 {/* SPEEDING YOUR BUSINESS EXPERIENCE */}
                 {heroText2.map((x, index) => {
@@ -94,7 +94,9 @@ export default function Hero() {
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-x-[20px] gap-y-[8px] md:gap-y-[12px] items-center justify-start uppercase text-4xl sm:text-5xl xl:text-6xl w-full leading-[1.2] font-portfolio_bold"
+                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-x-[2px] md:gap-x-[12px] gap-y-[4px] 
+                md:gap-y-[6px] items-center justify-start uppercase text-[45px] md:text-6xl lg:text-8xl xl:text-[120px]
+                w-full leading-[.9] md:leading-[1] font-portfolio_bold"
               >
                 {heroWords1.split(" ").map((x, index) => {
                   return (
@@ -117,7 +119,7 @@ export default function Hero() {
               <div className="w-100 flex items-start">
                 <div className="px-6 flex items-center justify-between gap-4 py-4 bg-[#eeeeee] rounded-3xl">
                   <div className="w-4 h-4 bg-[#C5F244] rounded-full"></div>
-                  <span className="text-sm text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
+                  <span className="text-sm text-text_dark_1 text-start uppercase leading-[1] font-portfolio_semibold">
                     AVAILABLE FOR WORK
                   </span>
                 </div>
@@ -125,7 +127,7 @@ export default function Hero() {
             </div>
             <div className="w-90 flex flex-col gap-16">
               <div className="w-full">
-                <div className="w-[420px] h-[200px] relative flex items-center justify-center">
+                <div className="w-full md:w-[420px] h-[200px] relative flex items-center justify-center">
                   <img
                     src={"./profile_6.JPG"}
                     alt=""
@@ -137,7 +139,9 @@ export default function Hero() {
               <div className="grid grid-cols-1 lg:flex w-100 items-center justify-between gap-8">
                 <h4
                   ref={container}
-                  className="text-lg md:text-xl w-full md:w-[80%] uppercase hero_text_2 flex flex-wrap gap-y-[8px] gap-x-[6px] items-center justify-start text-text_dark_1 leading-[1] font-normal font-portfolio_semibold"
+                  className="text-4xl md:text-4xl w-full md:w-[90%] uppercase hero_text_2 
+                  flex flex-wrap gap-y-[4px] gap-x-[4px] items-center justify-start 
+                  text-text_dark_1 leading-[1] font-normal font-portfolio_bold"
                 >
                   {heroWords.split(" ").map((x, index) => {
                     return (
@@ -161,7 +165,7 @@ export default function Hero() {
                   ref={container2}
                   data-scroll
                   data-scroll-speed="2"
-                  className="hero_text_3 font-normal text-text_dark_1 flex flex-wrap gap-[8px] uppercase justify-end lg:items-center text-4xl sm:text-5xl w-full leading-[1] font-portfolio_bold1"
+                  className="hero_text_3 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[6px] uppercase justify-end lg:items-center text-8xl w-full leading-[.9] font-portfolio_bold1"
                 >
                   {heroWords2.split(" ").map((x, index) => {
                     return (

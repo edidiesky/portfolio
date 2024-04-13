@@ -12,9 +12,9 @@ const Navbar = ({ text, path }) => {
   const [activelinkedln, setActiveLinkedln] = useState(false);
   return (
     <div className="w-full sticky top-0 left-0 z-50">
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {<Menu setMenu={setMenu} menu={menu} />}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       <div className="w-full mx-auto max-w-custom_2 py-8">
         <div className="w-[95%] mx-auto text-text_dark_1 flex item-center justify-space gap-4">

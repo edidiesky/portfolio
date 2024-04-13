@@ -49,7 +49,7 @@ function WorkTitle() {
             data-scroll
             data-scroll-speed="2"
             // titleRef
-            className="font-normal flex  text-text_dark_1 text-start lg:text-start uppercase text-4xl sm:text-5xl md:text-6xl xl:text-8xl w-full leading-[1.4] font-portfolio_bold"
+            className="font-normal flex  text-text_dark_1 text-start lg:text-start uppercase text-4xl sm:text-5xl md:text-6xl xl:text-9xl w-full leading-[1.4] font-portfolio_bold"
           >
             Vaada <sup className="text-4xl">01</sup>
           </span>
@@ -60,7 +60,7 @@ function WorkTitle() {
               </h4>
               <div className="w-full gap-2 flex items-center">
                 <div className="flex items-start">
-                  <span className="text-sm text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
+                  <span className="text-2xl text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
                     Full-Stack Development
                   </span>
                 </div>
@@ -72,7 +72,7 @@ function WorkTitle() {
               </h4>
               <div className="w-full gap-2 flex items-start">
                 <div className="flex items-start ">
-                  <span className="text-sm text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
+                  <span className="text-2xl text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
                     Lagos, Nigeria © 2024
                   </span>
                 </div>
@@ -84,7 +84,7 @@ function WorkTitle() {
               </h4>
               <div className="w-full gap-2 flex items-start">
                 <div className="flex items-start ">
-                  <span className="text-sm text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
+                  <span className="text-2xl text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
                     Design: Avada.com
                   </span>
                 </div>
@@ -132,7 +132,7 @@ function WorkOverview() {
                 <div className="flex items-start">
                   <h4
                     ref={container}
-                    className=" w-full text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.5] font-normal font-portfolio_semibold text-text_dark_1 "
+                    className=" w-full text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.5] font-normal font-portfolio_semibold text-text_dark_1 "
                   >
                     {/* {ovverviewText.split("").map((text, index) => {
 return (
@@ -198,13 +198,13 @@ function MyRoleInWork() {
           >
             My Role
           </span>
-          <div className="grid grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 gap-4">
             <div className="w-full flex flex-col gap-4">
               <div className="w-full gap-2 flex items-center">
                 <div className="flex items-start">
                   <h4
                     ref={container}
-                    className=" w-full text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.5] font-normal font-portfolio_semibold text-text_dark_1 "
+                    className=" w-full text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.5] font-normal font-portfolio_semibold text-text_dark_1 "
                   >
                     {/* {ovverviewText.split("").map((text, index) => {
 return (
@@ -240,7 +240,7 @@ animate={inView1 ? "animate" : "exit"}
                 </h4>
                 <div className="flex-1 gap-2 flex items-start">
                   <div className="flex items-start ">
-                    <span className="text-2xl font-normal text-text_dark_1 text-start leading-[1] font-portfolio_semibold">
+                    <span className="text-3xl md:text-4xl font-normal text-text_dark_1 text-start leading-[1] font-portfolio_bold">
                       Figma, Webflow, Angular, Laravel, SvelteKit, Supabase
                     </span>
                   </div>
@@ -280,7 +280,7 @@ function WorkFeatures() {
                 <div className="flex items-start">
                   <h4
                     ref={container1}
-                    className=" w-full text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.5] font-normal font-portfolio_semibold text-text_dark_1 "
+                    className=" w-full text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.5] font-normal font-portfolio_semibold text-text_dark_1 "
                   >
                     {/* {ovverviewText.split("").map((text, index) => {
 return (
@@ -365,7 +365,7 @@ function WorkUI() {
                 <div className="flex items-start">
                   <h4
                     ref={container2}
-                    className=" w-full text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.5] font-normal font-portfolio_semibold text-text_dark_1 "
+                    className=" w-full text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.5] font-normal font-portfolio_semibold text-text_dark_1 "
                   >
                     {/* {ovverviewText.split("").map((text, index) => {
 return (

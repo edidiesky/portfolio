@@ -95,7 +95,7 @@ const Work = () => {
 
   return (
     <>
-      <motion.span
+      {/* <motion.span
         ref={mouseRef}
         variants={scaleAnimations}
         initial="initial"
@@ -129,17 +129,18 @@ const Work = () => {
         ) : (
           <span className="text-center text-sm w-full"> Work in Progress</span>
         )}
-      </motion.span>
+      </motion.span> */}
       <div data-scroll className="py-12 w-full relative">
-        <div className="w-[90%] m-auto max-w-custom_1 relative flex flex-col gap-16">
-          <div className="text-lg text-text_dark_1 font-portfolio_bold w-full justify-between flex items-center pt-4 border-t border-[rgba(0,0,0,.3)] font-normal uppercase">
+        <div className="w-[90%] mx-auto px-8 m-auto max-w-custom_1 grid grid-cols-1 sm:grid-cols-custom_3 relative gap-16">
+          <div
+            className="text-6xl text-text_dark_1 font-portfolio_bold w-[120px] pt-4 border-t border-[rgba(0,0,0,.3)] font-normal uppercase"
+          >
             <span>02/</span>
             <span>RECENT WORKS?</span>
-            <span>PROJECTS</span>
           </div>
 
           {/* <Mouse mouseposition={mouseposition} /> */}
-          <div className="w-full relative pt-20 gap-x-8 gap-y-24 justify-between">
+          <div className="w-full relative gap-x-8 gap-y-24 justify-between">
             <WorkList
               setMousePosition={setMousePosition}
               setTab={setTab}

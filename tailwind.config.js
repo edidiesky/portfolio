@@ -26,8 +26,8 @@ module.exports = {
       fontFamily: {
         portfolio_bold: ["Agency_Extended", "sans-serif"],
         portfolio_bold1: ["Agency_Extended", "sans-serif"],
-        portfolio_semibold: ["SemiBold", "sans-serif"],
-        sans: ["SemiBold", "sans-serif"],
+        portfolio_semibold: ["Agency_Extended", "sans-serif"],
+        sans: ["Agency_Extended", "sans-serif"],
       },
       colors: {
         light_grey: "#F6F5F4",

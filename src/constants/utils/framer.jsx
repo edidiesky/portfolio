@@ -38,7 +38,7 @@ export const slideup2 = {
   animate: (i) => ({
     opacity: 1,
     y: "0",
-    transition: { duration: 0.7, delay: i * 0.2 },
+    transition: { duration: .6, delay: i * 0.12 },
   }),
   exit: {
     opacity: 0,
