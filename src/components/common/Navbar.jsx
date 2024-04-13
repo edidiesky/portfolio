@@ -22,7 +22,7 @@ const Navbar = ({ text, path }) => {
             <h4
               onMouseMove={() => setActive(true)}
               // onMouseLeave={() => setActive(false)}
-              className="relative uppercase z-50 text-lg md:w-[300px] w-full overflow-hidden font-portfolio_semibold"
+              className="relative uppercase z-50 text-4xl md:w-[300px] w-full overflow-hidden font-portfolio_semibold"
             >
               <motion.span
                 animate={{ top: active ? "-100%" : "0" }}
