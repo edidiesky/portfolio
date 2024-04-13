@@ -84,7 +84,7 @@ const Work = () => {
         variants={scaleAnimations}
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
-        className="w-40 z-[50] absolute h-40 rounded-full flex items-center justify-center text-[12px] text-white font-portfolio_bold bg-[#2e2e30]"
+        className="w-28 z-[50] absolute h-28 rounded-full flex items-center justify-center text-[12px] text-white font-portfolio_bold bg-[#2e2e30]"
       ></motion.span>
       <div
         onMouseEnter={() =>
@@ -100,18 +100,18 @@ const Work = () => {
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
         ref={labelRef}
-        className="w-32 z-[50] h-32 absolute rounded-full flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
+        className="w-16 z-[50] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
       >
         {website ? (
           <Link
-            className="text-center text-sm w-full"
+            className="text-center text-3xl w-full"
             target="_blank"
             href={website}
           >
             View
           </Link>
         ) : (
-          <span className="text-center text-sm w-full"> Work in Progress</span>
+          <span className="text-center text-xl leading-[1] w-full"> Work in Progress</span>
         )}
       </motion.span>
       <div data-scroll className="py-12 w-full relative">
