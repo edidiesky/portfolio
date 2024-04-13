@@ -8,7 +8,7 @@ import { projectdata } from "@/constants/data/projectdata";
 import { scaleAnimations } from "@/constants/utils/framer";
 import ProjectCard from "./ProjectCard";
 import WorkList from "@/components/common/WorkList";
-// gsap.registerPlugin(ScrollTrigger);
+
 const Work = () => {
   const [mouseposition, setMousePosition] = useState({
     active: false,
@@ -26,58 +26,42 @@ const Work = () => {
   ref.current = [];
   headerref.current = [];
 
-  // useEffect(() => {
-  //   ref.current?.forEach((el, index) => {
-  //     gsap.fromTo(
-  //       el,
-  //       { clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)", opacity: 0 },
-  //       {
-  //         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-  //         opacity: 1,
-  //         ease: "power3",
-  //         duration: 2,
-  //         delay: index * 0.2,
-  //         scrollTrigger: {
-  //           trigger: el,
-  //         },
-  //       }
-  //     );
-  //   });
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    let mouseXMovement = gsap.quickTo(mouseRef.current, "left", {
+      duration: 0.9,
+      ease: "power3",
+    });
 
-  //   let mouseXMovement = gsap.quickTo(mouseRef.current, "left", {
-  //     duration: 0.9,
-  //     ease: "power3",
-  //   });
+    let mouseYMovement = gsap.quickTo(mouseRef.current, "top", {
+      duration: 0.9,
+      ease: "power3",
+    });
 
-  //   let mouseYMovement = gsap.quickTo(mouseRef.current, "top", {
-  //     duration: 0.9,
-  //     ease: "power3",
-  //   });
+    let labelXMovement = gsap.quickTo(labelRef.current, "left", {
+      duration: 0.68,
+      ease: "power3",
+    });
 
-  //   let labelXMovement = gsap.quickTo(labelRef.current, "left", {
-  //     duration: 0.68,
-  //     ease: "power3",
-  //   });
+    let labelYMovement = gsap.quickTo(labelRef.current, "top", {
+      duration: 0.68,
+      ease: "power3",
+    });
 
-  //   let labelYMovement = gsap.quickTo(labelRef.current, "top", {
-  //     duration: 0.68,
-  //     ease: "power3",
-  //   });
+    const handleMouseMotion = (e) => {
+      const { pageX, pageY } = e;
+      mouseXMovement(pageX);
+      mouseYMovement(pageY);
 
-  //   const handleMouseMotion = (e) => {
-  //     const { pageX, pageY } = e;
-  //     mouseXMovement(pageX);
-  //     mouseYMovement(pageY);
+      labelXMovement(pageX);
+      labelYMovement(pageY);
+    };
 
-  //     labelXMovement(pageX);
-  //     labelYMovement(pageY);
-  //   };
-
-  //   window.addEventListener("mousemove", handleMouseMotion);
-  //   return () => {
-  //     window.removeEventListener("mousemove", handleMouseMotion);
-  //   };
-  // }, []);
+    window.addEventListener("mousemove", handleMouseMotion);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMotion);
+    };
+  }, []);
 
   const addRefs = (el) => {
     if (el && !ref?.current?.includes(el)) {
@@ -95,7 +79,7 @@ const Work = () => {
 
   return (
     <>
-      {/* <motion.span
+      <motion.span
         ref={mouseRef}
         variants={scaleAnimations}
         initial="initial"
@@ -129,7 +113,7 @@ const Work = () => {
         ) : (
           <span className="text-center text-sm w-full"> Work in Progress</span>
         )}
-      </motion.span> */}
+      </motion.span>
       <div data-scroll className="py-12 w-full relative">
         <div className="w-[90%] mx-auto px-8 m-auto max-w-custom_1 grid grid-cols-1 sm:grid-cols-custom_3 relative gap-16">
           <div
