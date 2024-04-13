@@ -40,11 +40,94 @@ const Navbar = ({ text, path }) => {
           </div>
 
           <div className="flex item-center justify-end flex-1 gap-4">
-            <div className="w-full flex item-center justify-end gap-4">
+            <div className="w-full flex item-center justify-end gap-8">
+              <span className="flex justify-end px-8 w-full text-sm items-center gap-12 ">
+                <h4
+                  onMouseMove={() => setActiveGithub(true)}
+                  onMouseLeave={() => setActiveGithub(false)}
+                  className="relative text-4xl hidden md:flex z-50 w-auto overflow-hidden font-portfolio_bold font-normal "
+                >
+                  <motion.div
+                    animate={{ top: activegithub ? "-100%" : "0" }}
+                    transition={{ duration: 0.5, ease: [0.75, 0, 0.24, 1] }}
+                    className="w-full h-full flex items-center flex-col relative"
+                  >
+                    <Link
+                      href={"https://twitter.com/edidiesky"}
+                      target="_blank"
+                      className="text-4xl flex items-center gap-2"
+                    >
+                      Twitter
+                    </Link>
+                    <Link
+                      href={"https://twitter.com/edidiesky"}
+                      className="absolute top-[100%] w-full left-0 flex items-center gap-2"
+                    >
+                      Twitter
+                    </Link>
+                  </motion.div>
+                </h4>
+
+                <h4
+                  onMouseMove={() => setActiveTwitter(true)}
+                  onMouseLeave={() => setActiveTwitter(false)}
+                  className="relative text-4xl hidden md:flex  z-50 w-auto overflow-hidden font-portfolio_bold font-normal "
+                >
+                  <motion.div
+                    animate={{ top: activetwitter ? "-100%" : "0" }}
+                    transition={{ duration: 0.5, ease: [0.75, 0, 0.24, 1] }}
+                    className="w-full h-full flex items-center flex-col relative"
+                  >
+                    <Link
+                      href={"https://github.com/edidiesky"}
+                      target="_blank"
+                      className="text-4xl flex items-center gap-2"
+                    >
+                      Github
+                    </Link>
+                    <Link
+                      href={"https://github.com/edidiesky"}
+                      className="absolute top-[100%] w-full left-0 flex items-center gap-2"
+                    >
+                      Github
+                    </Link>
+                  </motion.div>
+                </h4>
+
+                <h4
+                  onMouseMove={() => setActiveLinkedln(true)}
+                  onMouseLeave={() => setActiveLinkedln(false)}
+                  className="relative text-4xl items-center gap-2 hidden md:flex  z-50 w-auto overflow-hidden font-portfolio_bold font-normal "
+                >
+                  <motion.div
+                    animate={{ top: activelinkedln ? "-100%" : "0" }}
+                    transition={{ duration: 0.5, ease: [0.75, 0, 0.24, 1] }}
+                    className="w-full h-full flex items-center flex-col relative"
+                  >
+                    <Link
+                      href={
+                        "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
+                      }
+                      target="_blank"
+                      className="text-4xl flex items-center gap-2"
+                    >
+                      LinkedIn
+                    </Link>
+                    <Link
+                      href={
+                        "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
+                      }
+                      className="absolute top-[100%] w-full left-0 flex items-center gap-2"
+                    >
+                      LinkedIn
+                    </Link>
+                  </motion.div>
+                </h4>
+              </span>
               <div className="flex items-center gap-2 md:gap-8">
                 <div
                   onClick={() => setMenu(true)}
-                  className="w-16 h-16 flex items-center cursor-pointer justify-center rounded-full bg-[#000] hover:bg-[#C5F244] transition-all ease duration-900  shadow-2xl"
+                  className="w-16 h-16 flex items-center cursor-pointer justify-center rounded-full bg-[#000] hover:bg-[#C5F244] transition-all ease duration-900  shadow-4xl"
                 >
                   <div className="bar flex group cursor-pointer justify-end  flex-col gap-1 w-[24px]">
                     <div className="group-hover:w-[50%] ease w-100 h-[2px] bg-[#fff] group-hover:opacity-[.5] transition-all ease duration-900 "></div>
