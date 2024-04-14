@@ -83,14 +83,14 @@ const Work = () => {
         variants={scaleAnimations}
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
-        className="w-28 z-[62] absolute h-28 rounded-full flex items-center justify-center text-[12px] text-white font-portfolio_bold bg-[#2e2e30]"
+        className="w-32 z-[42] absolute h-32 rounded-full shadow-2xl flex items-center justify-center text-[12px] text-white font-portfolio_bold bg-[#2e2e30]"
       ></motion.span>
       <motion.span
         variants={scaleAnimations}
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
         ref={labelRef}
-        className="w-16 z-[62] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
+        className="w-16 z-[42] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
       >
         {website ? (
           <Link
@@ -114,18 +114,18 @@ const Work = () => {
               active: false,
             })
           }
-          className="absolute top-0 w-full h-full z-[55]"
+          className="absolute top-0 w-full h-full z-[36]"
         ></div>
 
         <div data-scroll className="py-12 w-full relative">
           <div className="w-[90%] mx-auto px-8 m-auto max-w-custom_1 grid grid-cols-1 sm:grid-cols-custom_3 relative gap-16">
-            <div className="text-6xl text-text_dark_1 font-portfolio_bold w-[120px] pt-4 border-t border-[rgba(0,0,0,.3)] font-normal uppercase">
+            <div className="text-6xl text-text_dark_1 font-portfolio_bold w-[120px] mt-16 font-normal uppercase">
               <span>02/</span>
               <span>RECENT WORKS?</span>
             </div>
 
             {/* <Mouse mouseposition={mouseposition} /> */}
-            <div className="w-full relative z-[60] gap-x-8 gap-y-24 md:gap-y-32 justify-between">
+            <div className="w-full relative z-[40] gap-x-8 gap-y-24 md:gap-y-32 justify-between">
               <WorkList
                 setMousePosition={setMousePosition}
                 setTab={setTab}
