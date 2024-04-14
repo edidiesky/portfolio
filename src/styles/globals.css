@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Bold";
-  src: url("../assets/fonts/Montreal.ttf") format("truetype");
+  src: url("../assets/fonts/Manrope-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -26,11 +26,11 @@
 body, html {
   background-color: #e1dfdd;   
   font-weight: 500;
-  letter-spacing: 1.6px !important;
+  /* letter-spacing: 1.6px !important; */
   /* transform-style:  preserve-3d; */
   -webkit-font-smoothing: antialiased;
   line-height: 1.3;
-  font-family: "SemiBold", apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;                
+  font-family: "Agency_Extended", apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;                
 }
 /* html {
   font-size: 62.5%;

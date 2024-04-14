@@ -83,7 +83,7 @@ export default function Hero() {
                       <motion.span
                         variants={heroTextslideup2}
                         custom={index}
-                        initial="initial"
+                        initial="initial"   
                         animate={"animate"}
                       >
                         {x}
