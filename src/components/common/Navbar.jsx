@@ -11,7 +11,7 @@ const Navbar = ({ text, path }) => {
   const [activegithub, setActiveGithub] = useState(false);
   const [activelinkedln, setActiveLinkedln] = useState(false);
   return (
-    <div className="w-full sticky top-0 left-0 z-50">
+    <div className="w-full">
       {/* <AnimatePresence mode="wait">
         {<Menu setMenu={setMenu} menu={menu} />}
       </AnimatePresence> */}

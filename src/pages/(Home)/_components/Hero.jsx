@@ -95,8 +95,8 @@ export default function Hero() {
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-[10px] items-center justify-start uppercase text-[55px] sm:text-[75px] md:text-[110px] xl:text-[120px]
-                w-full md:w-[1000px] leading-[.9] md:leading-[.9] font-portfolio_bold"
+                className="font-normal titleRef text-text_dark_1 flex flex-wrap lg:gap-[8px] items-center justify-start uppercase text-[58px] sm:text-[80px] md:text-[95px] lg:text-[100px] xl:text-[120px]
+                w-full lg:w-[1000px] leading-[.9] md:leading-[.9] font-portfolio_bold"
               >
                 {/* A Software Developer who crafts captivating digital experiences. */}
                 {heroWords1.split(" ").map((x, index) => {

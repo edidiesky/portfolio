@@ -133,7 +133,7 @@ const Skills = () => {
             <div className="w-full items-start md:items-end md:justify-end flex flex-col gap-20">
               <h4
                 ref={container}
-                className="w-full text-start  uppercase text-8xl md:text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+                className="w-full text-start  uppercase text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
               >
                 {heroWords2.split(" ").map((x, index) => {
                   return (
@@ -177,7 +177,7 @@ const Skills = () => {
                   <div className="w-full flex flex-col gap-4">
                     <h4
                       ref={container2}
-                      className="w-full text-start  uppercase text-4xl sm:text-5xl lg:text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+                      className="w-full text-start  uppercase text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
                     >
                       {heroWords3.split(" ").map((x, index) => {
                         return (
@@ -248,7 +248,7 @@ const Skills = () => {
             <div className="w-full mt-24 items-start md:justify-start flex flex-col gap-6">
               <h4
                 ref={container3}
-                className="w-full text-start  uppercase text-6xl sm:text-7xl lg:text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[10px] justify-start lg:items-center"
+                className="w-full text-start  uppercase text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[10px] justify-start lg:items-center"
               >
                 {heroWords4.split(" ").map((x, index) => {
                   return (

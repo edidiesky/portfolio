@@ -118,7 +118,7 @@ const Work = () => {
         ></div>
 
         <div data-scroll className="py-12 w-full relative">
-          <div className="w-[90%] mx-auto px-8 m-auto max-w-custom_1 grid grid-cols-1 sm:grid-cols-custom_3 relative gap-16">
+          <div className="w-[90%] mx-auto px-8 m-auto max-w-custom_1 grid grid-cols-1 lg:grid-cols-custom_3 relative gap-16">
             <div className="text-6xl text-text_dark_1 font-portfolio_bold w-[120px] mt-16 font-normal uppercase">
               <span>02/</span>
               <span>RECENT WORKS?</span>

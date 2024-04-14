@@ -1,75 +1,26 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import SplitType from "split-type";
 import { motion } from "framer-motion";
-import { GoArrowUpRight } from "react-icons/go";
-import gsap from "gsap";
 import Link from "next/link";
 const Footer = () => {
-  const [active, setActive] = useState(false);
-  const [mouseposition, setMousePosition] = useState({
-    active: false,
-    index: 0,
-  });
-  const sliderRef = useRef(null);
-  const firstSliderTextRef = useRef(null);
-  const secondSliderTextRef = useRef(null);
-
-  let sliderPosition = 0;
-  let sliderDirection = -1;
-
-  useEffect(() => {
-    const { ScrollTrigger } = window.gsap;
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(sliderRef.current, {
-      x: "-=500px",
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: 0,
-        end: window.innerHeight,
-        scrub: 0.2,
-        onUpdate: (e) => (direction = e.direction * -1),
-      },
-    });
-    requestAnimationFrame(handleSliderPosition);
-  }, []);
-  const handleSliderPosition = () => {
-    if (sliderPosition <= -150) {
-      sliderPosition = 0;
-    }
-    if (sliderPosition > 0) {
-      sliderPosition = -150;
-    }
-    gsap.set(firstSliderTextRef.current, { xPercent: sliderPosition });
-    gsap.set(secondSliderTextRef.current, { xPercent: sliderPosition });
-    sliderPosition += 0.2 * sliderDirection;
-    requestAnimationFrame(handleSliderPosition);
-  };
 
   return (
     <div className="relative min-h-[40vh] pb-20">
       <div className="w-full">
         <div className="flex w-full flex-col overflow-hidden">
           <div
-            ref={sliderRef}
             className="w-full relative whitespace-nowrap flex"
           >
             <Link
-              ref={firstSliderTextRef}
               href={
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="text-7xl md:text-[375px] w-full font-normal font-portfolio_bold1 text-text_dark_1 uppercase"
+              className="text-[200px] lg:text-[375px] w-full font-normal font-portfolio_bold1 text-text_dark_1"
             >
-              LETUSCOLLABORATE
-            </Link>
-            <Link
-              ref={secondSliderTextRef}
-              href={
-                "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
-              }
-              className="text-7xl absolute left-[150%] md:text-[375px] w-full font-normal font-portfolio_bold1 text-text_dark_1 uppercase"
-            >
-              LETUSCOLLABORATE
+              <span className="block -mb-[10px] text-5xl">
+                LET'S COLLABORATE
+              </span>
+              VICTOR ESSIEN <sub className="-ml-[20px] text-4xl">1000©gmail.com</sub>
             </Link>
           </div>
           <div className="w-[90%] max-w-custom mx-auto md:px-20 grid grid-cols-1 md:grid-cols-custom_5 justify-between gap-4">
