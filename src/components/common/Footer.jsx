@@ -1,11 +1,8 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import SplitType from "split-type";
-import gsap from "gsap";
 import { motion } from "framer-motion";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
-// gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
   const [active, setActive] = useState(false);
   const [mouseposition, setMousePosition] = useState({

@@ -2,12 +2,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import SplitType from "split-type";
 import Link from "next/link";
-import gsap from "gsap";
 import { motion } from "framer-motion";
 import { projectdata } from "@/constants/data/projectdata";
 import { scaleAnimations } from "@/constants/utils/framer";
 import ProjectCard from "./ProjectCard";
 import WorkList from "@/components/common/WorkList";
+import gsap from "gsap";
 
 const Work = () => {
   const [mouseposition, setMousePosition] = useState({
@@ -27,7 +27,6 @@ const Work = () => {
   headerref.current = [];
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
     let mouseXMovement = gsap.quickTo(mouseRef.current, "left", {
       duration: 0.9,
       ease: "power3",

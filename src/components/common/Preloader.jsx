@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import SplitType from "split-type";
 import styled from "styled-components";
-import gsap from "gsap";
 const Preloader = () => {
   const [index, setIndex] = React.useState(0);
   const wordsArray = [

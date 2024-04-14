@@ -21,7 +21,8 @@ export default function Hero() {
   const heroWords =
     "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
   const heroWords1 =
-    "A Software Developer,  specialising in creating beautiful experiences";
+    "A Software Developer who crafts captivating digital experiences.";
+  // Innovative Software Developer crafting captivating digital experiences.
   const heroWords2 = `BASED IN NIGERIA`;
 
   const heroText2 = ["Hello", "I'M", "Edidiong", "Victor"];
@@ -64,9 +65,9 @@ export default function Hero() {
         data-scroll
         className="min-h-[100vh] py-16 relative flex items-center justify-center"
       >
-        <div className="w-[90%] mx-auto  px-2 max-w-custom_1">
-          <div className="flex flex-col mx-auto justify-between gap-y-12 gap-x-20">
-            <div className="flex w-full  lg:w-[80%] flex-col gap-8">
+        <div className="w-[90%] mx-auto max-w-custom_1">
+          <div className="flex w-full flex-col mx-auto justify-between gap-y-12 gap-x-20">
+            <div className="flex w-full  lg:w-[90%] flex-col gap-8">
               <span
                 data-scroll
                 data-scroll-speed="2"
@@ -94,10 +95,10 @@ export default function Hero() {
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-x-[2px] md:gap-x-[12px] gap-y-[4px] 
-                md:gap-y-[6px] items-center justify-start uppercase text-[45px] md:text-6xl lg:text-8xl xl:text-[120px]
-                w-full leading-[.9] md:leading-[1] font-portfolio_bold"
+                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-[10px] items-center justify-start uppercase text-[55px] sm:text-[75px] md:text-[110px] xl:text-[120px]
+                w-full md:w-[1000px] leading-[.9] md:leading-[.9] font-portfolio_bold"
               >
+                {/* A Software Developer who crafts captivating digital experiences. */}
                 {heroWords1.split(" ").map((x, index) => {
                   return (
                     <span
@@ -119,8 +120,8 @@ export default function Hero() {
               <div className="w-100 flex items-start">
                 <div className="px-6 flex items-center justify-between gap-4 py-4 bg-[#eeeeee] rounded-3xl">
                   <div className="w-4 h-4 bg-[#C5F244] rounded-full"></div>
-                  <span className="text-sm text-text_dark_1 text-start uppercase leading-[1] font-portfolio_semibold">
-                    AVAILABLE FOR WORK
+                  <span className="text-3xl text-text_dark_1 text-start leading-[1] font-portfolio_semibold">
+                    {/* AVAILABLE FOR WORK */} Available for Work
                   </span>
                 </div>
               </div>
@@ -139,8 +140,8 @@ export default function Hero() {
               <div className="grid grid-cols-1 lg:flex w-100 items-center justify-between gap-8">
                 <h4
                   ref={container}
-                  className="text-4xl md:text-4xl w-full md:w-[90%] uppercase hero_text_2 
-                  flex flex-wrap gap-y-[4px] gap-x-[4px] items-center justify-start 
+                  className="text-4xl md:text-4xl w-full md:w-[95%] uppercase hero_text_2 
+                  flex flex-wrap gap-y-[6px] gap-x-[6px] items-center justify-start 
                   text-text_dark_1 leading-[1] font-normal font-portfolio_bold"
                 >
                   {heroWords.split(" ").map((x, index) => {
