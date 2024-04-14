@@ -23,14 +23,17 @@
   font-family: "Agency_Extended";
   src: url("../assets/fonts/Bold.ttf") format("truetype");
 }
-body, html {
-  background-color: #e1dfdd;   
+body,
+html {
+  background-color: #e1dfdd;
   font-weight: 500;
   /* letter-spacing: 1.6px !important; */
   /* transform-style:  preserve-3d; */
   -webkit-font-smoothing: antialiased;
   line-height: 1.3;
-  font-family: "Agency_Extended", apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;                
+  font-family: "Agency_Extended", apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 /* html {
   font-size: 62.5%;
@@ -40,7 +43,7 @@ body, html {
 }
 html.lenis,
 html.lenis body {
-  height: auto; 
+  height: auto;
 }
 
 .lenis.lenis-smooth {
@@ -69,11 +72,16 @@ html.lenis body {
   flex-wrap: wrap !important;
   gap: 8px;
 }
-.titleRef .line{
+.titleRef.titleRef2 .line {
+  text-align: center !important;
+   justify-content: center !important;
+   align-items: center !important;
+}
+.titleRef .line {
   row-gap: 20px !important;
   column-gap: 20px !important;
 }
- h4 .line {
+h4 .line {
   row-gap: 12px !important;
   column-gap: 12px !important;
 }
@@ -81,6 +89,7 @@ html.lenis body {
   justify-content: flex-end !important;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #000;
 }

@@ -1,26 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import { slideup3 } from "@/constants/utils/framer";
-const AccordionIndex = ({ expanded, setExpanded, x, index,view }) => {
+const AccordionIndex = ({ expanded, setExpanded, x, index }) => {
   const active = expanded === index;
   return (
-    <motion.div
-      variants={slideup3}
-      custom={index}
-      initial="initial"
-      animate={view ? "animate" : "exit"}
-      className="w-full z-50 border-t py-12 group cursor-pointer border-[rgba(0,0,0,.4)]"
-    >
+    <div className="w-full z-50 border-t py-12 group cursor-pointer border-[rgba(0,0,0,.4)]">
       <div
         onClick={() => setExpanded(active ? false : index)}
-        className="h-[30px] group-hover:text-[rgba(0,0,0,.5)] cursor-pointer text-xl md:text-xl flex items-center justify-between font-portfolio_bold1 gap-8 md:gap-24 text-text_dark_1"
+        className="h-[40px] group-hover:text-[rgba(0,0,0,.5)] cursor-pointer text-4xl md:text-6xl flex items-center justify-between font-portfolio_bold1 gap-8 md:gap-24 text-text_dark_1"
       >
         <span className="">0{index + 1}</span>
-        <span className="text-start uppercase flex-1 mx-4 md:mx-6">
-          {" "}
-          {x?.title}
-        </span>
+        <span className="text-start flex-1 mx-4 md:mx-6"> {x?.title}</span>
         <span className="relative text-xl">
           <motion.span
             transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
@@ -42,11 +32,11 @@ const AccordionIndex = ({ expanded, setExpanded, x, index,view }) => {
         transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
         className="w-full  overflow-hidden"
       >
-        <h4 className="text-xl w-[65%] pt-8 pb-16 mx-auto font-portfolio_semibold font-normal">
+        <h4 className="text-4xl w-[65%] pt-8 pb-16 mx-auto font-portfolio_semibold font-normal">
           {x.description}
         </h4>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

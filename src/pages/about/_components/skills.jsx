@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
-import SplitType from "split-type";
 import { opacity, slideup, slideup2, slideup3 } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
 import AccordionIndex from "./accordion";
@@ -118,8 +117,8 @@ const Skills = () => {
   const container5 = useRef(null);
   const inView7 = useInView(container5);
 
-    const container6 = useRef(null);
-    const inView8 = useInView(container6);
+  const container6 = useRef(null);
+  const inView8 = useInView(container6);
   return (
     <>
       <div data-scroll className="py-32 flex flex-col gap-20">
@@ -133,7 +132,7 @@ const Skills = () => {
             <div className="w-full items-start md:items-end md:justify-end flex flex-col gap-20">
               <h4
                 ref={container}
-                className="w-full text-start  uppercase text-4xl md:text-7xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+                className="w-full text-start  uppercase text-8xl md:text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
               >
                 {heroWords2.split(" ").map((x, index) => {
                   return (
@@ -177,7 +176,7 @@ const Skills = () => {
                   <div className="w-full flex flex-col gap-4">
                     <h4
                       ref={container2}
-                      className="w-full text-start  uppercase text-4xl sm:text-5xl lg:text-6xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+                      className="w-full text-start  uppercase text-4xl sm:text-5xl lg:text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
                     >
                       {heroWords3.split(" ").map((x, index) => {
                         return (
@@ -199,7 +198,7 @@ const Skills = () => {
                     </h4>
                     <h5
                       ref={skillText}
-                      className="text-xl flex flex-wrap gap-x-[16px] gap-y-[12px] leading-[1.1] font-portfolio_semibold"
+                      className="text-4xl flex flex-wrap gap-x-[16px] gap-y-[10px] leading-[1] font-portfolio_semibold"
                     >
                       {skillDescriptionText.split(" ").map((x, index) => {
                         return (
@@ -221,7 +220,7 @@ const Skills = () => {
                     </h5>
                     <div
                       ref={skillText3}
-                      className="w-full text-lg font-portfolio_bold1 flex items-start mt-6 flex-col flex-wrap gap-4"
+                      className="w-full text-4xl font-portfolio_bold1 flex items-start mt-6 flex-col flex-wrap gap-4"
                     >
                       {skillslist?.map((x, index) => {
                         return (
@@ -248,7 +247,7 @@ const Skills = () => {
             <div className="w-full mt-24 items-start md:justify-start flex flex-col gap-6">
               <h4
                 ref={container3}
-                className="w-full text-start  uppercase text-4xl sm:text-5xl lg:text-6xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[12px] justify-start lg:items-center"
+                className="w-full text-start  uppercase text-6xl sm:text-7xl lg:text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[10px] justify-start lg:items-center"
               >
                 {heroWords4.split(" ").map((x, index) => {
                   return (
@@ -270,7 +269,7 @@ const Skills = () => {
               </h4>
               <h5
                 ref={skillText2}
-                className="text-xl flex flex-wrap gap-x-[16px] gap-y-[12px] leading-[1.1] font-portfolio_semibold w-[90%] md:w-[60%]"
+                className="text-4xl md:text-4xl flex flex-wrap gap-x-[16px] gap-y-[10px] leading-[1] font-portfolio_semibold w-[90%] md:w-[60%]"
               >
                 {skillDescriptionText2.split(" ").map((x, index) => {
                   return (
@@ -298,15 +297,15 @@ const Skills = () => {
                       custom={index}
                       initial="initial"
                       animate={inView7 ? "animate" : "exit"}
-                      className="text-2xl font-portfolio_bold1 flex items-start gap-4 font-medium"
+                      className="text-5xl font-portfolio_bold1 flex items-start gap-4 font-medium"
                     >
                       {index + 1}.{" "}
                       <div className="flex flex-col gap-2">
-                        <span className="uppercase">{x?.position}</span>
-                        <span className="block text-xl font-portfolio_semibold">
+                        <span className="">{x?.position}</span>
+                        <span className="block text-3xl font-portfolio_semibold">
                           {x.title} ({x.location})
                         </span>
-                        <span className="block text-base font-light text-grey font-portfolio_semibold">
+                        <span className="block text-2xl font-light text-grey font-portfolio_semibold">
                           {x.date}
                         </span>
                       </div>
