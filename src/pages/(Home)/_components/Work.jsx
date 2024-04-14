@@ -83,23 +83,14 @@ const Work = () => {
         variants={scaleAnimations}
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
-        className="w-28 z-[50] absolute h-28 rounded-full flex items-center justify-center text-[12px] text-white font-portfolio_bold bg-[#2e2e30]"
+        className="w-28 z-[62] absolute h-28 rounded-full flex items-center justify-center text-[12px] text-white font-portfolio_bold bg-[#2e2e30]"
       ></motion.span>
-      <div
-        onMouseEnter={() =>
-          setMousePosition({
-            active: false,
-          })
-        }
-        className="absolute top-0 w-full h-full z-[45]"
-      ></div>
-
       <motion.span
         variants={scaleAnimations}
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
         ref={labelRef}
-        className="w-16 z-[50] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
+        className="w-16 z-[62] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
       >
         {website ? (
           <Link
@@ -110,25 +101,37 @@ const Work = () => {
             View
           </Link>
         ) : (
-          <span className="text-center text-xl leading-[1] w-full"> Work in Progress</span>
+          <span className="text-center text-xl leading-[1] w-full">
+            {" "}
+            Work in Progress
+          </span>
         )}
       </motion.span>
-      <div data-scroll className="py-12 w-full relative">
-        <div className="w-[90%] mx-auto px-8 m-auto max-w-custom_1 grid grid-cols-1 sm:grid-cols-custom_3 relative gap-16">
-          <div
-            className="text-6xl text-text_dark_1 font-portfolio_bold w-[120px] pt-4 border-t border-[rgba(0,0,0,.3)] font-normal uppercase"
-          >
-            <span>02/</span>
-            <span>RECENT WORKS?</span>
-          </div>
+      <div className="py-12 w-full relative">
+        <div
+          onMouseEnter={() =>
+            setMousePosition({
+              active: false,
+            })
+          }
+          className="absolute top-0 w-full h-full z-[55]"
+        ></div>
 
-          {/* <Mouse mouseposition={mouseposition} /> */}
-          <div className="w-full relative gap-x-8 gap-y-24 justify-between">
-            <WorkList
-              setMousePosition={setMousePosition}
-              setTab={setTab}
-              tab={tab}
-            />
+        <div data-scroll className="py-12 w-full relative">
+          <div className="w-[90%] mx-auto px-8 m-auto max-w-custom_1 grid grid-cols-1 sm:grid-cols-custom_3 relative gap-16">
+            <div className="text-6xl text-text_dark_1 font-portfolio_bold w-[120px] pt-4 border-t border-[rgba(0,0,0,.3)] font-normal uppercase">
+              <span>02/</span>
+              <span>RECENT WORKS?</span>
+            </div>
+
+            {/* <Mouse mouseposition={mouseposition} /> */}
+            <div className="w-full relative z-[60] gap-x-8 gap-y-24 md:gap-y-32 justify-between">
+              <WorkList
+                setMousePosition={setMousePosition}
+                setTab={setTab}
+                tab={tab}
+              />
+            </div>
           </div>
         </div>
       </div>

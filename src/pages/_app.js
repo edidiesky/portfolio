@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function App({ Component, pageProps, router }) {
     return (
       <SmoothScroll>
-        <Cursor/>
+        {/* <Cursor/> */}
         <Preloader/>
         <AnimatePresence mode="wait">
           <Component key={router.route} {...pageProps} />

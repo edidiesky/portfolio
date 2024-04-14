@@ -23,7 +23,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="card z-[47] w-full relative">
+    <div className="card z-[60] w-full relative">
       <div
         onMouseEnter={handleMouseEnter}
         // onMouseLeave={handleMouseLeave}
