@@ -139,7 +139,7 @@ const Preloader = () => {
           ease: [0.76, 0, 0.24, 1],
         }}
         // style={{letterSpacing:"1px"}}
-        className="text-lg overflow-hidden loader_text relative text-white font-normal uppercase font-portfolio_bold"
+        className="text-4xl md:text-5xl overflow-hidden loader_text relative text-white font-normal uppercase font-portfolio_bold"
       >
         <motion.span
           initial={{ opacity: 0 }}

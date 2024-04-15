@@ -148,9 +148,16 @@ const Footer = () => {
                 LET-US-COLLABORATE
               </Link>
             </div>
-            <div className="w-[90%] max-w-custom mx-auto md:px-20 grid grid-cols-1 md:grid-cols-custom_5 justify-between gap-4">
+            <div
+              onMouseEnter={() =>
+                setMousePosition({
+                  active: true,
+                })
+              }
+              className="w-[90%] z-[46] max-w-custom mx-auto md:px-20 grid grid-cols-1 md:grid-cols-custom_5 justify-between gap-4"
+            >
               <div className="w-full grid grid-cols-3 gap-16">
-                <div className="w-full flex flex-col gap-4">
+                <div className="w-full z-[46] flex flex-col gap-4">
                   <h4 className="text-5xl">
                     <sup className="text-2xl">01/</sup> SITEMAP
                   </h4>
