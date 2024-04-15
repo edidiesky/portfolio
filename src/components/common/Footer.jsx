@@ -151,21 +151,21 @@ const Footer = () => {
             <div
               onMouseEnter={() =>
                 setMousePosition({
-                  active: true,
+                  active: false,
                 })
               }
               className="w-[90%] z-[46] max-w-custom mx-auto md:px-20 grid grid-cols-1 md:grid-cols-custom_5 justify-between gap-4"
             >
               <div className="w-full grid grid-cols-3 gap-16">
-                <div className="w-full z-[46] flex flex-col gap-4">
+                <div className="w-full flex flex-col gap-4">
                   <h4 className="text-5xl">
                     <sup className="text-2xl">01/</sup> SITEMAP
                   </h4>
                   <ul className="flex text-3xl flex-col gap-2">
                     <Link href={"/"}>Home</Link>
-                    <Link href={"/"}>About</Link>
-                    <Link href={"/"}>Works</Link>
-                    <Link href={"/"}>Contact</Link>
+                    <Link href={"/about"}>About</Link>
+                    <Link href={"/work"}>Works</Link>
+                    <Link href={"/contact"}>Contact</Link>
                   </ul>
                 </div>
                 <div className="w-full flex flex-col gap-4">
@@ -173,9 +173,15 @@ const Footer = () => {
                     <sup className="text-2xl">02/</sup> SOCIALS
                   </h4>
                   <ul className="flex text-3xl flex-col gap-2">
-                    <Link href={"/"}>Twitter</Link>
-                    <Link href={"/"}>Instagram</Link>
-                    <Link href={"/"}>Github</Link>
+                    <Link href={"https://twitter.com/edidiesky"}>Twitter</Link>
+                    <Link
+                      href={
+                        "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
+                      }
+                    >
+                      LinkedLn
+                    </Link>
+                    <Link href={"https://github.com/edidiesky"}>Github</Link>
                   </ul>
                 </div>
               </div>
