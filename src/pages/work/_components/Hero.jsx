@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 import gsap from "gsap";
 import { scaleAnimations } from "@/constants/utils/framer";
 import WorkList from "@/components/common/WorkList";
-import { projectdata } from "@/constants/data/projectdata";
+import { projectdata3 } from "@/constants/data/projectdata";
 export default function Hero() {
   const [mouseposition, setMousePosition] = useState({
     active: false,
@@ -66,7 +66,7 @@ export default function Hero() {
   });
   const heroWords =
     "A selected set of experiments I'm building as I navigate through ideas and technologies. I learn by testing out and building based on concepts and techniques.";
-   const webactive = projectdata[mouseposition?.index]?.website;
+   const webactive = projectdata3[mouseposition?.index]?.website;
 
    const website = webactive ? webactive : false;
     return (
@@ -168,7 +168,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="w-[100%] md:w-[85%] mx-auto">
+            <div className="w-[100%] md:w-[95%] mx-auto">
               <WorkList
                 setMousePosition={setMousePosition}
                 setTab={setTab}

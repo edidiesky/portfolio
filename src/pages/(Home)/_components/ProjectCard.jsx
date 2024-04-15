@@ -35,12 +35,22 @@ const ProjectCard = ({
           data-scroll-speed="1"
           ref={addRefs}
           style={{
-            background: `${project?.color}`,
+            background: `${project?.backGroundColor}`,
           }}
-          className="flex w-full h-[420px] md:h-[450px] lg:h-[450px] items-center justify-center"
+          className="flex w-full h-[450px] lg:h-[500px] items-center justify-center"
         >
-          <div data-scroll data-scroll-speed="2" className="w-[80%]">
-            <img src={project?.image} alt="" className="w-full" />
+          <div
+            style={{ transition: "all .4s ease" }}
+            data-scroll
+            data-scroll-speed="2"
+            className="w-[85%] group-hover:scale-[1.08]"
+          >
+            <img
+              src={project?.mainImage}
+              alt=""
+              style={{ transition: "all .4s ease" }}
+              className="w-full group-hover:scale-[1.08"
+            />
           </div>
         </div>
         <div className="flex w-full flex-col gap-8">
@@ -50,15 +60,15 @@ const ProjectCard = ({
               data-scroll-speed="2"
               className="border-b border-[rgba(0,0,0,.2)] text-text_dark_1 pb-4 w-full"
             >
-              {project?.text}
+              {project?.mainTitle}
             </span>
             <span
               data-scroll
               data-scroll-speed="2"
               className="text-3xl flex font-portfolio_semibold items-center justify-between w-full"
             >
-              Development
-              <span>{project?.year}</span>
+              {project?.role}
+              <span>{project?.period}</span>
             </span>
           </h3>
         </div>

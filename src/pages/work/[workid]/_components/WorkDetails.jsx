@@ -83,7 +83,7 @@ function WorkTitle() {
           </div>
         </div>
         <div className="w-full relative mt-20 flex h-[40rem]">
-          <div className="w-40 h-40 absolute right-10 -top-20 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-sm text-white">
+          <div className="w-40 h-40 absolute right-10 -top-20 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-3xl text-white">
             Live Site <GoArrowUpRight fontSize={"20px"} />
           </div>
           <img
