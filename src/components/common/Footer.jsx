@@ -19,7 +19,18 @@ const Footer = () => {
 
   let sliderPosition = 0;
   let sliderDirection = -1;
-
+  const handleSliderPosition = () => {
+    if (sliderPosition <= -155) {
+      sliderPosition = 0;
+    }
+    if (sliderPosition > 0) {
+      sliderPosition = -155;
+    }
+    gsap.set(firstSliderTextRef?.current, { xPercent: sliderPosition });
+    gsap.set(secondSliderTextRef?.current, { xPercent: sliderPosition });
+    sliderPosition += 0.2 * sliderDirection;
+    requestAnimationFrame(handleSliderPosition);
+  };
   useEffect(() => {
     const { ScrollTrigger } = window.gsap;
     gsap.registerPlugin(ScrollTrigger);
@@ -70,18 +81,7 @@ const Footer = () => {
       window.removeEventListener("mousemove", handleMouseMotion);
     };
   }, []);
-  const handleSliderPosition = () => {
-    if (sliderPosition <= -155) {
-      sliderPosition = 0;
-    }
-    if (sliderPosition > 0) {
-      sliderPosition = -155;
-    }
-    gsap.set(firstSliderTextRef.current, { xPercent: sliderPosition });
-    gsap.set(secondSliderTextRef.current, { xPercent: sliderPosition });
-    sliderPosition += 0.2 * sliderDirection;
-    requestAnimationFrame(handleSliderPosition);
-  };
+
 
   return (
     <>

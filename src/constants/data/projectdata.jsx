@@ -6,7 +6,7 @@ export const projectdata = [
     text: "CAR MANAGEMENT SYSTEM",
     subtext: "Vaada",
     color: "#B1A994",
-    image: "./car_details_screen.jpeg ",
+    image: "/car_details_screen.jpeg ",
     website: "https://vaada.vercel.app/",
     github: "https://github.com/edidiesky/cardealer",
     features: [
@@ -507,16 +507,16 @@ export const projectdata3 = [
     backGroundColor: "#000000",
     roleDescription:
       "At Quantifly, I held a variety of responsibilities. My initial role involved creating the logo and the overall visual brand identity. Beyond that, I also designer a data-gathering questionnaire, designed and programmed the platform for partners and interactive game, and took on the role of product owner.",
-    mainImage: "",
+    mainImage:"https://www.klemenc.si/works/quantifly/img_website_blog.webp",
     mainTitle: "Quantifly",
     overview: {
-      Description: `Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.`,
+      Description: "Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.",
       images: ["https://www.klemenc.si/works/quantifly/img_website_blog.webp"],
     },
     technologyUsed: ["Figma", "Supabase", "React JS"],
     features: {
       Description:
-        "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements.",
+       [ "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements."],
       images: [
         "https://www.klemenc.si/works/quantifly/img_platform.webp",
         "https://www.klemenc.si/works/quantifly/img_game.webp",
@@ -538,12 +538,13 @@ export const projectdata3 = [
     period: "2022",
     year: "Jan 2022 - Mar 2022",
     backGroundColor: "#B1A994",
-    roleDescription: "",
-    mainImage: "./car_details_screen.jpeg ",
+    roleDescription:"I built Vaada with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, Car CRUD operations, and a dashboard to track inventory.",
+    mainImage: "/car_details_screen.jpeg",
     mainTitle: "Vaada",
     overview: {
-      Description: "",
-      images: [],
+      Description:
+        "Vaada is an innovative car management product designed to provide for both car buyers and owners, offering a better experience through its intuitive interface and comprehensive features. Whether you're in the market for a new vehicle or seeking efficient ways to manage your existing fleet, Vaada has you covered. With its robust admin dashboard, integrated payment system, and review functionality, Vaada transforms the way users interact with their cars.",
+      images: ["/car_details_screen.jpeg ", "/car_list_screen.jpeg"],
     },
     technologyUsed: [
       "React.js",
@@ -555,109 +556,118 @@ export const projectdata3 = [
       "Zoid",
     ],
     features: {
-      Description: "",
-      images: [],
+      Description: [
+        "Vaada simplifies the car buying process by providing a curated selection of vehicles for potential buyers. From sedans to SUVs, users can browse through a diverse range of options, complete with detailed specifications, images, and pricing information.",
+        "For car owners, Vaada offers a one-stop solution for managing their vehicles. Through the admin dashboard, users can track maintenance schedules, monitor fuel consumption, and receive timely reminders for servicing and inspections. This feature streamlines the management process, ensuring that vehicles remain in optimal condition.",
+        "Vaada integrates seamlessly with Stripe, allowing users to complete transactions securely and efficiently. Whether purchasing a new car or scheduling maintenance services, users can make payments with confidence, knowing that their financial information is protected.",
+        "Security is paramount in Vaada, which is why robust authentication and authorization mechanisms are implemented. This ensures that only authorized users have access to sensitive features and data, safeguarding the platform against unauthorized access and potential security threats.",
+      ],
+      images: ["/car_details_screen.jpeg ", "/car_list_screen.jpeg"],
     },
     ui: {
-      description: "",
-      images: [],
+      description:
+        "Vaada streamlines the car management process, saving users time and effort. Whether buying, selling, or maintaining vehicles, everything can be done conveniently through the platform's intuitive interface.",
+      images: ["/car_details_screen.jpeg ", "/car_list_screen.jpeg"],
     },
   },
   {
-    website: "",
-    role: "",
-    github: "",
-    period: "",
-    year: "",
+    website: "https://eib.vercel.app",
+    role: "Full-Stack Development",
+    github: "https://github.com/edidiesky/airbnb",
+    period: "2023",
+    year: "2023",
     backGroundColor: "#000000",
-    roleDescription: "",
-    mainImage: "",
-    mainTitle: "",
+    roleDescription:
+      "StayBnb comprehensive platform designed to facilitate the rental of accommodations, connecting property owners with individuals seeking temporary lodging. With full authentication, listing creation, reservation management, and user dashboards, the website offers a seamless experience for both hosts and guests.",
+    mainImage: "/airbnb_screen.jpeg",
+    mainTitle: "StayBnB",
     overview: {
-      Description: "",
-      images: [],
+      Description:
+        "Our accommodation rental platform offers a comprehensive solution for individuals seeking temporary lodging and property owners looking to rent out their spaces. With a suite of robust features, including full authentication, listing creation, reservation management, dashboards, and payment integration, our platform provides a seamless experience for both hosts and guests.",
+      images: ["/airbnb_screen.jpeg"],
     },
-    technologyUsed: [""],
+    technologyUsed: [
+      "React.js",
+      "Node.js",
+      "MongoDb",
+      "Express.js",
+      "Styled-components",
+    ],
     features: {
-      Description: "",
-      images: [],
+      Description: [
+        "In StayBnB, Users can securely register, log in, and manage their accounts, ensuring a personalized and secure experience on the platform.",
+        "StayBnb allows Hosts can easily create and manage property listings, including uploading photos, providing descriptions, setting pricing, and specifying availability.",
+        "Guests can search for accommodations based on location, dates, and preferences, and make reservations directly through the platform. Hosts can manage reservation requests, confirmations, and cancellations efficiently.",
+        "StayBnb platform allows for  Our platform integrates a secure payment gateway, enabling seamless transactions between hosts and guests. Hosts can set pricing, manage payouts, and track earnings with ease.",
+      ],
+      images: ["/airbnb_screen.jpeg"],
     },
     ui: {
-      description: "",
-      images: [],
-    },
-  },
-
-  {
-    website: "",
-    role: "",
-    github: "",
-    period: "",
-    year: "",
-    backGroundColor: "#000000",
-    roleDescription: "",
-    mainImage: "",
-    mainTitle: "",
-    overview: {
-      Description: "",
-      images: [],
-    },
-    technologyUsed: [""],
-    features: {
-      Description: "",
-      images: [],
-    },
-    ui: {
-      description: "",
-      images: [],
+      description:
+        "StayBnb is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      images: ["/airbnb_screen.jpeg"],
     },
   },
   {
-    website: "",
-    role: "",
-    github: "",
-    period: "",
-    year: "",
-    backGroundColor: "#000000",
-    roleDescription: "",
-    mainImage: "",
-    mainTitle: "",
+    website: "https://weeters.vercel.app/",
+    role: "Full-Stack Development",
+    github: "https://github.com/edidiesky/twitter_clone",
+    period: "2023",
+    year: "2023",
+    backGroundColor: "#626D6E",
+    roleDescription:
+      "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. Built with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform offers a comprehensive solution for users seeking a dynamic social networking experience.",
+    mainImage: "/twitter_screen_2.jpeg",
+    mainTitle: "Twizzle",
     overview: {
-      Description: "",
-      images: [],
+      Description: [
+        "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. Built with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform offers a comprehensive solution for users seeking a dynamic social networking experience.",
+      ],
+      images: ["/twitter_screen_2.jpeg"],
     },
-    technologyUsed: [""],
+    technologyUsed: [
+      "Typescript",
+      "Node.js",
+      "Typescript-Express.js",
+      "Socket.io",
+      "MongoDb",
+      "Express.js",
+      "Styled-components",
+    ],
     features: {
-      Description: "",
-      images: [],
+      Description: [
+        "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform mirrors the functionality and behavior of popular platforms like Twitter while offering unique enhancements and innovations.",
+        "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner."
+      ],
+      images: ["/twitter_screen_2.jpeg"],
     },
     ui: {
-      description: "",
+      description:"Twizzle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
       images: [],
     },
   },
-  {
-    website: "",
-    role: "",
-    github: "",
-    period: "",
-    year: "",
-    backGroundColor: "#000000",
-    roleDescription: "",
-    mainImage: "",
-    mainTitle: "",
-    overview: {
-      Description: "",
-      images: [],
-    },
-    technologyUsed: [""],
-    features: {
-      Description: "",
-      images: [],
-    },
-    ui: {
-      description: "",
-      images: [],
-    },
-  },
+  // {
+  //   website: "",
+  //   role: "",
+  //   github: "",
+  //   period: "",
+  //   year: "",
+  //   backGroundColor: "#E49C4A",
+  //   roleDescription: "",
+  //   mainImage: "",
+  //   mainTitle: "",
+  //   overview: {
+  //     Description: "",
+  //     images: [],
+  //   },
+  //   technologyUsed: [""],
+  //   features: {
+  //     Description: "",
+  //     images: [],
+  //   },
+  //   ui: {
+  //     description: "",
+  //     images: [],
+  //   },
+  // },
 ];

@@ -7,10 +7,10 @@ const AccordionIndex = ({ expanded, setExpanded, x, index }) => {
     <div className="w-full z-50 border-t py-12 group cursor-pointer border-[rgba(0,0,0,.4)]">
       <div
         onClick={() => setExpanded(active ? false : index)}
-        className="h-[40px] group-hover:text-[rgba(0,0,0,.5)] cursor-pointer text-4xl md:text-5xl xl:text-6xl flex items-center justify-between font-portfolio_bold1 gap-8 md:gap-24 text-text_dark_1"
+        className="h-[40px] group-hover:text-[rgba(0,0,0,.5)] cursor-pointer text-4xl xl:text-6xl flex items-center justify-between font-portfolio_bold1 gap-8 md:gap-24 text-text_dark_1"
       >
         <span className="">0{index + 1}</span>
-        <span className="text-start flex-1 mx-4 md:mx-6"> {x?.title}</span>
+        <span className="text-start flex-1 md:mx-6"> {x?.title}</span>
         <span className="relative text-xl">
           <motion.span
             transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}

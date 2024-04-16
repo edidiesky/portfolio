@@ -89,13 +89,13 @@ const Preloader = () => {
          .fromTo(
            text1?.words,
            {
-             y: 80,
+             y: 300,
              opacity: 0,
            },
            {
              y: 0,
              opacity: 1,
-             stagger: 0.1,
+             stagger: 0.08,
              duration: 2,
              ease: "power4.inOut",
            },
@@ -107,7 +107,7 @@ const Preloader = () => {
            {
              clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
              opacity: 1,
-             duration: 2,
+             duration: 1,
            },
            8.6
          );

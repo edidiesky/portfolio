@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsGithub, BsTwitter } from "react-icons/bs";
 import Link from "next/link";
 import { slide, opacity, perspective } from "./anim";
 import Navbar from "../common/Navbar";
@@ -52,6 +54,31 @@ export default function Layout({ children }) {
           animate="enter"
           exit="exit"
         >
+        <div className=" wrapperlink flex items-center flex-col gap-8">
+        <Link
+                        href={"https://github.com/edidiesky"}
+          target="_blank"
+          className="social"
+        >
+          <BsGithub fontSize={'24px'} />
+        </Link>
+        <Link
+         href={"https://twitter.com/edidiesky"} target="_blank"
+          className="social"
+        >
+          <BsTwitter fontSize={'24px'} />
+        </Link>
+        <Link
+            href={
+              "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
+             }
+          target="_blank"
+          className="social"
+        >
+          <FaLinkedinIn fontSize={'24px'} />
+        </Link>
+        <div className="arrow"></div>
+      </div>
           <Navbar />
           {children}
         </motion.div>
@@ -84,5 +111,22 @@ const LayOutStyles = styled.div`
     top: 0;
     background-color: white;
     z-index: 1;
+  }
+  .wrapperlink {
+    position: fixed;
+    bottom: 10%;
+    left: 3%;
+    z-index: 30000;
+    height: 50vh;
+    @media (max-width: 780px) {
+      left: 1%;
+      bottom: 0;
+      display: none;
+    }
+    .arrow {
+      height: 300px;
+      width: 0.2px;
+      background-color: #000;
+    }
   }
 `;

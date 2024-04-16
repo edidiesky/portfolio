@@ -65,7 +65,7 @@ export default function Hero() {
         data-scroll
         className="min-h-[100vh] py-16 relative flex items-center justify-center"
       >
-        <div className="w-[90%] mx-auto max-w-custom_1">
+        <div className="w-[90%] md:w-[80%] mx-auto max-w-custom_1">
           <div className="flex w-full flex-col mx-auto justify-between gap-y-12 gap-x-20">
             <div className="flex w-full  lg:w-[90%] flex-col gap-8">
               <span
@@ -128,7 +128,7 @@ export default function Hero() {
             </div>
             <div className="w-90 flex flex-col gap-16">
               <div className="w-full">
-                <div className="w-full md:w-[420px] h-[200px] relative flex items-center justify-center">
+                <div className="w-full md:w-[420px] h-[300px] md:h-[200px] relative flex items-center justify-center">
                   <img
                     src={"./profile_6.JPG"}
                     alt=""
@@ -140,8 +140,8 @@ export default function Hero() {
               <div className="grid grid-cols-1 lg:flex w-100 items-center justify-between gap-8">
                 <h4
                   ref={container}
-                  className="text-4xl md:text-4xl w-full md:w-[95%] uppercase hero_text_2 
-                  flex flex-wrap gap-y-[6px] gap-x-[6px] items-center justify-start 
+                  className="text-4xl md:text-4xl w-full md:w-[100%] uppercase hero_text_2 
+                  flex flex-wrap gap-[6px] items-center justify-start 
                   text-text_dark_1 leading-[1] font-normal font-portfolio_bold"
                 >
                   {heroWords.split(" ").map((x, index) => {

@@ -70,7 +70,7 @@ html.lenis body {
 .line {
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 8px;
+  gap: 4px;
 }
 .titleRef.titleRef2 .line {
   text-align: center !important;
@@ -78,8 +78,8 @@ html.lenis body {
    align-items: center !important;
 }
 .titleRef .line {
-  row-gap: 20px !important;
-  column-gap: 20px !important;
+ gap: 8.3px !important;
+  /* column-gap: 10px !important; */
 }
 h4 .line {
   row-gap: 12px !important;
@@ -92,4 +92,10 @@ h4 .line {
 input::placeholder,
 textarea::placeholder {
   color: #000;
+}
+@media (max-width:580px) {
+  .titleRef .line {
+ gap: 7px !important;
+  /* column-gap: 10px !important; */
+}
 }
