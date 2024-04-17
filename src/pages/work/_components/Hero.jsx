@@ -66,9 +66,7 @@ export default function Hero() {
   });
   const heroWords =
     "A selected set of experiments I'm building as I navigate through ideas and technologies. I learn by testing out and building based on concepts and techniques.";
-   const webactive = projectdata3[mouseposition?.index]?.website;
-
-   const website = webactive ? webactive : false;
+  const website = projectdata3[mouseposition?.index]?.mainTitle;
     return (
       <>
         <motion.span
@@ -85,20 +83,15 @@ export default function Hero() {
           ref={labelRef}
           className="w-16 z-[42] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
         >
-          {website ? (
+          {
             <Link
               className="text-center text-3xl w-full"
-              target="_blank"
-              href={website}
+              // target="_blank"
+              href={`/work/${website}`}
             >
               View
             </Link>
-          ) : (
-            <span className="text-center text-xl leading-[1] w-full">
-              {" "}
-              Work in Progress
-            </span>
-          )}
+          }
         </motion.span>
         <div
           data-scroll
