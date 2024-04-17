@@ -92,9 +92,7 @@ export default function Hero() {
               <div className="w-[90%] mx-auto flex flex-col gap-8 ">
                 <div className="w-[60%] mx-auto relative  flex items-center justify-center">
                   <img
-                    src={
-                      "./profile_6.jpg"
-                    }
+                    src={"./profile_6.JPG"}
                     alt=""
                     className="imageRef w-full h-full object-cover"
                   />
