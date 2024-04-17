@@ -293,6 +293,7 @@ const Skills = () => {
                 {experienceList?.map((x, index) => {
                   return (
                     <motion.h4
+                      key={index}
                       variants={slideup3}
                       custom={index}
                       initial="initial"
