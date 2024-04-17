@@ -23,12 +23,12 @@ const skillslist = [
 const serviceslist = [
   {
     id: 1,
-    title: "Front End Development / engineering",
+    title: "Front End Development",
     description: "I plan build, test, and maintain scalable web applications",
   },
   {
     id: 2,
-    title: "Backend Development /engineering",
+    title: "Backend Development",
     description:
       "I can build REST API for your web products at a very fast pace with testing associated. ",
   },
