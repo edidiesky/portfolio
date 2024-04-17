@@ -21,7 +21,7 @@ export default function Hero() {
   const heroWords =
     "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
   const heroWords1 =
-    "Software Developer. Crafting user centered product";
+    "Software Developer, Crafting user centered product";
   // Innovative Software Developer crafting captivating digital experiences.
   const heroWords2 = `BASED IN NIGERIA`;
 
@@ -141,7 +141,7 @@ export default function Hero() {
               <div className="grid grid-cols-1 lg:flex w-100 items-center justify-between gap-8">
                 <h4
                   ref={container}
-                  className="text-4xl md:text-4xl w-full md:w-[100%] uppercase hero_text_2 
+                  className="text-4xl md:text-4xl w-full md:w-[100%] uppercase
                   flex flex-wrap gap-[6px] items-center justify-start 
                   text-text_dark_1 leading-[1] font-normal font-portfolio_bold"
                 >

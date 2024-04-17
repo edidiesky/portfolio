@@ -66,15 +66,15 @@ const experienceList = [
     date: "2021-2022",
     location: "Mexico City",
   },
-  {
-    title: "GoTrendier",
-    position: "Backend Developer",
-    date: "2021 - 2022",
-    location: "Colombia",
-  },
+  // {
+  //   title: "GoTrendier",
+  //   position: "Backend Developer",
+  //   date: "2021 - 2022",
+  //   location: "Colombia",
+  // },
   {
     title: "Flink",
-    position: "Software Developer",
+    position: "Software Developer (InternShip)",
     date: "2020-2021",
     location: "Mexico",
   },
@@ -305,7 +305,7 @@ const Skills = () => {
                       <div className="flex flex-col gap-2">
                         <span className="">{x?.position}</span>
                         <span className="block text-3xl font-portfolio_semibold">
-                          {x.title} ({x.location})
+                          {x.title}
                         </span>
                         <span className="block text-2xl font-light text-grey font-portfolio_semibold">
                           {x.date}

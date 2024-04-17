@@ -25,28 +25,6 @@ const Preloader = () => {
     const textrefelement = new SplitType(".hero_text_3");
     gsap
       .timeline({ defaults: { ease: "SlowMo.easeOut" } })
-      //  .to(".pre_loader", {
-      //    duration: 3,
-      //    ease: "power4.out",
-      //  })
-      //  .to(
-      //    ".loader_text",
-      //    {
-      //      y: -140,
-      //      duration: 1.3,
-      //      ease: "power3.out",
-      //    },
-      //    4
-      //  )
-      //  .to(
-      //    ".loader_text",
-      //    {
-      //      opacity: 0,
-      //      duration: 0.6,
-      //      ease: "power3.out",
-      //    },
-      //    4.2
-      //  )
       .to(
         ".revealer_2",
         {

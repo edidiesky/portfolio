@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       <div className="relative min-h-[40vh] bg-[#000] flex flex-col justify-between py-12 pt-40">
-        <div className="w-[85%] mx-auto flex flex-col items-center gap-24">
+        <div className="w-[85%] max-w-custom mx-auto flex flex-col items-center gap-24">
           <div className="flex w-full pb-28 lg:pb-24 border-b border-[rgba(255,255,255,.1)] relative items-center gap-2">
             <h2
               ref={labelRef}

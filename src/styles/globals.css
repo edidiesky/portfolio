@@ -71,7 +71,7 @@ html.lenis body {
 .line {
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 4px;
+  gap: 8px;
   width: fit-content !important;
 }
 .titleRef.titleRef2 .line {
@@ -80,7 +80,7 @@ html.lenis body {
    align-items: center !important;
 }
 .titleRef .line {
- gap: 8.3px !important;
+ gap: 10px !important;
   /* column-gap: 10px !important; */
 }
 h4 .line {
