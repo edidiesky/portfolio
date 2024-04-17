@@ -267,7 +267,7 @@ function WorkFeatures() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
       <div className="w-[150px] flex">
-        <h4 className="text-3xl">03/</h4>
+        <h4 className="text-3xl">04/</h4>
       </div>
       <div className="flex w-[90%] md:w-[900px] flex-col gap-16 mx-auto">
         <div className="flex flex-col gap-12 w-full -mb-10">
