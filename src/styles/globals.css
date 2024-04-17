@@ -72,6 +72,7 @@ html.lenis body {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 4px;
+  width: fit-content !important;
 }
 .titleRef.titleRef2 .line {
   text-align: center !important;
