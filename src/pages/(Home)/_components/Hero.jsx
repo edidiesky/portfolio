@@ -21,7 +21,7 @@ export default function Hero() {
   const heroWords =
     "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
   const heroWords1 =
-    "A Software Developer who crafts captivating digital experiences.";
+    "Software Developer. Crafting user centered product";
   // Innovative Software Developer crafting captivating digital experiences.
   const heroWords2 = `BASED IN NIGERIA`;
 
@@ -30,7 +30,7 @@ export default function Hero() {
   const heroTextslideup1 = {
     initial: {
       opacity: 0,
-      y: "100%",
+      y: 200,
     },
     animate: (i) => ({
       opacity: 1,
@@ -39,14 +39,14 @@ export default function Hero() {
     }),
     exit: {
       opacity: 0,
-      // y: "100%",
-      y: "100%",
+      // y: 200,
+      y: 200,
     },
   };
   const heroTextslideup2 = {
     initial: {
       opacity: 0,
-      y: "100%",
+      y: 200,
     },
     animate: (i) => ({
       opacity: 1,
@@ -55,7 +55,7 @@ export default function Hero() {
     }),
     exit: {
       opacity: 0.5,
-      y: "100%",
+      y: 200,
     },
   };
 
@@ -95,8 +95,9 @@ export default function Hero() {
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-normal titleRef text-text_dark_1 flex flex-wrap lg:gap-[8px] items-center justify-start uppercase text-[58px] sm:text-[80px] md:text-[95px] lg:text-[100px] xl:text-[120px]
-                w-full lg:w-[1000px] leading-[.9] md:leading-[.9] font-portfolio_bold"
+                className="font-normal titleRef text-text_dark_1 flex flex-wrap lg:gap-[12px] items-center justify-start uppercase text-[58px] 
+                sm:text-[80px] md:text-[95px] lg:text-[100px] xl:text-[130px]
+                w-full lg:w-[1000px] leading-[.9] md:leading-[1] font-portfolio_bold"
               >
                 {/* A Software Developer who crafts captivating digital experiences. */}
                 {heroWords1.split(" ").map((x, index) => {

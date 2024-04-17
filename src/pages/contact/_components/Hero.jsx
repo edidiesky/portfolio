@@ -62,7 +62,7 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="min-h-[100vh] py-8 relative flex items-center justify-center"
+        className="min-h-[100vh]  py-8 relative flex items-center justify-center"
       >
         <div className="w-[90%] h-full mx-auto  px-2 max-w-custom_1">
           <div className="w-100 items-start grid md:grid-cols-custom_4 gap-x-8 gap-y-24">

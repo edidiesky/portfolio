@@ -452,51 +452,7 @@ export const projectdata = [
 // Twitter
 // Agency2
 
-export const projectdata2 = [
-  {
-    color: "#17120ecd",
-    image:
-      "https://assets.website-files.com/5d820ccf1097dd2dccadc680/5e2c4eef86f4176c2a15df6f_home-1.jpg",
-  },
-  {
-    color: "#17120ecd",
-    image:
-      "https://assets.website-files.com/5d820ccf1097dd2dccadc680/5e2c50c6d2e06727eda64394_home-3.jpg",
-  },
-  {
-    color: "#17120ecd",
-    image:
-      "https://assets.website-files.com/5d820ccf1097dd2dccadc680/5e2c53efb0943f4311bbc8d7_product.jpg",
-  },
-  {
-    color: "#48494B",
-    image:
-      "https://assets.website-files.com/5d820ccf1097dd2dccadc680/5e2c523586f4178a6f160606_shop.jpg",
-  },
-  {
-    color: "#000",
-    image:
-      "https://assets.website-files.com/5d820ccf1097dd2dccadc680/5e2c523586f4178a6f160606_shop.jpg",
-  },
-  {
-    color: "#E2D1D9",
-    image:
-      "https://assets.website-files.com/5d820ccf1097dd2dccadc680/5e2c523586f4178a6f160606_shop.jpg",
-  },
-  {
-    color: "#48494B",
-    image: "/cloning_2.jpg",
-  },
-  {
-    color: "#000",
-    image: "/cloning_2.jpg",
-  },
-  {
-    color: "#E49C4A",
-    image: "/cloning_2.jpg",
-  },
-];
-
+export const projectdata2 = []
 export const projectdata3 = [
   {
     website: "https://quantifly.net/",
@@ -507,16 +463,18 @@ export const projectdata3 = [
     backGroundColor: "#000000",
     roleDescription:
       "At Quantifly, I held a variety of responsibilities. My initial role involved creating the logo and the overall visual brand identity. Beyond that, I also designer a data-gathering questionnaire, designed and programmed the platform for partners and interactive game, and took on the role of product owner.",
-    mainImage:"https://www.klemenc.si/works/quantifly/img_website_blog.webp",
+    mainImage: "https://www.klemenc.si/works/quantifly/img_website_blog.webp",
     mainTitle: "Quantifly",
     overview: {
-      Description: "Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.",
+      Description:
+        "Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.",
       images: ["https://www.klemenc.si/works/quantifly/img_website_blog.webp"],
     },
     technologyUsed: ["Figma", "Supabase", "React JS"],
     features: {
-      Description:
-       [ "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements."],
+      Description: [
+        "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements.",
+      ],
       images: [
         "https://www.klemenc.si/works/quantifly/img_platform.webp",
         "https://www.klemenc.si/works/quantifly/img_game.webp",
@@ -538,7 +496,8 @@ export const projectdata3 = [
     period: "2022",
     year: "Jan 2022 - Mar 2022",
     backGroundColor: "#B1A994",
-    roleDescription:"I built Vaada with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, Car CRUD operations, and a dashboard to track inventory.",
+    roleDescription:
+      "I built Vaada with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, Car CRUD operations, and a dashboard to track inventory.",
     mainImage: "/car_details_screen.jpeg",
     mainTitle: "Vaada",
     overview: {
@@ -637,12 +596,13 @@ export const projectdata3 = [
     features: {
       Description: [
         "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform mirrors the functionality and behavior of popular platforms like Twitter while offering unique enhancements and innovations.",
-        "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner."
+        "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
       images: ["/twitter_screen_2.jpeg"],
     },
     ui: {
-      description:"Twizzle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      description:
+        "Twizzle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
       images: [],
     },
   },
@@ -653,6 +613,30 @@ export const projectdata3 = [
   //   period: "",
   //   year: "",
   //   backGroundColor: "#E49C4A",
+  //   roleDescription: "",
+  //   mainImage: "",
+  //   mainTitle: "",
+  //   overview: {
+  //     Description: "",
+  //     images: [],
+  //   },
+  //   technologyUsed: [""],
+  //   features: {
+  //     Description: "",
+  //     images: [],
+  //   },
+  //   ui: {
+  //     description: "",
+  //     images: [],
+  //   },
+  // },
+  // {
+  //   website: "",
+  //   role: "",
+  //   github: "",
+  //   period: "",
+  //   year: "",
+  //   backGroundColor: "#626E6E",
   //   roleDescription: "",
   //   mainImage: "",
   //   mainTitle: "",

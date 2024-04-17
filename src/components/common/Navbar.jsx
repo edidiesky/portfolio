@@ -53,17 +53,17 @@ const Navbar = ({ text, path }) => {
                     className="w-full h-full flex items-center flex-col relative"
                   >
                     <Link
-                      href={"https://twitter.com/edidiesky"}
-                      target="_blank"
+                      href={"/about"}
+                     
                       className="text-4xl flex items-center gap-2"
                     >
-                      Twitter
+                      About
                     </Link>
                     <Link
-                      href={"https://twitter.com/edidiesky"}
+                      href={"/about"}
                       className="absolute top-[100%] w-full left-0 flex items-center gap-2"
                     >
-                      Twitter
+                      About
                     </Link>
                   </motion.div>
                 </h4>
@@ -79,17 +79,17 @@ const Navbar = ({ text, path }) => {
                     className="w-full h-full flex items-center flex-col relative"
                   >
                     <Link
-                      href={"https://github.com/edidiesky"}
-                      target="_blank"
+                      href={"/work"}
+                     
                       className="text-4xl flex items-center gap-2"
                     >
-                      Github
+                      Work
                     </Link>
                     <Link
-                      href={"https://github.com/edidiesky"}
+                      href={"/work"}
                       className="absolute top-[100%] w-full left-0 flex items-center gap-2"
                     >
-                      Github
+                      Work
                     </Link>
                   </motion.div>
                 </h4>
@@ -106,20 +106,20 @@ const Navbar = ({ text, path }) => {
                   >
                     <Link
                       href={
-                        "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
+                        "/contact"
                       }
-                      target="_blank"
+                     
                       className="text-4xl flex items-center gap-2"
                     >
-                      LinkedIn
+                      Contact
                     </Link>
                     <Link
                       href={
-                        "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
+                        "/contact"
                       }
                       className="absolute top-[100%] w-full left-0 flex items-center gap-2"
                     >
-                      LinkedIn
+                      Contact
                     </Link>
                   </motion.div>
                 </h4>
@@ -127,7 +127,7 @@ const Navbar = ({ text, path }) => {
               <div className="flex items-center gap-2 md:gap-8">
                 <div
                   onClick={() => setMenu(true)}
-                  className="w-16 h-16 flex items-center cursor-pointer justify-center rounded-full bg-[#000] hover:bg-[#C5F244] transition-all ease duration-900  shadow-4xl"
+                  className="w-16 h-16 flex lg:hidden items-center cursor-pointer justify-center rounded-full bg-[#000] hover:bg-[#C5F244] transition-all ease duration-900  shadow-4xl"
                 >
                   <div className="bar flex group cursor-pointer justify-end  flex-col gap-1 w-[24px]">
                     <div className="group-hover:w-[50%] ease w-100 h-[2px] bg-[#fff] group-hover:opacity-[.5] transition-all ease duration-900 "></div>
