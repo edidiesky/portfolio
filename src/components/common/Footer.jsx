@@ -1,5 +1,4 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import SplitType from "split-type";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";

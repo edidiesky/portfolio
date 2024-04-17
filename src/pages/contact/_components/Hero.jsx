@@ -24,7 +24,7 @@ export default function Hero() {
     "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
   const heroWords1 = "READY TO CREATE MAGIC?";
   const heroWords2 = `BASED IN NIGERIA`;
-
+  const labelRef = useRef(null);
   const heroText2 = ["</>", "SOFTWARE", "DEVELOPER", "</>"];
 
   const heroTextslideup1 = {
@@ -62,63 +62,104 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="min-h-[100vh]  py-8 relative flex items-center justify-center"
+        className="min-h-[100vh]  py-32 overflow-hidden relative flex items-center justify-center"
       >
-        <div className="w-[90%] h-full mx-auto  px-2 max-w-custom_1">
-          <div className="w-100 items-start grid md:grid-cols-custom_4 gap-x-8 gap-y-24">
-            <div className="w-100 flex flex-col gap-12">
-              <span
-                data-scroll
-                data-scroll-speed="2"
-                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-x-[20px] gap-y-[8px] md:gap-y-lgitems-center justify-start uppercase text-5xl xl:text-6xl w-full leading-[1.2] font-portfolio_bold"
-              >
-                {heroWords1.split(" ").map((x, index) => {
-                  return (
-                    <span
-                      key={index}
-                      className="flex hide relative items-center justify-start"
-                    >
-                      <motion.span
-                        variants={heroTextslideup1}
-                        custom={index}
-                        initial="initial"
-                        animate={"animate"}
-                      >
-                        {x}
-                      </motion.span>
-                    </span>
-                  );
-                })}
-              </span>
-              <div className="w-100 flex flex-col gap-8">
+        <div className="w-[90%] lg:w-[85%] h-full mx-auto  lg:px-2 max-w-custom_1">
+          <div className="w-full items-start grid-cols-1 grid lg:grid-cols-custom gap-x-24 gap-y-24">
+            <div className="w-full flex flex-col gap-16">
+              <div className="w-full flex items-center gap-3">
+                <h2
+                  ref={labelRef}
+                  className="text-[100px] w-full lg:w-[550px] leading-[1] lg:text-[140px] text-white"
+                >
+                  LET US BUILD THAT PR0JECT TOGETHER
+                </h2>
+              </div>
+              <div className="grid w-full grid-cols-1 lg:grid-cols-1 gap-x-8 gap-y-8">
+                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-4xl">
+                  <span className="text-[rgba(255,255,255,.4)]">01</span>
+                  <label htmlFor="name" className="flex flex-col gap-4">
+                    What is your name?
+                    <input
+                      type="text"
+                      placeholder="John Does"
+                      className="input text-4xl text-white font-portfolio_bold h-[70px] rounded-xl"
+                    />
+                  </label>
+                </div>
+                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-4xl">
+                  <span className="text-[rgba(255,255,255,.4)]">02</span>
+                  <label htmlFor="email" className="flex flex-col gap-4">
+                    What is your email?
+                    <input
+                      type="email"
+                      placeholder="xyx23@gmail.com"
+                      className="input text-4xl text-white font-portfolio_bold h-[70px] rounded-xl"
+                    />
+                  </label>
+                </div>
+                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-4xl">
+                  <span className="text-[rgba(255,255,255,.4)]">03</span>
+                  <label htmlFor="email" className="flex flex-col gap-4">
+                    What is the name of your organization?
+                    <input
+                      type="email"
+                      placeholder="Felicia & Sons"
+                      className="input text-4xl text-white font-portfolio_bold h-[70px] rounded-xl"
+                    />
+                  </label>
+                </div>
+                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-4xl">
+                  <span className="text-[rgba(255,255,255,.4)]">03</span>
+                  <label htmlFor="email" className="flex flex-col gap-4">
+                    Your Message
+                    <textarea
+                      type="email"
+                      placeholder="Hello Edidiong can you help me with...."
+                      className="input text-4xl text-white font-portfolio_bold h-[70px] rounded-xl"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div className="grid w-full grid-cols-1 lg:grid-cols-1 gap-x-8 gap-y-8">
+                <button
+                  style={{ transition: "all .6s" }}
+                  className="w-full hover:opacity-[.8] h-[100px] lg:h-[140px] font-portfolio_bold text-4xl lg:text-5xl rounded-[80px] lg:rounded-full text-dark flex items-center justify-center bg-[#C5F244]"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div className="w-[400px] flex flex-col gap-12">
+              <div className="w-full flex text-white flex-col gap-8">
                 <div className="flex flex-col gap-3">
-                  <h4 className="text-xl uppercase font-portfolio_bold">
+                  <h4 className="text-3xl text-[rgba(255,255,255,.4)] font-portfolio_bold">
                     Contact Details
                   </h4>
-                  <div className="w-100 text-[12px] font-portfolio_bold font-medium flex flex-col gap-2">
+                  <div className="w-full text-3xl font-portfolio_bold font-medium flex flex-col gap-2">
                     <h5 className="">essienedidiong1000@gmail.com</h5>
-                    <h5 className="">08127107270</h5>
+                    <h5 className="">+234 812 710 7270</h5>
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-4">
-                  <h4 className="text-xl uppercase font-portfolio_bold">
+                  <h4 className="text-3xl text-[rgba(255,255,255,.4)] font-portfolio_bold">
                     SOCIALS
                   </h4>
-                  <div className="w-100 text-[12px] font-portfolio_bold font-medium flex flex-col gap-4">
+                  <div className="w-full text-3xl font-portfolio_bold font-medium flex lg:items-start items-center flex-row lg:flex-col gap-4">
                     <Link
                       href={"https://twitter.com/edidiesky"}
                       target="_blank"
-                      className="text-[12px] flex items-center gap-2"
+                      className="text-3xl flex items-center gap-2"
                     >
-                      Twitter <GoArrowUpRight fontSize={"14px"} />
+                      Twitter
                     </Link>
                     <Link
                       href={"https://github.com/edidiesky"}
                       target="_blank"
-                      className="text-[12px] flex items-center gap-2"
+                      className="text-3xl flex items-center gap-2"
                     >
-                      Github <GoArrowUpRight fontSize={"14px"} />
+                      Github
                     </Link>
 
                     <Link
@@ -126,60 +167,11 @@ export default function Hero() {
                         "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
                       }
                       target="_blank"
-                      className="text-[12px] flex items-center gap-2"
+                      className="text-3xl flex items-center gap-2"
                     >
-                      LinkedIn <GoArrowUpRight fontSize={"14px"} />
+                      LinkedIn
                     </Link>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-100 flex flex-col gap-8">
-              <div className="grid w-100 grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="input text-xs bg-[#fafafa] border border-[rgba(0,0,0,.9)] font-portfolio_bold p-4 h-[70px] rounded-xl"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="input text-xs bg-[#fafafa] border border-[rgba(0,0,0,.9)] font-portfolio_bold p-4 h-[70px] rounded-xl"
-                />
-
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="input text-xs bg-[#fafafa] border border-[rgba(0,0,0,.9)] font-portfolio_bold p-4 h-[70px] rounded-xl"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Phone (optional)"
-                  className="input text-xs bg-[#fafafa] border border-[rgba(0,0,0,.9)] font-portfolio_bold p-4 h-[70px] rounded-xl"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Company "
-                  className="input text-xs bg-[#fafafa] border border-[rgba(0,0,0,.9)] font-portfolio_bold p-4 h-[70px] rounded-xl"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Deadline (in weeks) "
-                  className="input text-xs bg-[#fafafa] border border-[rgba(0,0,0,.9)] font-portfolio_bold p-4 h-[70px] rounded-xl"
-                />
-              </div>
-              <div className="grid w-100 grid-cols-1 md:grid-cols-custom_5 gap-x-8 gap-y-8">
-                <textarea
-                  placeholder="Your Message Here"
-                  className="text-xs bg-[#fafafa] border border-[rgba(0,0,0,.9)] font-portfolio_bold p-4 h-[150px] rounded-xl"
-                />
-
-                <div className="w-100 h-[70px] md:h-[160px] font-portfolio_bold text-xs rounded-[40px] md:rounded-full text-dark flex items-center justify-center bg-[#C5F244]">
-                  Submit
                 </div>
               </div>
             </div>

@@ -92,7 +92,17 @@ h4 .line {
 
 input::placeholder,
 textarea::placeholder {
-  color: #000;
+  color: rgba(255,255,255,.4);
+}
+label {
+  width:100%;
+}
+input, textarea {
+  background-color: transparent !important;
+  color:#Fff;
+  width:100%;
+  border:none;
+  outline:none;
 }
 @media (max-width:580px) {
   .titleRef .line {
