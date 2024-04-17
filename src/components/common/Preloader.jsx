@@ -88,7 +88,7 @@ const Preloader = () => {
           opacity: 1,
           stagger: 0.08,
           duration: 1.6,
-          ease: "power4.inOut",
+          ease: "power3",
         },
         4
       )
