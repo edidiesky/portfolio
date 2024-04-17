@@ -31,7 +31,37 @@ const opacityVariants = {
   },
 };
 
-export default function Layout({ children }) {
+export default function Layout({ children, type }) {
+  if(type === 'contact') {
+     return (
+       <ContactLayOutStyles>
+         <motion.div
+           variants={slide}
+           initial="initial"
+           animate="enter"
+           exit="exit"
+           className="slide"
+         ></motion.div>
+         <motion.div
+           variants={perspective}
+           initial="initial"
+           animate="enter"
+           exit="exit"
+           className="page"
+         >
+           <motion.div
+             variants={opacityVariants}
+             initial="initial"
+             animate="enter"
+             exit="exit"
+           >
+             <Navbar type={'contact'} />
+             {children}
+           </motion.div>
+         </motion.div>
+       </ContactLayOutStyles>
+     );
+  }
   return (
     <LayOutStyles>
       <motion.div
@@ -97,6 +127,38 @@ export default function Layout({ children }) {
     // </div> */}
   );
 }
+const ContactLayOutStyles = styled.div`
+  background-color: black;
+  .page {
+    background-color: #000;
+  }
+  .slide {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+  }
+  .wrapperlink {
+    position: fixed;
+    bottom: 10%;
+    left: 3%;
+    z-index: 30000;
+    height: 50vh;
+    @media (max-width: 780px) {
+      left: 1%;
+      bottom: 0;
+      display: none;
+    }
+    .arrow {
+      height: 300px;
+      width: 0.2px;
+      background-color: #000;
+    }
+  }
+`;
 
 const LayOutStyles = styled.div`
   background-color: black;

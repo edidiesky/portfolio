@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
 import Menu from "./Menu";
-const Navbar = ({ text, path }) => {
+const   Navbar = ({ type }) => {
   const [active, setActive] = useState(false);
   const [menu, setMenu] = useState(false);
   const [activetwitter, setActiveTwitter] = useState(false);
@@ -17,12 +17,16 @@ const Navbar = ({ text, path }) => {
       </AnimatePresence> */}
 
       <div className="w-full mx-auto max-w-custom_2 py-8">
-        <div className="w-[95%] mx-auto text-text_dark_1 flex item-center justify-space gap-4">
+        <div
+          className={`w-[95%] mx-auto ${
+            type === "contact" ? "text-white" : "text-text_dark_1"
+          } flex item-center justify-space gap-4`}
+        >
           <div className="flex items-center gap-2">
             <h4
               onMouseMove={() => setActive(true)}
               // onMouseLeave={() => setActive(false)}
-              className="relative uppercase z-50 text-4xl md:w-[300px] w-full overflow-hidden font-portfolio_semibold"
+              className="relative z-50 text-3xl md:w-[300px] w-full overflow-hidden font-portfolio_semibold"
             >
               <motion.span
                 animate={{ top: active ? "-100%" : "0" }}
@@ -54,7 +58,6 @@ const Navbar = ({ text, path }) => {
                   >
                     <Link
                       href={"/about"}
-                     
                       className="text-4xl flex items-center gap-2"
                     >
                       About
@@ -80,7 +83,6 @@ const Navbar = ({ text, path }) => {
                   >
                     <Link
                       href={"/work"}
-                     
                       className="text-4xl flex items-center gap-2"
                     >
                       Work
@@ -105,18 +107,13 @@ const Navbar = ({ text, path }) => {
                     className="w-full h-full flex items-center flex-col relative"
                   >
                     <Link
-                      href={
-                        "/contact"
-                      }
-                     
+                      href={"/contact"}
                       className="text-4xl flex items-center gap-2"
                     >
                       Contact
                     </Link>
                     <Link
-                      href={
-                        "/contact"
-                      }
+                      href={"/contact"}
                       className="absolute top-[100%] w-full left-0 flex items-center gap-2"
                     >
                       Contact
