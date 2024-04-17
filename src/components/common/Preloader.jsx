@@ -54,7 +54,7 @@ const Preloader = () => {
           ease: "power3.inOut",
           duration: 1.5,
         },
-        .9
+        .8
       )
       .to(
         ".revealer_1",
