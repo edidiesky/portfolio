@@ -37,7 +37,7 @@ const ProjectCard = ({
           style={{
             background: `${project?.backGroundColor}`,
           }}
-          className="flex w-full h-[360px] md:h-[450px] lg:h-[500px] items-center justify-center"
+          className="flex overflow-hidden w-full h-[360px] md:h-[450px] lg:h-[500px] items-center justify-center"
         >
           <div
             style={{ transition: "all .4s ease" }}
