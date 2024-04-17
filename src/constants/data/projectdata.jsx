@@ -576,13 +576,13 @@ export const projectdata3 = [
     backGroundColor: "#626D6E",
     roleDescription:
       "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. Built with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform offers a comprehensive solution for users seeking a dynamic social networking experience.",
-    mainImage: "/twitter_screen_2.jpeg",
+    mainImage: "/images/twitter_11.jpeg",
     mainTitle: "Twizzle",
     overview: {
       Description: [
         "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. Built with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform offers a comprehensive solution for users seeking a dynamic social networking experience.",
       ],
-      images: ["/twitter_screen_2.jpeg"],
+      images: ["/images/twitter_7.jpeg"],
     },
     technologyUsed: [
       "Typescript",
@@ -598,12 +598,22 @@ export const projectdata3 = [
         "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform mirrors the functionality and behavior of popular platforms like Twitter while offering unique enhancements and innovations.",
         "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
-      images: ["/twitter_screen_2.jpeg"],
+      images: [
+        "/images/twitter_2.jpeg",
+        "/images/twitter_1.jpeg",
+        "/images/twitter_3.jpeg",
+      ],
     },
     ui: {
       description:
         "Twizzle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: [],
+      images: [
+        "/images/twitter_14.jpeg",
+        "/images/twitter_13.jpeg",
+        "/images/twitter_12.jpeg",
+        "/images/twitter_15.jpeg",
+        "/images/twitter_11.jpeg",
+      ],
     },
   },
   // {
