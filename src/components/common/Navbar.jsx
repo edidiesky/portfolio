@@ -12,9 +12,9 @@ const   Navbar = ({ type }) => {
   const [activelinkedln, setActiveLinkedln] = useState(false);
   return (
     <div className="w-full">
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {<Menu setMenu={setMenu} menu={menu} />}
-      </AnimatePresence> */}
+      </AnimatePresence>
 
       <div className="w-full mx-auto max-w-custom_2 py-8">
         <div
@@ -44,8 +44,8 @@ const   Navbar = ({ type }) => {
           </div>
 
           <div className="flex item-center justify-end flex-1 gap-4">
-            <div className="w-full flex item-center justify-end gap-8">
-              <span className="flex justify-end px-8 w-full text-sm items-center gap-12 ">
+            <div className="w-full  item-center justify-end gap-8">
+              <span className="hidden lg:flex justify-end px-8 w-full text-sm items-center gap-12 ">
                 <h4
                   onMouseMove={() => setActiveGithub(true)}
                   onMouseLeave={() => setActiveGithub(false)}
@@ -121,7 +121,7 @@ const   Navbar = ({ type }) => {
                   </motion.div>
                 </h4>
               </span>
-              <div className="flex items-center gap-2 md:gap-8">
+              <div className="flex justify-end items-center gap-2 md:gap-8">
                 <div
                   onClick={() => setMenu(true)}
                   className="w-16 h-16 flex lg:hidden items-center cursor-pointer justify-center rounded-full bg-[#000] hover:bg-[#C5F244] transition-all ease duration-900  shadow-4xl"

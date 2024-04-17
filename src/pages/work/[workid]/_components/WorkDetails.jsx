@@ -50,7 +50,7 @@ function WorkTitle() {
           >
             {workDetails?.mainTitle} <sup className="text-4xl">01</sup>
           </span>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="w-full flex flex-col gap-4">
               <h4 className="text-3xl w-full md:w-[250px] font-portfolio_semibold uppercase pb-2 md:pb-8 border-b">
                 Role & Services:
@@ -58,7 +58,7 @@ function WorkTitle() {
               <div className="w-full gap-2 flex items-center">
                 <div className="flex items-start">
                   <span className="text-4xl text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
-                     {workDetails?.role}
+                    {workDetails?.role}
                   </span>
                 </div>
               </div>
@@ -70,32 +70,41 @@ function WorkTitle() {
               <div className="w-full gap-2 flex items-start">
                 <div className="flex items-start ">
                   <span className="text-4xl text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
-                    Lagos, Nigeria ©  {workDetails?.period}
+                    Lagos, Nigeria © {workDetails?.period}
                   </span>
                 </div>
               </div>
             </div>
-            {workDetails?.github && <div className="w-full flex flex-col gap-4">
-              <h4 className="text-3xl w-full md:w-[250px] font-portfolio_semibold uppercase pb-2 md:pb-8 border-b">
-                Github
-              </h4>
-              <div className="w-full gap-2 flex items-start">
-                <div className="flex items-start ">
-                  <Link style={{textDecoration:"underline"}} href={`${workDetails?.github}`} className="text-4xl text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold">
-                  View Code
-                  </Link>
+            {workDetails?.github && (
+              <div className="w-full flex flex-col gap-4">
+                <h4 className="text-3xl w-full md:w-[250px] font-portfolio_semibold uppercase pb-2 md:pb-8 border-b">
+                  Github
+                </h4>
+                <div className="w-full gap-2 flex items-start">
+                  <div className="flex items-start ">
+                    <Link
+                      style={{ textDecoration: "underline" }}
+                      href={`${workDetails?.github}`}
+                      className="text-4xl text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold"
+                    >
+                      View Code
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>}
+            )}
           </div>
         </div>
         <div className="w-full relative mt-20 flex">
-          <Link href={`${workDetails?.website}`} className="w-40 h-40 absolute right-10 -top-20 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-3xl text-white">
+          <Link
+            href={`${workDetails?.website}`}
+            className="w-40 h-40 absolute right-10 -top-20 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-3xl text-white"
+          >
             Live Site <GoArrowUpRight fontSize={"20px"} />
           </Link>
           <img
             // src="https://dennissnellenberg.com/media/pages/work/the-damai/815df0128d-1710449859/case-image-2.jpg"
-           src={workDetails?.mainImage}
+            src={workDetails?.mainImage}
             alt=""
             className="w-full object-cover"
           />

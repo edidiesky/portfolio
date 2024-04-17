@@ -47,11 +47,11 @@ const Menu = ({ menu, setMenu }) => {
       animate={menu ? "open" : "close"}
       style={{ height: "100vh" }}
       ref={menuref}
-      className="bg-[#000] fixed z-[60] top-0 w-full -right-[0%] lg:right-0 flex items-center justify-center"
+      className="bg-[#000] flex md:hidden fixed z-[60] top-0 w-full -right-[0%] lg:right-0 items-center justify-center"
     >
       <div
         onClick={() => setMenu(false)}
-        className="w-16 h-16 rounded-full border border-[rgba(255,255,255,.3)] flex items-center justify-center z-[60] absolute top-10 right-10 cursor-pointer text-2xl text-white "
+        className="w-16 h-16 z-[80] rounded-full border border-[rgba(255,255,255,.3)] flex items-center justify-center absolute top-10 right-10 cursor-pointer text-2xl text-white "
       >
         <RxCross1 />
       </div>
@@ -75,31 +75,6 @@ const Menu = ({ menu, setMenu }) => {
               </div>
             )}
           </AnimatePresence>
-        </div>
-        <div className="w-100 absolute bottom-[5%] left-[35%] flex items-center justify-center gap-4">
-          <Link
-            href={"https://twitter.com/edidiesky"}
-            target="_blank"
-            className="text-[12px] font-portfolio_bold1 text-green-50 flex items-center gap-2"
-          >
-            Twitter <GoArrowUpRight fontSize={"24px"} />
-          </Link>
-
-          <Link
-            href={"https://github.com/edidiesky"}
-            target="_blank"
-            className="text-[12px] font-portfolio_bold1 text-green-50 flex items-center gap-2"
-          >
-            Github <GoArrowUpRight fontSize={"24px"} />
-          </Link>
-
-          <Link
-            href={"https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"}
-            target="_blank"
-            className="text-[12px] font-portfolio_bold1 text-green-50 flex items-center gap-2"
-          >
-            LinkedIn <GoArrowUpRight fontSize={"24px"} />
-          </Link>
         </div>
       </div>
     </motion.div>

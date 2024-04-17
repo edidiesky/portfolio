@@ -44,7 +44,7 @@ const Text = ({ menu, setMenu, x, index }) => {
         key={index}
         onMouseLeave={() => setActive(false)}
         onMouseOver={() => setActive(true)}
-        className="list text-5xl z-[80] lg:text-7xl flex items-center justify-center h-full overflow-hidden w-full 
+        className="list text-7xl z-[80] flex items-center justify-center h-full overflow-hidden w-full 
        relative font-normal text-white uppercase font-portfolio_semibold"
       >
         <motion.div
@@ -52,7 +52,7 @@ const Text = ({ menu, setMenu, x, index }) => {
           transition={{ duration: 0.7, ease: [0.75, 0, 0.24, 1] }}
           className="menulist relative h-full z-[80] w-full"
         >
-          <h1 className="list text-5xl z-[80] lg:text-7xl w-full flex items-center justify-center h-full font-normal text-white uppercase font-portfolio_semibold">
+          <h1 className="list text-7xl z-[80] w-full flex items-center justify-center h-full font-normal text-white uppercase font-portfolio_semibold">
             <Link href={`${x?.path}`} className="z-[80]">
               {x?.title}
             </Link>
@@ -60,7 +60,7 @@ const Text = ({ menu, setMenu, x, index }) => {
 
           <h1
             style={{ color: `${x?.color}` }}
-            className="list text-5xl z-[80] absolute text-[#00FAFF] top-[100%] left-0 lg:text-7xl w-full flex items-center justify-center h-full font-normaluppercase font-portfolio_semibold bg-cover bg-blend-multiply"
+            className="list text-7xl z-[80] absolute text-[#00FAFF] top-[100%] left-0 w-full flex items-center justify-center h-full font-normaluppercase font-portfolio_semibold bg-cover bg-blend-multiply"
           >
             <Link className="w-full text-center z-[80]" href={`${x?.path}`}>
               {x?.title}

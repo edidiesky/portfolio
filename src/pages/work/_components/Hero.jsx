@@ -110,7 +110,7 @@ export default function Hero() {
               <div className="w-full flex items-center md:justify-center">
                 <h4 className="text-4xl">01/</h4>
               </div>
-              <div className="flex w-[90%] md:w-[900px] flex-col gap-16 mx-auto">
+              <div className="flex w-[90%] lg:w-[900px] flex-col gap-16 mx-auto">
                 <span
                   data-scroll
                   data-scroll-speed="2"
@@ -122,14 +122,14 @@ export default function Hero() {
                   Projects <sup className="text-4xl">06</sup>
                 </span>
 
-                <div className="w-100 flex flex-col gap-4">
-                  <div className="w-100 grid grid-cols-custom_3 gap-x-24 gap-y-16">
+                <div className="w-full flex flex-col gap-4">
+                  <div className="w-full grid grid-cols-1 lg:grid-cols-custom_3 gap-x-24 gap-y-16">
                     <div className="w-full">
                       <h4 className=" w-full text-4xl flex uppercase flex-wrap gap-x-[12px] gap-y-[16px]  leading-[1.5] font-portfolio_semibold font-medium text-text_dark_1 ">
                         PROJECTS
                       </h4>
                     </div>
-                    <div className="w-100 flex justify-start">
+                    <div className="w-full flex justify-start">
                       <div className="w-[70%] flex justify-start flex-col gap-20">
                         <h4
                           ref={container}
