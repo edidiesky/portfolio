@@ -33,7 +33,7 @@ const AccordionIndex = ({ expanded, setExpanded, x, index }) => {
         className="w-full  overflow-hidden"
       >
         <h4 className="text-3xl md:text-3xl xl:text-4xl w-[80%] lg:w-[65%] pt-8 pb-16 mx-auto font-portfolio_semibold font-normal">
-          {x.description}
+          {x?.description}
         </h4>
       </motion.div>
     </div>
