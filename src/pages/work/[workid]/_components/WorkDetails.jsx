@@ -48,7 +48,7 @@ function WorkTitle() {
             // titleRef
             className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-8xl xl:text-[110px] w-full leading-[1.4] font-portfolio_bold"
           >
-            {workDetails?.mainTitle} <sup className="text-4xl">01</sup>
+            {workDetails?.mainTitle} <sup className="text-4xl">0{workDetails?.id}</sup>
           </span>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="w-full flex flex-col gap-4">
@@ -173,19 +173,19 @@ function WorkOverview() {
               {/* <div className="w-full"></div> */}
             </div>
           </div>
+          <div className="w-full relative mx-auto flex-col gap-4 mt-20 flex max-w-custom">
+            {workDetails?.overview?.images?.map((image, index) => {
+              return (
+                <img
+                  key={index}
+                  src={image}
+                  alt=""
+                  className="w-full object-cover"
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <div className="w-full relative mx-auto flex-col gap-4 mt-20 flex max-w-custom">
-        {workDetails?.overview?.images?.map((image, index) => {
-          return (
-            <img
-              key={index}
-              src={image}
-              alt=""
-              className="w-full object-cover"
-            />
-          );
-        })}
       </div>
     </div>
   );

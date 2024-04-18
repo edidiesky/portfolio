@@ -452,9 +452,10 @@ export const projectdata = [
 // Twitter
 // Agency2
 
-export const projectdata2 = []
+export const projectdata2 = [];
 export const projectdata3 = [
   {
+    id: 1,
     website: "https://quantifly.net/",
     role: "Frontend Development",
     github: "",
@@ -490,6 +491,7 @@ export const projectdata3 = [
     },
   },
   {
+    id: 2,
     website: "https://vaada.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/cardealer",
@@ -497,13 +499,13 @@ export const projectdata3 = [
     year: "Jan 2022 - Mar 2022",
     backGroundColor: "#B1A994",
     roleDescription:
-      "I built Vaada with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, Car CRUD operations, and a dashboard to track inventory.",
+      "I developed Vaada with the aid of primarily Reactjs and Nodejs. I saw the need of writing unit tests at the server side using jest to test and see for the behaviours of the server controllers.At the client side, I managed state using Redux toolkit. Majority of my styles were done using styled-components and vanilla css. ",
     mainImage: "/car_details_screen.jpeg",
     mainTitle: "Vaada",
     overview: {
       Description:
         "Vaada is an innovative car management product designed to provide for both car buyers and owners, offering a better experience through its intuitive interface and comprehensive features. Whether you're in the market for a new vehicle or seeking efficient ways to manage your existing fleet, Vaada has you covered. With its robust admin dashboard, integrated payment system, and review functionality, Vaada transforms the way users interact with their cars.",
-      images: ["/car_details_screen.jpeg ", "/car_list_screen.jpeg"],
+      images: ["/images/car_1.jpeg"],
     },
     technologyUsed: [
       "React.js",
@@ -521,15 +523,24 @@ export const projectdata3 = [
         "Vaada integrates seamlessly with Stripe, allowing users to complete transactions securely and efficiently. Whether purchasing a new car or scheduling maintenance services, users can make payments with confidence, knowing that their financial information is protected.",
         "Security is paramount in Vaada, which is why robust authentication and authorization mechanisms are implemented. This ensures that only authorized users have access to sensitive features and data, safeguarding the platform against unauthorized access and potential security threats.",
       ],
-      images: ["/car_details_screen.jpeg ", "/car_list_screen.jpeg"],
+      images: [
+        "/images/car_1.jpeg",
+        "/images/car_10.jpeg",
+        "/images/car_2.jpeg",
+      ],
     },
     ui: {
       description:
-        "Vaada streamlines the car management process, saving users time and effort. Whether buying, selling, or maintaining vehicles, everything can be done conveniently through the platform's intuitive interface.",
-      images: ["/car_details_screen.jpeg ", "/car_list_screen.jpeg"],
+        "Vaada is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      images: [
+        "/images/car_9.jpeg",
+        "/images/car_8.jpeg",
+        "/images/car_7.jpeg",
+      ],
     },
   },
   {
+    id: 3,
     website: "https://eib.vercel.app",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/airbnb",
@@ -537,12 +548,12 @@ export const projectdata3 = [
     year: "2023",
     backGroundColor: "#000000",
     roleDescription:
-      "StayBnb comprehensive platform designed to facilitate the rental of accommodations, connecting property owners with individuals seeking temporary lodging. With full authentication, listing creation, reservation management, and user dashboards, the website offers a seamless experience for both hosts and guests.",
+      "I developed Staybnb with the aid of Reactjs and Nodejs; also making use of MongoDb as my database. At the client side, I managed state using Redux toolkit; I used framer motion in carrying out a more user-friendly modals. Majority of my styles were done using styled-components and vanilla css. ",
     mainImage: "/airbnb_screen.jpeg",
     mainTitle: "StayBnB",
     overview: {
       Description:
-        "Our accommodation rental platform offers a comprehensive solution for individuals seeking temporary lodging and property owners looking to rent out their spaces. With a suite of robust features, including full authentication, listing creation, reservation management, dashboards, and payment integration, our platform provides a seamless experience for both hosts and guests.",
+        "StayBnb is a rental platform which offers a modern and interactive experience similiar to popular platforms like Airbnb. I Built it with cutting-edge technologies, it provides users with a seamless environment to see listings of various homes, book reservation, carry out payment using Stripe. From user authentication to booking of homes, owner of homes have the ability to also create homes and modify them",
       images: ["/airbnb_screen.jpeg"],
     },
     technologyUsed: [
@@ -568,18 +579,20 @@ export const projectdata3 = [
     },
   },
   {
+    id: 4,
     website: "https://weeters.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/twitter_clone",
     period: "2023",
     year: "2023",
     backGroundColor: "#626D6E",
-    roleDescription:"The role I took in developing Twizzle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",  
+    roleDescription:
+      "The role I took in developing Twizzle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
     mainImage: "/images/twitter_11.jpeg",
     mainTitle: "Twizzle",
     overview: {
       Description: [
-        "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. Built with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript.",
+        "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript and Nodejs.",
       ],
       images: ["/images/twitter_7.jpeg"],
     },
@@ -594,7 +607,7 @@ export const projectdata3 = [
     ],
     features: {
       Description: [
-        "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform mirrors the functionality and behavior of popular platforms like Twitter while offering unique enhancements and innovations.",
+        "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, it mirrors the functionality and behavior of popular platforms like Twitter.",
         "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
       images: [
