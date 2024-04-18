@@ -125,61 +125,67 @@ function WorkOverview() {
   //   "Avest is a Saas that makes easy for real estate agencies to target and find prospects online. Founded by 2 formers real estate agents, the product is already used by many real estate agencies, in France. To attract more customers, Avest needed a simple Webflow website presenting their product. For this project, i had to work on the branding, the wireframes, the UI Design and finally, the Webflow Development.";
   const overviewText = `${workDetails?.overview?.Description}`
   return (
-    <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
-      <div className="w-[150px] flex">
-        <h4 className="text-3xl">02/</h4>
-      </div>
-      <div className="flex w-[90%] md:w-[900px] flex-col gap-16 mx-auto">
-        <div className="flex flex-col gap-12 w-full -mb-10">
-          <span
-            data-scroll
-            data-scroll-speed="2"
-            // titleRef
-            className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-[70px] md:text-[90px] w-full leading-[1.4] font-portfolio_bold"
-          >
-            Overview
-          </span>
-          <div className="grid grid-cols-1 gap-8">
-            <div className="w-full flex flex-col gap-4">
-              <div className="w-full gap-2 flex items-center">
-                <div className="flex items-start">
-                  <h4
-                    ref={container}
-                    className=" w-full text-4xl sm:text-5xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold font-medium text-text_dark_1 "
-                  >
-                    {overviewText.split(" ").map((x, index) => {
-                      return (
-                        <span key={index} className="inline-flex hide relative">
-                          <motion.span
-                            variants={slideup}
-                            custom={index}
-                            initial="initial"
-                            animate={inView1 ? "animate" : "exit"}
+    <div className="w-full">
+      <div className="grid w-[90%] max-w-custom grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
+        <div className="w-[150px] flex">
+          <h4 className="text-3xl">02/</h4>
+        </div>
+        <div className="flex w-[90%] md:w-[900px] flex-col gap-16 mx-auto">
+          <div className="flex flex-col gap-12 w-full -mb-10">
+            <span
+              data-scroll
+              data-scroll-speed="2"
+              // titleRef
+              className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-[70px] md:text-[90px] w-full leading-[1.4] font-portfolio_bold"
+            >
+              Overview
+            </span>
+            <div className="grid grid-cols-1 gap-8">
+              <div className="w-full flex flex-col gap-4">
+                <div className="w-full gap-2 flex items-center">
+                  <div className="flex items-start">
+                    <h4
+                      ref={container}
+                      className=" w-full text-4xl sm:text-5xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold font-medium text-text_dark_1 "
+                    >
+                      {overviewText.split(" ").map((x, index) => {
+                        return (
+                          <span
+                            key={index}
+                            className="inline-flex hide relative"
                           >
-                            {x}
-                          </motion.span>
-                        </span>
-                      );
-                    })}
-                  </h4>
+                            <motion.span
+                              variants={slideup}
+                              custom={index}
+                              initial="initial"
+                              animate={inView1 ? "animate" : "exit"}
+                            >
+                              {x}
+                            </motion.span>
+                          </span>
+                        );
+                      })}
+                    </h4>
+                  </div>
                 </div>
               </div>
+
+              {/* <div className="w-full"></div> */}
             </div>
-            <div className="w-full relative flex-col gap-4 mt-20 flex ">
-              {workDetails?.overview?.images?.map((image, index) => {
-                return (
-                  <img
-                    key={index}
-                    src={image}
-                    alt=""
-                    className="w-full object-cover"
-                  />
-                );
-              })}
-            </div>
-            {/* <div className="w-full"></div> */}
           </div>
         </div>
+      </div>
+      <div className="w-full relative mx-auto flex-col gap-4 mt-20 flex max-w-custom">
+        {workDetails?.overview?.images?.map((image, index) => {
+          return (
+            <img
+              key={index}
+              src={image}
+              alt=""
+              className="w-full object-cover"
+            />
+          );
+        })}
       </div>
     </div>
   );
@@ -358,7 +364,7 @@ function WorkUI() {
             >
               CLEAR AND <br /> SIMPLE UI
             </span>
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 gap-16">
               <div className="w-full flex flex-col gap-4">
                 <div className="w-full gap-2 flex items-center">
                   <div className="flex items-start">
@@ -388,10 +394,10 @@ function WorkUI() {
                 </div>
               </div>
               <div className="grid grid-cols-1 gap-4">
-                <div className="grid grid-cols-1 gap-4">
+                <div className="grid grid-cols-1 gap-1">
                   {workDetails?.ui?.images?.map((image, index) => {
                     return (
-                      <div key={index} className="w-full relative mt-20 flex">
+                      <div key={index} className="w-full relative flex">
                         <img
                           src={image}
                           alt=""

@@ -574,13 +574,12 @@ export const projectdata3 = [
     period: "2023",
     year: "2023",
     backGroundColor: "#626D6E",
-    roleDescription:
-      "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. Built with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform offers a comprehensive solution for users seeking a dynamic social networking experience.",
+    roleDescription:"The role I took in developing Twizzle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",  
     mainImage: "/images/twitter_11.jpeg",
     mainTitle: "Twizzle",
     overview: {
       Description: [
-        "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. Built with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, our platform offers a comprehensive solution for users seeking a dynamic social networking experience.",
+        "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. Built with cutting-edge technologies and innovative features, our platform provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript.",
       ],
       images: ["/images/twitter_7.jpeg"],
     },
