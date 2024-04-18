@@ -23,7 +23,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="card z-[40] w-full relative">
+    <Link href={`/work/${project?.mainTitle}`} className="card z-[40] w-full relative">
       <div
         onMouseEnter={handleMouseEnter}
         // onMouseLeave={handleMouseLeave}
@@ -72,7 +72,7 @@ const ProjectCard = ({
           </h3>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
