@@ -523,20 +523,12 @@ export const projectdata3 = [
         "Vaada integrates seamlessly with Stripe, allowing users to complete transactions securely and efficiently. Whether purchasing a new car or scheduling maintenance services, users can make payments with confidence, knowing that their financial information is protected.",
         "Security is paramount in Vaada, which is why robust authentication and authorization mechanisms are implemented. This ensures that only authorized users have access to sensitive features and data, safeguarding the platform against unauthorized access and potential security threats.",
       ],
-      images: [
-        "/images/car_11.jpg",
-        "/images/car_10.jpg",
-        "/images/car_2.jpg",
-      ],
+      images: ["/images/car_11.jpg", "/images/car_10.jpg", "/images/car_2.jpg"],
     },
     ui: {
       description:
         "Vaada is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: [
-        "/images/car_9.jpg",
-        "/images/car_8.jpg",
-        "/images/car_7.jpg",
-      ],
+      images: ["/images/car_9.jpg", "/images/car_8.jpg", "/images/car_7.jpg"],
     },
   },
   {
@@ -549,12 +541,16 @@ export const projectdata3 = [
     backGroundColor: "#000000",
     roleDescription:
       "I developed Staybnb with the aid of Reactjs and Nodejs; also making use of MongoDb as my database. At the client side, I managed state using Redux toolkit; I used framer motion in carrying out a more user-friendly modals. Majority of my styles were done using styled-components and vanilla css. ",
-    mainImage: "/airbnb_screen.jpeg",
+    mainImage: "/images/airbnb_5.jpeg",
     mainTitle: "StayBnB",
     overview: {
       Description:
         "StayBnb is a rental platform which offers a modern and interactive experience similiar to popular platforms like Airbnb. I Built it with cutting-edge technologies, it provides users with a seamless environment to see listings of various homes, book reservation, carry out payment using Stripe. From user authentication to booking of homes, owner of homes have the ability to also create homes and modify them",
-      images: ["/airbnb_screen.jpeg"],
+      images: [
+        "/images/airbnb_7.jpeg",
+        "/images/airbnb_6.jpeg",
+        "/images/airbnb_8.jpeg",
+      ],
     },
     technologyUsed: [
       "React.js",
@@ -570,12 +566,23 @@ export const projectdata3 = [
         "Guests can search for accommodations based on location, dates, and preferences, and make reservations directly through the platform. Hosts can manage reservation requests, confirmations, and cancellations efficiently.",
         "StayBnb platform allows for  Our platform integrates a secure payment gateway, enabling seamless transactions between hosts and guests. Hosts can set pricing, manage payouts, and track earnings with ease.",
       ],
-      images: ["/airbnb_screen.jpeg"],
+      images: [
+        "/images/airbnb_9.jpeg",
+        "/images/airbnb_10.jpeg",
+        "/images/airbnb_13.jpeg",
+        "/images/airbnb_14.jpeg",
+      ],
     },
     ui: {
       description:
         "StayBnb is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/airbnb_screen.jpeg"],
+      images: [
+        "/images/airbnb_15.jpeg",
+        "/images/airbnb_16.jpeg",
+        "/images/airbnb_17.jpeg",
+        "/images/airbnb_18.jpeg",
+        "/images/airbnb_19.jpeg",
+      ],
     },
   },
   {
