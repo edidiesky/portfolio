@@ -66,7 +66,7 @@ export default function Hero() {
                   data-scroll
                   data-scroll-speed="2"
                   className="font-normal titleRef titleRef2 text-text_dark_1 flex flex-wrap gap-[10px] items-center justify-center
-                  uppercase text-[58px] sm:text-[85px] md:text-[120px] xl:text-[160px]
+                  uppercase text-[68px] sm:text-[95px] md:text-[120px] xl:text-[160px]
                 w-full md:w-full leading-[.9] md:leading-[.9] font-portfolio_bold"
                 >
                   {/* A Software Developer who crafts captivating digital experiences. */}
@@ -100,9 +100,9 @@ export default function Hero() {
                 <span
                   data-scroll
                   data-scroll-speed="2"
-                  className="font-normal titleRef titleRef2 text-text_dark_1 flex flex-wrap gap-[10px] items-center justify-center
-                  uppercase text-[58px] sm:text-[85px] md:text-[120px] xl:text-[160px]
-                  w-full md:w-full leading-[.9] md:leading-[.9] font-portfolio_bold"
+                  className="font-normal titleRef text-text_dark_1 flex flex-wrap lg:gap-[12px] items-center justify-start uppercase text-[58px] 
+                sm:text-[80px] md:text-[95px] lg:text-[100px] xl:text-[130px]
+                w-full lg:w-[1000px] leading-[.9] md:leading-[1] font-portfolio_bold"
                 >
                   {/* A Software Developer who crafts captivating digital experiences. */}
                   {heroWords2.split(" ").map((x, index) => {
