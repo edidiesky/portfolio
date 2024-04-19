@@ -524,18 +524,18 @@ export const projectdata3 = [
         "Security is paramount in Vaada, which is why robust authentication and authorization mechanisms are implemented. This ensures that only authorized users have access to sensitive features and data, safeguarding the platform against unauthorized access and potential security threats.",
       ],
       images: [
-        "/images/car_1.jpeg",
-        "/images/car_10.jpeg",
-        "/images/car_2.jpeg",
+        "/images/car_11.jpg",
+        "/images/car_10.jpg",
+        "/images/car_2.jpg",
       ],
     },
     ui: {
       description:
         "Vaada is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
       images: [
-        "/images/car_9.jpeg",
-        "/images/car_8.jpeg",
-        "/images/car_7.jpeg",
+        "/images/car_9.jpg",
+        "/images/car_8.jpg",
+        "/images/car_7.jpg",
       ],
     },
   },
