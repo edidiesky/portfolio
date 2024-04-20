@@ -110,4 +110,7 @@ input, textarea {
  gap: 7px !important;
   /* column-gap: 10px !important; */
 }
+.line{
+   gap: 12px !important;
+}
 }

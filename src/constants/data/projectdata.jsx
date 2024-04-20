@@ -499,7 +499,7 @@ export const projectdata3 = [
     year: "Jan 2022 - Mar 2022",
     backGroundColor: "#B1A994",
     roleDescription:
-      "I developed Vaada with the aid of primarily Reactjs and Nodejs. I saw the need of writing unit tests at the server side using jest to test and see for the behaviours of the server controllers.At the client side, I managed state using Redux toolkit. Majority of my styles were done using styled-components and vanilla css. ",
+      "I developed Vaada with the aid of primarily Reactjs and Nodejs. I saw the need to write unit tests on the server side using jest to test and see the behaviors of the server controllers. On the client side, I managed the state using the Redux toolkit. The majority of my styles were done using styled-components and vanilla CSS. ",
     mainImage: "/car_details_screen.jpeg",
     mainTitle: "Vaada",
     overview: {
@@ -540,7 +540,7 @@ export const projectdata3 = [
     year: "2023",
     backGroundColor: "#000000",
     roleDescription:
-      "I developed Staybnb with the aid of Reactjs and Nodejs; also making use of MongoDb as my database. At the client side, I managed state using Redux toolkit; I used framer motion in carrying out a more user-friendly modals. Majority of my styles were done using styled-components and vanilla css. ",
+      "I developed Staybnb with the aid of Reactjs and Nodejs; also making use of MongoDb as my database. On the client side, I managed state using Redux toolkit; I used framer motion in carrying out a more user-friendly modals. Majority of my styles were done using styled-components and vanilla css. ",
     mainImage: "/images/airbnb_5.jpeg",
     mainTitle: "StayBnB",
     overview: {

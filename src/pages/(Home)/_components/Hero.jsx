@@ -95,7 +95,7 @@ export default function Hero() {
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-normal titleRef text-text_dark_1 flex flex-wrap lg:gap-[12px] items-center justify-start uppercase text-[58px] 
+                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-[8px] lg:gap-[12px] items-center justify-start uppercase text-[58px] 
                 sm:text-[80px] md:text-[95px] lg:text-[100px] xl:text-[130px]
                 w-full lg:w-[1000px] leading-[.9] md:leading-[1] font-portfolio_bold"
               >
