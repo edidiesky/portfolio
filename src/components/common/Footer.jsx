@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="flex w-full pb-28 lg:pb-24 border-b border-[rgba(255,255,255,.1)] relative items-center gap-2">
             <h2
               ref={labelRef}
-              className="text-[100px] md:w-[700px] leading-[1] lg:text-[140px] text-white"
+              className="text-[80px] md:w-[700px] leading-[1] lg:text-[100px] text-white"
             >
               LET US BUILD THAT PR0JECT TOGETHER
             </h2>

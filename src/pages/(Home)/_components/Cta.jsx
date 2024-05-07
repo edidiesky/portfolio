@@ -1,5 +1,7 @@
 "use client";
 import React, { useRef } from "react";
+import Image from "next/image";
+// import Image from 'next/ima'
 import { opacity, slideup, smallslideup } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
 export default function Cta() {
@@ -102,9 +104,13 @@ export default function Cta() {
                 // ref={imageRef}
                 className="w-[100%] h-full"
               >
-                <img
-                  src={"./profile_6.JPG"}
-                  alt=""
+                <Image
+                  alt="Cotion"
+                  width={0}
+                  sizes="100vw"
+                  height={0}
+                  loading="lazy"
+                  src={"/profile_6.JPG"}
                   className="w-full h-full object-cover"
                 />
               </div>

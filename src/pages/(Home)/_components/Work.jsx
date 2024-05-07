@@ -2,9 +2,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import SplitType from "split-type";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { projectdata3 } from "@/constants/data/projectdata";
-import { scaleAnimations } from "@/constants/utils/framer";
+import { scaleAnimations, slideup2 } from "@/constants/utils/framer";
 import ProjectCard from "./ProjectCard";
 import WorkList from "@/components/common/WorkList";
 import gsap from "gsap";
@@ -61,21 +61,12 @@ const Work = () => {
       window.removeEventListener("mousemove", handleMouseMotion);
     };
   }, []);
-
-  const addRefs = (el) => {
-    if (el && !ref?.current?.includes(el)) {
-      ref.current.push(el);
-    }
-  };
-
-  // console.log(mouseposition);
-
+    const container = useRef(null);
+    const inView = useInView(container, {
+      margin: "0px 100px -50px 0px",
+    });
   const website = projectdata3[mouseposition?.index]?.mainTitle;
-
-  // const website = webactive ? webactive : false;
-
-  // console.log(website);
-
+const heroWords2 = `MY RECENT PROJECTS`;
   return (
     <>
       <motion.span
@@ -92,13 +83,15 @@ const Work = () => {
         ref={labelRef}
         className="w-16 z-[42] h-16 absolute rounded-full hidden lg:flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
       >
-        { <Link
+        {
+          <Link
             className="text-center text-3xl w-full"
             // target="_blank"
             href={`/work/${website}`}
           >
             View
-          </Link>}
+          </Link>
+        }
       </motion.span>
       <div className="py-12 w-full relative">
         <div
@@ -111,11 +104,29 @@ const Work = () => {
         ></div>
 
         <div data-scroll className="py-12 w-full relative">
-          <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 lg:grid-cols-custom_3 relative gap-16">
-            <div className="text-6xl text-text_dark_1 font-portfolio_bold w-[120px] mt-16 font-normal uppercase">
-              <span>02/</span>
-              <span>RECENT WORKS?</span>
-            </div>
+          <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 relative gap-16">
+            <h4
+              ref={container}
+              className="w-full text-start  uppercase text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+            >
+              {heroWords2.split(" ").map((x, index) => {
+                return (
+                  <span
+                    key={index}
+                    className="flex hide relative items-center justify-start"
+                  >
+                    <motion.span
+                      variants={slideup2}
+                      custom={index}
+                      initial="initial"
+                      animate={inView ? "animate" : "exit"}
+                    >
+                      {x}
+                    </motion.span>
+                  </span>
+                );
+              })}
+            </h4>
 
             {/* <Mouse mouseposition={mouseposition} /> */}
             <div className="w-full relative z-[40] gap-x-8 gap-y-24 md:gap-y-32 justify-between">

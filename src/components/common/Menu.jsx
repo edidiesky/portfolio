@@ -47,7 +47,7 @@ const Menu = ({ menu, setMenu }) => {
       animate={menu ? "open" : "close"}
       style={{ height: "100vh" }}
       ref={menuref}
-      className="bg-[#000] flex md:hidden fixed z-[60] top-0 w-full -right-[0%] lg:right-0 items-center justify-center"
+      className="bg-[#000] flex lg:hidden fixed z-[60] top-0 w-full -right-[0%] lg:right-0 items-center justify-center"
     >
       <div
         onClick={() => setMenu(false)}

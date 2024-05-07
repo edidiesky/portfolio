@@ -21,9 +21,9 @@ export default function Hero() {
   const heroWords =
     "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
   const heroWords1 =
-    "Software Developer, Crafting user centered product";
+    "Innovative Developer";
   // Innovative Software Developer crafting captivating digital experiences.
-  const heroWords2 = `BASED IN NIGERIA`;
+  const heroWords2 = `Edidiong Essien`;
 
   const heroText2 = ["Hello", "I'M", "Edidiong", "Victor"];
 
@@ -71,33 +71,9 @@ export default function Hero() {
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-normal  flex flex-wrap gap-[8px] text-text_dark_1 text-start text-4xl w-full leading-[1] font-portfolio_bold"
-              >
-                {/* SPEEDING YOUR BUSINESS EXPERIENCE */}
-                {heroText2.map((x, index) => {
-                  return (
-                    <span
-                      key={index}
-                      className="flex hide relative items-center justify-start"
-                    >
-                      <motion.span
-                        variants={heroTextslideup2}
-                        custom={index}
-                        initial="initial"   
-                        animate={"animate"}
-                      >
-                        {x}
-                      </motion.span>
-                    </span>
-                  );
-                })}
-              </span>
-              <span
-                data-scroll
-                data-scroll-speed="2"
-                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-[8px] lg:gap-[12px] items-center justify-start uppercase text-[58px] 
-                sm:text-[80px] md:text-[95px] lg:text-[100px] xl:text-[130px]
-                w-full lg:w-[1000px] leading-[.9] md:leading-[1] font-portfolio_bold"
+                className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-[8px] lg:gap-[12px] items-center justify-start uppercase 
+                text-[100px] lg:text-[150px] xl:text-[200px]
+                w-full lg:w-[1000px] leading-[.9] font-portfolio_bold"
               >
                 {/* A Software Developer who crafts captivating digital experiences. */}
                 {heroWords1.split(" ").map((x, index) => {
@@ -119,10 +95,10 @@ export default function Hero() {
                 })}
               </span>
               <div className="w-100 flex items-start">
-                <div className="px-6 flex items-center justify-between gap-4 py-4 bg-[#eeeeee] rounded-3xl">
+                <div className="px-12 flex items-center justify-between gap-4 py-4 bg-[#eeeeee] rounded-[40px]">
                   <div className="w-4 h-4 bg-[#C5F244] rounded-full"></div>
                   <span className="text-3xl text-text_dark_1 text-start leading-[1] font-portfolio_semibold">
-                    {/* AVAILABLE FOR WORK */} Available for Work
+                    {/* AVAILABLE FOR WORK */}I am available for work
                   </span>
                 </div>
               </div>
@@ -141,7 +117,7 @@ export default function Hero() {
               <div className="grid grid-cols-1 lg:flex w-100 items-center justify-between gap-8">
                 <h4
                   ref={container}
-                  className="text-4xl md:text-4xl w-full md:w-[100%] uppercase
+                  className="text-4xl md:text-6xl w-full md:w-[100%] uppercase
                   flex flex-wrap gap-[6px] items-center justify-start 
                   text-text_dark_1 leading-[1] font-normal font-portfolio_bold"
                 >
@@ -167,7 +143,8 @@ export default function Hero() {
                   ref={container2}
                   data-scroll
                   data-scroll-speed="2"
-                  className="hero_text_3 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[6px] uppercase justify-end lg:items-center text-8xl w-full leading-[.9] font-portfolio_bold1"
+                  className="hero_text_3 font-normal text-text_dark_1 flex flex-wrap gap-[8px] lg:gap-[12px] items-center justify-start uppercase text-[100px] lg:text-[140px] xl:text-[170px]
+                 leading-[.8] font-portfolio_bold"
                 >
                   {heroWords2.split(" ").map((x, index) => {
                     return (
