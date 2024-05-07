@@ -592,42 +592,42 @@ export const projectdata3 = [
       ],
     },
   },
-  {
-    id: 1,
-    website: "https://quantifly.net/",
-    role: "Frontend Development",
-    github: "",
-    period: "2022",
-    year: "May 2022 - Sep 2022",
-    backGroundColor: "#000000",
-    roleDescription:
-      "At Quantifly, I held a variety of responsibilities. My initial role involved creating the logo and the overall visual brand identity. Beyond that, I also designer a data-gathering questionnaire, designed and programmed the platform for partners and interactive game, and took on the role of product owner.",
-    mainImage: "https://www.klemenc.si/works/quantifly/img_website_blog.webp",
-    mainTitle: "Quantifly",
-    overview: {
-      Description:
-        "Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.",
-      images: ["https://www.klemenc.si/works/quantifly/img_website_blog.webp"],
-    },
-    technologyUsed: ["Figma", "Supabase", "React JS"],
-    features: {
-      Description: [
-        "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements.",
-      ],
-      images: [
-        "https://www.klemenc.si/works/quantifly/img_platform.webp",
-        "https://www.klemenc.si/works/quantifly/img_game.webp",
-      ],
-    },
-    ui: {
-      description:
-        "To better showcase our services and what customers can expect from us, we have developed an interactive game that guides them through their current challenges. The game interactively acquaints them with how our services can effectively address and resolve their specific needs.",
-      images: [
-        "https://www.klemenc.si/works/quantifly/img_game.webp",
-        "https://www.klemenc.si/works/quantifly/img_questionnaire.webp",
-      ],
-    },
-  },
+  // {
+  //   id: 1,
+  //   website: "https://quantifly.net/",
+  //   role: "Frontend Development",
+  //   github: "",
+  //   period: "2022",
+  //   year: "May 2022 - Sep 2022",
+  //   backGroundColor: "#000000",
+  //   roleDescription:
+  //     "At Quantifly, I held a variety of responsibilities. My initial role involved creating the logo and the overall visual brand identity. Beyond that, I also designer a data-gathering questionnaire, designed and programmed the platform for partners and interactive game, and took on the role of product owner.",
+  //   mainImage: "https://www.klemenc.si/works/quantifly/img_website_blog.webp",
+  //   mainTitle: "Quantifly",
+  //   overview: {
+  //     Description:
+  //       "Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.",
+  //     images: ["https://www.klemenc.si/works/quantifly/img_website_blog.webp"],
+  //   },
+  //   technologyUsed: ["Figma", "Supabase", "React JS"],
+  //   features: {
+  //     Description: [
+  //       "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements.",
+  //     ],
+  //     images: [
+  //       "https://www.klemenc.si/works/quantifly/img_platform.webp",
+  //       "https://www.klemenc.si/works/quantifly/img_game.webp",
+  //     ],
+  //   },
+  //   ui: {
+  //     description:
+  //       "To better showcase our services and what customers can expect from us, we have developed an interactive game that guides them through their current challenges. The game interactively acquaints them with how our services can effectively address and resolve their specific needs.",
+  //     images: [
+  //       "https://www.klemenc.si/works/quantifly/img_game.webp",
+  //       "https://www.klemenc.si/works/quantifly/img_questionnaire.webp",
+  //     ],
+  //   },
+  // },
   // {
   //   website: "",
   //   role: "",
