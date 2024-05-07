@@ -84,17 +84,17 @@ export default function Layout({ children, type }) {
           animate="enter"
           exit="exit"
         >
-        <div className=" wrapperlink flex items-center flex-col gap-8">
+        <div className=" wrapperlink flex items-center flex-col gap-4">
         <Link
                         href={"https://github.com/edidiesky"}
           target="_blank"
-          className="social"
+          className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
         >
           <BsGithub fontSize={'24px'} />
         </Link>
         <Link
          href={"https://twitter.com/edidiesky"} target="_blank"
-          className="social"
+          className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
         >
           <BsTwitter fontSize={'24px'} />
         </Link>
@@ -103,7 +103,7 @@ export default function Layout({ children, type }) {
               "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
              }
           target="_blank"
-          className="social"
+          className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
         >
           <FaLinkedinIn fontSize={'24px'} />
         </Link>
@@ -141,12 +141,16 @@ const ContactLayOutStyles = styled.div`
     background-color: white;
     z-index: 1;
   }
+  .socials {
+    width: 100px;
+    height: 100px;
+  }
   .wrapperlink {
     position: fixed;
     bottom: 10%;
-    left: 3%;
+    left: 2%;
     z-index: 30000;
-    height: 50vh;
+    /* height: 80vh; */
     @media (max-width: 780px) {
       left: 1%;
       bottom: 0;
@@ -174,6 +178,10 @@ const LayOutStyles = styled.div`
     background-color: white;
     z-index: 1;
   }
+  .socials {
+    width: 60px;
+    height: 60px;
+  }
   .wrapperlink {
     position: fixed;
     bottom: 10%;
@@ -186,7 +194,7 @@ const LayOutStyles = styled.div`
       display: none;
     }
     .arrow {
-      height: 300px;
+      height: 150px;
       width: 0.2px;
       background-color: #000;
     }
