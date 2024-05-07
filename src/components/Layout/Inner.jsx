@@ -179,15 +179,15 @@ const LayOutStyles = styled.div`
     z-index: 1;
   }
   .socials {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
   .wrapperlink {
     position: fixed;
-    bottom: 10%;
-    left: 3%;
+    bottom: -5%;
+    left: 1%;
     z-index: 30000;
-    height: 50vh;
+    height: 80vh;
     @media (max-width: 780px) {
       left: 1%;
       bottom: 0;
