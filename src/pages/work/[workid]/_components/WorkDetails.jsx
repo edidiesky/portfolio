@@ -98,7 +98,7 @@ function WorkTitle() {
         <div className="w-full relative mt-20 flex">
           <Link
             href={`${workDetails?.website}`}
-            className="md:w-40 w-32 h-32 md:h-40 absolute right-10 -top-20 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-2xl md:text-3xl text-white"
+            className="md:w-40 w-32 h-32 md:h-40 absolute right-10 -top-20 flex items-center gap-2 rounded-[10px] bg-[#17120eeb] justify-center text-2xl md:text-3xl text-white"
           >
             Live Site <GoArrowUpRight fontSize={"20px"} />
           </Link>
