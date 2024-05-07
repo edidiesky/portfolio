@@ -84,7 +84,7 @@ export default function Layout({ children, type }) {
           animate="enter"
           exit="exit"
         >
-        <div className=" wrapperlink flex items-center flex-col gap-4">
+        <div className=" wrapperlink flex justify-end items-center flex-col gap-4">
         <Link
                         href={"https://github.com/edidiesky"}
           target="_blank"
@@ -179,12 +179,12 @@ const LayOutStyles = styled.div`
     z-index: 1;
   }
   .socials {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   .wrapperlink {
     position: fixed;
-    bottom: -5%;
+    bottom: 10%;
     left: 1%;
     z-index: 30000;
     height: 80vh;
