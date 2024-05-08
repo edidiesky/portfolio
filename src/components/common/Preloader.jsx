@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
 import SplitType from "split-type";
 import styled from "styled-components";
+import gsap from "gsap";
 const Preloader = () => {
   const [index, setIndex] = React.useState(0);
   const wordsArray = [
@@ -21,8 +21,6 @@ const Preloader = () => {
 
   useEffect(() => {
     const text1 = new SplitType(".titleRef");
-    const textrefelement_1 = new SplitType(".hero_text_2");
-    const textrefelement = new SplitType(".hero_text_3");
     gsap
       .timeline({ defaults: { ease: "SlowMo.easeOut" } })
       .to(
