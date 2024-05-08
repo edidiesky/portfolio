@@ -107,7 +107,7 @@ export default function Hero() {
               <div className="w-full">
                 <div className="w-full md:w-[420px] h-[300px] md:h-[200px] relative flex items-center justify-center">
                   <img
-                    src={"./profile_6.JPG"}
+                    src={"/profile_6.JPG"}
                     alt=""
                     className="imageRef w-full h-full object-cover"
                   />
