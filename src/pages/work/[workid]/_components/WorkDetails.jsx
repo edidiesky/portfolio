@@ -15,7 +15,7 @@ export default function Hero() {
         data-scroll
         className="py-20 w-full overflow-hidden relative flex items-center justify-center"
       >
-        <div className="w-full px-4 flex flex-col gap-52 ">
+        <div className="w-full px-2 flex flex-col gap-52 ">
           {/* title */}
           {WorkTitle()}
           {/* overview */}
@@ -55,24 +55,24 @@ function WorkTitle() {
           </span>
           <div className="grid grid-cols-3 gap-4 md:gap-8">
             <div className="w-full flex flex-col gap-4">
-              <h4 className="text-sm w-full md:w-[250px] font-portfolio_bold1 uppercase pb-2 md:pb-4 border-b">
+              <h4 className="text-[10px] md:text-sm w-full md:w-[250px] font-portfolio_bold1 pb-2 md:pb-4 border-b">
                 Role & Services:
               </h4>
               <div className="w-full gap-2 flex items-center">
                 <div className="flex items-start">
-                  <span className="text-2xl md:text-lg text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold1">
+                  <span className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_bold1">
                     {workDetails?.role}
                   </span>
                 </div>
               </div>
             </div>
             <div className="w-full flex flex-col gap-4">
-              <h4 className="text-sm w-full md:w-[250px] font-portfolio_bold1 uppercase pb-2 md:pb-4 border-b">
-                LOCATION & YEAR
+              <h4 className="text-[10px] md:text-sm w-full md:w-[250px] font-portfolio_bold1 pb-2 md:pb-4 border-b">
+                Location & Year
               </h4>
               <div className="w-full gap-2 flex items-start">
                 <div className="flex items-start ">
-                  <span className="text-2xl md:text-lg text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold1">
+                  <span className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_bold1">
                     Lagos, Nigeria © {workDetails?.period}
                   </span>
                 </div>
@@ -80,7 +80,7 @@ function WorkTitle() {
             </div>
             {workDetails?.github && (
               <div className="w-full flex flex-col gap-4">
-                <h4 className="text-sm w-full md:w-[250px] font-portfolio_bold1 uppercase pb-2 md:pb-4 border-b">
+                <h4 className="text-[10px] md:text-sm w-full md:w-[250px] font-portfolio_bold1  pb-2 md:pb-4 border-b">
                   Github
                 </h4>
                 <div className="w-full gap-2 flex items-start">
@@ -88,7 +88,7 @@ function WorkTitle() {
                     <Link
                       style={{ textDecoration: "underline" }}
                       href={`${workDetails?.github}`}
-                      className="text-2xl md:text-lg text-text_dark_1 text-start uppercase leading-[1] font-portfolio_bold1"
+                      className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_bold1"
                     >
                       View Code
                     </Link>
@@ -101,7 +101,7 @@ function WorkTitle() {
         <div className="w-full relative mt-20 flex">
           <Link
             href={`${workDetails?.website}`}
-            className="md:w-40 w-32 h-32 md:h-40 absolute right-10 -top-20 font-portfolio_bold1 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-base text-white"
+            className="md:w-40 w-28 h-28 md:h-40 absolute right-10 -top-20 font-portfolio_bold1 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-sm text-white"
           >
             Live Site <GoArrowUpRight fontSize={"20px"} />
           </Link>
