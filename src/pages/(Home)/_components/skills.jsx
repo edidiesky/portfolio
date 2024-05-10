@@ -41,7 +41,7 @@ const serviceslist = [
 
   {
     id: 4,
-    title: "Unit Testing and Integration Testing",
+    title: "Write Tests",
     description:
       "I can write unit test and integration test for your web applications that deals with React and Typescript",
   },

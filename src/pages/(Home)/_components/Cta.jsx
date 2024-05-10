@@ -34,7 +34,7 @@ export default function Cta() {
 
   return (
     <div data-scroll className="py-32 z-50 flex items-end justify-end">
-      <div className="w-[90%] md:w-[80%] justify-end items-start mx-auto lg:px-8 m-auto max-w-custom_1 grid grid-cols-1 lg:grid-cols-custom_4 gap-2 ">
+      <div className="w-[90%] md:w-[80%] justify-end items-start mx-auto lg:px-8 m-auto max-w-custom_1 grid grid-cols-1 lg:grid-cols-custom_4 gap-8 md:gap-2 ">
         <div className="w-[200px]">
           <div className="text-6xl text-text_dark_1 font-portfolio_bold1 w-full font-normal uppercase">
             <span>02/</span>
@@ -43,7 +43,7 @@ export default function Cta() {
         <div className="w-[100%] flex flex-col items-end justify-end  gap-16">
           <h4
             ref={ctaText_4}
-            className=" w-full text-2xl uppercase md:text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold1 font-medium text-text_dark_1 "
+            className=" w-full uppercase text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1 "
           >
             {ctatext5.split(" ").map((x, index) => {
               return (
@@ -62,7 +62,7 @@ export default function Cta() {
           </h4>
           <h4
             ref={ctaText_1}
-            className=" w-full text-2xl uppercase md:text-3xl  flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold1 font-medium text-text_dark_1 "
+            className=" w-full uppercase text-3xl  flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1 "
           >
             {ctatext1.split(" ").map((x, index) => {
               return (
@@ -81,7 +81,7 @@ export default function Cta() {
           </h4>
           <h4
             ref={ctaText_2}
-            className="w-full text-2xl uppercase md:text-3xl  flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold1 font-medium text-text_dark_1"
+            className="w-full uppercase text-3xl  flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1"
           >
             {ctaText2.split(" ").map((x, index) => {
               return (
@@ -116,10 +116,10 @@ export default function Cta() {
               </div>
             </div>
             <div ref={ctaText_3} className="w-full flex flex-col gap-16">
-              <h5 className="about_text1 w-full text-2xl md:text-2xl  leading-[1.6] font-normal text-text_dark_1 font-portfolio_bold1 uppercase">
+              <h5 className="about_text1 w-full text-3xl md:text-2xl  leading-[1.6] font-normal text-text_dark_1 font-portfolio_bold1 uppercase">
                 A blend of Software Engineering and Electrical engineering.
               </h5>
-              <h4 className=" w-full text-xl md:text-xl  flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1] font-normal font-portfolio_bold1 uppercase text-text_dark_1 ">
+              <h4 className=" w-full text-3xl md:text-xl  flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.2] font-normal font-portfolio_bold1 uppercase text-text_dark_1 ">
                 {/* ctatext3 */}
                 {ctatext3.split(" ").map((x, index) => {
                   return (
