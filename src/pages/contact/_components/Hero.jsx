@@ -76,47 +76,47 @@ export default function Hero() {
                 </h2>
               </div>
               <div className="grid w-full grid-cols-1 lg:grid-cols-1 gap-x-8 gap-y-8">
-                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-4xl">
+                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-2xl font-portfolio_bold1">
                   <span className="text-[rgba(255,255,255,.4)]">01</span>
                   <label htmlFor="name" className="flex flex-col gap-4">
                     What is your name?
                     <input
                       type="text"
                       placeholder="John Does"
-                      className="input text-4xl text-white font-portfolio_bold h-[70px] rounded-xl"
+                      className="input text-3xl text-white font-portfolio_bold1 h-[70px] rounded-xl"
                     />
                   </label>
                 </div>
-                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-4xl">
+                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-2xl font-portfolio_bold1">
                   <span className="text-[rgba(255,255,255,.4)]">02</span>
                   <label htmlFor="email" className="flex flex-col gap-4">
                     What is your email?
                     <input
                       type="email"
                       placeholder="xyx23@gmail.com"
-                      className="input text-4xl text-white font-portfolio_bold h-[70px] rounded-xl"
+                      className="input text-3xl text-white font-portfolio_bold1 h-[70px] rounded-xl"
                     />
                   </label>
                 </div>
-                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-4xl">
+                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-2xl font-portfolio_bold1">
                   <span className="text-[rgba(255,255,255,.4)]">03</span>
                   <label htmlFor="email" className="flex flex-col gap-4">
                     What is the name of your organization?
                     <input
                       type="email"
                       placeholder="Felicia & Sons"
-                      className="input text-4xl text-white font-portfolio_bold h-[70px] rounded-xl"
+                      className="input text-3xl text-white font-portfolio_bold1 h-[70px] rounded-xl"
                     />
                   </label>
                 </div>
-                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-4xl">
+                <div className="border-t-2 p-8 text-white w-full border-[rgba(255,255,255,.3)] flex gap-16 text-2xl font-portfolio_bold1">
                   <span className="text-[rgba(255,255,255,.4)]">03</span>
                   <label htmlFor="email" className="flex flex-col gap-4">
                     Your Message
                     <textarea
                       type="email"
                       placeholder="Hello Edidiong can you help me with...."
-                      className="input text-4xl text-white font-portfolio_bold h-[70px] rounded-xl"
+                      className="input text-2xl text-white font-portfolio_bold1 h-[70px] rounded-xl"
                     />
                   </label>
                 </div>
@@ -124,7 +124,7 @@ export default function Hero() {
               <div className="grid w-full grid-cols-1 lg:grid-cols-1 gap-x-8 gap-y-8">
                 <button
                   style={{ transition: "all .6s" }}
-                  className="w-full hover:opacity-[.8] h-[100px] lg:h-[140px] font-portfolio_bold text-4xl lg:text-5xl rounded-[80px] lg:rounded-full text-dark flex items-center justify-center bg-[#C5F244]"
+                  className="w-full hover:opacity-[.8] h-[100px] lg:h-[140px] font-portfolio_bold1 text-2xl lg:text-3xl rounded-[80px] lg:rounded-full text-dark flex items-center justify-center bg-[#C5F244]"
                 >
                   Submit
                 </button>
@@ -133,31 +133,31 @@ export default function Hero() {
             <div className="w-[400px] flex flex-col gap-12">
               <div className="w-full flex text-white flex-col gap-8">
                 <div className="flex flex-col gap-3">
-                  <h4 className="text-3xl text-[rgba(255,255,255,.4)] font-portfolio_bold">
+                  <h4 className="text-xl text-[rgba(255,255,255,.4)] font-portfolio_bold1">
                     Contact Details
                   </h4>
-                  <div className="w-full text-3xl font-portfolio_bold font-medium flex flex-col gap-2">
+                  <div className="w-full text-xl font-portfolio_bold1 font-medium flex flex-col gap-2">
                     <h5 className="">essienedidiong1000@gmail.com</h5>
                     <h5 className="">+234 812 710 7270</h5>
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-4">
-                  <h4 className="text-3xl text-[rgba(255,255,255,.4)] font-portfolio_bold">
+                  <h4 className="text-xl text-[rgba(255,255,255,.4)] font-portfolio_bold1">
                     SOCIALS
                   </h4>
-                  <div className="w-full text-3xl font-portfolio_bold font-medium flex lg:items-start items-center flex-row lg:flex-col gap-4">
+                  <div className="w-full text-xl font-portfolio_bold1 font-medium flex lg:items-start items-center flex-row lg:flex-col gap-4">
                     <Link
                       href={"https://twitter.com/edidiesky"}
                       target="_blank"
-                      className="text-3xl flex items-center gap-2"
+                      className="text-xl flex items-center gap-2"
                     >
                       Twitter
                     </Link>
                     <Link
                       href={"https://github.com/edidiesky"}
                       target="_blank"
-                      className="text-3xl flex items-center gap-2"
+                      className="text-xl flex items-center gap-2"
                     >
                       Github
                     </Link>
@@ -167,7 +167,7 @@ export default function Hero() {
                         "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
                       }
                       target="_blank"
-                      className="text-3xl flex items-center gap-2"
+                      className="text-xl flex items-center gap-2"
                     >
                       LinkedIn
                     </Link>
