@@ -70,7 +70,7 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="min-h-[100vh] py-16 relative flex items-center justify-center"
+        className="min-h-[100vh] py-40 relative flex items-center justify-center"
       >
         <div className="w-[90%] md:w-[80%] mx-auto max-w-custom_1">
           <div className="flex w-full flex-col mx-auto justify-between gap-y-12 gap-x-20">
@@ -105,9 +105,9 @@ export default function Hero() {
 
               <h4
                 ref={container3}
-                className="text-2xl md:text-2xl w-full md:w-[700px]
+                className="text-2xl md:text-2xl w-full md:w-[600px]
                 flex flex-wrap gap-[8px] items-center justify-start 
-                text-text_dark_1 leading-[1.1] md:leading-[1] font-normal font-portfolio_bold1"
+                text-text_dark_1 leading-[1.1] md:leading-[1.1] font-normal font-portfolio_bold1"
               >
                 {heroWords3.split(" ").map((x, index) => {
                   return (
@@ -142,7 +142,7 @@ export default function Hero() {
               <div className="grid lg:grid-cols-custom w-full items-center justify-between gap-8 md:gap-2">
                 <h4
                   ref={container}
-                  className="text-xl md:text-2xl w-full md:w-[400px]
+                  className="text-xl md:text-xl w-full md:w-[350px]
                   flex flex-wrap gap-[6px] items-center justify-start 
                   text-text_dark_1 leading-[1] font-normal font-portfolio_bold1"
                 >

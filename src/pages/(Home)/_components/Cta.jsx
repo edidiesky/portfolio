@@ -34,7 +34,7 @@ export default function Cta() {
 
   return (
     <div data-scroll className="py-32 z-50 flex items-end justify-end">
-      <div className="w-[90%] md:w-[70%] justify-end items-start mx-auto lg:px-8 m-auto max-w-custom_1 grid grid-cols-1 lg:grid-cols-custom_4 gap-2 ">
+      <div className="w-[90%] md:w-[80%] justify-end items-start mx-auto lg:px-8 m-auto max-w-custom_1 grid grid-cols-1 lg:grid-cols-custom_4 gap-2 ">
         <div className="w-[200px]">
           <div className="text-6xl text-text_dark_1 font-portfolio_bold1 w-full font-normal uppercase">
             <span>02/</span>
