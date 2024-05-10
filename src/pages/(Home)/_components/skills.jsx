@@ -74,7 +74,7 @@ const experienceList = [
   // },
   {
     title: "Flink",
-    position: "Software Developer (InternShip)",
+    position: "Software Developer (Internship)",
     date: "2020-2021",
     location: "Mexico",
   },
@@ -125,15 +125,16 @@ const Skills = () => {
       <div data-scroll className="py-32 flex flex-col gap-20">
         <div className="w-[90%] px-8 m-auto max-w-custom items-start grid grid-cols-1 lg:grid-cols-custom_3 gap-16 ">
           <div className="w-full">
-            <h3 className="text-sm md:text-lg mt-12 font-portfolio_bold text-text_dark_1 w-full gap-2 justify-between flex items-center font-normal uppercase">
+            <div className="text-5xl text-text_dark_1 font-portfolio_bold1 w-full font-normal uppercase">
               <span>03/</span>
-            </h3>
+            </div>
           </div>
           <div className="w-full flex flex-col gap-24">
             <div className="w-full items-start md:items-end md:justify-end flex flex-col gap-20">
-              <h4
+              <h3
                 ref={container}
-                className="w-full text-start  uppercase text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+                className="w-full text-start  uppercase text-9xl leading-[1] font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1
+                 flex flex-wrap gap-[14px] justify-end lg:items-center "
               >
                 {heroWords2.split(" ").map((x, index) => {
                   return (
@@ -152,7 +153,7 @@ const Skills = () => {
                     </span>
                   );
                 })}
-              </h4>
+              </h3>
               <div ref={container6} className="w-full flex flex-col">
                 {serviceslist?.map((x, index) => {
                   return (
@@ -170,14 +171,14 @@ const Skills = () => {
               <div className="w-full md:w-[700px] mt-12">
                 <div className="w-full  md:px-8 max-w-custom items-start grid grid-cols-1 lg:grid-cols-custom_3 gap-16 ">
                   <div className="w-full">
-                    <h3 className="text-sm md:text-lg mt-20 font-portfolio_bold text-text_dark_1 w-full gap-2 justify-between flex items-center font-normal uppercase">
+                    <div className="text-5xl text-text_dark_1 font-portfolio_bold1 w-full font-normal uppercase">
                       <span>04/</span>
-                    </h3>
+                    </div>
                   </div>
                   <div className="w-full flex flex-col gap-4">
                     <h4
                       ref={container2}
-                      className="w-full text-start  uppercase text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+                      className="w-full text-start  uppercase text-9xl leading-[1] font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
                     >
                       {heroWords3.split(" ").map((x, index) => {
                         return (
@@ -199,7 +200,7 @@ const Skills = () => {
                     </h4>
                     <h5
                       ref={skillText}
-                      className="text-4xl flex flex-wrap gap-x-[16px] gap-y-[10px] leading-[1] font-portfolio_semibold"
+                      className="text-2xl flex flex-wrap gap-x-[16px] gap-y-[10px] leading-[1] font-portfolio_bold1"
                     >
                       {skillDescriptionText.split(" ").map((x, index) => {
                         return (
@@ -221,7 +222,7 @@ const Skills = () => {
                     </h5>
                     <div
                       ref={skillText3}
-                      className="w-full text-4xl font-portfolio_bold1 flex items-start mt-6 flex-col flex-wrap gap-4"
+                      className="w-full text-2xl font-portfolio_bold1 flex items-start mt-6 flex-col flex-wrap gap-4"
                     >
                       {skillslist?.map((x, index) => {
                         return (
@@ -248,7 +249,7 @@ const Skills = () => {
             <div className="w-full mt-24 items-start md:justify-start flex flex-col gap-6">
               <h4
                 ref={container3}
-                className="w-full text-start  uppercase text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[10px] justify-start lg:items-center"
+                className="w-full text-start  uppercase text-9xl leading-[1] font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[10px] justify-start lg:items-center"
               >
                 {heroWords4.split(" ").map((x, index) => {
                   return (
@@ -270,7 +271,7 @@ const Skills = () => {
               </h4>
               <h5
                 ref={skillText2}
-                className="text-4xl md:text-4xl flex flex-wrap gap-x-[16px] gap-y-[10px] leading-[1] font-portfolio_semibold w-[90%] md:w-[60%]"
+                className="text-xl md:text-2xl flex flex-wrap gap-x-[8px] gap-y-[7px] leading-[1] font-portfolio_bold1 w-[90%] md:w-[60%]"
               >
                 {skillDescriptionText2.split(" ").map((x, index) => {
                   return (
@@ -294,20 +295,20 @@ const Skills = () => {
                 {experienceList?.map((x, index) => {
                   return (
                     <motion.h4
-                    key={index}
+                      key={index}
                       variants={slideup3}
                       custom={index}
                       initial="initial"
                       animate={inView7 ? "animate" : "exit"}
-                      className="text-5xl font-portfolio_bold1 flex items-start gap-4 font-medium"
+                      className="text-4xl font-portfolio_bold2 flex items-start gap-4 font-medium"
                     >
                       {index + 1}.{" "}
                       <div className="flex flex-col gap-2">
                         <span className="">{x?.position}</span>
-                        <span className="block text-3xl font-portfolio_semibold">
+                        <span className="block text-2xl font-portfolio_bold1">
                           {x.title}
                         </span>
-                        <span className="block text-2xl font-light text-grey font-portfolio_semibold">
+                        <span className="block text-xl font-light text-grey font-portfolio_bold1">
                           {x.date}
                         </span>
                       </div>

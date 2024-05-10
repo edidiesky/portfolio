@@ -85,7 +85,7 @@ const heroWords2 = `MY RECENT PROJECTS`;
       >
         {
           <Link
-            className="text-center text-3xl w-full"
+            className="text-center text-xl w-full"
             // target="_blank"
             href={`/work/${website}`}
           >
@@ -107,7 +107,7 @@ const heroWords2 = `MY RECENT PROJECTS`;
           <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 relative gap-16">
             <h4
               ref={container}
-              className="w-full text-start  uppercase text-8xl leading-[1.2] font-portfolio_bold1 text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+              className="w-full text-start  uppercase text-9xl leading-[1] font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
             >
               {heroWords2.split(" ").map((x, index) => {
                 return (

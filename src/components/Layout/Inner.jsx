@@ -138,7 +138,7 @@ const ContactLayOutStyles = styled.div`
     position: fixed;
     left: 0;
     top: 0;
-    background-color: white;
+    background-color: #f0f3ec;
     z-index: 1;
   }
   .socials {
@@ -167,7 +167,7 @@ const ContactLayOutStyles = styled.div`
 const LayOutStyles = styled.div`
   background-color: black;
   .page {
-    background-color: white;
+    background-color: #f0f3ec;
   }
   .slide {
     height: 100vh;
@@ -175,7 +175,7 @@ const LayOutStyles = styled.div`
     position: fixed;
     left: 0;
     top: 0;
-    background-color: white;
+    background-color: #f0f3ec;
     z-index: 1;
   }
   .socials {

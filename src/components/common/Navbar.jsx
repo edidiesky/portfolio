@@ -20,24 +20,25 @@ const   Navbar = ({ type }) => {
         <div
           className={`w-[95%] mx-auto ${
             type === "contact" ? "text-white" : "text-text_dark_1"
-          } flex item-center justify-space gap-4`}
+          } flex items-center justify-space gap-4`}
         >
           <div className="flex items-center gap-2">
-            <h4
-              onMouseMove={() => setActive(true)}
-              // onMouseLeave={() => setActive(false)}
-              className="relative z-50 text-3xl md:w-[300px] w-full overflow-hidden font-portfolio_semibold"
-            >
+            <img
+              src="/profile_6.jpg"
+              alt=""
+              className="w-14 h-14 rounded-full"
+            />
+            <h4 className="relative z-50 text-xl md:w-[300px] w-full overflow-hidden font-portfolio_bold1">
               <motion.span
                 animate={{ top: active ? "-100%" : "0" }}
                 transition={{ duration: 0.5, ease: [0.75, 0, 0.24, 1] }}
                 className="w-full h-full flex items-center flex-col relative"
               >
-                <Link href={"/"} className="h-full w-full ">
-                  © Code By Eddy
+                <Link href={"/"} className=" w-full ">
+                  Edidiong Essien
                 </Link>
-                <Link href={"/"} className="absolute top-[100%] w-full left-0 ">
-                  Portfolio © 2024
+                <Link href={"/"} className="text-sm text-grey w-full left-0 ">
+                  Full Stack Developer &gt; BlockChain Enthusiast
                 </Link>
               </motion.span>
             </h4>
@@ -49,7 +50,7 @@ const   Navbar = ({ type }) => {
                 <h4
                   onMouseMove={() => setActiveGithub(true)}
                   onMouseLeave={() => setActiveGithub(false)}
-                  className="relative text-4xl hidden md:flex z-50 w-auto overflow-hidden font-portfolio_bold font-normal "
+                  className="relative text-xl hidden md:flex z-50 w-auto overflow-hidden font-portfolio_bold1 font-normal "
                 >
                   <motion.div
                     animate={{ top: activegithub ? "-100%" : "0" }}
@@ -58,7 +59,7 @@ const   Navbar = ({ type }) => {
                   >
                     <Link
                       href={"/about"}
-                      className="text-4xl flex items-center gap-2"
+                      className="text-xl flex items-center gap-2"
                     >
                       About
                     </Link>
@@ -74,7 +75,7 @@ const   Navbar = ({ type }) => {
                 <h4
                   onMouseMove={() => setActiveTwitter(true)}
                   onMouseLeave={() => setActiveTwitter(false)}
-                  className="relative text-4xl hidden md:flex  z-50 w-auto overflow-hidden font-portfolio_bold font-normal "
+                  className="relative text-xl hidden md:flex  z-50 w-auto overflow-hidden font-portfolio_bold1 font-normal "
                 >
                   <motion.div
                     animate={{ top: activetwitter ? "-100%" : "0" }}
@@ -83,7 +84,7 @@ const   Navbar = ({ type }) => {
                   >
                     <Link
                       href={"/work"}
-                      className="text-4xl flex items-center gap-2"
+                      className="text-xl flex items-center gap-2"
                     >
                       Work
                     </Link>
@@ -99,7 +100,7 @@ const   Navbar = ({ type }) => {
                 <h4
                   onMouseMove={() => setActiveLinkedln(true)}
                   onMouseLeave={() => setActiveLinkedln(false)}
-                  className="relative text-4xl items-center gap-2 hidden md:flex  z-50 w-auto overflow-hidden font-portfolio_bold font-normal "
+                  className="relative text-xl items-center gap-2 hidden md:flex  z-50 w-auto overflow-hidden font-portfolio_bold1 font-normal "
                 >
                   <motion.div
                     animate={{ top: activelinkedln ? "-100%" : "0" }}
@@ -108,7 +109,7 @@ const   Navbar = ({ type }) => {
                   >
                     <Link
                       href={"/contact"}
-                      className="text-4xl flex items-center gap-2"
+                      className="text-xl flex items-center gap-2"
                     >
                       Contact
                     </Link>
@@ -124,7 +125,7 @@ const   Navbar = ({ type }) => {
               <div className="flex justify-end items-center gap-2 md:gap-8">
                 <div
                   onClick={() => setMenu(true)}
-                  className="w-16 h-16 flex lg:hidden items-center cursor-pointer justify-center rounded-full bg-[#000] hover:bg-[#C5F244] transition-all ease duration-900  shadow-4xl"
+                  className="w-16 h-16 flex lg:hidden items-center cursor-pointer justify-center rounded-full bg-[#000] hover:bg-[#C5F244] transition-all ease duration-900  shadow-xl"
                 >
                   <div className="bar flex group cursor-pointer justify-end  flex-col gap-1 w-[24px]">
                     <div className="group-hover:w-[50%] ease w-100 h-[2px] bg-[#fff] group-hover:opacity-[.5] transition-all ease duration-900 "></div>

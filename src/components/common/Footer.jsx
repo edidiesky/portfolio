@@ -16,12 +16,12 @@ const Footer = () => {
 
   return (
     <>
-      <div className="relative min-h-[40vh] flex flex-col justify-between py-12 pt-40">
+      <div className="relative min-h-[40vh] flex flex-col justify-between py-8 pt-32">
         <div className="w-[85%] max-w-custom mx-auto flex flex-col items-center gap-24">
           <div className="flex w-full pb-28 lg:pb-24 border-b border-[rgba(0,0,0,.1)] relative items-center gap-2">
             <h2
               ref={labelRef}
-              className="text-[90px] md:w-[700px] leading-[1] lg:text-[150px] text-dark"
+              className="text-[90px] sm:w-[700px] leading-[1] lg:text-[150px] text-dark"
             >
               LET US BUILD THAT PR0JECT TOGETHER
             </h2>
@@ -29,18 +29,18 @@ const Footer = () => {
               href={
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="absolute flex items-center justify-center text-3xl text-white right-10 -bottom-20 w-40 h-40 md:w-48 md:h-48 rounded-[10px] bg-[#455CE9]"
+              className="absolute flex items-center hover:opacity-[.7] justify-center font-portfolio_bold1 text-sm text-white right-10 -bottom-20 w-48 h-48 md:w-48 md:h-48 rounded-full bg-[#455CE9]"
             >
-              Stay In Touch
+              Keep In Touch
             </Link>
           </div>
-          <div className="w-full pt-8 flex flex-col md:flex-row justify-between gap-16">
-            <h4 className="text-4xl pb-8 border-b border-[rgba(0,0,0,.1)] md:pb-0 md:border-b-0 text-dark">
+          <div className="w-full pt-8 flex flex-col items-center sm:flex-row justify-between gap-16">
+            <h4 className="text-xl pb-8 font-portfolio_bold1 border-b border-[rgba(0,0,0,.1)] sm:pb-0 sm:border-b-0 text-dark">
               © Code By Victor Essien 2024
             </h4>
-            <div className="flex flex-col justify-end gap-4">
-              <h4 className="text-4xl text-dark">SOCIALS</h4>
-              <ul className="flex text-3xl text-dark items-center gap-16">
+            <div className="flex font-portfolio_bold1 flex-col justify-end gap-4">
+              <h4 className="text-2xl text-dark">SOCIALS</h4>
+              <ul className="flex text-lg text-dark items-center gap-16">
                 <Link href={"https://twitter.com/edidiesky"}>Twitter</Link>
                 <Link
                   href={
