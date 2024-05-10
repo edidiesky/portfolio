@@ -70,7 +70,7 @@ export default function Hero() {
               <div className="w-full flex items-center gap-3">
                 <h2
                   ref={labelRef}
-                  className="text-[100px] w-full lg:w-[550px] leading-[1] lg:text-[140px] text-white"
+                  className="text-[100px] w-full lg:w-[400px] xl:w-[550px] leading-[1] lg:text-[140px] text-white"
                 >
                   LET US BUILD THAT PR0JECT TOGETHER
                 </h2>
