@@ -85,7 +85,7 @@ export default function Hero() {
         >
           {
             <Link
-              className="text-center text-3xl w-full"
+              className="text-center text-lg w-full"
               // target="_blank"
               href={`/work/${website}`}
             >
@@ -108,7 +108,7 @@ export default function Hero() {
           <div className="w-[90%] mx-auto flex flex-col gap-48  px-2 max-w-custom_1">
             <div className="grid grid-cols-1 md:grid-cols-custom_3 mx-auto justify-between gap-y-8 gap-x-20">
               <div className="w-full flex items-center md:justify-center">
-                <h4 className="text-4xl">01/</h4>
+                <h4 className="text-4xl font-portfolio_bold1">01/</h4>
               </div>
               <div className="flex w-[90%] lg:w-[900px] flex-col gap-16 mx-auto">
                 <span
@@ -119,13 +119,13 @@ export default function Hero() {
                   uppercase text-[58px] sm:text-[85px] md:text-[120px] xl:text-[160px]
                 w-full md:w-full leading-[.9] md:leading-[.9] font-portfolio_bold"
                 >
-                  Projects <sup className="text-4xl">06</sup>
+                  Projects <sup className="text-2xl font-portfolio_bold1">06</sup>
                 </span>
 
                 <div className="w-full flex flex-col gap-4">
                   <div className="w-full grid grid-cols-1 lg:grid-cols-custom_3 gap-x-24 gap-y-16">
                     <div className="w-full">
-                      <h4 className=" w-full text-4xl flex uppercase flex-wrap gap-x-[12px] gap-y-[16px]  leading-[1.5] font-portfolio_semibold font-medium text-text_dark_1 ">
+                      <h4 className=" w-full text-2xl flex uppercase flex-wrap gap-x-[12px] gap-y-[16px]  leading-[1.5] font-portfolio_bold1 font-medium text-text_dark_1 ">
                         PROJECTS
                       </h4>
                     </div>
@@ -133,9 +133,9 @@ export default function Hero() {
                       <div className="w-[70%] flex justify-start flex-col gap-20">
                         <h4
                           ref={container}
-                          className=" w-full text-4xl flex uppercase flex-wrap gap-x-[8px] gap-y-[12px] 
+                          className=" w-full text-2xl flex uppercase flex-wrap gap-x-[8px] gap-y-[8px] 
                   font-normal
-                    leading-[1.2] font-portfolio_semibold text-text_dark_1 "
+                    leading-[1.1] font-portfolio_bold1 text-text_dark_1 "
                         >
                           {heroWords.split(" ").map((x, index) => {
                             return (
