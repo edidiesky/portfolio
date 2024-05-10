@@ -40,7 +40,7 @@ function WorkTitle() {
       <div className="w-[150px] flex">
         <h4 className="text-3xl font-portfolio_bold1">01/</h4>
       </div>
-      <div className="flex w-[90%] lg:w-[900px] flex-col gap-16 mx-auto">
+      <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
         <div className="flex flex-col gap-4 w-full -mb-10">
           <span
             data-scroll
@@ -133,7 +133,7 @@ function WorkOverview() {
         <div className="w-[150px] flex">
           <h4 className="text-3xl font-portfolio_bold1">02/</h4>
         </div>
-        <div className="flex w-[90%] lg:w-[900px] flex-col gap-16 mx-auto">
+        <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
           <div className="flex flex-col gap-4 w-full -mb-10">
             <span
               data-scroll
@@ -211,7 +211,7 @@ function MyRoleInWork() {
       <div className="w-[150px] flex">
         <h4 className="text-3xl font-portfolio_bold1">03/</h4>
       </div>
-      <div className="flex w-[90%] lg:w-[900px] flex-col gap-16 mx-auto">
+      <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
         <div className="flex flex-col gap-4 w-full -mb-10">
           <span
             data-scroll
@@ -287,7 +287,7 @@ function WorkFeatures() {
       <div className="w-[150px] flex">
         <h4 className="text-3xl font-portfolio_bold1">04/</h4>
       </div>
-      <div className="flex w-[90%] lg:w-[900px] flex-col gap-16 mx-auto">
+      <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
         <div className="flex flex-col gap-4 w-full -mb-10">
           <span
             data-scroll
@@ -358,7 +358,7 @@ function WorkUI() {
         <div className="w-[150px] flex">
           <h4 className="text-3xl font-portfolio_bold1">05/</h4>
         </div>
-        <div className="flex w-[90%] lg:w-[900px] flex-col gap-4 mx-auto">
+        <div className="flex w-[90%] xl:w-[900px] flex-col gap-4 mx-auto">
           <div className="flex flex-col gap-4 w-full -mb-10">
             <span
               data-scroll
