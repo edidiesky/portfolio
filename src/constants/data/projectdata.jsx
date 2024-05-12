@@ -519,7 +519,6 @@ export const projectdata3 = [
       images: [
         "/images/twitter_2.jpg",
         "/images/twitter_1.jpg",
-        "/images/twitter_3.jpg",
       ],
     },
     ui: {
@@ -527,10 +526,6 @@ export const projectdata3 = [
         "Twizzle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
       images: [
         "/images/twitter_14.jpg",
-        "/images/twitter_13.jpg",
-        "/images/twitter_12.jpg",
-        "/images/twitter_15.jpg",
-        "/images/twitter_11.jpg",
       ],
     },
   },
