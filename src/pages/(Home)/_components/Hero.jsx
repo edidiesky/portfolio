@@ -1,10 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
-import SplitType from "split-type";
-import gsap from "gsap";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import {
-  opacity,
-  slideup,
   slideup2,
   smallslideup,
 } from "@/constants/utils/framer";
@@ -19,15 +16,14 @@ export default function Hero() {
     margin: "0px 100px -50px 0px",
   });
 
-    const container3 = useRef(null);
-    const inView3 = useInView(container3, {
-      margin: "0px 100px -50px 0px",
-    });
+  const container3 = useRef(null);
+  const inView3 = useInView(container3, {
+    margin: "0px 100px -50px 0px",
+  });
   const heroWords =
     "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
- 
-    const heroWords1 =
-    "Innovative Developer";
+
+  const heroWords1 = "Innovative Developer";
   // Innovative Software Developer crafting captivating digital experiences.
   const heroWords2 = `Victor Essien`;
   const heroWords3 = `I engage in end-to-end development of websites that aligns with your business goals, pull customers (consumers) and place you ahead of your competitiors `;
@@ -74,14 +70,14 @@ export default function Hero() {
       >
         <div className="w-[90%] md:w-[80%] mx-auto max-w-custom_1">
           <div className="flex w-full flex-col mx-auto justify-between gap-y-12 gap-x-20">
-            <div className="flex w-full  lg:w-[90%] flex-col gap-8">
+            <div className="grid gap-6 items-start lg:items-center grid-cols-1 lg:grid-cols-custom w-full">
               <span
                 data-scroll
                 data-scroll-speed="2"
                 className="font-normal titleRef text-text_dark_1 flex flex-wrap
                  gap-[8px] lg:gap-[8px] items-center justify-start uppercase 
-                text-[136px] md:text-[190px] xl:text-[200px]
-                w-full lg:w-[800px] leading-[.8] font-portfolio_bold"
+                text-[130px] md:text-[190px] xl:text-[200px]
+                w-full leading-[.8] font-portfolio_bold"
               >
                 {/* A Software Developer who crafts captivating digital experiences. */}
                 {heroWords1.split(" ").map((x, index) => {
@@ -103,34 +99,39 @@ export default function Hero() {
                 })}
               </span>
 
-              <h4
-                ref={container3}
-                className="text-2xl md:text-2xl w-full md:w-[600px]
+              <div className="w-full lg:w-[400px] flex flex-col gap-8">
+                <h4
+                  ref={container3}
+                  className="text-xl md:text-xl w-full
                 flex flex-wrap gap-[8px] items-center justify-start 
                 text-text_dark_1 leading-[1.1] md:leading-[1.1] font-normal font-portfolio_bold1"
-              >
-                {heroWords3.split(" ").map((x, index) => {
-                  return (
-                    <span
-                      key={index}
-                      className="flex hide relative items-center justify-start"
-                    >
-                      <motion.span
-                        variants={smallslideup}
-                        custom={index}
-                        initial="initial"
-                        animate={inView3 ? "animate" : "exit"}
+                >
+                  {heroWords3.split(" ").map((x, index) => {
+                    return (
+                      <span
+                        key={index}
+                        className="flex hide relative items-center justify-start"
                       >
-                        {x}
-                      </motion.span>
-                    </span>
-                  );
-                })}
-              </h4>
+                        <motion.span
+                          variants={smallslideup}
+                          custom={index}
+                          initial="initial"
+                          animate={inView3 ? "animate" : "exit"}
+                        >
+                          {x}
+                        </motion.span>
+                      </span>
+                    );
+                  })}
+                </h4>
+                <div className="p-6 px-8 bg-[#f9d955] font-portfolio_bold1 flex items-center justify-center gap-3 text-dark text-xl">
+                  <IoChatboxEllipsesOutline/>
+                  Request Services</div>
+              </div>
             </div>
             <div className="w-90 flex flex-col gap-16">
               <div className="w-full">
-                <div className="w-full md:w-[420px] h-[300px] md:h-[200px] relative flex items-center justify-center">
+                <div className="w-full md:w-[460px] h-[300px] md:h-[250px] relative flex items-center justify-center">
                   <img
                     src={"/profile_6.JPG"}
                     alt=""
@@ -142,7 +143,7 @@ export default function Hero() {
               <div className="grid lg:grid-cols-custom w-full items-center justify-between gap-8 md:gap-2">
                 <h4
                   ref={container}
-                  className="text-xl md:text-xl w-full md:w-[350px]
+                  className="text-2xl md:text-xl w-full md:w-[350px]
                   flex flex-wrap gap-[6px] items-center justify-start 
                   text-text_dark_1 leading-[1] font-normal font-portfolio_bold1"
                 >
@@ -170,7 +171,7 @@ export default function Hero() {
                   data-scroll-speed="2"
                   className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-[8px] lg:gap-[12px] items-center justify-start uppercase 
                 text-[140px] md:text-[150px] xl:text-[180px]
-                w-full leading-[.9] font-portfolio_bold"
+                w-full leading-[.8] md:leading-[.9] font-portfolio_bold"
                 >
                   {heroWords2.split(" ").map((x, index) => {
                     return (
