@@ -83,6 +83,10 @@ html.lenis body {
  gap: 10px !important;
   /* column-gap: 10px !important; */
 }
+.hero_text2 .line {
+ gap:4px !important;
+
+}
 h4 .line {
   row-gap: 12px !important;
   column-gap: 12px !important;

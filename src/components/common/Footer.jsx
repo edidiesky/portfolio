@@ -1,8 +1,5 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import Image from "next/image";
+import React, {  useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { GoArrowUpRight } from "react-icons/go";
-import gsap from "gsap";
 import Link from "next/link";
 import { scaleAnimations } from "@/constants/utils/framer";
 const Footer = () => {

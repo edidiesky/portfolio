@@ -1,10 +1,8 @@
 "use client";
 import React, { useRef, useEffect } from "react";
+import Link from "next/link";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import {
-  slideup2,
-  smallslideup,
-} from "@/constants/utils/framer";
+import { slideup2, smallslideup } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
 export default function Hero() {
   const container = useRef(null);
@@ -102,7 +100,7 @@ export default function Hero() {
               <div className="w-full lg:w-[400px] flex flex-col gap-8">
                 <h4
                   ref={container3}
-                  className="text-xl md:text-xl w-full
+                  className="hero_text2 text-xl md:text-xl w-full
                 flex flex-wrap gap-[8px] items-center justify-start 
                 text-text_dark_1 leading-[1.1] md:leading-[1.1] font-normal font-portfolio_bold1"
                 >
@@ -124,9 +122,15 @@ export default function Hero() {
                     );
                   })}
                 </h4>
-                <div className="p-6 px-8 bg-[#f9d955] font-portfolio_bold1 flex items-center justify-center gap-3 text-dark text-xl">
-                  <IoChatboxEllipsesOutline/>
-                  Request Services</div>
+                <Link
+                  href={
+                    "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
+                  }
+                  className="p-6 px-8 bg-[#f9d955] font-portfolio_bold1 flex items-center justify-center gap-3 text-dark text-xl"
+                >
+                  <IoChatboxEllipsesOutline />
+                  Request Services
+                </Link>
               </div>
             </div>
             <div className="w-90 flex flex-col gap-16">

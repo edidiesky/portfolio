@@ -21,6 +21,8 @@ const Preloader = () => {
 
   useEffect(() => {
     const text1 = new SplitType(".titleRef");
+    const text2 = new SplitType(".hero_text2");
+    // hero_text2
     gsap
       .timeline({ defaults: { ease: "SlowMo.easeOut" } })
       .to(
@@ -30,7 +32,7 @@ const Preloader = () => {
           ease: "power3.inOut",
           duration: 1.5,
         },
-        .8
+        0.8
       )
       .to(
         ".revealer_1",
@@ -54,6 +56,21 @@ const Preloader = () => {
         3
       )
       .fromTo(
+        text2?.words,
+        {
+          y: 30,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.06,
+          duration: 1.6,
+          ease: "power3",
+        },
+        4
+      )
+      .fromTo(
         text1?.words,
         {
           y: 300,
@@ -66,7 +83,7 @@ const Preloader = () => {
           duration: 1.6,
           ease: "power3",
         },
-        4
+       5
       )
       .fromTo(
         ".imageRef",
@@ -76,7 +93,7 @@ const Preloader = () => {
           opacity: 1,
           duration: 1,
         },
-        5
+        5.6
       );
   }, []);
 
