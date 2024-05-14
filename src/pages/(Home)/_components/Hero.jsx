@@ -129,7 +129,7 @@ export default function Hero() {
                   className="p-6 px-8 bg-[#f9d955] font-portfolio_bold1 flex items-center justify-center gap-3 text-dark text-lg"
                 >
                   <IoChatboxEllipsesOutline />
-                 Hire me! I am open to work
+                 Request services! I am open to work.
                 </Link>
               </div>
             </div>
