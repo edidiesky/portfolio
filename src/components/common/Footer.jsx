@@ -53,7 +53,7 @@ const heroWords2 = `LET US BUILD THAT PR0JECT TOGETHER`;
             <h4 className="w-full text-lg pb-8 font-portfolio_bold1 border-b border-[rgba(0,0,0,.1)] sm:pb-0 sm:border-b-0 text-dark">
               © Code By Victor Essien 2024
             </h4>
-            <div className=" flex font-portfolio_bold1 flex-col md:justify-end gap-2">
+            <div className="flex w-full font-portfolio_bold1 flex-col md:justify-end gap-2">
               <h4 className="text-lg text-dark font-bold font-portfolio_bold2">
                 SOCIALS
               </h4>
