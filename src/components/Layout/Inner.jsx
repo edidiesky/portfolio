@@ -32,35 +32,35 @@ const opacityVariants = {
 };
 
 export default function Layout({ children, type }) {
-  if(type === 'contact') {
-     return (
-       <ContactLayOutStyles>
-         <motion.div
-           variants={slide}
-           initial="initial"
-           animate="enter"
-           exit="exit"
-           className="slide"
-         ></motion.div>
-         <motion.div
-           variants={perspective}
-           initial="initial"
-           animate="enter"
-           exit="exit"
-           className="page"
-         >
-           <motion.div
-             variants={opacityVariants}
-             initial="initial"
-             animate="enter"
-             exit="exit"
-           >
-             <Navbar type={'contact'} />
-             {children}
-           </motion.div>
-         </motion.div>
-       </ContactLayOutStyles>
-     );
+  if (type === "contact") {
+    return (
+      <ContactLayOutStyles>
+        <motion.div
+          variants={slide}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          className="slide"
+        ></motion.div>
+        <motion.div
+          variants={perspective}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          className="page"
+        >
+          <motion.div
+            variants={opacityVariants}
+            initial="initial"
+            animate="enter"
+            exit="exit"
+          >
+            <Navbar type={"contact"} />
+            {children}
+          </motion.div>
+        </motion.div>
+      </ContactLayOutStyles>
+    );
   }
   return (
     <LayOutStyles>
@@ -84,31 +84,30 @@ export default function Layout({ children, type }) {
           animate="enter"
           exit="exit"
         >
-        <div className=" wrapperlink flex justify-end items-center flex-col gap-4">
-        <Link
-                        href={"https://github.com/edidiesky"}
-          target="_blank"
-          className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
-        >
-          <BsGithub fontSize={'24px'} />
-        </Link>
-        <Link
-         href={"https://twitter.com/edidiesky"} target="_blank"
-          className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
-        >
-          <BsTwitter fontSize={'24px'} />
-        </Link>
-        <Link
-            href={
-              "https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"
-             }
-          target="_blank"
-          className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
-        >
-          <FaLinkedinIn fontSize={'24px'} />
-        </Link>
-        <div className="arrow"></div>
-      </div>
+          <div className=" wrapperlink flex justify-end items-center flex-col gap-4">
+            <Link
+              href={"https://github.com/edidiesky"}
+              target="_blank"
+              className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
+            >
+              <BsGithub fontSize={"24px"} />
+            </Link>
+            <Link
+              href={"https://twitter.com/edidiesky"}
+              target="_blank"
+              className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
+            >
+              <BsTwitter fontSize={"24px"} />
+            </Link>
+            <Link
+              href={"https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"}
+              target="_blank"
+              className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
+            >
+              <FaLinkedinIn fontSize={"24px"} />
+            </Link>
+            <div className="arrow"></div>
+          </div>
           <Navbar />
           {children}
         </motion.div>

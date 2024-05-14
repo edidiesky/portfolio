@@ -86,6 +86,7 @@ function WorkTitle() {
                 <div className="w-full gap-2 flex items-start">
                   <div className="flex items-start ">
                     <Link
+                      target="_blank"
                       style={{ textDecoration: "underline" }}
                       href={`${workDetails?.github}`}
                       className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_bold1"
@@ -101,6 +102,7 @@ function WorkTitle() {
         <div className="w-full relative mt-20 flex">
           <Link
             href={`${workDetails?.website}`}
+            target="_blank"
             className="md:w-40 w-28 h-28 md:h-40 absolute right-10 -top-20 font-portfolio_bold1 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-sm text-white"
           >
             Live Site <GoArrowUpRight fontSize={"20px"} />
