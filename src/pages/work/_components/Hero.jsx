@@ -116,11 +116,12 @@ export default function Hero() {
                   data-scroll-speed="2"
                   // titleRef
                   className="font-normal titleRef titleRef2 text-text_dark_1 flex flex-wrap gap-[10px]
-                  uppercase text-[58px] sm:text-[85px] md:text-[120px] xl:text-[160px]
+                  uppercase text-[90px] md:text-[120px] xl:text-[160px]
                 w-full md:w-full leading-[.9] md:leading-[.9] font-portfolio_bold"
                 >
                   Projects <sup className="text-2xl font-portfolio_bold1">06</sup>
                 </span>
+                
 
                 <div className="w-full flex flex-col gap-4">
                   <div className="w-full grid grid-cols-1 lg:grid-cols-custom_3 gap-x-24 gap-y-16">
