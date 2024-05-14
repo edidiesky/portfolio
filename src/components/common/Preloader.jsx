@@ -65,7 +65,7 @@ const Preloader = () => {
           y: 0,
           opacity: 1,
           stagger: 0.06,
-          duration: 1.6,
+          duration: 1.2,
           ease: "power3",
         },
         4
@@ -93,7 +93,7 @@ const Preloader = () => {
           opacity: 1,
           duration: 1,
         },
-        5.6
+        6
       );
   }, []);
 

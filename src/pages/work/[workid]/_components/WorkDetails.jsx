@@ -15,7 +15,7 @@ export default function Hero() {
         data-scroll
         className="py-20 w-full overflow-hidden relative flex items-center justify-center"
       >
-        <div className="w-full px-2 flex flex-col gap-52 ">
+        <div className="w-full px-2 flex flex-col gap-20 md:gap-52 ">
           {/* title */}
           {WorkTitle()}
           {/* overview */}
@@ -46,7 +46,7 @@ function WorkTitle() {
             data-scroll
             data-scroll-speed="2"
             // titleRef
-            className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-8xl xl:text-[110px] w-full leading-[1.4] font-portfolio_bold"
+            className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-8xl xl:text-[150px] w-full leading-[1.4] font-portfolio_bold"
           >
             {workDetails?.mainTitle}{" "}
             <sup className="text-xl font-portfolio_bold1">
