@@ -151,7 +151,7 @@ function WorkOverview() {
                   <div className="flex items-start">
                     <h4
                       ref={container}
-                      className=" w-full text-2xl sm:text-2xl flex flex-wrap gap-x-[6px] gap-y-[8px]  leading-[.9] font-portfolio_bold1 font-medium text-text_dark_1 "
+                      className=" w-full text-lg sm:text-xl flex flex-wrap gap-x-[6px] gap-y-[8px]  leading-[.9] font-portfolio_bold1 font-medium text-text_dark_1 "
                     >
                       {overviewText.split(" ").map((x, index) => {
                         return (
@@ -229,7 +229,7 @@ function MyRoleInWork() {
                 <div className="flex items-start">
                   <h4
                     ref={container_2}
-                    className=" w-full text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[.9] font-portfolio_bold1 font-medium text-text_dark_1 "
+                    className=" w-full text-lg md:text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold1 font-medium text-text_dark_1 "
                   >
                     {overviewText2?.split(" ").map((x, index) => {
                       return (
@@ -251,12 +251,12 @@ function MyRoleInWork() {
             </div>
             <div className="grid grid-cols-1 gap-8 mt-12">
               <div className="w-full flex flex-col md:flex-row items-start gap-4">
-                <h4 className="text-2xl font-portfolio_bold2 font-light text-grey">
+                <h4 className="text-lg font-portfolio_bold2 font-light text-grey">
                   Technology used:
                 </h4>
                 <div className="flex-1 gap-2 flex items-start">
                   <div className="flex items-start ">
-                    <span className="text-2xl flex flex-wrap items-center gap-2 md:text-2xl font-normal text-text_dark_1 text-start leading-[1] font-portfolio_bold1">
+                    <span className="text-lg flex flex-wrap items-center gap-2 md:text-lg font-normal text-text_dark_1 text-start leading-[1] font-portfolio_bold1">
                       {workDetails?.technologyUsed?.map((tools, index) => {
                         return <span key={index}>{tools},</span>;
                       })}
@@ -305,7 +305,7 @@ function WorkFeatures() {
                 <div className="flex items-start">
                   <h4
                     ref={container3}
-                    className=" w-full text-2xl sm:text-2xl flex flex-wrap gap-x-[6px] gap-y-[6px]  leading-[.8] font-portfolio_bold1 font-medium text-text_dark_1 "
+                    className=" w-full text-lg sm:text-xl flex flex-wrap gap-x-[6px] gap-y-[6px]  leading-[.8] font-portfolio_bold1 font-medium text-text_dark_1 "
                   >
                     {overviewText2?.split(" ").map((x, index) => {
                       return (
@@ -376,7 +376,7 @@ function WorkUI() {
                   <div className="flex items-start">
                     <h4
                       ref={container4}
-                      className=" w-full text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold1 font-medium text-text_dark_1 "
+                      className=" w-full text-lg md:text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold1 font-medium text-text_dark_1 "
                     >
                       {overviewText5?.split(" ").map((x, index) => {
                         return (
