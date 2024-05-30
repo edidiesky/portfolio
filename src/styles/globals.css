@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap') */
+
 
 @tailwind base;
 @tailwind components;
@@ -112,7 +112,6 @@ input, textarea {
 @media (max-width:580px) {
   .titleRef .line {
  gap: 7px !important;
-  /* column-gap: 10px !important; */
 }
 .line{
    gap: 12px !important;

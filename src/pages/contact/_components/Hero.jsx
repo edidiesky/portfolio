@@ -1,63 +1,7 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
-import SplitType from "split-type";
-import gsap from "gsap";
-import {
-  opacity,
-  slideup,
-  slideup2,
-  smallslideup,
-} from "@/constants/utils/framer";
-import { motion, useInView } from "framer-motion";
-import { GoArrowUpRight } from "react-icons/go";
 export default function Hero() {
-  const container = useRef(null);
-  const imageRef = useRef(null);
-  const inView = useInView(container);
-
-  const container2 = useRef(null);
-  const inView2 = useInView(container2, {
-    margin: "0px 100px -50px 0px",
-  });
-  const heroWords =
-    "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
-  const heroWords1 = "READY TO CREATE MAGIC?";
-  const heroWords2 = `BASED IN NIGERIA`;
-  const labelRef = useRef(null);
-  const heroText2 = ["</>", "SOFTWARE", "DEVELOPER", "</>"];
-
-  const heroTextslideup1 = {
-    initial: {
-      opacity: 0,
-      y: "100%",
-    },
-    animate: (i) => ({
-      opacity: 1,
-      y: "0",
-      transition: { duration: 2, delay: i * 0.11, ease: [0.76, 0, 0.24, 1] },
-    }),
-    exit: {
-      opacity: 0,
-      // y: "100%",
-      y: "100%",
-    },
-  };
-  const heroTextslideup2 = {
-    initial: {
-      opacity: 0,
-      y: "100%",
-    },
-    animate: (i) => ({
-      opacity: 1,
-      y: "0",
-      transition: { duration: 1, delay: i * 0.25, ease: [0.76, 0, 0.24, 1] },
-    }),
-    exit: {
-      opacity: 0.5,
-      y: "100%",
-    },
-  };
   return (
     <>
       <div
