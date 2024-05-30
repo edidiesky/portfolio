@@ -1,7 +1,46 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
+import { motion, useInView } from "framer-motion";
 export default function Hero() {
+  const heroWords =
+    "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
+  const heroWords1 = "READY TO CREATE MAGIC?";
+  const heroWords2 = `BASED IN NIGERIA`;
+  const labelRef = useRef(null);
+  const heroText2 = ["</>", "SOFTWARE", "DEVELOPER", "</>"];
+
+  const heroTextslideup1 = {
+    initial: {
+      opacity: 0,
+      y: "100%",
+    },
+    animate: (i) => ({
+      opacity: 1,
+      y: "0",
+      transition: { duration: 2, delay: i * 0.11, ease: [0.76, 0, 0.24, 1] },
+    }),
+    exit: {
+      opacity: 0,
+      // y: "100%",
+      y: "100%",
+    },
+  };
+  const heroTextslideup2 = {
+    initial: {
+      opacity: 0,
+      y: "100%",
+    },
+    animate: (i) => ({
+      opacity: 1,
+      y: "0",
+      transition: { duration: 1, delay: i * 0.25, ease: [0.76, 0, 0.24, 1] },
+    }),
+    exit: {
+      opacity: 0.5,
+      y: "100%",
+    },
+  };
   return (
     <>
       <div
