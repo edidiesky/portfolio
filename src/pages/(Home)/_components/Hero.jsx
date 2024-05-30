@@ -126,10 +126,10 @@ export default function Hero() {
                   href={
                     "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
                   }
-                  className="p-6 px-8 bg-[#f9d955] font-portfolio_bold1 flex items-center justify-center gap-3 text-dark text-lg"
+                  className="p-6 px-8 bg-[#f9d955] max-w-[90%] md:max-w-[450px] font-portfolio_bold1 flex items-center justify-center gap-3 text-dark text-lg"
                 >
                   <IoChatboxEllipsesOutline />
-                 Request services! I am open to work.
+                  Request services! I am open to work.
                 </Link>
               </div>
             </div>
