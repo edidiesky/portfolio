@@ -65,7 +65,7 @@ const Preloader = () => {
           y: 0,
           opacity: 1,
           stagger: 0.06,
-          duration: 1.2,
+          duration: 1,
           ease: "power3",
         },
         4
