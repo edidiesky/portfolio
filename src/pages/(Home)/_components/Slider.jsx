@@ -23,13 +23,13 @@ const Slider = () => {
             direction={"left"}
           />
           <Sliders
-            images={"/profile_7.JPG"}
+            images={"/profile_7.jpg"}
             left={"-16%"}
             progress={scrollYProgress}
             direction={"right"}
           />
           <Sliders
-            images={"/profile_8.JPG"}
+            images={"/profile_8.jpg"}
             left={"-26%"}
             progress={scrollYProgress}
             direction={"left"}

@@ -102,7 +102,7 @@ const Sliders = ({ GalleryImageList, left, progress, direction }) => {
         className="relative w-full flex whitespace-nowrap gap-[20px]"
       >
         {GalleryImageList?.map((image, index) => {
-          return <ImageGallery images={image} />;
+          return <ImageGallery key={index} images={image} />;
         })}
       </motion.div>
     </>
