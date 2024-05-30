@@ -123,7 +123,7 @@ const Skills = () => {
   return (
     <>
       <div data-scroll className="py-32 flex flex-col gap-20">
-        <div className="w-[90%] px-8 m-auto max-w-custom items-start grid grid-cols-1 lg:grid-cols-custom_3 gap-16 ">
+        <div className="w-[90%] md:px-4 m-auto max-w-custom items-start grid grid-cols-1 lg:grid-cols-custom_3 gap-16 ">
           <div className="w-full">
             <div className="text-5xl text-text_dark_1 font-portfolio_bold1 w-full font-normal uppercase">
               <span>04/</span>
