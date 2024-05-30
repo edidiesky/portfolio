@@ -107,7 +107,7 @@ const heroWords2 = `MY RECENT PROJECTS`;
           <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 relative gap-16">
             <h4
               ref={container}
-              className="w-full text-start  uppercase text-9xl leading-[1] font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
+              className="w-full text-start  uppercase text-7xl md:text-9xl leading-[.9] md:leading-[1] font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
             >
               {heroWords2.split(" ").map((x, index) => {
                 return (
