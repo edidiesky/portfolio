@@ -6,13 +6,15 @@ import Cta from "./Cta";
 import Skills from "./skills";
 import Footer from "@/components/common/Footer";
 import Slider from "./Slider";
+import Gallery from "./Gallery";
 
 export default function HomeIndex() {
   return (
     <div>
       <Hero />
       <Work />
-      <Slider/>
+      <Gallery/>
+      {/* <Slider/> */}
       <Cta />
       <Skills />
       {/* <Work />
