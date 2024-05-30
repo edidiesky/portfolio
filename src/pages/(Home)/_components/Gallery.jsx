@@ -11,9 +11,42 @@ const GalleryImageList = [
   "/images/airbnb_16.JPG",
   "/images/quantify_1.JPG",
   "/images/quantify_3.JPG",
+  "/images/car-1.JPG",
+  "/images/twitter_14.JPG",
+  "/images/car_10.JPG",
+  "/images/twitter_10.JPG",
+  "/images/airbnb_5.JPG",
+  "/images/airbnb_16.JPG",
+  "/images/quantify_1.JPG",
+  "/images/quantify_3.JPG",
+
+  "/images/car-1.JPG",
+  "/images/twitter_14.JPG",
+  "/images/car_10.JPG",
+  "/images/twitter_10.JPG",
+  "/images/airbnb_5.JPG",
+  "/images/airbnb_16.JPG",
+  "/images/quantify_1.JPG",
+  "/images/quantify_3.JPG",
 ];
 
 const GalleryImageList2 = [
+  "/images/twitter_15.JPG",
+  "/images/twitter_3.JPG",
+  "/images/twitter_4.JPG",
+  "/images/twitter_14.JPG",
+  "/images/twitter_10.JPG",
+
+  "/images/twitter_14.JPG",
+
+  "/images/twitter_15.JPG",
+  "/images/twitter_3.JPG",
+  "/images/twitter_4.JPG",
+  "/images/twitter_14.JPG",
+  "/images/twitter_10.JPG",
+
+  "/images/twitter_14.JPG",
+
   "/images/twitter_15.JPG",
   "/images/twitter_3.JPG",
   "/images/twitter_4.JPG",
@@ -79,7 +112,7 @@ const Sliders = ({ GalleryImageList, left, progress, direction }) => {
 const ImageGallery = ({ images, title }) => {
   return (
     <>
-      <img src={images} alt="" className="w-[400px] object-cover" />
+      <img src={images} alt="" className="w-[300px] md:w-[400px] object-cover" />
     </>
   );
 };

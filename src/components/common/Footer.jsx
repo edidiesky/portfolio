@@ -1,4 +1,4 @@
-import React, {  useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { opacity, slideup, slideup2, slideup3 } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
@@ -12,7 +12,7 @@ const Footer = () => {
   const inView2 = useInView(container2, {
     margin: "0px 100px -50px 0px",
   });
-const heroWords2 = `LET US BUILD THAT PR0JECT TOGETHER`;
+  const heroWords2 = `LET US BUILD THAT PR0JECT TOGETHER`;
   return (
     <>
       <div className="relative min-h-[40vh] flex flex-col justify-between py-8 pt-32">
@@ -50,14 +50,14 @@ const heroWords2 = `LET US BUILD THAT PR0JECT TOGETHER`;
             </Link>
           </div>
           <div className="w-full pt-8 flex flex-col items-center sm:flex-row justify-between gap-16">
-            <h4 className="w-full text-lg pb-8 font-portfolio_bold1 border-b border-[rgba(0,0,0,.1)] sm:pb-0 sm:border-b-0 text-dark">
+            <h4 className=" text-base pb-8 font-portfolio_bold1 border-b border-[rgba(0,0,0,.1)] sm:pb-0 sm:border-b-0 text-dark">
               © Code By Victor Essien 2024
             </h4>
-            <div className="flex w-full font-portfolio_bold1 flex-col md:justify-end gap-2">
-              <h4 className="text-lg text-dark font-bold font-portfolio_bold2">
+            <div className="flex font-portfolio_bold1 flex-col md:justify-end gap-2">
+              <h4 className="text-base text-dark font-portfolio_bold1">
                 SOCIALS
               </h4>
-              <ul className="flex text-lg text-dark items-center gap-16">
+              <ul className="flex text-base text-dark items-center gap-16">
                 <Link href={"https://twitter.com/edidiesky"}>Twitter</Link>
                 <Link
                   href={

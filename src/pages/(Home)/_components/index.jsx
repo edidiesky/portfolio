@@ -13,12 +13,10 @@ export default function HomeIndex() {
     <div>
       <Hero />
       <Work />
-      <Gallery/>
-      {/* <Slider/> */}
+      <Gallery />
       <Cta />
+      <Slider />
       <Skills />
-      {/* <Work />
-      <Skills/> */}
       <Footer />
     </div>
   );
