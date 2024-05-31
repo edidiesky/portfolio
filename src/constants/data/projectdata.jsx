@@ -45,20 +45,20 @@ export const projectdata3 = [
   },
   {
     id: 4,
-    website: "https://weeters.vercel.app/",
+    website: "https://twizle.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/twitter_clone",
     period: "2023",
     year: "2023",
     backGroundColor: "#f0f3ec",
     roleDescription:
-      "The role I took in developing Twizzle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
+      "The role I took in developing Twizle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
     mainImage: "/images/twitter_11.jpg",
-    mainTitle: "Twizzle",
+    mainTitle: "Twizle",
     overview: {
       color: "#bbacaf",
       Description: [
-        "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript and Nodejs.",
+        "Twizle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript and Nodejs.",
       ],
       images: ["/images/twitter_10.jpg"],
     },
@@ -74,15 +74,15 @@ export const projectdata3 = [
     features: {
       color: "#977f60",
       Description: [
-        "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, it mirrors the functionality and behavior of popular platforms like Twitter.",
-        "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
+        "Twizle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, it mirrors the functionality and behavior of popular platforms like Twitter.",
+        "Twizle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
       images: ["/images/twitter_2.jpg", "/images/twitter_1.jpg"],
     },
     ui: {
       color: "#977f60",
       description:
-        "Twizzle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+        "Twizle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
       images: ["/images/twitter_14.jpg"],
     },
   },
