@@ -55,10 +55,10 @@ const Sliders = ({ images, left, progress, direction }) => {
       >
         <Phrase images={images} title={"Full Stack Developer"} />
         <Phrase images={images} title={"Freelance Developer"} />
-        <Phrase images={images} title={"Full Stack Developer"} />
+        <Phrase images={images} title={"I Am Open To Work"} />
         <Phrase images={images} title={"Full Stack Developer"} />
         <Phrase images={images} title={"Freelance Developer"} />
-        <Phrase images={images} title={"Full Stack Developer"} />
+        <Phrase images={images} title={"I Am Open To Work"} />
       </motion.div>
     </>
   );
@@ -68,7 +68,9 @@ const Phrase = ({ images, title }) => {
   return (
     <>
       <div data-scroll className="w-full flex items-center gap-4">
-        <p className="text-4xl md:text-6xl font-portfolio_bold1 font-bold">{title}</p>
+        <p className="text-4xl md:text-6xl font-portfolio_bold2">
+          {title}
+        </p>
         <img
           src={images}
           alt=""
