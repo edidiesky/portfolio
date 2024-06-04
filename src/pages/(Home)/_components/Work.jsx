@@ -103,7 +103,7 @@ const heroWords2 = `MY RECENT PROJECTS`;
           className="absolute top-0 w-full h-full z-[36]"
         ></div>
 
-        <div data-scroll className="py-12 w-full relative">
+        <div data-scroll className="py-4 md:py-12 w-full relative">
           <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 relative gap-4">
             <h4
               ref={container}
