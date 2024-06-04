@@ -271,7 +271,7 @@ const Skills = () => {
               </h4>
               <h5
                 ref={skillText2}
-                className="text-xl md:text-2xl flex flex-wrap gap-x-[8px] gap-y-[7px] leading-[1] font-portfolio_bold1 w-[90%] md:w-[60%]"
+                className="text-xl md:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_bold1 w-[90%] md:w-[60%]"
               >
                 {skillDescriptionText2.split(" ").map((x, index) => {
                   return (
@@ -300,15 +300,15 @@ const Skills = () => {
                       custom={index}
                       initial="initial"
                       animate={inView7 ? "animate" : "exit"}
-                      className="text-4xl font-portfolio_bold2 flex items-start gap-4 font-medium"
+                      className="text-3xl md:text-4xl font-portfolio_bold2 flex items-start gap-4 font-medium"
                     >
                       {index + 1}.{" "}
                       <div className="flex flex-col gap-2">
                         <span className="">{x?.position}</span>
-                        <span className="block text-2xl font-portfolio_bold1">
+                        <span className="block text-xl md:text-2xl font-portfolio_bold2">
                           {x.title}
                         </span>
-                        <span className="block text-xl font-light text-grey font-portfolio_bold1">
+                        <span className="block text-lg md:text-xl font-light text-grey font-portfolio_bold1">
                           {x.date}
                         </span>
                       </div>
