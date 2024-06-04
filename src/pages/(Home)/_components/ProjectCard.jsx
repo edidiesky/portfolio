@@ -39,7 +39,7 @@ const ProjectCard = ({
             <span
               data-scroll
               data-scroll-speed="2"
-              className="border-b border-[rgba(0,0,0,.2)] text-text_dark_1 pb-4 w-full"
+              className="border-b font-portfolio_bold2 border-[rgba(0,0,0,.2)] text-text_dark_1 pb-4 w-full"
             >
               {project?.mainTitle}
             </span>
