@@ -74,7 +74,7 @@ export default function Hero() {
                 data-scroll-speed="2"
                 className="font-normal titleRef text-text_dark_1 flex flex-wrap
                  gap-[8px] lg:gap-[8px] items-center justify-start uppercase 
-                text-[130px] md:text-[190px] xl:text-[200px]
+                text-[120px] md:text-[190px] xl:text-[200px]
                 w-full leading-[.8] font-portfolio_bold"
               >
                 {/* A Software Developer who crafts captivating digital experiences. */}
@@ -174,7 +174,7 @@ export default function Hero() {
                   data-scroll
                   data-scroll-speed="2"
                   className="font-normal titleRef text-text_dark_1 flex flex-wrap gap-[8px] lg:gap-[12px] items-center justify-start uppercase 
-                text-[140px] md:text-[150px] xl:text-[180px]
+               text-[100px] md:text-[190px] xl:text-[200px]
                 w-full leading-[.8] md:leading-[.9] font-portfolio_bold"
                 >
                   {heroWords2.split(" ").map((x, index) => {
