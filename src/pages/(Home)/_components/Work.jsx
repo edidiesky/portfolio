@@ -81,11 +81,11 @@ const heroWords2 = `MY RECENT PROJECTS`;
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
         ref={labelRef}
-        className="w-16 z-[42] h-16 absolute rounded-full hidden lg:flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
+        className="w-16 z-[42] h-16 absolute rounded-full hidden lg:flex items-center justify-center text-white font-portfolio_bold1"
       >
         {
           <Link
-            className="text-center text-xl w-full"
+            className="text-center text-base w-full"
             // target="_blank"
             href={`/work/${website}`}
           >
