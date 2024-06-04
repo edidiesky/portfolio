@@ -147,7 +147,7 @@ export default function Hero() {
               <div className="grid lg:grid-cols-custom w-full items-center justify-between gap-8 md:gap-2">
                 <h4
                   ref={container}
-                  className="text-2xl md:text-xl w-full md:w-[350px]
+                  className="text-lg md:text-xl w-full md:w-[350px]
                   flex flex-wrap gap-[6px] items-center justify-start 
                   text-text_dark_1 leading-[1] font-normal font-portfolio_bold1"
                 >
