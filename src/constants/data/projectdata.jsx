@@ -47,7 +47,7 @@ export const projectdata3 = [
     id: 4,
     website: "https://twizle.vercel.app/",
     role: "Full-Stack Development",
-    github: "https://github.com/edidiesky/twitter_clone",
+    github: "https://github.com/edidiesky/Twizle-Social-Platform",
     period: "2023",
     year: "2023",
     backGroundColor: "#f0f3ec",
