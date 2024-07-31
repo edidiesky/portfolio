@@ -10,39 +10,6 @@
 // Agency2
 
 export const projectdata3 = [
-  {
-    id: 1,
-    website: "https://quantifly.net/",
-    role: "Frontend Development",
-    github: "",
-    period: "2022",
-    year: "May 2022 - Sep 2022",
-    backGroundColor: "#f0f3ec",
-    roleDescription:
-      "At Quantifly, I held a variety of responsibilities. My initial role involved creating the logo and the overall visual brand identity. Beyond that, I also designer a data-gathering questionnaire, designed and programmed the platform for partners and interactive game, and took on the role of product owner.",
-    mainImage: "/images/quantify_1.jpg",
-    mainTitle: "Quantifly",
-    overview: {
-      color: "#bbacaf",
-      Description:
-        "Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.",
-      images: ["/images/quantify_1.jpg"],
-    },
-    technologyUsed: ["Figma", "Supabase", "React JS"],
-    features: {
-      color: "#977f60",
-      Description: [
-        "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements.",
-      ],
-      images: ["/images/quantify_2.jpg"],
-    },
-    ui: {
-      color: "#977f60",
-      description:
-        "To better showcase our services and what customers can expect from us, we have developed an interactive game that guides them through their current challenges. The game interactively acquaints them with how our services can effectively address and resolve their specific needs.",
-      images: ["/images/quantify_3.jpg"],
-    },
-  },
   // tastytrove
   {
     id: 41,
@@ -131,6 +98,7 @@ export const projectdata3 = [
       images: ["/images/luxe/luxe_4.JPEG"],
     },
   },
+
   // twizzle
   {
     id: 456,
@@ -217,6 +185,39 @@ export const projectdata3 = [
       description:
         "Vaada is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
       images: ["/images/car_9.jpg"],
+    },
+  },
+  {
+    id: 1,
+    website: "https://quantifly.net/",
+    role: "Frontend Development",
+    github: "",
+    period: "2022",
+    year: "May 2022 - Sep 2022",
+    backGroundColor: "#f0f3ec",
+    roleDescription:
+      "At Quantifly, I held a variety of responsibilities. My initial role involved creating the logo and the overall visual brand identity. Beyond that, I also designer a data-gathering questionnaire, designed and programmed the platform for partners and interactive game, and took on the role of product owner.",
+    mainImage: "/images/quantify_1.jpg",
+    mainTitle: "Quantifly",
+    overview: {
+      color: "#bbacaf",
+      Description:
+        "Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.",
+      images: ["/images/quantify_1.jpg"],
+    },
+    technologyUsed: ["Figma", "Supabase", "React JS"],
+    features: {
+      color: "#977f60",
+      Description: [
+        "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements.",
+      ],
+      images: ["/images/quantify_2.jpg"],
+    },
+    ui: {
+      color: "#977f60",
+      description:
+        "To better showcase our services and what customers can expect from us, we have developed an interactive game that guides them through their current challenges. The game interactively acquaints them with how our services can effectively address and resolve their specific needs.",
+      images: ["/images/quantify_3.jpg"],
     },
   },
   // {

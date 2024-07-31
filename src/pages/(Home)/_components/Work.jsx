@@ -85,11 +85,12 @@ const heroWords2 = `MY RECENT PROJECTS`;
       >
         {
           <Link
-            className="text-center text-base w-full"
+            className="text-center text-sm w-full"
             // target="_blank"
             href={`/work/${website}`}
           >
             View
+            <span className="block text-sm">{website}</span>
           </Link>
         }
       </motion.span>
