@@ -35,18 +35,18 @@ const ProjectCard = ({
       >
         <img src={project?.mainImage} alt="" className="w-full " />
         <div className="flex w-full flex-col gap-8">
-          <h3 className="text-3xl md:text-4xl flex items-start text-text_dark_1 flex-col gap-4 justify-between font-portfolio_bold2">
+          <h3 className="text-5xl md:text-6xl flex items-start text-text_dark_1 flex-col gap-4 justify-between font-portfolio_bold2">
             <span
               data-scroll
               data-scroll-speed="2"
-              className="border-b font-portfolio_bold2 border-[rgba(0,0,0,.2)] text-text_dark_1 pb-4 w-full"
+              className="border-b font-portfolio_bold border-[rgba(0,0,0,.2)] text-text_dark_1 pb-4 w-full"
             >
               {project?.mainTitle}
             </span>
             <span
               data-scroll
               data-scroll-speed="2"
-              className="text-xl flex font-portfolio_bold1 items-center justify-between w-full"
+              className="text-lg flex font-portfolio_bold1 items-center justify-between w-full"
             >
               {project?.role}
               <span>{project?.period}</span>

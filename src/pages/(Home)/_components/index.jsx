@@ -15,7 +15,7 @@ export default function HomeIndex() {
       <Work />
       <Gallery />
       <Cta />
-      <Slider />
+      {/* <Slider /> */}
       <Skills />
       <Footer />
     </div>

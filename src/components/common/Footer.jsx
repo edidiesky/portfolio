@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="flex w-full pb-28 lg:pb-24 border-b border-[rgba(0,0,0,.1)] relative items-center gap-2">
             <h2
               ref={container2}
-              className="text-[90px] sm:w-[700px] flex flex-wrap gap-[8px]  leading-[.9] lg:text-[150px] text-dark"
+              className="text-[90px] sm:w-[700px] flex flex-wrap gap-[8px] font-portfolio_bold leading-[.9] lg:text-[150px] text-dark"
             >
               {heroWords2.split(" ").map((x, index) => {
                 return (

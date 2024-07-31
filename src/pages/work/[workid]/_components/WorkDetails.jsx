@@ -38,7 +38,7 @@ function WorkTitle() {
   return (
     <div className="grid w-[90%] max-w-custom_1 mx-auto grid-cols-1 md:grid-cols-custom_4 justify-between gap-y-8 gap-x-12">
       <div className="w-[150px] flex">
-        <h4 className="text-3xl font-portfolio_bold1">01/</h4>
+        <h4 className="text-3xl font-portfolio_normal">01/</h4>
       </div>
       <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
         <div className="flex flex-col gap-4 w-full -mb-10">
@@ -46,33 +46,35 @@ function WorkTitle() {
             data-scroll
             data-scroll-speed="2"
             // titleRef
-            className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-8xl xl:text-[150px] w-full leading-[1.4] font-portfolio_bold"
+            className="font-normal flex text-text_dark_1 
+            text-start lg:text-start text-8xl w-full leading-[1.4] font-portfolio_bold"
           >
             {workDetails?.mainTitle}{" "}
-            <sup className="text-xl font-portfolio_bold1">
+            <sup className="text-xl font-portfolio_normal">
               0{workDetails?.id}
             </sup>
           </span>
           <div className="grid grid-cols-3 gap-4 md:gap-8">
             <div className="w-full flex flex-col gap-4">
-              <h4 className="text-[10px] md:text-sm w-full md:w-[250px] font-portfolio_bold1 pb-2 md:pb-4 border-b">
+              <h4 className="text-[10px] md:text-sm w-full md:w-[250px] 
+              font-portfolio_normal pb-2 md:pb-4 border-b">
                 Role & Services:
               </h4>
               <div className="w-full gap-2 flex items-center">
                 <div className="flex items-start">
-                  <span className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_bold1">
+                  <span className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_normal">
                     {workDetails?.role}
                   </span>
                 </div>
               </div>
             </div>
             <div className="w-full flex flex-col gap-4">
-              <h4 className="text-[10px] md:text-sm w-full md:w-[250px] font-portfolio_bold1 pb-2 md:pb-4 border-b">
+              <h4 className="text-[10px] md:text-sm w-full md:w-[250px] font-portfolio_normal pb-2 md:pb-4 border-b">
                 Location & Year
               </h4>
               <div className="w-full gap-2 flex items-start">
                 <div className="flex items-start ">
-                  <span className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_bold1">
+                  <span className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_normal">
                     Lagos, Nigeria © {workDetails?.period}
                   </span>
                 </div>
@@ -80,7 +82,7 @@ function WorkTitle() {
             </div>
             {workDetails?.github && (
               <div className="w-full flex flex-col gap-4">
-                <h4 className="text-[10px] md:text-sm w-full md:w-[250px] font-portfolio_bold1  pb-2 md:pb-4 border-b">
+                <h4 className="text-[10px] md:text-sm w-full md:w-[250px] font-portfolio_normal  pb-2 md:pb-4 border-b">
                   Github
                 </h4>
                 <div className="w-full gap-2 flex items-start">
@@ -89,7 +91,7 @@ function WorkTitle() {
                       target="_blank"
                       style={{ textDecoration: "underline" }}
                       href={`${workDetails?.github}`}
-                      className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_bold1"
+                      className="text-[12px] md:text-base text-text_dark_1 text-start  leading-[1] font-portfolio_normal"
                     >
                       View Code
                     </Link>
@@ -103,7 +105,7 @@ function WorkTitle() {
           <Link
             href={`${workDetails?.website}`}
             target="_blank"
-            className="md:w-40 w-28 h-28 md:h-40 absolute right-10 -top-20 font-portfolio_bold1 flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-sm text-white"
+            className="md:w-40 w-28 h-28 md:h-40 absolute right-10 -top-20 font-portfolio_normal flex items-center gap-2 rounded-full bg-[#17120eeb] justify-center text-sm text-white"
           >
             Live Site <GoArrowUpRight fontSize={"20px"} />
           </Link>
@@ -131,66 +133,58 @@ function WorkOverview() {
   const overviewText = `${workDetails?.overview?.Description}`
   return (
     <div className="w-full">
-      <div className="grid w-[90%] max-w-custom grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
-        <div className="w-[150px] flex">
-          <h4 className="text-3xl font-portfolio_bold1">02/</h4>
-        </div>
-        <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
-          <div className="flex flex-col gap-4 w-full -mb-10">
-            <span
-              data-scroll
-              data-scroll-speed="2"
-              // titleRef
-              className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-[70px] md:text-[90px] w-full leading-[1.4] font-portfolio_bold"
-            >
-              Overview
-            </span>
-            <div className="grid grid-cols-1 gap-8">
-              <div className="w-full flex flex-col gap-4">
-                <div className="w-full gap-2 flex items-center">
-                  <div className="flex items-start">
-                    <h4
-                      ref={container}
-                      className=" w-full text-lg sm:text-xl flex flex-wrap gap-x-[6px] gap-y-[8px]  leading-[.9] font-portfolio_bold1 font-medium text-text_dark_1 "
-                    >
-                      {overviewText.split(" ").map((x, index) => {
-                        return (
-                          <span
-                            key={index}
-                            className="inline-flex hide relative"
+      <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
+        <div className="flex flex-col gap-4 w-full mb-10">
+          <span
+            data-scroll
+            data-scroll-speed="2"
+            // titleRef
+            className="font-normal flex text-text_dark_1 text-start lg:text-start text-5xl md:text-6xl w-full leading-[1.4] font-portfolio_bold"
+          >
+            Overview
+          </span>
+          <div className="grid grid-cols-1 gap-8">
+            <div className="w-full flex flex-col gap-4">
+              <div className="w-full gap-2 flex items-center">
+                <div className="flex items-start">
+                  <h4
+                    ref={container}
+                    className=" w-full text-lg sm:text-xl flex flex-wrap gap-x-[6px] gap-y-[8px]  leading-[.9] font-portfolio_normal text-text_dark_1 "
+                  >
+                    {overviewText.split(" ").map((x, index) => {
+                      return (
+                        <span key={index} className="inline-flex hide relative">
+                          <motion.span
+                            variants={slideup}
+                            custom={index}
+                            initial="initial"
+                            animate={inView1 ? "animate" : "exit"}
                           >
-                            <motion.span
-                              variants={slideup}
-                              custom={index}
-                              initial="initial"
-                              animate={inView1 ? "animate" : "exit"}
-                            >
-                              {x}
-                            </motion.span>
-                          </span>
-                        );
-                      })}
-                    </h4>
-                  </div>
+                            {x}
+                          </motion.span>
+                        </span>
+                      );
+                    })}
+                  </h4>
                 </div>
               </div>
-
-              {/* <div className="w-full"></div> */}
             </div>
+
+            {/* <div className="w-full"></div> */}
           </div>
         </div>
-      </div>
-      <div className="w-full relative mx-auto flex-col gap-4 mt-20 flex max-w-custom">
-        {workDetails?.overview?.images?.map((image, index) => {
-          return (
-            <img
-              key={index}
-              src={image}
-              alt=""
-              className="w-full object-cover"
-            />
-          );
-        })}
+        <div className="w-full relative mx-auto flex-col gap-4 mt-20 flex max-w-custom">
+          {workDetails?.overview?.images?.map((image, index) => {
+            return (
+              <img
+                key={index}
+                src={image}
+                alt=""
+                className="w-full object-cover"
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -211,7 +205,7 @@ function MyRoleInWork() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
       <div className="w-[150px] flex">
-        <h4 className="text-3xl font-portfolio_bold1">03/</h4>
+        <h4 className="text-3xl font-portfolio_normal">03/</h4>
       </div>
       <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
         <div className="flex flex-col gap-4 w-full -mb-10">
@@ -219,7 +213,7 @@ function MyRoleInWork() {
             data-scroll
             data-scroll-speed="2"
             // titleRef
-            className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-[70px] md:text-[90px] w-full leading-[1.4] font-portfolio_bold"
+            className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-5xl md:text-6xl w-full leading-[1.4] font-portfolio_bold"
           >
             My Role
           </span>
@@ -229,7 +223,7 @@ function MyRoleInWork() {
                 <div className="flex items-start">
                   <h4
                     ref={container_2}
-                    className=" w-full text-lg md:text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold1 font-medium text-text_dark_1 "
+                    className=" w-full text-lg md:text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_normal text-text_dark_1 "
                   >
                     {overviewText2?.split(" ").map((x, index) => {
                       return (
@@ -256,7 +250,7 @@ function MyRoleInWork() {
                 </h4>
                 <div className="flex-1 gap-2 flex items-start">
                   <div className="flex items-start ">
-                    <span className="text-lg flex flex-wrap items-center gap-2 md:text-lg font-normal text-text_dark_1 text-start leading-[1] font-portfolio_bold1">
+                    <span className="text-lg flex flex-wrap items-center gap-2 md:text-lg font-normal text-text_dark_1 text-start leading-[1] font-portfolio_normal">
                       {workDetails?.technologyUsed?.map((tools, index) => {
                         return <span key={index}>{tools},</span>;
                       })}
@@ -287,7 +281,7 @@ function WorkFeatures() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
       <div className="w-[150px] flex">
-        <h4 className="text-3xl font-portfolio_bold1">04/</h4>
+        <h4 className="text-3xl font-portfolio_normal">04/</h4>
       </div>
       <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
         <div className="flex flex-col gap-4 w-full -mb-10">
@@ -295,7 +289,7 @@ function WorkFeatures() {
             data-scroll
             data-scroll-speed="2"
             // titleRef
-            className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-[70px] md:text-[90px] w-full leading-[1] font-portfolio_bold"
+            className="font-normal flex text-text_dark_1 text-start lg:text-start uppercase text-5xl md:text-6xl w-full leading-[1] font-portfolio_bold"
           >
             {workDetails?.mainTitle}- Features
           </span>
@@ -305,7 +299,7 @@ function WorkFeatures() {
                 <div className="flex items-start">
                   <h4
                     ref={container3}
-                    className=" w-full text-lg sm:text-xl flex flex-wrap gap-x-[6px] gap-y-[6px]  leading-[.8] font-portfolio_bold1 font-medium text-text_dark_1 "
+                    className=" w-full text-lg sm:text-xl flex flex-wrap gap-x-[6px] gap-y-[6px]  leading-[.8] font-portfolio_normal text-text_dark_1 "
                   >
                     {overviewText2?.split(" ").map((x, index) => {
                       return (
@@ -358,7 +352,7 @@ function WorkUI() {
     return (
       <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
         <div className="w-[150px] flex">
-          <h4 className="text-3xl font-portfolio_bold1">05/</h4>
+          <h4 className="text-3xl font-portfolio_normal">05/</h4>
         </div>
         <div className="flex w-[90%] xl:w-[900px] flex-col gap-4 mx-auto">
           <div className="flex flex-col gap-4 w-full -mb-10">
@@ -376,7 +370,7 @@ function WorkUI() {
                   <div className="flex items-start">
                     <h4
                       ref={container4}
-                      className=" w-full text-lg md:text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_bold1 font-medium text-text_dark_1 "
+                      className=" w-full text-lg md:text-xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1] font-portfolio_normal text-text_dark_1 "
                     >
                       {overviewText5?.split(" ").map((x, index) => {
                         return (

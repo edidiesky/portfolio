@@ -1,48 +1,48 @@
 export const slideup = {
   initial: {
     opacity: 0,
-    y: "30px",
+    y: "50%",
   },
   animate: (i) => ({
     opacity: 1,
-    y: "0",
-    transition: { duration: 0.4, delay: i * 0.03, },
+    y: "0%",
+    transition: { duration: 1, delay: i * 0.003, },
   }),
   exit: {
     opacity: 0,
-    y: "30px",
-  },
+    y: "50%",
+  }
 };
 
 export const smallslideup = {
   initial: {
     opacity: 0,
-    y: "42px",
+    y: "50%",
   },
   animate: (i) => ({
     opacity: 1,
-    y: "0",
-    transition: { duration: 0.4, delay: i * 0.03, },
+    y: "0%",
+    transition: { duration: 1, delay: i * 0.003 },
   }),
   exit: {
     opacity: 0,
-    y: "42px",
+    y: "50%",
   },
 };
 
 export const slideup2 = {
   initial: {
     opacity: 0,
-    y: "100px",
+    y: "80%",
   },
   animate: (i) => ({
     opacity: 1,
-    y: "0",
-    transition: { duration: .6, delay: i * 0.12 },
+    y: "0%",
+    transition: { duration: 0.5, delay: i * 0.003 },
   }),
   exit: {
     opacity: 0,
-    y: "100px",
+    y: "80%",
   },
 };
 

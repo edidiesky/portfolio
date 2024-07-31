@@ -24,11 +24,8 @@ module.exports = {
       },
       // Blog_Styles
       fontFamily: {
+        portfolio_normal: ["Bold", "sans-serif"],
         portfolio_bold: ["Agency_Extended", "sans-serif"],
-        portfolio_bold1: ["Bold", "sans-serif"],
-        portfolio_bold2: ["SemiBold", "sans-serif"],
-        portfolio_semibold: ["Agency_Extended", "sans-serif"],
-        sans: ["Agency_Extended", "sans-serif"],
       },
       colors: {
         light_grey: "#F6F5F4",
