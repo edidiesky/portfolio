@@ -21,7 +21,7 @@ export default function Hero() {
   const heroWords =
     "I AM purposeful, proactive, predetermined and a driven catalyst for creative development in industries";
 
-  const heroWords1 = "Innovative Developer";
+  const heroWords1 = "A Creative Developer";
   // Innovative Software Developer crafting captivating digital experiences.
   const heroWords2 = `Victor Essien`;
   const heroWords3 = `I engage in end-to-end development of websites that aligns with your business goals, pull customers (consumers) and place you ahead of your competitiors `;
