@@ -28,7 +28,7 @@ export const projectdata3 = [
       Description: [
         "TastyTrove is a real-time restaurant marketplace, where users can see menu listing, buy them, chat with the chef or sellers of the menu, pay using flutter wave payment and also see there orders listing. I Built it with cutting-edge technologies, it provides Selllers with a seamless environment to connect, engage, with buyers their thoughts in real-time.",
       ],
-      images: ["/images/trove/tasty_4.JPEG"],
+      images: ["/images/trove/tasty_4.jpeg"],
     },
     technologyUsed: [
       "Typescript",
@@ -45,13 +45,13 @@ export const projectdata3 = [
         "TastyTrove platform redefines the concept of social food marketplace where users can see menu listing, buy them, chat with the chef or sellers of the menu, pay using flutter wave payment and also see there orders listing real-time chat systems.",
         "TastyTrove allows Sellers to communicate with buyers, see notifications, see revenue, carry out managment or inventory on their products in a dynamic and interactive manner.",
       ],
-      images: ["/images/trove/tasty_2.JPEG"],
+      images: ["/images/trove/tasty_2.jpeg"],
     },
     ui: {
       color: "#977f60",
       description:
         "TastyTrove is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/trove/tasty_4.JPEG"],
+      images: ["/images/trove/tasty_4.jpeg"],
     },
   },
   // bookluxe
@@ -65,14 +65,14 @@ export const projectdata3 = [
     backGroundColor: "#f0f3ec",
     roleDescription:
       "The role I took in developing Zyrastones involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
-    mainImage: "/images/luxe/luxe_1.JPEG",
+    mainImage: "/images/luxe/luxe_1.jpeg",
     mainTitle: "Zyrastones",
     overview: {
       color: "#bbacaf",
       Description: [
-        "Zyrastones is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript and Nodejs.",
+        "Zyrastones is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
       ],
-      images: ["/images/luxe/luxe_3.JPEG"],
+      images: ["/images/luxe/luxe_3.jpeg"],
     },
     technologyUsed: [
       "Typescript",
@@ -89,13 +89,13 @@ export const projectdata3 = [
         "Zyrastones platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
         "Zyrastones allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
-      images: ["/images/luxe/luxe_2.JPEG", "/images/luxe/luxe_5.JPEG"],
+      images: ["/images/luxe/luxe_2.jpeg", "/images/luxe/luxe_5.jpeg"],
     },
     ui: {
       color: "#977f60",
       description:
         "Zyrastones is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/luxe/luxe_4.JPEG"],
+      images: ["/images/luxe/luxe_4.jpeg"],
     },
   },
 
