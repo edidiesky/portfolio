@@ -12,9 +12,9 @@ export default function HomeIndex() {
   return (
     <div>
       <Hero />
+      <Cta />
       <Work />
       <Gallery />
-      <Cta />
       {/* <Slider /> */}
       <Skills />
       <Footer />

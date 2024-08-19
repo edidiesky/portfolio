@@ -6,12 +6,16 @@ export const slideup = {
   animate: (i) => ({
     opacity: 1,
     y: "0%",
-    transition: { duration: .4, delay: i * 0.005, },
+    transition: {
+      duration: 0.4,
+      delay: i * 0.005,
+      ease: [0.62, 0.05, 0.01, 0.99],
+    },
   }),
   exit: {
     opacity: 0,
     y: "60%",
-  }
+  },
 };
 
 export const smallslideup = {
@@ -54,7 +58,11 @@ export const slideup3 = {
   animate: (i) => ({
     opacity: 1,
     y: "0",
-    transition: { duration: .6, delay: i * 0.4 },
+    transition: {
+      duration: 1,
+      delay: i * 0.4,
+      ease: [0.62, 0.05, 0.01, 0.99],
+    },
   }),
   exit: {
     opacity: 0,

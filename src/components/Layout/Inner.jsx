@@ -84,7 +84,7 @@ export default function Layout({ children, type }) {
           animate="enter"
           exit="exit"
         >
-          <div className=" wrapperlink flex justify-end items-center flex-col gap-4">
+          {/* <div className=" wrapperlink flex justify-end items-center flex-col gap-4">
             <Link
               href={"https://github.com/edidiesky"}
               target="_blank"
@@ -107,7 +107,7 @@ export default function Layout({ children, type }) {
               <FaLinkedinIn fontSize={"24px"} />
             </Link>
             <div className="arrow"></div>
-          </div>
+          </div> */}
           <Navbar />
           {children}
         </motion.div>
@@ -137,7 +137,7 @@ const ContactLayOutStyles = styled.div`
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #f0f3ec;
+    /* background-color: #f0f3ec; */
     z-index: 1;
   }
   .socials {
@@ -165,16 +165,13 @@ const ContactLayOutStyles = styled.div`
 
 const LayOutStyles = styled.div`
   background-color: black;
-  .page {
-    background-color: #f0f3ec;
-  }
   .slide {
     height: 100vh;
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #f0f3ec;
+    /* background-color: #f0f3ec; */
     z-index: 1;
   }
   .socials {

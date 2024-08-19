@@ -29,6 +29,7 @@ const Preloader = () => {
         ".revealer_2",
         {
           height: 0,
+          top:'-100%',
           ease: "power3.inOut",
           duration: 1.5,
         },

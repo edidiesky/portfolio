@@ -8,6 +8,7 @@ import { scaleAnimations, slideup2 } from "@/constants/utils/framer";
 import ProjectCard from "./ProjectCard";
 import WorkList from "@/components/common/WorkList";
 import gsap from "gsap";
+import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
 const Work = () => {
   const [mouseposition, setMousePosition] = useState({
@@ -61,12 +62,7 @@ const Work = () => {
       window.removeEventListener("mousemove", handleMouseMotion);
     };
   }, []);
-    const container = useRef(null);
-    const inView = useInView(container, {
-      margin: "0px 100px -50px 0px",
-    });
   const website = projectdata3[mouseposition?.index]?.mainTitle;
-const heroWords2 = `MY RECENT PROJECTS`;
   return (
     <>
       <motion.span
@@ -74,7 +70,8 @@ const heroWords2 = `MY RECENT PROJECTS`;
         variants={scaleAnimations}
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
-        className="w-32 z-[42] absolute h-32 rounded-full shadow-2xl hidden lg:flex items-center justify-center text-[12px] text-white font-portfolio_bold bg-[#2e2e30]"
+        className="w-32 z-[42] absolute h-32 rounded-full shadow-2xl 
+        hidden lg:flex items-center justify-center text-sm text-white font-portfolio_bold bg-[var(--primary)]"
       ></motion.span>
       <motion.span
         variants={scaleAnimations}
@@ -105,31 +102,11 @@ const heroWords2 = `MY RECENT PROJECTS`;
         ></div>
 
         <div data-scroll className="py-4 md:py-8 w-full relative">
-          <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 relative gap-4">
-            <h4
-              ref={container}
-              className="w-full text-start  uppercase text-7xl md:text-9xl leading-[.9] md:leading-[1] font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
-            >
-              {heroWords2.split(" ").map((x, index) => {
-                return (
-                  <span
-                    key={index}
-                    className="flex hide relative items-center justify-start"
-                  >
-                    <motion.span
-                      variants={slideup2}
-                      custom={index}
-                      initial="initial"
-                      animate={inView ? "animate" : "exit"}
-                    >
-                      {x}
-                    </motion.span>
-                  </span>
-                );
-              })}
+          <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 gap-12 relative">
+            <h4 className="w-full text-start uppercase text-lg text-dark opacity-[.4]">
+              <AnimateTextWord children={"Recent Works"} />
             </h4>
 
-            {/* <Mouse mouseposition={mouseposition} /> */}
             <div className="w-full relative z-[40] gap-x-8 gap-y-24 md:gap-y-32 justify-between">
               <WorkList
                 setMousePosition={setMousePosition}

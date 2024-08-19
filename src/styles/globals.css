@@ -1,24 +1,12 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- @font-face {
+@font-face {
   font-family: "Bold";
   src: url("../assets/fonts/NeueMontreal-Regular.otf") format("opentype");
 }
 
-/*
 
-@font-face {
-  font-family: "SemiBold";
-  src: url("../assets/fonts/NeueMontreal-Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Bold1";
-  src: url("../assets/fonts/Manrope-Bold.ttf") format("truetype");
-} */
 
 @font-face {
   font-family: "Agency_Extended";
@@ -28,20 +16,37 @@
 @font-face {
   font-family: "dashboard_bold";
   src: url("../assets/fonts/dashboard_bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Regular";
   src: url("../assets/fonts/dashboard_regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 body,
 html {
-  background-color: #fff !important;
+  background-color: var(--dark-1) !important;
   -webkit-font-smoothing: antialiased;
   line-height: 1.2;
-  font-family: "Bold", apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
-    color:#000;
+  font-family: "dashboard_bold", apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--white);
+}
+:root {
+  --pink: #f3e1d9;
+  --dark-1: #0a0a0a;
+  --grey-1: #383838;
+  --primary:#455CE9;
+  --purple: #ff3b00;
+  --base-scale3d: scale3d(1, 1, 1);
+  --base-translate3d: translate3d(0, 0, 0);
+
+  --primary-curve: cubic-bezier(0.62, 0.05, 0.01, 0.99);
+  --white: #fff;
 }
 /* html {
   font-size: 62.5%;
@@ -49,6 +54,13 @@ html {
 .hide {
   overflow: hidden;
 }
+.hero_images {
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-image: url("https://avada.website/tour-operator/wp-content/uploads/sites/169/2022/06/image-mask.svg");
+}
+
 html.lenis,
 html.lenis body {
   height: auto;
@@ -83,16 +95,15 @@ html.lenis body {
 }
 .titleRef.titleRef2 .line {
   text-align: center !important;
-   justify-content: center !important;
-   align-items: center !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 .titleRef .line {
- gap: 10px !important;
+  gap: 10px !important;
   /* column-gap: 10px !important; */
 }
 .hero_text2 .line {
- gap:4px !important;
-
+  gap: 4px !important;
 }
 h4 .line {
   row-gap: 12px !important;
@@ -104,23 +115,24 @@ h4 .line {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(255,255,255,.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 label {
-  width:100%;
+  width: 100%;
 }
-input, textarea {
+input,
+textarea {
   background-color: transparent !important;
-  color:#Fff;
-  width:100%;
-  border:none;
-  outline:none;
+  color: #fff;
+  width: 100%;
+  border: none;
+  outline: none;
 }
-@media (max-width:580px) {
+@media (max-width: 580px) {
   .titleRef .line {
- gap: 7px !important;
-}
-.line{
-   gap: 12px !important;
-}
+    gap: 7px !important;
+  }
+  .line {
+    gap: 12px !important;
+  }
 }

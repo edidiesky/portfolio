@@ -61,7 +61,7 @@ export const projectdata3 = [
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/Bookluxe",
     period: "2024",
-    year: "2024",
+    year: "2024", 
     backGroundColor: "#f0f3ec",
     roleDescription:
       "The role I took in developing Zyrastones involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",

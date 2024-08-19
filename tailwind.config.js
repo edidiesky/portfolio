@@ -17,10 +17,7 @@ module.exports = {
       gridTemplateColumns: {
         // Simple 16 column grid
         custom: "1fr auto",
-        custom_5: "1fr 160px",
-        custom_2: "30% 1fr",
-        custom_4: "auto 1fr",
-        custom_3: "15% 1fr",
+        custom_2: "auto 1fr",
       },
       // Blog_Styles
       fontFamily: {
@@ -28,12 +25,12 @@ module.exports = {
         portfolio_bold: ["Agency_Extended", "sans-serif"],
       },
       colors: {
-        light_grey: "#F6F5F4",
+        light_grey: "#eee",
       },
       maxWidth: {
-        custom: "1204px",
-        custom_1: "1204px",
-        custom_2: "1304px",
+        custom: "1504px",
+        custom_1: "1504px",
+        custom_2: "1504px",
       },
     },
   },
