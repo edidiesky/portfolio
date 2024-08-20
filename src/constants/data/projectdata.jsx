@@ -54,25 +54,25 @@ export const projectdata3 = [
       images: ["/images/trove/tasty_4.jpeg"],
     },
   },
-  // bookluxe
+  // ZyncLuxury
   {
     id: 4,
-    website: "https://zyrastones.vercel.app/",
+    website: "",
     role: "Full-Stack Development",
-    github: "https://github.com/edidiesky/Bookluxe",
+    github: "https://github.com/edidiesky/ZyncLuxury",
     period: "2024",
-    year: "2024", 
+    year: "2024",
     backGroundColor: "#f0f3ec",
     roleDescription:
-      "The role I took in developing Zyrastones involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
-    mainImage: "/images/luxe/luxe_1.jpeg",
-    mainTitle: "Zyrastones",
+      "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
+    mainImage: "/images/zync/image_1.jpeg",
+    mainTitle: "ZyncLuxury",
     overview: {
       color: "#bbacaf",
       Description: [
-        "Zyrastones is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
+        "ZyncLuxury is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
       ],
-      images: ["/images/luxe/luxe_3.jpeg"],
+      images: ["/images/zync/image_4.jpeg"],
     },
     technologyUsed: [
       "Typescript",
@@ -86,38 +86,81 @@ export const projectdata3 = [
     features: {
       color: "#977f60",
       Description: [
-        "Zyrastones platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
-        "Zyrastones allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
+        "ZyncLuxury platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
+        "ZyncLuxury allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
-      images: ["/images/luxe/luxe_2.jpeg", "/images/luxe/luxe_5.jpeg"],
+      images: ["/images/zync/image_1.jpeg", "/images/zync/image_5.jpeg"],
     },
     ui: {
       color: "#977f60",
       description:
-        "Zyrastones is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/luxe/luxe_4.jpeg"],
+        "ZyncLuxury is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      images: ["/images/zync/image_5.jpeg"],
     },
   },
-
-  // twizzle
+  // tattoo
   {
-    id: 456,
-    website: "https://bookluxe.vercel.app/",
-    role: "Full-Stack Development",
-    github: "https://github.com/edidiesky/Bookluxe",
+    id: 43,
+    website: "",
+    role: "Frontend Development",
+    github: "https://github.com/edidiesky/TattooVerse",
     period: "2024",
     year: "2024",
     backGroundColor: "#f0f3ec",
     roleDescription:
+      "The role I took in developing TattooVerse involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
+    mainImage: "/images/tattoo/image_1.jpeg",
+    mainTitle: "TattooVerse",
+    overview: {
+      color: "#bbacaf",
+      Description: [
+        "TattooVerse is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
+      ],
+      images: ["/images/tattoo/image_2.jpeg"],
+    },
+    technologyUsed: [
+      "Typescript",
+      "Node.js",
+      "Typescript-Express.js",
+      "Socket.io",
+      "MongoDb",
+      "Express.js",
+      "Styled-components",
+    ],
+    features: {
+      color: "#977f60",
+      Description: [
+        "TattooVerse platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
+        "TattooVerse allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
+      ],
+      images: ["/images/tattoo/image_2.jpeg", "/images/tattoo/image_3.jpeg"],
+    },
+    ui: {
+      color: "#977f60",
+      description:
+        "TattooVerse is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      images: ["/images/tattoo/image_4.jpeg"],
+    },
+  },
+  // twizzle
+  {
+    id: 4156,
+    website: "https://twizle.vercel.app/",
+    role: "Full-Stack Development",
+    github: "https://github.com/edidiesky/Twizle-Social-Platform",
+    period: "2023",
+    year: "2023",
+    backGroundColor: "#f0f3ec",
+    roleDescription:
       "The role I took in developing Twizzle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
-    mainImage: "/images/twitter_11.jpg",
-    mainTitle: "Twizzle",
+    mainImage: "/images/twizle/image_3.jpeg",
+    mainTitle: "Social Platform",
     overview: {
       color: "#bbacaf",
       Description: [
         "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript and Nodejs.",
       ],
-      images: ["/images/twitter_10.jpg"],
+      images: ["/images/twizle/image_1.jpeg"],
     },
     technologyUsed: [
       "Typescript",
@@ -134,90 +177,57 @@ export const projectdata3 = [
         "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, it mirrors the functionality and behavior of popular platforms like Twitter.",
         "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
-      images: ["/images/twitter_2.jpg", "/images/twitter_1.jpg"],
+      images: ["/images/twizle/image_4.jpeg", "/images/twizle/image_2.jpeg"],
     },
     ui: {
       color: "#977f60",
       description:
         "Twizzle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/twitter_14.jpg"],
+      images: ["/images/twizle/image_2.jpeg"],
     },
   },
+  // Car
   {
-    id: 2,
+    id: 4356,
     website: "https://vaada.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/cardealer",
-    period: "2022",
-    year: "Jan 2022 - Mar 2022",
+    period: "2023",
+    year: "2023",
     backGroundColor: "#f0f3ec",
     roleDescription:
-      "I developed Vaada with the aid of primarily Reactjs and Nodejs. I saw the need to write unit tests on the server side using jest to test and see the behaviors of the server controllers. On the client side, I managed the state using the Redux toolkit. The majority of my styles were done using styled-components and vanilla CSS. ",
-    mainImage: "/car_details_screen.jpg",
-    mainTitle: "Vaada",
+      "The role I took in developing Vaada involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
+    mainImage: "/images/car/image_1.jpeg",
+    mainTitle: "Car Dealership",
     overview: {
       color: "#bbacaf",
-      Description:
-        "Vaada is an innovative car management product designed to provide for both car buyers and owners, offering a better experience through its intuitive interface and comprehensive features. Whether you're in the market for a new vehicle or seeking efficient ways to manage your existing fleet, Vaada has you covered. With its robust admin dashboard, integrated payment system, and review functionality, Vaada transforms the way users interact with their cars.",
-      images: ["/images/car_1.jpg"],
+      Description: [
+        "Vaada is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript and Nodejs.",
+      ],
+      images: ["/images/car/image_4.jpeg"],
     },
     technologyUsed: [
-      "React.js",
+      "Typescript",
       "Node.js",
+      "Typescript-Express.js",
       "Socket.io",
       "MongoDb",
       "Express.js",
       "Styled-components",
-      "Zoid",
     ],
     features: {
       color: "#977f60",
       Description: [
-        "Vaada simplifies the car buying process by providing a curated selection of vehicles for potential buyers. From sedans to SUVs, users can browse through a diverse range of options, complete with detailed specifications, images, and pricing information.",
-        "For car owners, Vaada offers a one-stop solution for managing their vehicles. Through the admin dashboard, users can track maintenance schedules, monitor fuel consumption, and receive timely reminders for servicing and inspections. This feature streamlines the management process, ensuring that vehicles remain in optimal condition.",
-        "Vaada integrates seamlessly with Stripe, allowing users to complete transactions securely and efficiently. Whether purchasing a new car or scheduling maintenance services, users can make payments with confidence, knowing that their financial information is protected.",
-        "Security is paramount in Vaada, which is why robust authentication and authorization mechanisms are implemented. This ensures that only authorized users have access to sensitive features and data, safeguarding the platform against unauthorized access and potential security threats.",
+        "Vaada platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, it mirrors the functionality and behavior of popular platforms like Twitter.",
+        "Vaada allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
-      images: ["/images/car_11.jpg", "/images/car_10.jpg", "/images/car_2.jpg"],
+      images: ["/images/car/image_3.jpeg", "/images/car/image_2.jpeg"],
     },
     ui: {
       color: "#977f60",
       description:
         "Vaada is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/car_9.jpg"],
+      images: ["/images/car/image_2.jpeg"],
     },
   },
-  {
-    id: 1,
-    website: "https://quantifly.net/",
-    role: "Frontend Development",
-    github: "",
-    period: "2022",
-    year: "May 2022 - Sep 2022",
-    backGroundColor: "#f0f3ec",
-    roleDescription:
-      "At Quantifly, I held a variety of responsibilities. My initial role involved creating the logo and the overall visual brand identity. Beyond that, I also designer a data-gathering questionnaire, designed and programmed the platform for partners and interactive game, and took on the role of product owner.",
-    mainImage: "/images/quantify_1.jpg",
-    mainTitle: "Quantifly",
-    overview: {
-      color: "#bbacaf",
-      Description:
-        "Quantifly helps management and HR professionals make confident decisions based on objective insights into organizational culture, climate and structure. Quantifly enables companies to identify key employees, detect issues within the organizational structure, systematically increase employee engagement, prevent burnout, and eliminate information bottlenecks. Is uses a combination of quantitative and qualitative analysis, sociometry, and employee competency assessments to gain detailed insights and recommendations for improvements in critical areas of the company.",
-      images: ["/images/quantify_1.jpg"],
-    },
-    technologyUsed: ["Figma", "Supabase", "React JS"],
-    features: {
-      color: "#977f60",
-      Description: [
-        "The platform allows our partners and clients to easily create a new analysis. After the analysis is created, they receive a link to the survey, and upon the completion of data collection, we generate a report with the gathered information and recommendations for further improvements.",
-      ],
-      images: ["/images/quantify_2.jpg"],
-    },
-    ui: {
-      color: "#977f60",
-      description:
-        "To better showcase our services and what customers can expect from us, we have developed an interactive game that guides them through their current challenges. The game interactively acquaints them with how our services can effectively address and resolve their specific needs.",
-      images: ["/images/quantify_3.jpg"],
-    },
-  },
- ];
+];
