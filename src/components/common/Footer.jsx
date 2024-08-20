@@ -16,11 +16,11 @@ const Footer = () => {
   return (
     <>
       <div className="relative min-h-[40vh] flex flex-col justify-between py-8">
-        <div className="w-[90%] max-w-custom mx-auto flex flex-col items-center gap-16">
-          <div className="flex w-full border-b border-[rgba(0,0,0,.1)] relative items-center gap-2">
+        <div className="w-[95%] md:w-[90%] max-w-custom mx-auto flex flex-col items-center gap-16">
+          <div className="flex flex-col md:flex-row w-full border-b border-[rgba(0,0,0,.1)] relative md:items-center gap-8">
             <h2
               ref={container2}
-              className="text-7xl uppercase lg:text-9xl font-portfolio_bold text-dark"
+              className="text-5xl md:text-6xl uppercase lg:text-7xl xl:text-9xl font-portfolio_bold text-dark"
             >
               <AnimateTextWord type={'largeText'} children={heroWords2} />
               <AnimateTextWord type={'largeText'} children={heroWords} />
@@ -31,28 +31,28 @@ const Footer = () => {
                   "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
                 }
                 className="flex items-center md:justify-end font-portfolio_bold1
-               text-sm text-[var(--dark-1)]  w-40 h-20  rounded-[60px] bg-[#fff]"
+               text-sm text-[var(--dark-1)]  w-40 h-16 md:h-20  rounded-[60px] bg-[#fff]"
               >
                 <Magnetic bgColor={"#8f8f8f"} children={"Contact me"} />
               </Link>
             </div>
           </div>
-          <div className="w-full grid grid-cols-custom_2 gap-8">
+          <div className="w-full grid md:grid-cols-custom_2 gap-8">
             <div className="w-[100px]"></div>
-            <div className="w-full grid grid-cols-2 gap-x-8">
+            <div className="w-full grid md:grid-cols-2 gap-x-8">
               {socialsList?.map((skill, index) => {
                 return (
                   <Link
                     href={`${skill?.path}`}
                     key={index}
                     className="w-full cursor-pointer group flex flex-col items-center gap-1 justify-between
-                       text-sm md:text-sm px-4 font-portfolio_regular "
+                       text-xs md:text-sm px-4 font-portfolio_regular "
                   >
                     <div
                       style={{
                         transition: "all .4s var(--primary-curve)",
                       }}
-                      className="w-full py-6 uppercase group-hover:translate-x-5 group-hover:text-[#fff] text-grey grid grid-cols-custom_2 items-center"
+                      className="w-full py-4 md:py-6 uppercase group-hover:translate-x-5 group-hover:text-[#fff] text-grey grid grid-cols-custom_2 items-center"
                     >
                       <span className="w-[60px] ">{skill?.title}</span>
                       <span className="flex justify-end items-center gap-12">

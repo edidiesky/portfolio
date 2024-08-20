@@ -50,10 +50,10 @@ const ProjectCard = ({
           <img
             src={project?.mainImage}
             alt=""
-            className="w-full h-[500px] object-cover"
+            className="w-full md:h-[500px] object-cover"
           />
           <div className="flex w-full flex-col gap-8">
-            <h3 className="text-5xl md:text-6xl flex items-start text-text_dark_1 flex-col gap-4 justify-between font-portfolio_bold2">
+            <h3 className="text-4xl md:text-5xl flex items-start text-text_dark_1 flex-col gap-4 justify-between font-portfolio_bold2">
               <span
                 data-scroll
                 data-scroll-speed="2"

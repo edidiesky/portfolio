@@ -43,14 +43,14 @@ export default function Hero() {
       >
         <div className="w-[90%] mx-auto max-w-custom">
           <div className="flex w-full flex-col mx-auto justify-between gap-y-12 gap-x-20">
-            <div className="grid gap-24 items-start grid-cols-1 w-full">
-              <div className="w-full relative flex items-center gap-4 justify-between">
+            <div className="grid gap-16 items-start grid-cols-1 w-full">
+              <div className="w-full relative flex flex-col lg:flex-row md:items-center gap-8">
                 <span
                   data-scroll
                   data-scroll-speed="2"
-                  className="font-normal titleRef text-text_dark_1 flex flex-wrap
+                  className="font-normal max-w-[1000px] titleRef text-text_dark_1 flex flex-wrap
                  gap-[8px] lg:gap-[8px] items-center justify-start uppercase 
-                text-7xl md:text-[170px]
+                text-7xl md:text-9xl lg:text-[140px]
                 w-full leading-[.8] font-portfolio_bold"
                 >
                   {/* A Software Developer who crafts captivating digital experiences. */}
@@ -76,23 +76,23 @@ export default function Hero() {
                   href={
                     "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
                   }
-                  className="w-[180px] h-[180px] hero_images absolute flex items-center justify-center right-5 -top-10 text-white text-lg rounded-full overflow-hidden bg-[var(--primary)]"
+                  className="w-[180px] md:selection:-ml-20 h-[180px] hero_images flex items-center justify-center text-white text-lg rounded-full overflow-hidden bg-[var(--primary)]"
                 >
                   <Magnetic bgColor={"#2638a9"} children={" Open to Work!"} />
                 </Link>
               </div>
 
-              <div className="w-full grid md:grid-cols-custom md:items-center gap-12">
-                <div className="w-full grid md:grid-cols-custom gap-4">
+              <div className="w-full grid md:grid-cols-custom md:items-center gap-4 md:gap-12">
+                <div className="w-full grid lg:grid-cols-custom gap-4">
                   <div className="w-full flex flex-col gap-8">
                     <h4 className="text-lg md:text-xl uppercase font-normal font-portfolio_bold1">
                       <AnimateTextWord children={heroWords3} />
                     </h4>
                   </div>
-                  <div className="w-[160px]"></div>
+                  <div className="w-[250px]"></div>
                 </div>
-                <div className="md:w-[500px]">
-                  <div className=" md:w-[400px]  overflow-hidden h-[300px] md:h-[350px] relative flex items-center justify-center">
+                <div className="w-[250px] lg:w-[300px]">
+                  <div className="w-[100%] md:w-[100%] overflow-hidden h-[300px] md:h-[350px] relative flex items-center justify-center">
                     <img
                       src={"/profile_6.JPG"}
                       alt=""
