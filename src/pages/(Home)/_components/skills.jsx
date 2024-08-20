@@ -1,320 +1,109 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
-import SplitType from "split-type";
 import { opacity, slideup, slideup2, slideup3 } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
-import AccordionIndex from "./accordion";
-const skillslist = [
-  "TYPESCRIPT",
-  "PRISMA",
-  "CYPRESS",
-  "JEST",
-  "NODEJS",
-  "EXPRESSJS",
-  "REACT",
-  "REDUX",
-  "JAVASCRIPT",
-  "CONTEXT-API",
-  "TAILWIND.CSS",
-  "HTML",
-  "NEXTJS",
-  "GIT",
-  "GSAP",
-  "FRAMER-MOTION",
-];
+import AnimateTextWord from "@/components/animations/AnimateTextWord";
+import { aboutText1, ctatext5 } from "@/constants/data/text";
+import {
+  skillslist,
+  InterpersonalSkillList,
+  experienceList,
+} from "@/constants/data/text";
+import Word from "@/components/animations/Word";
 
-const serviceslist = [
-  {
-    id: 1,
-    title: "Front End Development",
-    description: "I plan build, test, and maintain scalable web applications",
-  },
-  {
-    id: 2,
-    title: "Backend Development",
-    description:
-      "I can build REST API for your web products at a very fast pace with testing associated. ",
-  },
-  {
-    id: 3,
-    title: "Creative Implementation",
-    description:
-      "I build layouts and interactions optimizing for performance and usabilty.",
-  },
-
-  {
-    id: 4,
-    title: "Write Tests",
-    description:
-      "I can write unit test and integration test for your web applications that deals with React and Typescript",
-  },
-];
-
-const experienceList = [
-  {
-    title: "Nimbly Technologies",
-    position: "Frontend Developer",
-    date: "2023-2024",
-    location: "Indonesia",
-  },
-  {
-    title: "Hysolate",
-    position: "Frontend Developer",
-    date: "2022-2023",
-    location: "Tel-Aviv",
-  },
-  {
-    title: "Billpocket",
-    position: "Frontend Developer",
-    date: "2021-2022",
-    location: "Mexico City",
-  },
-  // {
-  //   title: "GoTrendier",
-  //   position: "Backend Developer",
-  //   date: "2021 - 2022",
-  //   location: "Colombia",
-  // },
-  {
-    title: "Flink",
-    position: "Software Developer (Internship)",
-    date: "2020-2021",
-    location: "Mexico",
-  },
-  // {
-  //   title: "KonnecTo StartUp",
-  //   position: "Frontend Developer",
-  //   date: "2020-2021",
-  //   location: "Tel-Aviv",
-  // },
-];
-const heroWords2 = `SERVICES I OFFER`;
-const heroWords3 = `SKILLS I BRING`;
-const heroWords4 = `HOW I EVOLVED`;
-const skillDescriptionText =
-  "My skills range from conceptual design to technical implementation, enabling me to transfer unique designs  into the digital realm, where they can be admired by a broad audience.";
-const skillDescriptionText2 =
-  "Beyond freelancing,I also gained valuable experience,in roles demanding full time role and freelancing,at various companies for which I am very grateful.";
 const Skills = () => {
   const [expanded, setExpanded] = useState(0);
-  const container = useRef(null);
-  const inView = useInView(container);
 
-  const container2 = useRef(null);
-  const inView2 = useInView(container2, {
-    margin: "0px 100px -50px 0px",
-  });
-
-  const skillText = useRef(null);
-  const inView3 = useInView(skillText);
-
-  const skillText2 = useRef(null);
-  const inView5 = useInView(skillText2);
-  const skillText3 = useRef(null);
-  const inView6 = useInView(skillText3);
-
-  const container3 = useRef(null);
-  const inView4 = useInView(container3, {
-    margin: "0px 100px -50px 0px",
-  });
-
-  const container5 = useRef(null);
-  const inView7 = useInView(container5);
-
-    const container6 = useRef(null);
-    const inView8 = useInView(container6);
   return (
     <>
-      <div data-scroll className="py-12 md:py-20 flex flex-col gap-20">
-        <div className="w-[90%] md:px-4 m-auto max-w-custom items-start grid grid-cols-1 lg:grid-cols-custom_3 gap-16 ">
-          <div className="w-full">
-            <div className="text-4xl text-text_dark_1 font-portfolio_bold1 w-full font-normal uppercase">
-              <span>04/</span>
-            </div>
-          </div>
-          <div className="w-full flex flex-col gap-24">
-            <div className="w-full items-start md:items-end md:justify-end flex flex-col gap-20">
-              <h3
-                ref={container}
-                className="w-full text-start  uppercase text-7xl md:text-9xl leading-[.9] md:leading-[1]  font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1
-                 flex flex-wrap gap-[14px] justify-end lg:items-center "
-              >
-                {heroWords2.split(" ").map((x, index) => {
-                  return (
-                    <span
-                      key={index}
-                      className="flex hide relative items-center justify-start"
-                    >
-                      <motion.span
-                        variants={slideup2}
-                        custom={index}
-                        initial="initial"
-                        animate={inView ? "animate" : "exit"}
-                      >
-                        {x}
-                      </motion.span>
-                    </span>
-                  );
-                })}
-              </h3>
-              <div ref={container6} className="w-full flex flex-col">
-                {serviceslist?.map((x, index) => {
-                  return (
-                    <AccordionIndex
-                      x={x}
-                      key={index}
-                      index={index}
-                      expanded={expanded}
-                      setExpanded={setExpanded}
-                      view={inView8}
-                    />
-                  );
-                })}
+      <div data-scroll className="py-32 md:py-40 flex flex-col gap-24">
+        <div className="w-[90%] md:px-4 m-auto max-w-custom grid md:grid-cols-custom_2 gap-16">
+          <div className="w-[100px]"></div>
+          <div className="flex flex-col gap-12">
+            <div className="w-full grid md:grid-cols-custom gap-16">
+              <div className="w-full grid md:grid-cols-2 gap-8">
+                <div className="w-full"></div>
+                <h4 className=" w-full uppercase text-lg lg:text-xl leading-[1.4] text-text_dark_1 ">
+                  <Word children={aboutText1} />
+                </h4>
               </div>
-              <div className="w-full md:w-[700px] mt-12">
-                <div className="w-full  md:px-8 max-w-custom items-start grid grid-cols-1 lg:grid-cols-custom_3 gap-16 ">
-                  <div className="w-full">
-                    <div className="text-5xl text-text_dark_1 font-portfolio_bold1 w-full font-normal uppercase">
-                      <span>04/</span>
-                    </div>
+              <div className="w-[200px]"></div>
+            </div>
+            <div className="w-full flex flex-col gap-12">
+              <div className="w-full grid grid-cols-2 gap-4">
+                <h4 className="w-full text-start uppercase text-lg text-dark opacity-[.4]">
+                  <AnimateTextWord children={"TOOLS AND SERVICES"} />
+                </h4>
+              </div>
+              <div className="w-full grid md:grid-cols-1 gap-12">
+                {/* InterpersonalSkillList */}
+                <div className="w-full flex flex-col gap-8">
+                  <h4 className="w-full text-start uppercase flex items-center justify-between text-2xl md:text-3xl text-[#Fff]">
+                    <AnimateTextWord children={"Development TOOLS"} />
+                  </h4>
+                  <div className="w-full grid md:grid-cols-4 gap-4">
+                    {skillslist?.map((skill, index) => {
+                      return (
+                        <div
+                          key={index}
+                          className="w-full flex items-center gap-4 justify-between text-sm border-b border-[rgba(255,255,255,.1)] pb-4 font-portfolio_regular text-grey"
+                        >
+                          {skill}
+                          <span className="w-2 h-2 rounded-md bg-[rgba(255,255,255,.1)]"></span>
+                        </div>
+                      );
+                    })}
                   </div>
-                  <div className="w-full flex flex-col gap-4">
-                    <h4
-                      ref={container2}
-                      className="w-full text-start  uppercase text-7xl md:text-9xl leading-[.9] md:leading-[1]  font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-[14px] justify-end lg:items-center "
-                    >
-                      {heroWords3.split(" ").map((x, index) => {
-                        return (
-                          <span
-                            key={index}
-                            className="flex hide relative items-center justify-start"
-                          >
-                            <motion.span
-                              variants={slideup2}
-                              custom={index}
-                              initial="initial"
-                              animate={inView2 ? "animate" : "exit"}
-                            >
-                              {x}
-                            </motion.span>
-                          </span>
-                        );
-                      })}
-                    </h4>
-                    <h5
-                      ref={skillText}
-                      className="text-2xl flex flex-wrap gap-x-[16px] gap-y-[10px] leading-[1] font-portfolio_bold1"
-                    >
-                      {skillDescriptionText.split(" ").map((x, index) => {
-                        return (
-                          <span
-                            key={index}
-                            className="inline-flex hide relative"
-                          >
-                            <motion.span
-                              variants={slideup}
-                              custom={index}
-                              initial="initial"
-                              animate={inView3 ? "animate" : "exit"}
-                            >
-                              {x}
-                            </motion.span>
-                          </span>
-                        );
-                      })}
-                    </h5>
-                    <div
-                      ref={skillText3}
-                      className="w-full text-2xl font-portfolio_bold1 flex items-start mt-6 flex-col flex-wrap gap-4"
-                    >
-                      {skillslist?.map((x, index) => {
-                        return (
-                          <span
-                            key={index}
-                            className="flex hide relative items-center justify-start"
-                          >
-                            <motion.span
-                              variants={slideup2}
-                              custom={index}
-                              initial="initial"
-                              animate={inView6 ? "animate" : "exit"}
-                            >
-                              {index + 1}. <span>{x}</span>
-                            </motion.span>
-                          </span>
-                        );
-                      })}
-                    </div>
+                </div>
+                <div className="w-full flex flex-col gap-8">
+                  <h4 className="w-full text-start uppercase flex items-center justify-between text-2xl md:text-3xl text-[#Fff]">
+                    <AnimateTextWord children={"Development TOOLS"} />
+                  </h4>
+                  <div className="w-full grid md:grid-cols-4 gap-4">
+                    {InterpersonalSkillList?.map((skill, index) => {
+                      return (
+                        <div
+                          key={index}
+                          className="w-full uppercase flex items-center gap-4 justify-between text-sm border-b border-[rgba(255,255,255,.1)] pb-4 font-portfolio_regular text-grey"
+                        >
+                          {skill}
+                          <span className="w-2 h-2 rounded-md bg-[rgba(255,255,255,.1)]"></span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full mt-24 items-start md:justify-start flex flex-col gap-6">
-              <h4
-                ref={container3}
-                className="w-full text-start  uppercase text-7xl md:text-9xl leading-[.9] md:leading-[1]  font-portfolio_bold text-text_dark_1 font-normal text-text_dark_1 flex flex-wrap gap-x-[8px] gap-y-[10px] justify-start lg:items-center"
-              >
-                {heroWords4.split(" ").map((x, index) => {
+          </div>
+        </div>
+        <div className="w-[90%] md:px-4 py-20 m-auto max-w-custom grid md:grid-cols-custom_2 gap-16">
+          <div className="w-[100px]"></div>
+          <div className="w-full flex flex-col gap-16">
+            <div className="w-full grid md:grid-cols-custom gap-16">
+              <div className="w-full grid md:grid-cols-2 gap-8">
+                <div className="w-full"></div>
+                <h4 className=" w-full uppercase text-lg lg:text-xl leading-[1.4] text-text_dark_1 ">
+                  <Word children={aboutText1} />
+                </h4>
+              </div>
+              <div className="w-[200px]"></div>
+            </div>
+            <div className="w-full grid grid-cols-1 gap-4">
+              <div className="w-full flex flex-col">
+                {experienceList?.map((skill, index) => {
                   return (
-                    <span
+                    <div
                       key={index}
-                      className="flex hide relative items-center justify-start"
+                      className="w-full uppercase grid grid-cols-3 items-center gap-4 justify-between
+                       text-lg md:text-xl border-b border-[rgba(255,255,255,.1)] py-8 font-portfolio_normal text-grey"
                     >
-                      <motion.span
-                        variants={slideup2}
-                        custom={index}
-                        initial="initial"
-                        animate={inView4 ? "animate" : "exit"}
-                      >
-                        {x}
-                      </motion.span>
-                    </span>
-                  );
-                })}
-              </h4>
-              <h5
-                ref={skillText2}
-                className="text-xl md:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_bold1 w-[90%] md:w-[60%]"
-              >
-                {skillDescriptionText2.split(" ").map((x, index) => {
-                  return (
-                    <span key={index} className="inline-flex hide relative">
-                      <motion.span
-                        variants={slideup}
-                        custom={index}
-                        initial="initial"
-                        animate={inView5 ? "animate" : "exit"}
-                      >
-                        {x}
-                      </motion.span>
-                    </span>
-                  );
-                })}
-              </h5>
-              <div
-                ref={container5}
-                className="w-full flex flex-col gap-12 mt-16"
-              >
-                {experienceList?.map((x, index) => {
-                  return (
-                    <motion.h4
-                      key={index}
-                      variants={slideup3}
-                      custom={index}
-                      initial="initial"
-                      animate={inView7 ? "animate" : "exit"}
-                      className="text-3xl md:text-4xl font-portfolio_bold2 flex items-start gap-4 font-medium"
-                    >
-                      {index + 1}.{" "}
-                      <div className="flex flex-col gap-2">
-                        <span className="">{x?.position}</span>
-                        <span className="block text-xl md:text-2xl font-portfolio_bold2">
-                          {x.title}
-                        </span>
-                        <span className="block text-lg md:text-xl font-light text-grey font-portfolio_bold1">
-                          {x.date}
-                        </span>
-                      </div>
-                    </motion.h4>
+                      <span>{skill?.title}</span>
+                      <span>{skill?.position}</span>
+                      <span className="flex justify-end items-center gap-4">
+                        {skill?.date}
+                        <span className="w-2 h-2 rounded-md bg-[rgba(255,255,255,.1)]"></span>
+                      </span>
+                    </div>
                   );
                 })}
               </div>

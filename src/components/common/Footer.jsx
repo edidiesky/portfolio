@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { opacity, slideup, slideup2, slideup3 } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
+import AnimateTextWord from "../animations/AnimateTextWord";
+import Magnetic from "../animations/Magnetic";
 const Footer = () => {
   const [active, setActive] = useState(false);
   const [mouseposition, setMousePosition] = useState({
@@ -12,42 +14,31 @@ const Footer = () => {
   const inView2 = useInView(container2, {
     margin: "0px 100px -50px 0px",
   });
-  const heroWords2 = `LET US BUILD THAT PR0JECT TOGETHER`;
+  const heroWords2 = `LET US BUILD That `;
+  const heroWords = `project together`;
   return (
     <>
-      <div className="relative min-h-[40vh] flex flex-col justify-between py-8 pt-32">
-        <div className="w-[90%] md:w-[85%] max-w-custom mx-auto flex flex-col items-center gap-24">
+      <div className="relative min-h-[40vh] flex flex-col justify-between py-8">
+        <div className="w-[90%] max-w-custom mx-auto flex flex-col items-center gap-16">
           <div className="flex w-full pb-28 lg:pb-24 border-b border-[rgba(0,0,0,.1)] relative items-center gap-2">
             <h2
               ref={container2}
-              className="text-[90px] sm:w-[700px] flex flex-wrap gap-[8px] font-portfolio_bold leading-[.9] lg:text-[150px] text-dark"
+              className="text-5xl uppercase lg:text-8xl font-portfolio_bold text-dark"
             >
-              {heroWords2.split(" ").map((x, index) => {
-                return (
-                  <span
-                    key={index}
-                    className="flex hide relative items-center justify-start"
-                  >
-                    <motion.span
-                      variants={slideup2}
-                      custom={index}
-                      initial="initial"
-                      animate={inView2 ? "animate" : "exit"}
-                    >
-                      {x}
-                    </motion.span>
-                  </span>
-                );
-              })}
+              <AnimateTextWord children={heroWords2} />
+              <AnimateTextWord children={heroWords} />
             </h2>
-            <Link
-              href={
-                "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
-              }
-              className="absolute flex items-center hover:opacity-[.7] justify-center font-portfolio_bold1 text-sm text-white right-10 -bottom-20 w-40 h-40 md:w-48 md:h-48 rounded-full bg-[#455CE9]"
-            >
-              Keep In Touch
-            </Link>
+            <div className="flex flex-1 items-center md:justify-end">
+              <Link
+                href={
+                  "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
+                }
+                className="flex items-center md:justify-end font-portfolio_bold1
+               text-sm text-[var(--dark-1)]  w-40 h-20  rounded-[60px] bg-[#fff]"
+              >
+                <Magnetic bgColor={"#8f8f8f"} children={"Contact me"} />
+              </Link>
+            </div>
           </div>
           <div className="w-full pt-8 flex flex-col items-center sm:flex-row justify-between gap-16">
             <h4 className=" text-base pb-8 font-portfolio_bold1 border-b border-[rgba(0,0,0,.1)] sm:pb-0 sm:border-b-0 text-dark">
