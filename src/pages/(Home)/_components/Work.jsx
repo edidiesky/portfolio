@@ -1,11 +1,10 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import SplitType from "split-type";
 import Link from "next/link";
+import Magnetic from "@/components/animations/Magnetic";
 import { motion, useInView } from "framer-motion";
 import { projectdata3 } from "@/constants/data/projectdata";
 import { scaleAnimations, slideup2 } from "@/constants/utils/framer";
-import ProjectCard from "./ProjectCard";
 import WorkList from "@/components/common/WorkList";
 import gsap from "gsap";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
@@ -91,7 +90,7 @@ const Work = () => {
           </Link>
         }
       </motion.span>
-      <div className="py-12 w-full relative">
+      <div className="py-32 w-full relative">
         <div
           onMouseEnter={() =>
             setMousePosition({
@@ -107,12 +106,21 @@ const Work = () => {
               <AnimateTextWord children={"Recent Works"} />
             </h4>
 
-            <div className="w-full relative z-[40] gap-x-8 gap-y-24 md:gap-y-32 justify-between">
+            <div className="w-full relative z-[40] gap-x-8 gap-y-24 md:gap-y-32 flex flex-col md:items-center md:justify-center">
               <WorkList
+                type={"home"}
                 setMousePosition={setMousePosition}
                 setTab={setTab}
                 tab={tab}
               />
+              <Link
+                href={
+                  "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
+                }
+                className="w-[200px] md:w-[240px] h-[85px] md:h-[100px] flex items-center justify-center text-white text-lg md:text-xl rounded-[60px] overflow-hidden bg-[var(--primary)]"
+              >
+                <Magnetic bgColor={"#2638a9"} children={"View More Works"} />
+              </Link>
             </div>
           </div>
         </div>

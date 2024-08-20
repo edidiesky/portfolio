@@ -14,7 +14,7 @@ export default function HomeIndex() {
       <Hero />
       <Cta />
       <Work />
-      <Gallery />
+      {/* <Gallery /> */}
       {/* <Slider /> */}
       <Skills />
       <Footer />
