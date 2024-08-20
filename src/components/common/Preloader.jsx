@@ -29,8 +29,8 @@ const Preloader = () => {
         ".revealer_2",
         {
           height: 0,
-          top:'-100%',
-          ease: "power3.inOut",
+          top: "-100%",
+          ease: "[0.62, 0.05, 0.01, 0.99]",
           duration: 1.5,
         },
         0.8
@@ -39,7 +39,7 @@ const Preloader = () => {
         ".revealer_1",
         {
           height: 0,
-          ease: "power3.inOut",
+          ease: "[0.62, 0.05, 0.01, 0.99]",
           duration: 1,
         },
         1.2
@@ -52,7 +52,7 @@ const Preloader = () => {
           opacity: 0,
           display: "none",
           duration: 2,
-          ease: "power3.out",
+          ease: "[0.62, 0.05, 0.01, 0.99]",
         },
         3
       )
@@ -67,7 +67,7 @@ const Preloader = () => {
           opacity: 1,
           stagger: 0.06,
           duration: 1,
-          ease: "power3",
+          ease: "[0.62, 0.05, 0.01, 0.99]",
         },
         4
       )
@@ -82,9 +82,9 @@ const Preloader = () => {
           opacity: 1,
           stagger: 0.08,
           duration: 1.6,
-          ease: "power3",
+          ease: "[0.62, 0.05, 0.01, 0.99]",
         },
-       5
+        5
       )
       .fromTo(
         ".imageRef",
@@ -93,6 +93,7 @@ const Preloader = () => {
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
           opacity: 1,
           duration: 1,
+          ease: "[0.62, 0.05, 0.01, 0.99]",
         },
         6
       );

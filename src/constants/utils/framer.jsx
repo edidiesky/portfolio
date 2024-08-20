@@ -9,7 +9,7 @@ export const slideup = {
     transition: {
       duration: 0.4,
       delay: i * 0.005,
-      ease: [0.62, 0.05, 0.01, 0.99],
+    
     },
   }),
   exit: {
@@ -61,7 +61,7 @@ export const slideup3 = {
     transition: {
       duration: 1,
       delay: i * 0.4,
-      ease: [0.62, 0.05, 0.01, 0.99],
+    
     },
   }),
   exit: {

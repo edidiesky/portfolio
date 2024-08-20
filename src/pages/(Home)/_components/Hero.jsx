@@ -21,7 +21,11 @@ export default function Hero() {
     animate: (i) => ({
       opacity: 1,
       y: "0",
-      transition: { duration: 2, delay: i * 0.11, ease: [0.76, 0, 0.24, 1] },
+      transition: {
+        duration: 2,
+        delay: i * 0.11,
+        ease: [0.62, 0.05, 0.01, 0.99],
+      },
     }),
     exit: {
       opacity: 0,
