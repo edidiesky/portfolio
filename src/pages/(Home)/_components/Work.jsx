@@ -63,7 +63,7 @@ const Work = () => {
   }, []);
   const website = projectdata3[mouseposition?.index]?.mainTitle;
   return (
-    <>
+    <div className="flex flex-col gap-16">
       <motion.span
         ref={mouseRef}
         variants={scaleAnimations}
@@ -113,19 +113,23 @@ const Work = () => {
                 setTab={setTab}
                 tab={tab}
               />
-              <Link
-                href={
-                  "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
-                }
-                className="w-[200px] md:w-[240px] h-[85px] md:h-[100px] flex items-center justify-center text-white text-lg md:text-xl rounded-[60px] overflow-hidden bg-[var(--primary)]"
-              >
-                <Magnetic bgColor={"#2638a9"} children={"View More Works"} />
-              </Link>
             </div>
           </div>
         </div>
       </div>
-    </>
+      <div className="w-full">
+        <div className="max-w-custom flex items-center justify-center mx-auto w-[90%]">
+          <Link
+            href={
+              "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
+            }
+            className="w-[200px] md:w-[240px] h-[85px] md:h-[100px] flex items-center bg-[#fff] justify-center text-[var(--dark-1)] text-lg md:text-xl rounded-[60px] overflow-hidden"
+          >
+            <Magnetic bgColor={"#d1d1d1"} children={"View More Works"} />
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 

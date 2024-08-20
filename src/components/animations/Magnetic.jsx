@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 // animattions to staggerText
-const Magnetic = ({ children, bgColor }) => {
+const Magnetic = ({ children, bgColor, type }) => {
   const circleRef = useRef(null);
   const timelineRef = useRef(null);
   let timelineId = null;
@@ -42,21 +42,38 @@ const Magnetic = ({ children, bgColor }) => {
       timelineRef.current.play();
     }, 500);
   };
-  return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      style={{ borderRadius: "inherit" }}
-      className="w-full overflow-hidden cursor-pointer  h-full flex items-center justify-center relative"
-    >
-      <span className="z-20"> {children}</span>
+  if (type === 'white') {
+    return (
       <div
-        ref={circleRef}
-        style={{ background: `${bgColor ? bgColor : "#3856E0"}` }}
-        className="absolute z-10 rounded-[50%] top-[100%] w-full h-[150%] "
-      ></div>
-    </div>
-  );
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{ borderRadius: "inherit" }}
+        className="w-full overflow-hidden cursor-pointer  h-full flex items-center justify-center relative"
+      >
+        <span className="z-20"> {children}</span>
+        <div
+          ref={circleRef}
+          style={{ background: `${bgColor ? bgColor : "#3856E0"}` }}
+          className="absolute z-10 rounded-[50%] top-[100%] w-full h-[150%] "
+        ></div>
+      </div>
+    );
+  }
+    return (
+      <div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        style={{ borderRadius: "inherit" }}
+        className="w-full overflow-hidden cursor-pointer  h-full flex items-center justify-center relative"
+      >
+        <span className="z-20"> {children}</span>
+        <div
+          ref={circleRef}
+          style={{ background: `${bgColor ? bgColor : "#3856E0"}` }}
+          className="absolute z-10 rounded-[50%] top-[100%] w-full h-[150%] "
+        ></div>
+      </div>
+    );
 };
 
 export default Magnetic;
