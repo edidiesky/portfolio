@@ -22,8 +22,8 @@ const Footer = () => {
               ref={container2}
               className="text-5xl md:text-6xl uppercase lg:text-7xl xl:text-9xl font-portfolio_bold text-dark"
             >
-              <AnimateTextWord type={'largeText'} children={heroWords2} />
-              <AnimateTextWord type={'largeText'} children={heroWords} />
+              <AnimateTextWord type={"largeText"}>{heroWords2}</AnimateTextWord>
+              <AnimateTextWord type={"largeText"}>{heroWords}</AnimateTextWord>
             </h2>
             <div className="flex flex-1 items-center md:justify-end">
               <Link
@@ -33,7 +33,7 @@ const Footer = () => {
                 className="flex items-center md:justify-end font-portfolio_bold1
                text-sm text-[var(--dark-1)]  w-40 h-16 md:h-20  rounded-[60px] bg-[#fff]"
               >
-                <Magnetic bgColor={"#8f8f8f"} children={"Contact me"} />
+                <Magnetic bgColor={"#8f8f8f"}>Contact me</Magnetic>
               </Link>
             </div>
           </div>

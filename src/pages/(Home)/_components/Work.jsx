@@ -103,7 +103,7 @@ const Work = () => {
         <div data-scroll className="py-4 md:py-8 w-full relative">
           <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 gap-12 relative">
             <h4 className="w-full text-start uppercase text-lg text-dark opacity-[.4]">
-              <AnimateTextWord children={"Recent Works"} />
+              <AnimateTextWord>Recent Works</AnimateTextWord>
             </h4>
 
             <div className="w-full relative z-[40] gap-x-8 gap-y-24 md:gap-y-32 flex flex-col md:items-center md:justify-center">
@@ -125,7 +125,7 @@ const Work = () => {
             }
             className="w-[200px] md:w-[240px] h-[85px] md:h-[100px] flex items-center bg-[#fff] justify-center text-[var(--dark-1)] text-lg md:text-xl rounded-[60px] overflow-hidden"
           >
-            <Magnetic bgColor={"#d1d1d1"} children={"View More Works"} />
+            <Magnetic bgColor={"#d1d1d1"}>View More Works</Magnetic>
           </Link>
         </div>
       </div>

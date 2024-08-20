@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 import { aboutText1, ctatext5 } from "@/constants/data/text";
@@ -10,7 +10,6 @@ import {
 import Word from "@/components/animations/Word";
 
 const Skills = () => {
-
   return (
     <div data-scroll className="py-32 md:py-40 flex flex-col gap-24">
       <div className="w-[90%] md:px-4 m-auto max-w-custom grid md:grid-cols-custom_2 gap-16">
@@ -20,7 +19,7 @@ const Skills = () => {
             <div className="w-full grid lg:grid-cols-2 gap-8">
               <div className="w-full"></div>
               <h4 className=" w-full uppercase text-lg lg:text-xl leading-[1.4] text-text_dark_1 ">
-                <Word children={aboutText1} />
+                <Word>{aboutText1}</Word>
               </h4>
             </div>
             <div className="w-[200px]"></div>
@@ -28,19 +27,15 @@ const Skills = () => {
           <div className="w-full flex flex-col gap-20">
             <div className="w-full grid grid-cols-2 gap-4">
               <h4 className="w-full text-start uppercase text-lg text-dark opacity-[.4]">
-                <AnimateTextWord
-                  children={"TOOLS AND SERVICES"}
-                />
+                <AnimateTextWord>TOOLS AND SERVICES</AnimateTextWord>
               </h4>
             </div>
             <div className="w-full grid md:grid-cols-1 gap-12">
-              {/* InterpersonalSkillList */}
               <div className="w-full flex flex-col gap-8">
                 <h4 className="w-full text-start uppercase flex items-center justify-between text-2xl md:text-3xl text-[#Fff]">
-                  <AnimateTextWord
-                    type={"largeText"}
-                    children={"Development TOOLS"}
-                  />
+                  <AnimateTextWord type={"largeText"}>
+                    Development TOOLS
+                  </AnimateTextWord>
                 </h4>
                 <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
                   {skillslist?.map((skill, index) => {
@@ -58,10 +53,9 @@ const Skills = () => {
               </div>
               <div className="w-full flex flex-col gap-8">
                 <h4 className="w-full text-start uppercase flex items-center justify-between text-2xl md:text-3xl text-[#Fff]">
-                  <AnimateTextWord
-                    type={"largeText"}
-                    children={"Development TOOLS"}
-                  />
+                  <AnimateTextWord type={"largeText"}>
+                    Development TOOLS
+                  </AnimateTextWord>
                 </h4>
                 <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
                   {InterpersonalSkillList?.map((skill, index) => {
@@ -88,7 +82,7 @@ const Skills = () => {
             <div className="w-full grid lg:grid-cols-2 gap-8">
               <div className="w-full"></div>
               <h4 className=" w-full uppercase text-lg lg:text-xl leading-[1.4] text-text_dark_1 ">
-                <Word children={aboutText1} />
+                <Word>{aboutText1}</Word>
               </h4>
             </div>
             <div className="w-[200px]"></div>

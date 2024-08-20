@@ -78,7 +78,7 @@ export default function Hero() {
                   }
                   className="w-[180px] md:selection:-ml-20 h-[180px] hero_images flex items-center justify-center text-white text-lg rounded-full overflow-hidden bg-[var(--primary)]"
                 >
-                  <Magnetic bgColor={"#2638a9"} children={" Open to Work!"} />
+                  <Magnetic bgColor={"#2638a9"}>Open to Work!</Magnetic>
                 </Link>
               </div>
 
@@ -86,7 +86,7 @@ export default function Hero() {
                 <div className="w-full grid lg:grid-cols-custom gap-4">
                   <div className="w-full flex flex-col gap-8">
                     <h4 className="text-lg md:text-xl uppercase font-normal font-portfolio_bold1">
-                      <AnimateTextWord children={heroWords3} />
+                      <AnimateTextWord>{heroWords3}</AnimateTextWord>
                     </h4>
                   </div>
                   <div className="w-[250px]"></div>

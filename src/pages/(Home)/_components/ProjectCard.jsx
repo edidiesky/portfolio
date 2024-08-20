@@ -5,11 +5,7 @@ import { slideup3 } from "@/constants/utils/framer";
 const ProjectCard = ({
   project,
   index,
-  addRefs,
-  tab,
-  setTab,
   setMousePosition,
-  mouseposition,
 }) => {
   const workCard = useRef(null)
    const inView = useInView(workCard, {
