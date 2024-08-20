@@ -45,6 +45,28 @@ export const InterpersonalSkillList = [
   "Software Design Patterns",
 ];
 
+export const socialsList = [
+  {
+    title: "Hashnode",
+    subTitle: "@eddycancode",
+    path: "https://eddiebadcoder.hashnode.dev/",
+  },
+  {
+    title: "X.com",
+    subTitle: "@edidiesky",
+    path: "https://twitter.com/edidiesky",
+  },
+  {
+    title: "Linkedin",
+    subTitle: "@victorezekielessien",
+    path: "https://www.linkedin.com/in/victorezekielessien",
+  },
+  {
+    title: "Email",
+    subTitle: "Hi@victorcancode1000@gmail.com",
+    path: "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!",
+  },
+];
 
 export const serviceslist = [
   {

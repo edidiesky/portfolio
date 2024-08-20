@@ -18,6 +18,26 @@ export const slideup = {
   },
 };
 
+export const LargeSlideUp = {
+  initial: {
+    opacity: 0,
+    y: "100%",
+  },
+  animate: (i) => ({
+    opacity: 1,
+    y: "0%",
+    transition: {
+      duration: 1,
+      delay: i * 0.05,
+      ease: [0.62, 0.05, 0.01, 0.99],
+    },
+  }),
+  exit: {
+    opacity: 0,
+    y: "100%",
+  },
+};
+
 export const smallslideup = {
   initial: {
     opacity: 0,
