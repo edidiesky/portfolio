@@ -14,7 +14,8 @@ const Word = ({ children }) => {
       {words.map((word, index) => {
         return (
           <OpacityText
-            words={word}
+            words={words}
+            word={word}
             index={index}
             key={index}
             scrollYProgress={scrollYProgress}
