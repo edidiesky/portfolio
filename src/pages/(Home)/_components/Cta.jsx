@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { aboutText1, ctatext5 } from "@/constants/data/text";
+import { aboutText1, ctatext5, aboutText2 } from "@/constants/data/text";
 import Word from "@/components/animations/Word";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
@@ -22,7 +22,7 @@ export default function Cta() {
               <Word>{aboutText1}</Word>
             </h4>
             <h4 className="w-full uppercase text-2xl lg:text-5xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
-              <Word>{aboutText1}</Word>
+              <Word>{aboutText2}</Word>
             </h4>
           </div>
           <div className="w-full grid-cols-1 grid py-5 gap-12 sm:grid-cols-custom_2">
