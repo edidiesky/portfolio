@@ -1,17 +1,12 @@
 export const aboutText1 =
-  "Fascinated about web technologies. I love developing creative and user friendly interfaces. I create memorable web experiences";
+  "Intrigued with web technologies. I love developing creative and user friendly interfaces. I can build memorable web experience";
 
 export const aboutText2 =
-  "When I'm not developing new web experiences, I'm either playing games or watching football";
-
-const ctatext1 = "A blend of Software Engineering and Electrical engineering.";
+  "When I'm not developing new web experiences, I'm either reading or watching football";
 export const ctatext5 =
   "I am Victor Essien and I am a self-learned software developer, dedicated in creating appealing user-interfaces for industries since 2020";
-const ctaText2 = "Learn more about me and services";
-const ctaText6 =
-  "WHEN I AM NOT DEVELOPING WEB INTERFACES I AM WORKING AND RESEARCHING  ON MY ENGINERRING THESIS";
 
-const ctatext3 = `Having background in design, I work closely with design focused teams to build websites and microsites for companies and individuals. I have years of experience working and  collaborating on product teams and leading engineering efforts.`;
+export const ctatext3 = `I am your guy to go to! I can work and communicate effectively with design focused teams to build web applications. I have years of experience collaborating with product teams.`;
 
 export const skillslist = [
   "TYPESCRIPT",
@@ -136,7 +131,7 @@ export const experienceList = [
 const heroWords2 = `SERVICES I OFFER`;
 const heroWords3 = `SKILLS I BRING`;
 const heroWords4 = `HOW I EVOLVED`;
-const skillDescriptionText =
+export const skillDescriptionText =
   "My skills range from conceptual design to technical implementation, enabling me to transfer unique designs  into the digital realm, where they can be admired by a broad audience.";
-const skillDescriptionText2 =
+export const skillDescriptionText2 =
   "Beyond freelancing,I also gained valuable experience,in roles demanding full time role and freelancing,at various companies for which I am very grateful.";

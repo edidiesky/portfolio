@@ -3,7 +3,12 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { aboutText1, ctatext5, aboutText2 } from "@/constants/data/text";
+import {
+  aboutText1,
+  ctatext5,
+  aboutText2,
+  ctatext3,
+} from "@/constants/data/text";
 import Word from "@/components/animations/Word";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
@@ -47,7 +52,7 @@ export default function Cta() {
                 <AnimateTextWord>{ctatext5}</AnimateTextWord>
               </h4>
               <h4 className="w-full uppercase text-xl lg:text-2xl text-text_dark_1">
-                <AnimateTextWord>{ctatext5}</AnimateTextWord>
+                <AnimateTextWord>{ctatext3}</AnimateTextWord>
               </h4>
               <Link
                 href={"/about"}
