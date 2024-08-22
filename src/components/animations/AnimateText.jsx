@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 // animattions to staggerText
-const AnimateText = ({ children }) => {
+const AnimateText = ({ children, color }) => {
   return (
     <motion.div
       initial="initial"
@@ -19,7 +19,7 @@ const AnimateText = ({ children }) => {
               }}
               transition={{
                 delay: index * 0.025,
-                duration: 0.25,
+                duration: 0.3,
                 ease: "easeInOut",
               }}
               className="inline-block"
@@ -33,6 +33,9 @@ const AnimateText = ({ children }) => {
         {children.split("").map((data, index) => {
           return (
             <motion.span
+              style={{
+                color: `${color}`,
+              }}
               key={index}
               variants={{
                 initial: { y: "100%" },
@@ -40,7 +43,7 @@ const AnimateText = ({ children }) => {
               }}
               transition={{
                 delay: index * 0.025,
-                duration: 0.25,
+                duration: 0.3,
                 ease: "easeInOut",
               }}
             >
