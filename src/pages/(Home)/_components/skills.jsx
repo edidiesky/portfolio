@@ -37,12 +37,12 @@ const Skills = () => {
                     Development TOOLS
                   </AnimateTextWord>
                 </h4>
-                <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="w-full grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-4">
                   {skillslist?.map((skill, index) => {
                     return (
                       <div
                         key={index}
-                        className="w-full flex items-center gap-4 justify-between text-sm border-b border-[rgba(255,255,255,.1)] pb-4 font-portfolio_regular text-grey"
+                        className="w-full flex items-center gap-4 justify-between text-xs md:text-sm border-b border-[rgba(255,255,255,.1)] pb-4 font-portfolio_regular text-grey"
                       >
                         {skill}
                         <span className="w-2 h-2 rounded-md bg-[rgba(255,255,255,.1)]"></span>
@@ -57,12 +57,12 @@ const Skills = () => {
                     Interpersonal TOOLS
                   </AnimateTextWord>
                 </h4>
-                <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="w-full grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-4">
                   {InterpersonalSkillList?.map((skill, index) => {
                     return (
                       <div
                         key={index}
-                        className="w-full uppercase flex items-center gap-4 justify-between text-sm border-b border-[rgba(255,255,255,.1)] pb-4 font-portfolio_regular text-grey"
+                        className="w-full uppercase flex items-center gap-4 justify-between text-xs md:text-sm border-b border-[rgba(255,255,255,.1)] pb-4 font-portfolio_regular text-grey"
                       >
                         {skill}
                         <span className="w-2 h-2 rounded-md bg-[rgba(255,255,255,.1)]"></span>
@@ -75,7 +75,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] md:px-4 pt-16 m-auto max-w-custom grid md:grid-cols-custom_2 gap-16">
+      <div className="w-[90%] md:px-4 md:pt-16 m-auto max-w-custom grid md:grid-cols-custom_2 gap-16">
         <div className="w-[100px]"></div>
         <div className="w-full flex flex-col gap-16">
           <div className="w-full grid md:grid-cols-custom gap-16">

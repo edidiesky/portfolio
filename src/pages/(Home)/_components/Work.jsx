@@ -123,7 +123,8 @@ const Work = () => {
             href={
               "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
             }
-            className="w-[200px] md:w-[240px] h-[85px] md:h-[100px] flex items-center bg-[#fff] justify-center text-[var(--dark-1)] text-lg md:text-xl rounded-[60px] overflow-hidden"
+            className="w-[200px] md:w-[240px] h-[80px] font-portfolio_regular md:h-[85px] flex items-center bg-[#fff] justify-center 
+            text-[var(--dark-1)] text-lg md:text-lg rounded-[60px] overflow-hidden"
           >
             <Magnetic bgColor={"#d1d1d1"}>View More Works</Magnetic>
           </Link>

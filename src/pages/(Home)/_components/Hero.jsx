@@ -72,7 +72,8 @@ export default function Hero() {
                   href={
                     "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
                   }
-                  className="w-[180px] open_to_work md:selection:-ml-20 h-[180px] hero_images flex items-center justify-center text-white text-lg rounded-full overflow-hidden bg-[var(--primary)]"
+                  className="w-[230px] open_to_work h-[80px] flex items-center
+                   justify-center text-white text-lg rounded-full font-portfolio_regular overflow-hidden bg-[var(--primary)]"
                 >
                   <Magnetic bgColor={"#2638a9"}>Open to Work!</Magnetic>
                 </Link>
