@@ -31,6 +31,7 @@ const ProjectCard = ({
          variants={slideup3}
          custom={index}
          initial="initial"
+         ref={workCard}
          animate={inView ? "animate" : "exit"}
          className="w-full"
        >
