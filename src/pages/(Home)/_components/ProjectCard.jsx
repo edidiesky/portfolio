@@ -42,7 +42,7 @@ const ProjectCard = ({
              key={index}
              className="w-full group flex items-center relative flex-col gap-4"
            >
-             <div className="w-full  overflow-hidden">
+             <div className="w-full h-[240px] overflow-hidden">
                <img
                  style={{ transition: "all .6s var(--primary-curve)" }}
                  src={project?.mainImage}
