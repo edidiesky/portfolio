@@ -47,7 +47,7 @@ const Text = ({ x, index }) => {
           className="text-6xl lg:text-8xl font-portfolio_bold w-full
          z-20 font-normal text-white uppercase family2"
         >
-          <AnimateText color={x?.color} children={x?.title} />
+          <AnimateText color={x?.color}>{x?.title}</AnimateText>
         </Link>
       </motion.h1>
     </div>
