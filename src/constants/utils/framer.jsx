@@ -7,9 +7,9 @@ export const slideup = {
     opacity: 1,
     y: "0%",
     transition: {
-      duration: 0.3,
-      delay: i * 0.005,
-      ease: [0.62, 0.05, 0.01, 0.99],
+      duration: 0.5,
+      delay: i * 0.003,
+      // ease: [0.62, 0.05, 0.01, 0.99],
     },
   }),
   exit: {

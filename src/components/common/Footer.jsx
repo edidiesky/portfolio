@@ -15,7 +15,7 @@ const Footer = () => {
   const heroWords = `project together`;
   return (
     <>
-      <div className="relative min-h-[40vh] flex flex-col justify-between py-8">
+      <div className="relative min-h-[700px] pb-12 pt-28 md:pt-40 flex flex-col justify-between">
         <div className="w-[95%] md:w-[90%] max-w-custom mx-auto flex flex-col items-center gap-16">
           <div className="flex flex-col md:flex-row w-full border-b border-[rgba(0,0,0,.1)] relative md:items-center gap-8">
             <h2

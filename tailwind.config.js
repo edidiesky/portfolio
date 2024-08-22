@@ -23,7 +23,7 @@ module.exports = {
       fontFamily: {
         portfolio_normal: ["Bold", "sans-serif"],
         portfolio_bold: ["Agency_Extended", "sans-serif"],
-        portfolio_regular: ["Regular", "sans-serif"],
+        portfolio_regular: ["CustomFont_Normal", "sans-serif"],
       },
       colors: {
         light_grey: "#eee",

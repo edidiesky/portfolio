@@ -11,7 +11,7 @@ const Word = ({ children }) => {
 
   return (
     <span ref={text_1_ref} className="w-full flex flex-wrap items-center">
-      {words.map((word, index) => {
+      {words?.map((word, index) => {
         return (
           <OpacityText
             words={words}

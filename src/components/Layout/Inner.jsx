@@ -171,7 +171,8 @@ const LayOutStyles = styled.div`
     position: fixed;
     left: 0;
     top: 0;
-    /* background-color: #f0f3ec; */
+
+    background-color: #f0f3ec;
     z-index: 1;
   }
   .socials {

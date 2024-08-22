@@ -54,6 +54,42 @@ export const projectdata3 = [
       images: ["/images/trove/tasty_4.jpeg"],
     },
   },
+  // tattoo
+  {
+    id: 43,
+    website: "https://tattooverse.vercel.app/",
+    role: "Frontend Development",
+    github: "https://github.com/edidiesky/TattooVerse",
+    period: "2024",
+    year: "2024",
+    backGroundColor: "#f0f3ec",
+    roleDescription:
+      "The role I took in developing TattooVerse involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
+    mainImage: "/images/tattoo/image_1.jpeg",
+    mainTitle: "TattooVerse",
+    overview: {
+      color: "#bbacaf",
+      Description: [
+        "TattooVerse is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
+      ],
+      images: ["/images/tattoo/image_2.jpeg"],
+    },
+    technologyUsed: ["NextJS", "Tailwind Css"],
+    features: {
+      color: "#977f60",
+      Description: [
+        "TattooVerse platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
+        "TattooVerse allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
+      ],
+      images: ["/images/tattoo/image_2.jpeg", "/images/tattoo/image_3.jpeg"],
+    },
+    ui: {
+      color: "#977f60",
+      description:
+        "TattooVerse is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      images: ["/images/tattoo/image_4.jpeg"],
+    },
+  },
   // ZyncLuxury
   {
     id: 4,
@@ -98,50 +134,7 @@ export const projectdata3 = [
       images: ["/images/zync/image_5.jpeg"],
     },
   },
-  // tattoo
-  {
-    id: 43,
-    website: "",
-    role: "Frontend Development",
-    github: "https://github.com/edidiesky/TattooVerse",
-    period: "2024",
-    year: "2024",
-    backGroundColor: "#f0f3ec",
-    roleDescription:
-      "The role I took in developing TattooVerse involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
-    mainImage: "/images/tattoo/image_1.jpeg",
-    mainTitle: "TattooVerse",
-    overview: {
-      color: "#bbacaf",
-      Description: [
-        "TattooVerse is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
-      ],
-      images: ["/images/tattoo/image_2.jpeg"],
-    },
-    technologyUsed: [
-      "Typescript",
-      "Node.js",
-      "Typescript-Express.js",
-      "Socket.io",
-      "MongoDb",
-      "Express.js",
-      "Styled-components",
-    ],
-    features: {
-      color: "#977f60",
-      Description: [
-        "TattooVerse platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
-        "TattooVerse allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
-      ],
-      images: ["/images/tattoo/image_2.jpeg", "/images/tattoo/image_3.jpeg"],
-    },
-    ui: {
-      color: "#977f60",
-      description:
-        "TattooVerse is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/tattoo/image_4.jpeg"],
-    },
-  },
+
   // twizzle
   {
     id: 4156,

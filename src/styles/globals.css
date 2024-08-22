@@ -27,11 +27,17 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "CustomFont_Normal";
+  src: url("../assets/fonts/regular.ttf") format("truetype");
+}
+
 body,
 html {
   background-color: var(--dark-1) !important;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.2;
+  line-height: 1.4 !important;
   font-family: "dashboard_bold", apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: var(--white);

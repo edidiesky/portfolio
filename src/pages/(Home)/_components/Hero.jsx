@@ -1,12 +1,14 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import AnimateTextWord from "@/components/animations/AnimateTextWord";
 import Magnetic from "@/components/animations/Magnetic";
 export default function Hero() {
   const container = useRef(null);
 
   const heroWords1 = "Software Developer Technical Writer";
+  const heroWords2 = `Victor Essien`;
   const heroWords3 = `I help tech companies drive awareness and adoption of their products by creating user-friendly and visually appealing cross-platform applications that fit with their business goals, pull customers, and Place them ahead of their competitors `;
   const heroTextslideup1 = {
     initial: {
@@ -80,8 +82,7 @@ export default function Hero() {
                 <div className="w-full grid lg:grid-cols-custom gap-4">
                   <div className="w-full flex flex-col gap-8">
                     <h4 className="text-lg md:text-xl titleRef uppercase font-normal font-portfolio_bold1">
-                      {/* <AnimateTextWord>{heroWords3}</AnimateTextWord> */}
-                      {heroWords3}
+                      <AnimateTextWord>{heroWords3}</AnimateTextWord>
                     </h4>
                   </div>
                   <div className="w-[250px]"></div>
