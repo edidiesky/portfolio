@@ -9,25 +9,25 @@ export default function Hero() {
 
   const heroWords1 = "Software Developer Technical Writer";
   const heroWords2 = `Victor Essien`;
-  const heroWords3 = `I help tech companies drive awareness and adoption of their products by creating user-friendly and visually appealing cross-platform applications that fit with their business goals, pull customers, and Place them ahead of their competitors `;
+  const heroWords3 = `I help tech companies in leveraging their products by creating user-friendly and visually appealing cross-platform applications that fit with their business goals.`;
   const heroTextslideup1 = {
     initial: {
       opacity: 0,
-      y: 200,
+      y: '100%',
     },
     animate: (i) => ({
       opacity: 1,
       y: "0",
       transition: {
         duration: 2,
-        delay: i * 0.11,
+        delay: i * 0.06,
         ease: [0.62, 0.05, 0.01, 0.99],
       },
     }),
     exit: {
       opacity: 0,
-      // y: 200,
-      y: 200,
+      // y: '100%',
+      y: '100%',
     },
   };
 
@@ -85,14 +85,14 @@ export default function Hero() {
                       <AnimateTextWord>{heroWords3}</AnimateTextWord>
                     </h4>
                   </div>
-                  <div className="w-[250px]"></div>
+                  <div className="w-[180px]"></div>
                 </div>
-                <div className="w-[250px] lg:w-[300px]">
-                  <div className="w-[100%] imageRef md:w-[100%] overflow-hidden h-[300px] md:h-[350px] relative flex items-center justify-center">
+                <div className="w-[250px] lg:w-[400px]">
+                  <div className="w-[100%] imageRef md:w-[100%] overflow-hidden h-[250px] relative flex items-center justify-center">
                     <img
                       src={"/profile_6.JPG"}
                       alt=""
-                      className="imageRef w-full h-full hero_images object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </div>

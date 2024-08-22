@@ -120,7 +120,7 @@ const Preloader = () => {
           y: 0,
           opacity: 1,
           stagger: 0.03,
-          duration: .6,
+          duration: 0.6,
           ease: "power3.out",
         },
         12.6
@@ -131,10 +131,9 @@ const Preloader = () => {
         {
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
           opacity: 1,
-          duration: 1,
+          duration: 1.5,
           ease: "power3.out",
-        },
-        14
+        }
       );
   }, []);
 
