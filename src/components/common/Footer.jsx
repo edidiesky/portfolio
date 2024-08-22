@@ -11,16 +11,16 @@ const Footer = () => {
   const inView2 = useInView(container2, {
     margin: "0px 100px -50px 0px",
   });
-  const heroWords2 = `LET US BUILD That `;
+  const heroWords2 = `LET US Build the`;
   const heroWords = `project together`;
   return (
     <>
-      <div className="relative min-h-[700px] pb-12 pt-28 md:pt-40 flex flex-col justify-between">
+      <div className="relative pb-12 pt-28 md:pt-40 flex flex-col justify-between">
         <div className="w-[95%] md:w-[90%] max-w-custom mx-auto flex flex-col items-center gap-16">
           <div className="flex flex-col md:flex-row w-full border-b border-[rgba(0,0,0,.1)] relative md:items-center gap-8">
             <h2
               ref={container2}
-              className="text-5xl md:text-6xl uppercase lg:text-7xl xl:text-9xl font-portfolio_bold text-dark"
+              className="text-4xl md:text-6xl capitalize text-dark"
             >
               <AnimateTextWord type={"largeText"}>{heroWords2}</AnimateTextWord>
               <AnimateTextWord type={"largeText"}>{heroWords}</AnimateTextWord>

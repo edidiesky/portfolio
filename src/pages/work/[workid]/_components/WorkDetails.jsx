@@ -9,6 +9,7 @@ import { motion, useInView } from "framer-motion";
 import Magnetic from "@/components/animations/Magnetic";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 import Word from "@/components/animations/Word";
+import ProjectCard from "@/pages/(Home)/_components/ProjectCard";
 export default function Hero() {
   // text animation reveal
 
@@ -26,6 +27,7 @@ export default function Hero() {
           {MyRoleInWork()}
           {WorkFeatures()}
           {WorkUI()}
+          {NextWork()}
         </div>
       </div>
       {/* {NextWork()} */}
@@ -48,17 +50,16 @@ function WorkTitle() {
               data-scroll-speed="2"
               // titleRef
               className="font-normal flex 
-            text-start lg:text-start text-5xl md:text-6xl w-full leading-[1.4] font-portfolio_bold"
+            text-start lg:text-start text-5xl md:text-7xl w-full leading-[1.4] font-portfolio_bold"
             >
               {workDetails?.mainTitle}{" "}
-             
             </span>
             <div className="flex md:justify-end md:items-center">
               <Link
                 href={`${workDetails?.website}`}
                 target="_blank"
-                className="md:w-48 w-36 h-18 md:h-20 font-portfolio_regular flex items-center gap-2 rounded-full
-                 bg-[var(--primary)] justify-center text-lg md:text-lg text-white"
+                className="md:w-40 w-36 h-18 md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
+                 bg-[var(--primary)] justify-center text-lg md:text-base text-white"
               >
                 <Magnetic bgColor={"var(--grey-1)"}>
                   <span className="flex items-center justify-center gap-2">
@@ -134,7 +135,7 @@ function WorkOverview() {
   return (
     <div className="w-full">
       <div className="flex w-[90%] xl:w-[900px] flex-col gap-16 mx-auto">
-        <div className="w-full md:w-[800px] mx-auto flex flex-col gap-8">
+        <div className="w-full md:w-[800px] mx-auto flex flex-col gap-6">
           <span
             data-scroll
             data-scroll-speed="2"
@@ -181,8 +182,8 @@ function MyRoleInWork() {
   const overviewText2 = workDetails?.roleDescription;
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
-      <div className="flex w-[90%] xl:w-[900px] flex-col gap-8 mx-auto">
-        <div className="w-full md:w-[800px] mx-auto flex flex-col gap-8  -mb-10">
+      <div className="flex w-[90%] xl:w-[900px] flex-col gap-6 mx-auto">
+        <div className="w-full md:w-[800px] mx-auto flex flex-col gap-6  -mb-10">
           <span
             data-scroll
             data-scroll-speed="2"
@@ -245,16 +246,14 @@ function WorkFeatures() {
             );
           })}
         </div>
-        <div className="w-full md:w-[800px] mx-auto  flex flex-col gap-8">
+        <div className="w-full md:w-[800px] mx-auto  flex flex-col gap-6">
           <span
             data-scroll
             data-scroll-speed="2"
             // titleRef
             className="text-3xl md:text-4xl"
           >
-            <AnimateTextWord type={"largeText"}>
-               Features
-            </AnimateTextWord>
+            <AnimateTextWord type={"largeText"}>Features</AnimateTextWord>
           </span>
           <div className="grid grid-cols-1 gap-12">
             <div className="w-full flex flex-col gap-12">
@@ -302,7 +301,7 @@ function WorkUI() {
               );
             })}
           </div>
-          <div className="w-full md:w-[755px] mx-auto flex flex-col gap-8">
+          <div className="w-full md:w-[755px] mx-auto flex flex-col gap-6">
             <span
               data-scroll
               data-scroll-speed="2"
@@ -326,5 +325,31 @@ function WorkUI() {
   );
 }
 function NextWork() {
-  return <div className="w-full py-24"></div>;
+  const router = useRouter();
+  const { workid } = router.query;
+  const works = projectdata3.filter((data) => data.mainTitle !== workid);
+  // console.log(works);
+  return (
+    <div className="w-full pt-8">
+      <div className="flex w-[90%] xl:w-[900px] flex-col gap-8 mx-auto">
+        <h4 className="text-4xl">
+          <AnimateTextWord type={"largeText"}>
+            See More Projects ⭐️
+          </AnimateTextWord>
+        </h4>
+        <div className="w-full grid md:grid-cols-3 gap-4">
+          {works?.slice(0,3)?.map((work, index) => {
+            return (
+              <ProjectCard
+                type={"smallcard"}
+                key={index}
+                project={work}
+                index={index}
+              />
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
 }
