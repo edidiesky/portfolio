@@ -1,17 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { motion, useInView } from "framer-motion";
-import { slideup3 } from "@/constants/utils/framer";
-const ProjectCard = ({
-  project,
-  index,
-  setMousePosition,
-  type
-}) => {
-  const workCard = useRef(null)
-   const inView = useInView(workCard, {
-     margin: "0px 100px -120px 0px",
-   });
+const ProjectCard = ({ project, index, setMousePosition, type }) => {
+
   const handleMouseEnter = (e) => {
     setMousePosition({
       active: true,
@@ -25,75 +15,60 @@ const ProjectCard = ({
     });
   };
 
-  if(type === 'smallcard') {
-     return (
-       <motion.div
-         variants={slideup3}
-         custom={index}
-         initial="initial"
-         ref={workCard}
-         animate={inView ? "animate" : "exit"}
-         className="w-full"
-       >
-         <Link
-           href={`/work/${project?.mainTitle}`}
-           className="card z-[40] w-full relative"
-         >
-           <div
-             key={index}
-             className="w-full group flex items-center relative flex-col gap-4"
-           >
-             <div className="w-full h-[240px] overflow-hidden">
-               <img
-                 style={{ transition: "all .6s var(--primary-curve)" }}
-                 src={project?.mainImage}
-                 alt=""
-                 className="w-full group-hover:scale-[1.2] object-cover"
-               />
-             </div>
-             <div className="flex w-full flex-col gap-2">
-               <h3
-                 className="text-lg md:text-xl gap-4 flex items-start 
+  if (type === "smallcard") {
+    return (
+      <div className="w-full">
+        <Link
+          href={`/work/${project?.mainTitle}`}
+          className="card z-[40] w-full relative"
+        >
+          <div
+            key={index}
+            className="w-full group flex items-center relative flex-col gap-4"
+          >
+            <div className="w-full h-[240px] overflow-hidden">
+              <img
+                style={{ transition: "all .6s var(--primary-curve)" }}
+                src={project?.mainImage}
+                alt=""
+                className="w-full group-hover:scale-[1.2] object-cover"
+              />
+            </div>
+            <div className="flex w-full flex-col gap-2">
+              <h3
+                className="text-lg md:text-xl gap-4 flex items-start 
                text-text_dark_1 flex-col justify-between font-portfolio_bold2"
-               >
-                 <span
-                   data-scroll
-                   data-scroll-speed="2"
-                   className="border-b  border-[rgba(0,0,0,.2)]
+              >
+                <span
+                  data-scroll
+                  data-scroll-speed="2"
+                  className="border-b  border-[rgba(0,0,0,.2)]
                     text-text_dark_1 w-full"
-                 >
-                   {project?.mainTitle}
-                 </span>
-                 <span
-                   data-scroll
-                   data-scroll-speed="2"
-                   className="text-sm flex font-portfolio_regular
+                >
+                  {project?.mainTitle}
+                </span>
+                <span
+                  data-scroll
+                  data-scroll-speed="2"
+                  className="text-sm flex font-portfolio_regular
                     text=[var(--dark-1)] opacity-[0.4] items-center 
                     justify-between w-full"
-                 >
-                   {project?.role}
-                   <span>{project?.period}</span>
-                 </span>
-               </h3>
-             </div>
-           </div>
-         </Link>
-       </motion.div>
-     );
+                >
+                  {project?.role}
+                  <span>{project?.period}</span>
+                </span>
+              </h3>
+            </div>
+          </div>
+        </Link>
+      </div>
+    );
   }
 
   return (
-    <motion.div
-      variants={slideup3}
-      custom={index}
-      initial="initial"
-      animate={inView ? "animate" : "exit"}
-      ref={workCard}
-      className="w-full"
-    >
+    <div className="w-full">
       <Link
         onMouseEnter={handleMouseEnter}
-        // onMouseLeave={handleMouseLeave}
         href={`/work/${project?.mainTitle}`}
         className="card z-[40] w-full relative"
       >
@@ -127,7 +102,7 @@ const ProjectCard = ({
           </div>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 };
 

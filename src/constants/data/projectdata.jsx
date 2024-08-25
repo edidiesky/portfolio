@@ -93,7 +93,7 @@ export const projectdata3 = [
   // ZyncLuxury
   {
     id: 4,
-    website: "",
+    website: "https://zyncluxury.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/ZyncLuxury",
     period: "2024",
