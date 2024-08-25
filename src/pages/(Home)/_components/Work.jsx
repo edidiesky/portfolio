@@ -77,16 +77,15 @@ const Work = () => {
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
         ref={labelRef}
-        className="w-16 z-[42] h-16 absolute rounded-full hidden lg:flex items-center justify-center text-white font-portfolio_bold1"
+        className="w-16 z-[42] h-16 absolute rounded-full hidden lg:flex items-center justify-center text-white font-portfolio_normal"
       >
         {
           <Link
-            className="text-center text-sm w-full"
+            className="text-center text-base font-bold w-full"
             // target="_blank"
             href={`/work/${website}`}
           >
             View
-            <span className="block text-sm">{website}</span>
           </Link>
         }
       </motion.span>
