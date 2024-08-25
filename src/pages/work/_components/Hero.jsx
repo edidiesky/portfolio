@@ -106,10 +106,7 @@ export default function Hero() {
           className="absolute top-0 w-full h-full z-[36]"
         ></div>
         <div className="w-[90%] mx-auto flex flex-col gap-48  px-2 max-w-custom_1">
-          <div className="grid grid-cols-1 md:grid-cols-custom_3 mx-auto justify-between gap-y-8 gap-x-20">
-            <div className="w-full flex items-center md:justify-center">
-              <h4 className="text-4xl font-portfolio_bold1">01/</h4>
-            </div>
+          <div className=" mx-auto justify-between gap-y-8 gap-x-20">
             <div className="flex w-[90%] lg:w-[900px] flex-col gap-16 mx-auto">
               <span
                 data-scroll
@@ -119,7 +116,7 @@ export default function Hero() {
                   uppercase text-[90px] md:text-[120px] xl:text-[160px]
                 w-full md:w-full leading-[.9] md:leading-[.9] font-portfolio_bold"
               >
-                Projects <sup className="text-2xl font-portfolio_bold1">06</sup>
+                Projects
               </span>
 
               <div className="w-full flex flex-col gap-4">

@@ -14,17 +14,12 @@ const Work = () => {
     active: false,
     index: 0,
   });
-  const ref = useRef([]);
   const mouseRef = useRef(null);
-  const headerref = useRef([]);
-
   const labelRef = useRef(null);
   const [tab, setTab] = useState({
     active: false,
     index: 0,
   });
-  ref.current = [];
-  headerref.current = [];
 
   useEffect(() => {
     let mouseXMovement = gsap.quickTo(mouseRef.current, "left", {
@@ -63,8 +58,8 @@ const Work = () => {
   }, []);
   const website = projectdata3[mouseposition?.index]?.mainTitle;
   return (
-    <div className="flex flex-col gap-16">
-      <motion.span
+    <>
+      {/* <motion.span
         ref={mouseRef}
         variants={scaleAnimations}
         initial="initial"
@@ -88,6 +83,30 @@ const Work = () => {
             View
           </Link>
         }
+      </motion.span> */}
+      <motion.span
+        ref={mouseRef}
+        variants={scaleAnimations}
+        initial="initial"
+        animate={mouseposition?.active ? "enter" : "exit"}
+        className="w-24 z-[42] absolute h-24 rounded-full shadow-2xl flex items-center justify-center text-[12px] text-[#000] font-portfolio_bold bg-[#fff]"
+      ></motion.span>
+      <motion.span
+        variants={scaleAnimations}
+        initial="initial"
+        animate={mouseposition?.active ? "enter" : "exit"}
+        ref={labelRef}
+        className="w-16 z-[42] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-[#000] font-portfolio_bold1"
+      >
+        {
+          <Link
+            className="text-center text-base w-full"
+            // target="_blank"
+            href={`/work/${website}`}
+          >
+            View
+          </Link>
+        }
       </motion.span>
       <div className="py-32 w-full relative">
         <div
@@ -99,7 +118,7 @@ const Work = () => {
           className="absolute top-0 w-full h-full z-[36]"
         ></div>
 
-        <div data-scroll className="py-4 md:py-8 w-full relative">
+        <div data-scroll className="py-4 overflow-hidden md:py-8 w-full relative">
           <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 gap-12 relative">
             <h4 className="w-full text-start uppercase text-lg text-dark opacity-[.4]">
               <AnimateTextWord>Recent Works</AnimateTextWord>
@@ -129,7 +148,7 @@ const Work = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
