@@ -151,7 +151,7 @@ const Preloader = () => {
 
       <div
         style={{ background: `var(--primary)` }}
-        className="revealer_3 absolute h-full top-0 left-0 p-12 md:p-20 items-end justify-end w-full flex"
+        className="revealer_3 absolute h-full top-0 left-0 p-12 md:p-12 items-end justify-end w-full flex"
       >
         <div className="h-[20vh] md:h-[35vh] overflow-hidden min-h-[20vh] md:min-h-[35vh]">
           <ul className="counter-list" ref={countRef}>

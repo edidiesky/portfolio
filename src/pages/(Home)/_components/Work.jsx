@@ -49,11 +49,11 @@ const Work = () => {
 
     const handleMouseMotion = (e) => {
       const { pageX, pageY } = e;
-      mouseXMo
-      labelYMovement(pageY);vement(pageX);
+      mouseXMovement(pageX);
       mouseYMovement(pageY);
 
       labelXMovement(pageX);
+      labelYMovement(pageY);
     };
 
     window.addEventListener("mousemove", handleMouseMotion);
@@ -77,11 +77,11 @@ const Work = () => {
         initial="initial"
         animate={mouseposition?.active ? "enter" : "exit"}
         ref={labelRef}
-        className="w-16 z-[42] h-16 absolute rounded-full hidden lg:flex items-center justify-center text-white font-portfolio_normal"
+        className="w-16 z-[42] h-16 absolute rounded-full hidden lg:flex items-center justify-center text-white font-portfolio_bold1"
       >
         {
           <Link
-            className="text-center text-base font-bold w-full"
+            className="text-center text-base w-full"
             // target="_blank"
             href={`/work/${website}`}
           >
