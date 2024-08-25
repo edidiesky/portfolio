@@ -22,79 +22,11 @@ const Work = () => {
   });
   const heroWords =
     "A selected set of experiments I'm building as I navigate through ideas and technologies. I do learn by testing out and building based on concepts and techniques.";
- 
-  useEffect(() => {
-    let mouseXMovement = gsap.quickTo(mouseRef.current, "left", {
-      duration: 0.9,
-      ease: "power3",
-    });
 
-    let mouseYMovement = gsap.quickTo(mouseRef.current, "top", {
-      duration: 0.9,
-      ease: "power3",
-    });
-
-    let labelXMovement = gsap.quickTo(labelRef.current, "left", {
-      duration: 0.68,
-      ease: "power3",
-    });
-
-    let labelYMovement = gsap.quickTo(labelRef.current, "top", {
-      duration: 0.68,
-      ease: "power3",
-    });
-
-    const handleMouseMotion = (e) => {
-      const { pageX, pageY } = e;
-      mouseXMovement(pageX);
-      mouseYMovement(pageY);
-
-      labelXMovement(pageX);
-      labelYMovement(pageY);
-    };
-
-    window.addEventListener("mousemove", handleMouseMotion);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMotion);
-    };
-  }, []);
   const website = projectdata3[mouseposition?.index]?.mainTitle;
   return (
     <>
-      <motion.span
-        ref={mouseRef}
-        variants={scaleAnimations}
-        initial="initial"
-        animate={mouseposition?.active ? "enter" : "exit"}
-        className="w-24 z-[42] absolute h-24 rounded-full shadow-2xl flex items-center justify-center text-[12px] text-[#000] font-portfolio_bold bg-[#fff]"
-      ></motion.span>
-      <motion.span
-        variants={scaleAnimations}
-        initial="initial"
-        animate={mouseposition?.active ? "enter" : "exit"}
-        ref={labelRef}
-        className="w-16 z-[42] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-[#000] font-portfolio_bold1"
-      >
-        {
-          <Link
-            className="text-center text-base w-full"
-            // target="_blank"
-            href={`/work/${website}`}
-          >
-            View
-          </Link>
-        }
-      </motion.span>
       <div className="py-20 w-full relative">
-        <div
-          onMouseEnter={() =>
-            setMousePosition({
-              active: false,
-            })
-          }
-          className="absolute top-0 w-full h-full z-[36]"
-        ></div>
-
         <div className="w-[100%] md:w-[90%] flex flex-col gap-12 mx-auto">
           <div className="flex w-full flex-col gap-4">
             <span
@@ -112,7 +44,6 @@ const Work = () => {
             </h4>
           </div>
           <WorkList
-            setMousePosition={setMousePosition}
             setTab={setTab}
             tab={tab}
           />

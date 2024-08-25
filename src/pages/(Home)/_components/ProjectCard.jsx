@@ -1,19 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-const ProjectCard = ({ project, index, setMousePosition, type }) => {
+const ProjectCard = ({ project, index,type }) => {
 
-  const handleMouseEnter = (e) => {
-    setMousePosition({
-      active: true,
-      index: index,
-    });
-  };
-
-  const handleMouseLeave = (e) => {
-    setMousePosition({
-      active: false,
-    });
-  };
 
   if (type === "smallcard") {
     return (
@@ -68,7 +56,6 @@ const ProjectCard = ({ project, index, setMousePosition, type }) => {
   return (
     <div className="w-full">
       <Link
-        onMouseEnter={handleMouseEnter}
         href={`/work/${project?.mainTitle}`}
         className="card z-[40] w-full relative"
       >
@@ -76,11 +63,14 @@ const ProjectCard = ({ project, index, setMousePosition, type }) => {
           key={index}
           className="w-full group flex items-center relative flex-col gap-12"
         >
-          <img
-            src={project?.mainImage}
-            alt=""
-            className="w-full md:h-[500px] object-cover"
-          />
+          <div className="w-full h-[500px] overflow-hidden">
+            <img
+              style={{ transition: "all .6s var(--primary-curve)" }}
+              src={project?.mainImage}
+              alt=""
+              className="w-full h-full group-hover:scale-[1.2] object-cover"
+            />
+          </div>
           <div className="flex w-full flex-col gap-8">
             <h3 className="text-4xl md:text-5xl flex items-start text-text_dark_1 flex-col gap-4 justify-between font-portfolio_bold2">
               <span
