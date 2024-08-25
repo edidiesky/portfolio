@@ -49,11 +49,11 @@ const Work = () => {
 
     const handleMouseMotion = (e) => {
       const { pageX, pageY } = e;
-      mouseXMovement(pageX);
+      mouseXMo
+      labelYMovement(pageY);vement(pageX);
       mouseYMovement(pageY);
 
       labelXMovement(pageX);
-      labelYMovement(pageY);
     };
 
     window.addEventListener("mousemove", handleMouseMotion);
