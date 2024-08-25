@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { scaleAnimations } from "@/constants/utils/framer";
 import WorkList from "@/components/common/WorkList";
 import { projectdata3 } from "@/constants/data/projectdata";
+import AnimateTextWord from "@/components/animations/AnimateTextWord";
 export default function Hero() {
   const [mouseposition, setMousePosition] = useState({
     active: false,
@@ -95,7 +96,7 @@ export default function Hero() {
       </motion.span>
       <div
         data-scroll
-        className="py-40 relative flex items-center justify-center"
+        className="py-32 relative flex items-center justify-center"
       >
         <div
           onMouseEnter={() =>
@@ -105,9 +106,10 @@ export default function Hero() {
           }
           className="absolute top-0 w-full h-full z-[36]"
         ></div>
-        <div className="w-[90%] mx-auto flex flex-col gap-48  px-2 max-w-custom_1">
+        <div className="w-[90%] mx-auto flex flex-col gap-48
+         px-2 max-w-custom">
           <div className=" mx-auto justify-between gap-y-8 gap-x-20">
-            <div className="flex w-[90%] lg:w-[900px] flex-col gap-16 mx-auto">
+            <div className="flex w-[90%] lg:w-[900px] flex-col gap-4 mx-auto">
               <span
                 data-scroll
                 data-scroll-speed="2"
@@ -118,44 +120,13 @@ export default function Hero() {
               >
                 Projects
               </span>
-
-              <div className="w-full flex flex-col gap-4">
-                <div className="w-full grid grid-cols-1 lg:grid-cols-custom_3 gap-x-24 gap-y-16">
-                  <div className="w-full">
-                    <h4 className=" w-full text-2xl flex uppercase flex-wrap gap-x-[12px] gap-y-[16px]  leading-[1.5] font-portfolio_bold1 font-medium text-text_dark_1 ">
-                      PROJECTS
-                    </h4>
-                  </div>
-                  <div className="w-full flex justify-start">
-                    <div className="w-full md:w-[70%] flex justify-start flex-col gap-20">
-                      <h4
-                        ref={container}
-                        className=" w-full text-xl md:text-2xl flex uppercase flex-wrap gap-x-[8px] gap-y-[8px] 
-                  font-normal
-                    leading-[1.1] font-portfolio_bold1 text-text_dark_1 "
-                      >
-                        {heroWords.split(" ").map((x, index) => {
-                          return (
-                            <span
-                              key={index}
-                              className="inline-flex hide relative"
-                            >
-                              <motion.span
-                                variants={slideup}
-                                custom={index}
-                                initial="initial"
-                                animate={inView ? "animate" : "exit"}
-                              >
-                                {x}
-                              </motion.span>
-                            </span>
-                          );
-                        })}
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h4
+                className="max-w-[600px] w-full text-xl md:text-2xl 
+                  font-normal uppercase
+                    leading-[1.1] "
+              >
+                <AnimateTextWord>{heroWords}</AnimateTextWord>
+              </h4>
             </div>
           </div>
           <div className="w-[100%] md:w-[95%] mx-auto">

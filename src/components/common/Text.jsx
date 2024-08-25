@@ -29,7 +29,7 @@ const textvariants = {
   }),
 };
 
-const Text = ({ x, index }) => {
+const Text = ({ x, index, setMenu }) => {
   return (
     <div className="h-full overflow-hidden flex items-center justify-center">
       <motion.h1
@@ -43,6 +43,7 @@ const Text = ({ x, index }) => {
       relative font-normal text-white uppercase family2"
       >
         <Link
+          onClick={() => setMenu(false)}
           href={`${x?.path}`}
           className="text-6xl lg:text-8xl font-portfolio_bold w-full
          z-20 font-normal text-white uppercase family2"

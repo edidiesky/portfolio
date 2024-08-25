@@ -20,7 +20,9 @@ const Work = () => {
     active: false,
     index: 0,
   });
-
+  const heroWords =
+    "A selected set of experiments I'm building as I navigate through ideas and technologies. I do learn by testing out and building based on concepts and techniques.";
+ 
   useEffect(() => {
     let mouseXMovement = gsap.quickTo(mouseRef.current, "left", {
       duration: 0.9,
@@ -59,31 +61,6 @@ const Work = () => {
   const website = projectdata3[mouseposition?.index]?.mainTitle;
   return (
     <>
-      {/* <motion.span
-        ref={mouseRef}
-        variants={scaleAnimations}
-        initial="initial"
-        animate={mouseposition?.active ? "enter" : "exit"}
-        className="w-32 z-[42] absolute h-32 rounded-full shadow-2xl 
-        hidden lg:flex items-center justify-center text-sm text-white font-portfolio_bold bg-[var(--primary)]"
-      ></motion.span>
-      <motion.span
-        variants={scaleAnimations}
-        initial="initial"
-        animate={mouseposition?.active ? "enter" : "exit"}
-        ref={labelRef}
-        className="w-16 z-[42] h-16 absolute rounded-full hidden lg:flex items-center justify-center text-white font-portfolio_bold1"
-      >
-        {
-          <Link
-            className="text-center text-base w-full"
-            // target="_blank"
-            href={`/work/${website}`}
-          >
-            View
-          </Link>
-        }
-      </motion.span> */}
       <motion.span
         ref={mouseRef}
         variants={scaleAnimations}
@@ -108,7 +85,7 @@ const Work = () => {
           </Link>
         }
       </motion.span>
-      <div className="py-32 w-full relative">
+      <div className="py-20 w-full relative">
         <div
           onMouseEnter={() =>
             setMousePosition({
@@ -118,21 +95,27 @@ const Work = () => {
           className="absolute top-0 w-full h-full z-[36]"
         ></div>
 
-        <div data-scroll className="py-4 overflow-hidden md:py-8 w-full relative">
-          <div className="w-[90%] mx-auto md:px-8 m-auto max-w-custom_1 grid grid-cols-1 gap-12 relative">
-            <h4 className="w-full text-start uppercase text-lg text-dark opacity-[.4]">
-              <AnimateTextWord>Recent Works</AnimateTextWord>
+        <div className="w-[100%] md:w-[90%] flex flex-col gap-12 mx-auto">
+          <div className="flex w-full flex-col gap-4">
+            <span
+              data-scroll
+              data-scroll-speed="2"
+              // titleRef
+              className="font-normal titleRef titleRef2 text-text_dark_1 flex flex-wrap gap-[10px]
+                  uppercase text-5xl xl:text-7xl"
+            >
+              {/* Projects */}
+              <AnimateTextWord>Projects</AnimateTextWord>
+            </span>
+            <h4 className="max-w-[600px] w-full text-lg md:text-xl font-normal uppercase leading-[1.1] ">
+              <AnimateTextWord>{heroWords}</AnimateTextWord>
             </h4>
-
-            <div className="w-full relative z-[40] gap-x-8 gap-y-24 md:gap-y-32 flex flex-col md:items-center md:justify-center">
-              <WorkList
-                type={"home"}
-                setMousePosition={setMousePosition}
-                setTab={setTab}
-                tab={tab}
-              />
-            </div>
           </div>
+          <WorkList
+            setMousePosition={setMousePosition}
+            setTab={setTab}
+            tab={tab}
+          />
         </div>
       </div>
       <div className="w-full">
