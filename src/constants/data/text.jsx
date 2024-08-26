@@ -92,41 +92,30 @@ export const serviceslist = [
 
 export const experienceList = [
   {
-    title: "Nimbly Technologies",
-    position: "Frontend Developer",
-    date: "2023-2024",
-    location: "Indonesia",
+    title: "Bitnorm",
+    position: "Full-Stack Engineer",
+    date: "November 2023 - April 2024 ",
+    location: "The Netherlands",
   },
   {
-    title: "Hysolate",
-    position: "Frontend Developer",
-    date: "2022-2023",
-    location: "Tel-Aviv",
+    title: "Coba",
+    position: "Lead, Frontend Engineer",
+    date: "  January 2022 - August 2023",
+    location: " United States",
   },
   {
-    title: "Billpocket",
-    position: "Frontend Developer",
-    date: "2021-2022",
-    location: "Mexico City",
+    title: "Outset.ai",
+    position: "Frontend Engineer",
+    date: "August 2020 - May 2021",
+    location: "Canada, Ontario",
   },
-  // {
-  //   title: "GoTrendier",
-  //   position: "Backend Developer",
-  //   date: "2021 - 2022",
-  //   location: "Colombia",
-  // },
+
   {
-    title: "Flink",
-    position: "Software Developer (Internship)",
-    date: "2020-2021",
-    location: "Mexico",
+    title: "Trevlo Technologies Limited",
+    position: "Frontend Intern",
+    date: "February 2019 - March 2020",
+    location: "Imo State, Nigeria",
   },
-  // {
-  //   title: "KonnecTo StartUp",
-  //   position: "Frontend Developer",
-  //   date: "2020-2021",
-  //   location: "Tel-Aviv",
-  // },
 ];
 const heroWords2 = `SERVICES I OFFER`;
 const heroWords3 = `SKILLS I BRING`;

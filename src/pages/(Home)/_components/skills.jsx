@@ -8,6 +8,7 @@ import {
   experienceList,
 } from "@/constants/data/text";
 import Word from "@/components/animations/Word";
+// 1. Cherry 
 
 const Skills = () => {
   return (
