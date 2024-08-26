@@ -117,9 +117,7 @@ export const experienceList = [
     location: "Imo State, Nigeria",
   },
 ];
-const heroWords2 = `SERVICES I OFFER`;
-const heroWords3 = `SKILLS I BRING`;
-const heroWords4 = `HOW I EVOLVED`;
+
 export const skillDescriptionText =
   "My skills range from conceptual design to technical implementation, enabling me to transfer unique designs  into the digital realm, where they can be admired by a broad audience.";
 export const skillDescriptionText2 =
