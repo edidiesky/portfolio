@@ -1,13 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { opacity, slideup, smallslideup } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
-import gsap from "gsap";
-import { scaleAnimations } from "@/constants/utils/framer";
-import WorkList from "@/components/common/WorkList";
-import { projectdata3 } from "@/constants/data/projectdata";
-import AnimateTextWord from "@/components/animations/AnimateTextWord";
+import WorkList from "@/components/common/WorkList"
 export default function Hero() {
   const heroWords1 =
     "I help startups and series A—D teams to establish a strong connection between their product and customers";
