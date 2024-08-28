@@ -75,11 +75,11 @@ const ProjectCard = ({ project, index, type }) => {
             />
           </div>
           <div className="flex p-4 w-full absolute flex-col gap-8">
-            <h3 className="text-4xl md:text-3xl flex text-text_dark_1 items-center gap-4 justify-between font-portfolio_bold2">
+            <h3 className=" flex text-text_dark_1 items-center gap-4 justify-between font-portfolio_bold2">
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-portfolio_bold border-[rgba(0,0,0,.2)] text-text_dark_1"
+                className="font-portfolio_bold text-2xl md:text-3xl border-[rgba(0,0,0,.2)] text-text_dark_1"
               >
                 {project?.mainTitle}
               </span>
@@ -87,14 +87,14 @@ const ProjectCard = ({ project, index, type }) => {
                 <span
                   data-scroll
                   data-scroll-speed="2"
-                  className="text-base flex font-portfolio_normal text-[var(--dark-1)] py-4 bg-white justify-center rounded-full px-6 items-center"
+                  className="text-sm md:text-base flex font-portfolio_normal text-[var(--dark-1)] py-4 bg-white justify-center rounded-full px-6 items-center"
                 >
                   {project?.role}
                 </span>
                 <span
                   data-scroll
                   data-scroll-speed="2"
-                  className="text-base flex font-portfolio_normal text-[var(--dark-1)] py-4 bg-white justify-center rounded-full px-6 items-center"
+                  className="text-sm md:text-base flex font-portfolio_normal text-[var(--dark-1)] py-4 bg-white justify-center rounded-full px-6 items-center"
                 >
                   Web
                 </span>
