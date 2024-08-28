@@ -9,131 +9,70 @@ import WorkList from "@/components/common/WorkList";
 import { projectdata3 } from "@/constants/data/projectdata";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 export default function Hero() {
-  const [mouseposition, setMousePosition] = useState({
-    active: false,
-    index: 0,
-  });
-  const ref = useRef([]);
-  const mouseRef = useRef(null);
-  const headerref = useRef([]);
-
-  const labelRef = useRef(null);
-  const [tab, setTab] = useState({
-    active: false,
-    index: 0,
-  });
-  ref.current = [];
-  headerref.current = [];
-  useEffect(() => {
-    let mouseXMovement = gsap.quickTo(mouseRef.current, "left", {
-      duration: 0.9,
-      ease: "power3",
-    });
-
-    let mouseYMovement = gsap.quickTo(mouseRef.current, "top", {
-      duration: 0.9,
-      ease: "power3",
-    });
-
-    let labelXMovement = gsap.quickTo(labelRef.current, "left", {
-      duration: 0.68,
-      ease: "power3",
-    });
-
-    let labelYMovement = gsap.quickTo(labelRef.current, "top", {
-      duration: 0.68,
-      ease: "power3",
-    });
-
-    const handleMouseMotion = (e) => {
-      const { pageX, pageY } = e;
-      mouseXMovement(pageX);
-      mouseYMovement(pageY);
-
-      labelXMovement(pageX);
-      labelYMovement(pageY);
-    };
-
-    window.addEventListener("mousemove", handleMouseMotion);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMotion);
-    };
-  }, []);
-
-  const container = useRef(null);
-  const imageRef = useRef(null);
-  const inView = useInView(container, {
-    margin: "0px 100px -50px 0px",
-  });
-  const heroWords =
-    "A selected set of experiments I'm building as I navigate through ideas and technologies. I learn by testing out and building based on concepts and techniques.";
-  const website = projectdata3[mouseposition?.index]?.mainTitle;
+  const heroWords1 =
+    "I help startups and series A—D teams to establish a strong connection between their product and customers";
+  const heroTextslideup1 = {
+    initial: {
+      opacity: 0,
+      y: "100%",
+    },
+    animate: (i) => ({
+      opacity: 1,
+      y: "0",
+      transition: {
+        duration: 2,
+        delay: i * 0.06,
+        ease: [0.62, 0.05, 0.01, 0.99],
+      },
+    }),
+    exit: {
+      opacity: 0,
+      // y: '100%',
+      y: "100%",
+    },
+  };
   return (
     <>
-      <motion.span
-        ref={mouseRef}
-        variants={scaleAnimations}
-        initial="initial"
-        animate={mouseposition?.active ? "enter" : "exit"}
-        className="w-32 z-[42] absolute h-32 rounded-full shadow-2xl flex items-center justify-center text-[12px] text-white font-portfolio_bold bg-[#2e2e30]"
-      ></motion.span>
-      <motion.span
-        variants={scaleAnimations}
-        initial="initial"
-        animate={mouseposition?.active ? "enter" : "exit"}
-        ref={labelRef}
-        className="w-16 z-[42] h-16 absolute rounded-full flex items-center justify-center text-[10px] text-white font-portfolio_bold1"
-      >
-        {
-          <Link
-            className="text-center text-lg w-full"
-            // target="_blank"
-            href={`/work/${website}`}
-          >
-            View
-          </Link>
-        }
-      </motion.span>
       <div
         data-scroll
         className="py-32 relative flex items-center justify-center"
       >
         <div
-          onMouseEnter={() =>
-            setMousePosition({
-              active: false,
-            })
-          }
-          className="absolute top-0 w-full h-full z-[36]"
-        ></div>
-        <div className="w-[90%] mx-auto flex flex-col gap-48
-         px-2 max-w-custom">
-          <div className=" mx-auto justify-between gap-y-8 gap-x-20">
-            <div className="flex w-[90%] lg:w-[900px] flex-col gap-4 mx-auto">
-              <span
-                data-scroll
-                data-scroll-speed="2"
-                // titleRef
-                className="font-normal titleRef titleRef2 text-text_dark_1 flex flex-wrap gap-[10px]
-                  uppercase text-[90px] md:text-[120px] xl:text-[160px]
-                w-full md:w-full leading-[.9] md:leading-[.9] font-portfolio_bold"
-              >
-                Projects
-              </span>
-              <h4
-                className="max-w-[600px] w-full text-xl md:text-2xl 
-                  font-normal uppercase
-                    leading-[1.1] "
-              >
-                <AnimateTextWord>{heroWords}</AnimateTextWord>
-              </h4>
-            </div>
-          </div>
+          className="w-[90%] md:w-[85%] mx-auto flex flex-col gap-48
+         px-2 max-w-custom"
+        >
+          <span
+            data-scroll
+            data-scroll-speed="2"
+            className="font-normal hero_text2 text_background flex flex-wrap
+                 gap-[8px] lg:gap-[12px] items-center justify-start 
+                text-5xl md:text-6xl lg:text-7xl
+                w-full leading-[.8] font-portfolio_bold"
+          >
+            {/* A Software Developer who crafts captivating digital experiences. */}
+            {heroWords1.split(" ").map((x, index) => {
+              return (
+                <span
+                  key={index}
+                  className="flex hide relative items-center justify-start"
+                >
+                  <motion.span
+                    variants={heroTextslideup1}
+                    custom={index}
+                    initial="initial"
+                    animate={"animate"}
+                  >
+                    {x}
+                  </motion.span>
+                </span>
+              );
+            })}
+          </span>
           <div className="w-[100%] md:w-[95%] mx-auto">
             <WorkList
-              setMousePosition={setMousePosition}
-              setTab={setTab}
-              tab={tab}
+            // setMousePosition={setMousePosition}
+            // setTab={setTab}
+            // tab={tab}
             />
           </div>
         </div>

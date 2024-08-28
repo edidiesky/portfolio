@@ -49,7 +49,7 @@ export default function Hero() {
                 data-scroll-speed="2"
                 className="font-normal hero_text2 text_background flex flex-wrap
                  gap-[8px] lg:gap-[8px] items-center justify-start 
-                text-5xl md:text-5xl lg:text-6xl
+                text-5xl md:text-5xl lg:text-7xl
                 w-full leading-[.8] font-portfolio_bold"
               >
                 {/* A Software Developer who crafts captivating digital experiences. */}
