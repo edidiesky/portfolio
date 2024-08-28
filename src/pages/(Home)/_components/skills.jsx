@@ -18,7 +18,7 @@ const Skills = () => {
           <div className="w-full grid md:grid-cols-custom gap-16">
             <div className="w-full grid lg:grid-cols-1 gap-8">
               <div className="w-full"></div>
-              <h4 className=" w-full uppercase max-w-[600px] flex items-center gap-4 text-lg lg:text-2xl leading-[1.4] text-text_dark_1 ">
+              <h4 className=" w-full  max-w-[600px] flex items-center gap-4 text-2xl lg:text-3xl font-semibold leading-[1.4] text-text_dark_1 ">
                 <Word>{aboutText1}</Word>
               </h4>
             </div>
@@ -52,7 +52,9 @@ const Skills = () => {
                         <h4 className="text-xl font-normal text-[var(--light-grey)] font-portfolio_normal">
                           {skill?.title}
 
-                          <span className="text-base block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">{skill?.role}</span>
+                          <span className="text-base block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
+                            {skill?.role}
+                          </span>
                         </h4>
                       </div>
                     );
@@ -68,7 +70,7 @@ const Skills = () => {
         <div className="w-full flex flex-col gap-16">
           <div className="w-full grid md:grid-cols-custom gap-16">
             <div className="w-full grid gap-8">
-              <h4 className=" w-full uppercase text-2xl max-w-[600px] lg:text-3xl leading-[1.4] text-text_dark_1 ">
+              <h4 className=" w-full  font-semibold  text-2xl max-w-[600px] lg:text-3xl leading-[1.4] text-text_dark_1 ">
                 <Word>{skillDescriptionText2}</Word>
               </h4>
             </div>
