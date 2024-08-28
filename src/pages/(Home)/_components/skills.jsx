@@ -33,7 +33,7 @@ const Skills = () => {
                   </AnimateTextWord>
                   <div className="w-full h-[2px] bg-[rgba(255,255,255,.3)]"></div>
                 </h4>
-                <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 md:gap-y-20">
+                <div className="w-full grid grid-cols-2 md:grid-cols-4 md:items-center gap-x-8 gap-y-12 md:gap-y-20">
                   {skillslist?.map((skill, index) => {
                     return (
                       <div
@@ -49,10 +49,10 @@ const Skills = () => {
                           />
                           <img src={skill?.icons} alt="" className="z-20" />
                         </div>
-                        <h4 className="text-xl font-normal text-[var(--light-grey)] font-portfolio_normal">
+                        <h4 className="text-base md:text-xl font-normal text-[var(--light-grey)] font-portfolio_normal">
                           {skill?.title}
 
-                          <span className="text-base block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
+                          <span className="text-sm md:text-base block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
                             {skill?.role}
                           </span>
                         </h4>

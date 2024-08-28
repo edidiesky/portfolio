@@ -32,7 +32,7 @@ const Navbar = ({ type }) => {
         {<Menu setMenu={setMenu} menu={menu} />}
       </AnimatePresence>
 
-      <div className="w-full py-4 z-[4000] ">
+      <div className="w-full py-2 md:py-4 z-[4000] ">
         <div
           className={`w-[95%] lg:w-[85%] border-b border-[rgba(255,255,255,.2)] mx-auto max-w-custom ${
             type === "contact" ? "text-white" : "text-text_dark_1"
