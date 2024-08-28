@@ -45,8 +45,8 @@ const Text = ({ x, index, setMenu }) => {
         <Link
           onClick={() => setMenu(false)}
           href={`${x?.path}`}
-          className="text-6xl lg:text-8xl font-portfolio_bold w-full
-         z-20 font-normal text-white uppercase family2"
+          className="text-6xl lg:text-7xl font-portfolio_bold w-full
+         z-20 font-bold text-white uppercase family2"
         >
           <AnimateText color={x?.color}>{x?.title}</AnimateText>
         </Link>

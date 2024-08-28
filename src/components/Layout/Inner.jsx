@@ -94,24 +94,14 @@ export default function Layout({ children, type }) {
           initial="initial"
           animate="enter"
           exit="exit"
-          className="z-40"
+          className=""
         >
           <Navbar />
-          <div className="w-full z-40">{children}</div>
+          <div className="w-full">{children}</div>
         </motion.div>
       </motion.div>
     </LayOutStyles>
-    // <div className="inner">
-    //   {/* <motion.div className="slide" {...anim(slide)} /> */}
-    //   {/* <motion.div {...anim(opacity)}>
-    //     <div className="header">
-    //       <Link href="/">Home</Link>
-    //       <Link href="/about">About</Link>
-    //       <Link href="/contact">Contact</Link>
-    //     </div>
-    //     {children}
-    //   </motion.div>
-    // </div> */}
+  
   );
 }
 const ContactLayOutStyles = styled.div`

@@ -8,15 +8,17 @@ import Footer from "@/components/common/Footer";
 
 export default function HomeIndex() {
   return (
-    <div className="z-[40000] relative">
-      <Hero />
+    <div className="relative">
+      <div className="w-full z-[40]">
+        <Hero />
 
-      <Work />
-      <Cta />
-      {/* <Gallery /> */}
-      {/* <Slider /> */}
-      <Skills />
-      <Footer />
+        <Work />
+        <Cta />
+        {/* <Gallery /> */}
+        {/* <Slider /> */}
+        <Skills />
+        <Footer />
+      </div>
     </div>
   );
 }

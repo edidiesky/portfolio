@@ -64,9 +64,9 @@ const Sidebar = ({ menu, setMenu }) => {
       variants={variants}
       initial={"close"}
       animate={menu ? "open" : "close"}
-      style={{ width: "100vw", zIndex: 200 }}
+      style={{ width: "100vw" }}
       ref={menuref}
-      className="bg-[var(--primary)] z-[50000] fixed top-0 w-full h-[100vh] left-0 right-0 flex items-center justify-center"
+      className="bg-[var(--primary)] z-[100000] fixed top-0 w-full h-[100vh] left-0 right-0 flex items-center justify-center"
     >
       <div
         onClick={() => setMenu(!menu)}
@@ -102,7 +102,7 @@ const Sidebar = ({ menu, setMenu }) => {
               animate={"enter"}
               exit={"exit"}
               variants={locationvariants}
-              className="w-full flex items-center"
+              className="w-full flex items-center gap-8"
             >
               <Link
                 style={{ transition: "all .5s" }}
