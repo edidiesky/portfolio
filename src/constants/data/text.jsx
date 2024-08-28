@@ -11,7 +11,8 @@ export const ctatext5 =
   "I am Victor Essien and I am a self-learned software developer, dedicated in creating appealing user-interfaces for industries since 2020";
 
 export const ctatext3 = `I am your guy to go to! I can work and communicate effectively with design focused teams to build web applications. I have years of experience collaborating with product teams.`;
-
+export const ctatext4 = 
+'I have speciaized skills that can act as a catalyst for the growth of businesses. From automated testing, to building reuseable components to carrying out specical effects enriching that the overall user experience'
 export const skillslist = [
   {
     role: "frontend development",

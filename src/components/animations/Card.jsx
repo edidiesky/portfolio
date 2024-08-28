@@ -11,7 +11,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
   const scale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const cardScale = useTransform(progress, range, [1, targetScale]);
   return (
-    <div className="w-full h-screen sticky top-0 left-0 flex items-center justify-center">
+    <div className="w-full h-screen z-[400] sticky top-0 left-0 flex items-center justify-center">
       <motion.div
         ref={containerRef}
         style={{

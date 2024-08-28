@@ -3,12 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import {
-  aboutText1,
-  ctatext5,
-  aboutText2,
-  ctatext3,
-} from "@/constants/data/text";
+import { ctatext4 } from "@/constants/data/text";
 import Word from "@/components/animations/Word";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
@@ -20,11 +15,16 @@ export default function Cta() {
        max-w-custom grid grid-cols-1 lg:grid-cols-custom gap-12 md:gap-24"
       >
         <div className="flex flex-col gap-8">
-          <h4 className="w-full font-portfolio_normal uppercase text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
+          {/* <h4 className="w-full font-portfolio_normal uppercase text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
             <Word>{ctatext5}</Word>
-          </h4>
-          <h4 className="w-full font-portfolio_normal uppercase text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
-            <Word>{aboutText1}</Word>
+          </h4> */}
+          <h4
+            className="w-full font-portfolio_normal
+           text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px]
+            gap-y-[8px] leading-[1.2] font-portfolio_bold1 
+            font-medium"
+          >
+            <Word>{ctatext4}</Word>
           </h4>
           <Link
             href={"/about"}
