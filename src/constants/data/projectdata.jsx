@@ -61,8 +61,8 @@ export const projectdata3 = [
     website: "https://zyncluxury.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/ZyncLuxury",
-    period: "2024",
-    year: "2024",
+    period: "2023",
+    year: "2023",
     color:"#000",
     backGroundColor: "#FFFFFF",
     roleDescription:
@@ -106,8 +106,8 @@ export const projectdata3 = [
     website: "https://tattooverse.vercel.app/",
     role: "Frontend Development",
     github: "https://github.com/edidiesky/TattooVerse",
-    period: "2024",
-    year: "2024",
+    period: "2020",
+    year: "2020",
     color:"#000",
     backGroundColor: "#B3FFCB",
     roleDescription:
@@ -144,8 +144,8 @@ export const projectdata3 = [
     website: "https://twizle.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/Twizle-Social-Platform",
-    period: "2023",
-    year: "2023",
+    period: "2021",
+    year: "2021",
     color:"#000",
     backGroundColor: "#f0f3ec",
     roleDescription:
@@ -189,8 +189,8 @@ export const projectdata3 = [
     website: "https://vaada.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/cardealer",
-    period: "2023",
-    year: "2023",
+    period: "2020",
+    year: "2020",
     color:"#000",
     backGroundColor: "var(--primary)",
     roleDescription:
