@@ -64,6 +64,7 @@ const Navbar = ({ type }) => {
               {linklist?.map((link, index) => {
                 return (
                   <Link
+                  key={index}
                     href={`/${link?.path}`}
                     className="text-lg text-[var(--dark-grey)] font-portfolio_regular"
                   >
