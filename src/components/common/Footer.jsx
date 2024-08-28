@@ -40,14 +40,14 @@ const Footer = () => {
           {/* top side */}
           <div className="flex flex-col gap-12 w-full">
             <div
-              className="py-6 border-t flex items-center justify-between border-[rgba(255,255,255,.3)] border-b text-2xl 
+              className="py-6 border-t grid md:grid-cols-2 items-center justify-between border-[rgba(255,255,255,.3)] border-b text-2xl 
             text-[var(--light-grey)]"
             >
               <span className="text-base text-white uppercase">
                 VICTOR | NOUN | a person who defeats an enemy or opponent in a
                 battle, game, or other competition.{" "}
               </span>
-              <span className="text-lg uppercase">VICTOR ©2024</span>
+              <span className="text-lg md:text-end uppercase">VICTOR ©2024</span>
             </div>
             <h1 className="text-5xl md:text-6xl text_background">
               why don't you give a thumb up to hi@victor.com
@@ -59,7 +59,7 @@ const Footer = () => {
               href={
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="w-full md:w-[560px] text-[#fff] hover:text-[#000] text-lg md:text-3xl font-bold h-[150px] border rounded-full"
+              className="w-full md:w-[560px] text-[#fff] hover:text-[#000] text-lg md:text-3xl font-normal h-[100px] md:h-[150px] border rounded-full"
             >
               <Magnetic bgColor={"#fff"}>VictorCanCode1000@gmail.com</Magnetic>
             </Link>

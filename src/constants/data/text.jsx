@@ -13,22 +13,56 @@ export const ctatext5 =
 export const ctatext3 = `I am your guy to go to! I can work and communicate effectively with design focused teams to build web applications. I have years of experience collaborating with product teams.`;
 
 export const skillslist = [
-  "TYPESCRIPT",
-  "PRISMA",
-  "CYPRESS",
-  "JEST",
-  "NODEJS",
-  "EXPRESSJS",
-  "REACT",
-  "REDUX",
-  "JAVASCRIPT",
-  "CONTEXT-API",
-  "TAILWIND.CSS",
-  "HTML",
-  "NEXTJS",
-  "GIT",
-  "GSAP",
-  "FRAMER-MOTION",
+  {
+    title: "TYPESCRIPT",
+    icons: "/icons/typescript.png",
+  },
+  {
+    title: "PRISMA",
+    icons: "/icons/prisma.png",
+  },
+  {
+    title: "JAVASCRIPT",
+    icons: "/icons/javascript.png",
+  },
+  {
+    title: "NODEJS",
+    icons: "/icons/nodejs.png",
+  },
+  {
+    title: "EXPRESSJS",
+    icons: "/icons/express.png",
+  },
+  {
+    title: "REACT",
+    icons: "/icons/react.png",
+  },
+    {
+    title: "NEXTJS",
+    icons: "/icons/nextjs.png",
+  },
+  {
+    title: "GIT",
+    icons: "/icons/git.png",
+  },
+  {
+    title: "JEST",
+    icons: "/icons/jest.png",
+  },
+
+  {
+    title: "REDUX",
+    icons: "/icons/express.png",
+  },
+    {
+    title: "CSS",
+    icons: "/icons/css.png",
+  },
+  {
+    title: "TAILWIND.CSS",
+    icons: "/icons/tailwind.png",
+  },
+
 ];
 
 export const InterpersonalSkillList = [
@@ -103,18 +137,21 @@ export const experienceList = [
     title: "Bitnorm",
     position: "Full-Stack Engineer",
     date: "November 2023 - April 2024 ",
+    role: " Bridged the gap between frontend and backend, delivering a dynamic and personalized userexperience, tailored to each user and organization, resulting in a 25% increase in user satisfaction.",
     location: "The Netherlands",
   },
   {
     title: "Coba",
     position: "Lead, Frontend Engineer",
     date: "  January 2022 - August 2023",
+    role: "Developed comprehensive test suites with Cypress, increasing test coverage from 60% to 85%, resulting in a 21.4% improvement in bug detection.",
     location: " United States",
   },
   {
     title: "Outset.ai",
     position: "Frontend Engineer",
     date: "August 2020 - May 2021",
+    role: " Coordinated with backend developers to align API requirements and data formats, reducing integration issues by 30% and ensuring a seamless user experience",
     location: "Canada, Ontario",
   },
 
@@ -122,6 +159,7 @@ export const experienceList = [
     title: "Trevlo Technologies Limited",
     position: "Frontend Intern",
     date: "February 2019 - March 2020",
+    role: "Learn and analyze design mockups to understand layout, color schemes, typography, and interactive elements, contributing to a 25% improvement in design implementation accuracy",
     location: "Imo State, Nigeria",
   },
 ];

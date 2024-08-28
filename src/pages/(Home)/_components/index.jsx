@@ -15,7 +15,7 @@ export default function HomeIndex() {
       <Cta />
       {/* <Gallery /> */}
       {/* <Slider /> */}
-      {/* <Skills /> */}
+      <Skills />
       <Footer />
     </div>
   );
