@@ -6,6 +6,7 @@ import { BsGithub, BsTwitter } from "react-icons/bs";
 import Link from "next/link";
 import { slide, opacity, perspective } from "./anim";
 import Navbar from "../common/Navbar";
+import Footer from "../common/Footer";
 
 const anim = (variants) => {
   return {
@@ -78,7 +79,7 @@ export default function Layout({ children, type }) {
         exit="exit"
         className="page"
       >
-        <div className="w-full z-20 fixed top-0 left-0 min-h-screen grid grid-cols-4 md:grid-cols-9">
+        <div className="w-full z-[10] fixed top-0 left-0 min-h-screen grid grid-cols-4 md:grid-cols-9">
           <div className="background_line h-full w-[1px]"></div>
           <div className="background_line h-full w-[1px]"></div>
           <div className="background_line h-full w-[1px]"></div>
@@ -97,11 +98,11 @@ export default function Layout({ children, type }) {
           className=""
         >
           <Navbar />
-          <div className="w-full">{children}</div>
+          <div className="w-full overflow-hidden">{children}</div>
+          <Footer />
         </motion.div>
       </motion.div>
     </LayOutStyles>
-  
   );
 }
 const ContactLayOutStyles = styled.div`

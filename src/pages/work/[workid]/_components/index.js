@@ -7,7 +7,7 @@ export default function WorkDetails({params}) {
   return (
     <div className="z-[40000] relative">
       <Hero />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function AboutIndex() {
       <Hero />
       <About />
       <Skills />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

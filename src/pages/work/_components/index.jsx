@@ -7,7 +7,7 @@ export default function WorkPage() {
   return (
     <div className="z-[40000] relative"avba>
       <Hero />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

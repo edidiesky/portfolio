@@ -7,7 +7,6 @@ import Menu from "./Menu";
 import Link from "next/link";
 // import { Link } from """;
 const linklist = [
-
   {
     title: "Works",
     path: "work",
@@ -18,19 +17,22 @@ const linklist = [
     path: "about",
     color: "#FFC700",
   },
-
-
 ];
 const Navbar = ({ type }) => {
   const [active, setActive] = useState(false);
   const [menu, setMenu] = useState(false);
   return (
-    <div className="w-full z-[40000] relative">
+    <div
+      style={{
+        backdropFilter: "blur(54px)",
+      }}
+      className="w-full z-[40000] sticky left-0 top-0 bg-[rgb(0 0 0 / 32%)]"
+    >
       <AnimatePresence mode="wait">
         {<Menu setMenu={setMenu} menu={menu} />}
       </AnimatePresence>
 
-      <div className="w-full py-4 z-[4000]">
+      <div className="w-full py-4 z-[4000] ">
         <div
           className={`w-[95%] lg:w-[85%] border-b border-[rgba(255,255,255,.2)] mx-auto max-w-custom ${
             type === "contact" ? "text-white" : "text-text_dark_1"

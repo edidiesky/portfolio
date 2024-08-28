@@ -192,7 +192,7 @@ export const projectdata3 = [
     period: "2023",
     year: "2023",
     color:"#000",
-    backGroundColor: "#f0f3ec",
+    backGroundColor: "var(--primary)",
     roleDescription:
       "The role I took in developing Vaada involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
     mainImage: "/images/car/image_1.jpeg",
