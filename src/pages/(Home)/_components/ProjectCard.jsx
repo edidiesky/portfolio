@@ -55,7 +55,7 @@ const ProjectCard = ({ project, index, type }) => {
     <div className="w-full">
       <Link
         href={`/work/${project?.mainTitle}`}
-        className="card z-[40] w-full relative"
+        className="card z-[20] w-full relative"
       >
         <div
           style={{ transition: "all .3s ease-out" }}
