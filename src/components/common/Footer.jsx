@@ -1,73 +1,118 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
-import { ImArrowUpRight2 } from "react-icons/im";
-import {  useInView } from "framer-motion";
+
+import { useInView } from "framer-motion";
 import AnimateTextWord from "../animations/AnimateTextWord";
 import Magnetic from "../animations/Magnetic";
 import { socialsList } from "@/constants/data/text";
 const Footer = () => {
-
   const container2 = useRef(null);
   const inView2 = useInView(container2, {
     margin: "0px 100px -50px 0px",
   });
-  const heroWords2 = `LET US Build the`;
-  const heroWords = `project together`;
+  const linklist = [
+    {
+      title: "Home",
+      path: "",
+      color: "#FF00B0",
+    },
+    {
+      title: "Works",
+      path: "work",
+      color: "#00FAFF",
+    },
+    {
+      title: "About",
+      path: "about",
+      color: "#FFC700",
+    },
+
+    {
+      title: "Contact",
+      path: "contact",
+      color: "#FF00B0",
+    },
+  ];
   return (
     <>
-      <div className="relative pb-12 pt-28 md:pt-40 flex flex-col justify-between">
+      <div className="relative blur-0 bg-[#000] pb-12 pt-12 md:pt-20 flex flex-col justify-between">
         <div className="w-[95%] md:w-[90%] max-w-custom mx-auto flex flex-col items-center gap-16">
-          <div className="flex flex-col md:flex-row w-full border-b border-[rgba(0,0,0,.1)] relative md:items-center gap-8">
-            <h2
-              ref={container2}
-              className="text-4xl md:text-6xl capitalize text-dark"
+          {/* top side */}
+          <div className="flex flex-col gap-12 w-full">
+            <div
+              className="py-6 border-t flex items-center justify-between border-[rgba(255,255,255,.3)] border-b text-2xl 
+            text-[var(--light-grey)]"
             >
-              <AnimateTextWord type={"largeText"}>{heroWords2}</AnimateTextWord>
-              <AnimateTextWord type={"largeText"}>{heroWords}</AnimateTextWord>
-            </h2>
-            <div className="flex flex-1 items-center md:justify-end">
-              <Link
-                href={
-                  "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
-                }
-                className="flex items-center md:justify-end font-portfolio_bold1
-               text-sm text-[var(--dark-1)]  w-40 h-16 md:h-20  rounded-[60px] bg-[#fff]"
-              >
-                <Magnetic bgColor={"#8f8f8f"}>Contact me</Magnetic>
-              </Link>
+              <span className="text-base text-white uppercase">
+                VICTOR | NOUN | a person who defeats an enemy or opponent in a
+                battle, game, or other competition.{" "}
+              </span>
+              <span className="text-lg uppercase">VICTOR ©2024</span>
             </div>
+            <h1 className="text-5xl md:text-6xl text_background">
+              why don't you give a thumb up to hi@victor.com
+            </h1>
           </div>
-          <div className="w-full grid md:grid-cols-custom_2 gap-8">
-            <div className="w-[100px]"></div>
-            <div className="w-full grid md:grid-cols-2 gap-x-8">
+          <div className="w-full flex items-center justify-center">
+            <Link
+              style={{ transition: "all .5s" }}
+              href={
+                "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
+              }
+              className="w-full md:w-[560px] text-[#fff] hover:text-[#000] text-lg md:text-3xl font-bold h-[150px] border rounded-full"
+            >
+              <Magnetic bgColor={"#fff"}>VictorCanCode1000@gmail.com</Magnetic>
+            </Link>
+          </div>
+          <div className="py-8 w-full flex items-center justify-between gap-8">
+            <div className="flex items-center gap-2">
+              <h4 className="relative z-50 text-2xl overflow-hidden font-portfolio_bold1">
+                <Link
+                  href={"/"}
+                  className="text-xl md:text-2xl text-[var(--light-grey)] w-full font-portfolio_bold"
+                >
+                  Victor Essien
+                </Link>
+              </h4>
+            </div>
+
+            <div className="flex justify-center items-center">
+              <div className="hidden md:flex item-center justify-end flex-1 gap-12">
+                {/* <div
+              onClick={() => setMenu(true)}
+              className="w-16 cursor-pointer text-3xl bg-[#242424ed] text-white h-16 flex rounded-full items-center justify-center"
+            >
+              <HiBars3BottomRight />
+            </div> */}
+                {linklist?.map((link, index) => {
+                  return (
+                    <Link
+                      href={`/${link?.path}`}
+                      className="text-lg text-[var(--light-grey)] font-portfolio_regular"
+                    >
+                      {link?.title}
+                    </Link>
+                  );
+                })}
+                <Link
+                  href={`www.linkedin.com/in/victorezekielessien`}
+                  className="text-lg text-[var(--primary)] font-portfolio_regular"
+                >
+                  linkedln
+                </Link>
+              </div>
+            </div>
+            <div className="flex justify-end gap-8 items-center">
               {socialsList?.map((skill, index) => {
                 return (
-                  <Link
-                    href={`${skill?.path}`}
-                    key={index}
-                    className="w-full cursor-pointer group flex flex-col items-center gap-1 justify-between
-                       text-xs md:text-sm px-4 font-portfolio_regular "
-                  >
-                    <div
-                      style={{
-                        transition: "all .4s var(--primary-curve)",
-                      }}
-                      className="w-full py-4 md:py-6 uppercase group-hover:translate-x-5 group-hover:text-[#fff] text-grey grid grid-cols-custom_2 items-center"
-                    >
-                      <span className="w-[60px] ">{skill?.title}</span>
-                      <span className="flex justify-end items-center gap-12">
-                        <span>{skill?.subTitle}</span>
-                        <span className="w-8 h-8 text-sm rounded-full flex items-center text-white justify-center bg-[rgba(255,255,255,.1)]">
-                          <ImArrowUpRight2 />
-                        </span>
-                      </span>
-                    </div>
-                    <div className="w-full bg-[rgba(255,255,255,.1)] h-[.5px]"></div>
+                  <Link href={`${skill?.path}`} className="text-2xl md:text-4xl text-white">
+                    {skill?.icon}
                   </Link>
                 );
               })}
             </div>
           </div>
+
         </div>
       </div>
     </>

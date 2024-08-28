@@ -18,7 +18,8 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/TastyTrove",
     period: "2024",
     year: "2024",
-    backGroundColor: "#f0f3ec",
+    color:"#fff",
+    backGroundColor: "#318AFC",
     roleDescription:
       "The role I took in developing involves developing it as a restaurant marketplace. I took pride in developing this application from the server side to the client side. I had to progress further by writing Frontend unit tests using Cypress.",
     mainImage: "/images/Tasttrove_1.png",
@@ -62,7 +63,8 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/ZyncLuxury",
     period: "2024",
     year: "2024",
-    backGroundColor: "#f0f3ec",
+    color:"#000",
+    backGroundColor: "#FFFFFF",
     roleDescription:
       "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
     mainImage: "/images/zync/image_1.jpeg",
@@ -106,7 +108,8 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/TattooVerse",
     period: "2024",
     year: "2024",
-    backGroundColor: "#f0f3ec",
+    color:"#000",
+    backGroundColor: "#B3FFCB",
     roleDescription:
       "The role I took in developing TattooVerse involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
     mainImage: "/images/tattoo/image_1.jpeg",
@@ -143,6 +146,7 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/Twizle-Social-Platform",
     period: "2023",
     year: "2023",
+    color:"#000",
     backGroundColor: "#f0f3ec",
     roleDescription:
       "The role I took in developing Twizzle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
@@ -187,6 +191,7 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/cardealer",
     period: "2023",
     year: "2023",
+    color:"#000",
     backGroundColor: "#f0f3ec",
     roleDescription:
       "The role I took in developing Vaada involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",

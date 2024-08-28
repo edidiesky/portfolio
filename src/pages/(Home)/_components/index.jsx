@@ -8,13 +8,14 @@ import Footer from "@/components/common/Footer";
 
 export default function HomeIndex() {
   return (
-    <div>
+    <div className="z-[40000] relative">
       <Hero />
-      <Cta />
+
       <Work />
+      <Cta />
       {/* <Gallery /> */}
       {/* <Slider /> */}
-      <Skills />
+      {/* <Skills /> */}
       <Footer />
     </div>
   );

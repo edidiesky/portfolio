@@ -1,3 +1,7 @@
+import { LiaGithubAlt } from "react-icons/lia";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaHashnode } from "react-icons/fa6";
 export const aboutText1 =
   "Intrigued with web technologies. I love developing creative and user friendly interfaces. I can build memorable web experience";
 
@@ -45,21 +49,25 @@ export const socialsList = [
     title: "Hashnode",
     subTitle: "@eddycancode",
     path: "https://eddiebadcoder.hashnode.dev/",
+    icon: <FaHashnode />,
   },
   {
     title: "X.com",
     subTitle: "@edidiesky",
     path: "https://twitter.com/edidiesky",
+    icon: <FaSquareXTwitter />,
   },
   {
     title: "Linkedin",
     subTitle: "@victorezekielessien",
     path: "https://www.linkedin.com/in/victorezekielessien",
+    icon: <FaLinkedin />,
   },
   {
-    title: "Email",
-    subTitle: "Hi@victorcancode1000@gmail.com",
-    path: "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!",
+    title: "Github",
+    subTitle: "@edidiesky",
+    path: "https://github.com/edidiesky",
+    icon: <LiaGithubAlt />,
   },
 ];
 

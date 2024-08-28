@@ -78,38 +78,26 @@ export default function Layout({ children, type }) {
         exit="exit"
         className="page"
       >
+        <div className="w-full z-20 fixed top-0 left-0 min-h-screen grid grid-cols-4 md:grid-cols-9">
+          <div className="background_line h-full w-[1px]"></div>
+          <div className="background_line h-full w-[1px]"></div>
+          <div className="background_line h-full w-[1px]"></div>
+          <div className="background_line h-full w-[1px]"></div>
+          <div className="background_line h-full w-[1px] hidden md:flex"></div>
+          <div className="background_line h-full w-[1px] hidden md:flex"></div>
+          <div className="background_line h-full w-[1px] hidden md:flex"></div>
+          <div className="background_line h-full w-[1px] hidden md:flex"></div>
+          <div className="background_line h-full w-[1px] hidden md:flex"></div>
+        </div>
         <motion.div
           variants={opacityVariants}
           initial="initial"
           animate="enter"
           exit="exit"
+          className="z-40"
         >
-          {/* <div className=" wrapperlink flex justify-end items-center flex-col gap-4">
-            <Link
-              href={"https://github.com/edidiesky"}
-              target="_blank"
-              className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
-            >
-              <BsGithub fontSize={"24px"} />
-            </Link>
-            <Link
-              href={"https://twitter.com/edidiesky"}
-              target="_blank"
-              className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
-            >
-              <BsTwitter fontSize={"24px"} />
-            </Link>
-            <Link
-              href={"https://www.linkedin.com/in/edidiong-essien-a4b59b1a5/"}
-              target="_blank"
-              className="socials hover:bg-[#afafaf] flex items-center justify-center rounded-full"
-            >
-              <FaLinkedinIn fontSize={"24px"} />
-            </Link>
-            <div className="arrow"></div>
-          </div> */}
           <Navbar />
-          {children}
+          <div className="w-full z-40">{children}</div>
         </motion.div>
       </motion.div>
     </LayOutStyles>
@@ -132,7 +120,7 @@ const ContactLayOutStyles = styled.div`
     background-color: #000;
   }
   .slide {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: fixed;
     left: 0;

@@ -7,7 +7,7 @@ import Magnetic from "@/components/animations/Magnetic";
 export default function Hero() {
   const container = useRef(null);
 
-  const heroWords1 = "Software Developer Technical Writer";
+  const heroWords1 = "I am Victor a Software Developer specialized in creating crisp and catchy user experience";
   const heroWords2 = `Victor Essien`;
   const heroWords3 = `I help tech companies in leveraging their products by creating user-friendly and visually appealing cross-platform applications that fit with their business goals.`;
   const heroTextslideup1 = {
@@ -35,70 +35,51 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="min-h-[80vh] py-28 relative flex items-center justify-center"
+        className="min-h-[80vh] py-40 relative flex items-center justify-center"
       >
         <div className="w-[90%] md:px-8 mx-auto max-w-custom">
-          <div className="flex w-full flex-col">
-            <div className="grid gap-8 items-start grid-cols-1 w-full">
-              <div className="w-full relative flex flex-col lg:flex-row md:items-center gap-8">
-                <span
-                  data-scroll
-                  data-scroll-speed="2"
-                  className="font-normal max-w-[1000px] hero_text2 text-text_dark_1 flex flex-wrap
-                 gap-[8px] lg:gap-[8px] items-center justify-start uppercase 
-                text-7xl md:text-9xl lg:text-[140px]
+          <div className="flex w-full flex-col gap-8">
+            <span
+              data-scroll
+              data-scroll-speed="2"
+              className="font-normal hero_text2 text_background flex flex-wrap
+                 gap-[8px] lg:gap-[8px] items-center justify-start 
+                text-5xl md:text-6xl lg:text-8xl
                 w-full leading-[.8] font-portfolio_bold"
-                >
-                  {/* A Software Developer who crafts captivating digital experiences. */}
-                  {heroWords1.split(" ").map((x, index) => {
-                    return (
-                      <span
-                        key={index}
-                        className="flex hide relative items-center justify-start"
-                      >
-                        <motion.span
-                          variants={heroTextslideup1}
-                          custom={index}
-                          initial="initial"
-                          animate={"animate"}
-                        >
-                          {x}
-                        </motion.span>
-                      </span>
-                    );
-                  })}
-                </span>
-                <Link
-                  href={
-                    "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
-                  }
-                  className="w-[230px] open_to_work h-[80px] flex items-center
-                   justify-center text-white text-lg rounded-full font-portfolio_regular overflow-hidden bg-[var(--primary)]"
-                >
-                  <Magnetic bgColor={"#2638a9"}>Open to Work!</Magnetic>
-                </Link>
-              </div>
-
-              <div className="w-full grid md:grid-cols-custom md:items-center gap-4 md:gap-12">
-                <div className="w-full grid lg:grid-cols-custom gap-4">
-                  <div className="w-full flex flex-col gap-8">
-                    <h4 className="text-lg md:text-xl titleRef uppercase font-normal font-portfolio_bold1">
-                      <AnimateTextWord>{heroWords3}</AnimateTextWord>
-                    </h4>
-                  </div>
-                  <div className="w-[180px]"></div>
-                </div>
-                <div className="w-[250px] lg:w-[400px]">
-                  <div className="w-[100%] imageRef md:w-[100%] overflow-hidden h-[250px] relative flex items-center justify-center">
-                    <img
-                      src={"/profile_6.JPG"}
-                      alt=""
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            >
+              {/* A Software Developer who crafts captivating digital experiences. */}
+              {heroWords1.split(" ").map((x, index) => {
+                return (
+                  <span
+                    key={index}
+                    className="flex hide relative items-center justify-start"
+                  >
+                    <motion.span
+                      variants={heroTextslideup1}
+                      custom={index}
+                      initial="initial"
+                      animate={"animate"}
+                    >
+                      {x}
+                    </motion.span>
+                  </span>
+                );
+              })}
+            </span>
+             <h4 className="text-lg md:text-3xl max-w-[900px] titleRef font-normal font-portfolio_bold1">
+              <AnimateTextWord>{heroWords3}</AnimateTextWord>
+            </h4>
+            <Link
+              href={
+                "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
+              }
+              className="w-[250px] open_to_work h-[75px] flex items-center
+                   justify-center text-[#000] text-lg rounded-full font-portfolio_regular overflow-hidden
+                    bg-[#fff]"
+            >
+              <Magnetic bgColor={"#2638a9"}>Open to Work!</Magnetic>
+            </Link>
+           
           </div>
         </div>
       </div>

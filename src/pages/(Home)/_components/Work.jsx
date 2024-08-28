@@ -10,46 +10,14 @@ import gsap from "gsap";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
 const Work = () => {
-  const [mouseposition, setMousePosition] = useState({
-    active: false,
-    index: 0,
-  });
-  const mouseRef = useRef(null);
-  const labelRef = useRef(null);
-  const [tab, setTab] = useState({
-    active: false,
-    index: 0,
-  });
-  const heroWords =
-    "A selected set of experiments I'm building as I navigate through ideas and technologies. I do learn by testing out and building based on concepts and techniques.";
-
-  const website = projectdata3[mouseposition?.index]?.mainTitle;
   return (
     <>
-      <div className="py-20 w-full relative">
+      <div className="py-20 pb-72 mb-40 w-full relative">
         <div className="w-[100%] md:w-[90%] flex flex-col gap-12 mx-auto">
-          <div className="flex w-full flex-col gap-4">
-            <span
-              data-scroll
-              data-scroll-speed="2"
-              // titleRef
-              className="font-normal titleRef titleRef2 text-text_dark_1 flex flex-wrap gap-[10px]
-                  uppercase text-5xl xl:text-7xl"
-            >
-              {/* Projects */}
-              <AnimateTextWord>Projects</AnimateTextWord>
-            </span>
-            <h4 className="max-w-[600px] w-full text-lg md:text-xl font-normal uppercase leading-[1.1] ">
-              <AnimateTextWord>{heroWords}</AnimateTextWord>
-            </h4>
-          </div>
-          <WorkList
-            setTab={setTab}
-            tab={tab}
-          />
+          <WorkList />
         </div>
       </div>
-      <div className="w-full">
+      {/* <div className="w-full">
         <div className="max-w-custom flex items-center justify-center mx-auto w-[90%]">
           <Link
             href={
@@ -61,9 +29,25 @@ const Work = () => {
             <Magnetic bgColor={"#d1d1d1"}>View More Works</Magnetic>
           </Link>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
 
 export default Work;
+
+// <div className="flex w-full flex-col gap-4">
+//   <span
+//     data-scroll
+//     data-scroll-speed="2"
+//     // titleRef
+//     className="font-normal titleRef titleRef2 text-text_dark_1 flex flex-wrap gap-[10px]
+//         uppercase text-5xl xl:text-7xl"
+//   >
+//     {/* Projects */}
+//     <AnimateTextWord>Projects</AnimateTextWord>
+//   </span>
+//   <h4 className="max-w-[600px] w-full text-lg md:text-xl font-normal uppercase leading-[1.1] ">
+//     <AnimateTextWord>{heroWords}</AnimateTextWord>
+//   </h4>
+// </div>;

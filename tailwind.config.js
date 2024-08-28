@@ -21,9 +21,9 @@ module.exports = {
       },
       // Blog_Styles
       fontFamily: {
-        portfolio_normal: ["Bold", "sans-serif"],
-        portfolio_bold: ["Agency_Extended", "sans-serif"],
-        portfolio_regular: ["CustomFont_Normal", "sans-serif"],
+        portfolio_normal: ["Manrope", "sans-serif"],
+        portfolio_bold: ["Manrope", "sans-serif"],
+        portfolio_regular: ["DM Mono", "sans-serif"],
       },
       colors: {
         light_grey: "#eee",

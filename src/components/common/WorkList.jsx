@@ -1,7 +1,15 @@
 "use client";
 import { projectdata3 } from "@/constants/data/projectdata";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import ProjectCard from "@/pages/(Home)/_components/ProjectCard";
+import Card from "../animations/Card";
 const WorkList = ({ index, setTab, tab, type }) => {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
   if (type === "home") {
     return (
       <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-24 justify-between">
@@ -20,8 +28,8 @@ const WorkList = ({ index, setTab, tab, type }) => {
     );
   }
   return (
-    <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-24 justify-between">
-      {projectdata3.map((x, index) => {
+    <div ref={containerRef} className="w-full relative ">
+      {/* {projectdata3.map((x, index) => {
         return (
           <ProjectCard
             setTab={setTab}
@@ -29,6 +37,19 @@ const WorkList = ({ index, setTab, tab, type }) => {
             project={x}
             key={index}
             index={index}
+          />
+        );
+      })} */}
+      {projectdata3.map((data, index) => {
+        const targetScale = 1 - (projectdata3.length - 1) * 0.009;
+        return (
+          <Card
+            progress={scrollYProgress}
+            targetScale={targetScale}
+            range={[index * 0.25, 1]}
+            data={data}
+            index={index}
+            key={`p_${index}`}
           />
         );
       })}

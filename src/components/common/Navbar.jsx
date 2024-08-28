@@ -3,25 +3,46 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
-import Link from "next/link";
 import Menu from "./Menu";
+import Link from "next/link";
+// import { Link } from """;
+const linklist = [
+  {
+    title: "Home",
+    path: "",
+    color: "#FF00B0",
+  },
+  {
+    title: "Works",
+    path: "work",
+    color: "#00FAFF",
+  },
+  {
+    title: "About",
+    path: "about",
+    color: "#FFC700",
+  },
+
+  {
+    title: "Contact",
+    path: "contact",
+    color: "#FF00B0",
+  },
+];
 const Navbar = ({ type }) => {
   const [active, setActive] = useState(false);
   const [menu, setMenu] = useState(false);
-  const [activetwitter, setActiveTwitter] = useState(false);
-  const [activegithub, setActiveGithub] = useState(false);
-  const [activelinkedln, setActiveLinkedln] = useState(false);
   return (
-    <div className="w-full">
+    <div className="w-full z-[40000] relative">
       <AnimatePresence mode="wait">
         {<Menu setMenu={setMenu} menu={menu} />}
       </AnimatePresence>
 
       <div className="w-full py-4">
         <div
-          className={`w-[95%] mx-auto max-w-custom ${
+          className={`w-[95%] md:w-[85%] border-b border-[rgba(255,255,255,.2)] mx-auto max-w-custom ${
             type === "contact" ? "text-white" : "text-text_dark_1"
-          } flex items-center justify-space gap-4`}
+          } flex items-center justify-space gap-4 py-6`}
         >
           <div className="flex items-center gap-2">
             <h4 className="relative z-50 text-2xl md:w-[300px] w-full overflow-hidden font-portfolio_bold1">
@@ -32,7 +53,7 @@ const Navbar = ({ type }) => {
               >
                 <Link
                   href={"/"}
-                  className="text-3xl w-full font-portfolio_bold"
+                  className="text-xl md:text-2xl text-[var(--light-grey)] w-full font-portfolio_bold"
                 >
                   Victor Essien
                 </Link>
@@ -40,12 +61,30 @@ const Navbar = ({ type }) => {
             </h4>
           </div>
 
-          <div className="flex item-center justify-end flex-1 gap-4">
-            <div
+          <div className="flex flex-1 items-center justify-end">
+            <div className="hidden md:flex item-center justify-end flex-1 gap-12">
+              {/* <div
               onClick={() => setMenu(true)}
-              className="w-16 cursor-pointer text-3xl bg-[#242424ed] text-white h-16 cursor-pointer flex rounded-full items-center justify-center"
+              className="w-16 cursor-pointer text-3xl bg-[#242424ed] text-white h-16 flex rounded-full items-center justify-center"
             >
               <HiBars3BottomRight />
+            </div> */}
+              {linklist?.map((link, index) => {
+                return (
+                  <Link
+                    href={`/${link?.path}`}
+                    className="text-lg text-[var(--light-grey)] font-portfolio_regular"
+                  >
+                    {link?.title}
+                  </Link>
+                );
+              })}
+              <Link
+                href={`www.linkedin.com/in/victorezekielessien`}
+                className="text-lg text-[var(--primary)] font-portfolio_regular"
+              >
+                linkedln
+              </Link>
             </div>
           </div>
         </div>
