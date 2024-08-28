@@ -66,15 +66,15 @@ export default function Hero() {
                 );
               })}
             </span>
-             <h4 className="text-2xl md:text-3xl max-w-[900px] titleRef text-[var(--dark-grey)] font-normal font-portfolio_bold1">
+             <h4 className="text-2xl md:text-3xl max-w-[900px] leading-[1.2] titleRef text-[var(--dark-grey)] font-normal font-portfolio_bold1">
               <AnimateTextWord>{heroWords3}</AnimateTextWord>
             </h4>
             <Link
               href={
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="w-[250px] open_to_work h-[75px] flex items-center
-                   justify-center text-[#000] text-lg rounded-full font-portfolio_regular overflow-hidden
+              className="w-[270px] open_to_work h-[80px] flex items-center
+                   justify-center text-[#000] text-xl font-bold rounded-full font-portfolio_regular overflow-hidden
                     bg-[#fff]"
             >
               <Magnetic bgColor={"#2638a9"}>Open to Work!</Magnetic>
