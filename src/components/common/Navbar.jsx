@@ -55,16 +55,10 @@ const Navbar = ({ type }) => {
 
           <div className="flex flex-1 items-center justify-end">
             <div className="hidden md:flex item-center justify-end flex-1 gap-12">
-              {/* <div
-              onClick={() => setMenu(true)}
-              className="w-16 cursor-pointer text-3xl bg-[#242424ed] text-white h-16 flex rounded-full items-center justify-center"
-            >
-              <HiBars3BottomRight />
-            </div> */}
               {linklist?.map((link, index) => {
                 return (
                   <Link
-                  key={index}
+                    key={index}
                     href={`/${link?.path}`}
                     className="text-lg text-[var(--dark-grey)] font-portfolio_regular"
                   >
@@ -84,6 +78,12 @@ const Navbar = ({ type }) => {
               >
                 linkedln
               </Link>
+            </div>
+            <div
+              onClick={() => setMenu(true)}
+              className="w-16 cursor-pointer text-3xl bg-[#242424ed] text-white h-16 flex md:hidden rounded-full items-center justify-center"
+            >
+              <HiBars3BottomRight />
             </div>
           </div>
         </div>
