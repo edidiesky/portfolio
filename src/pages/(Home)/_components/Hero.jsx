@@ -66,7 +66,7 @@ export default function Hero() {
                 );
               })}
             </span>
-             <h4 className="text-lg md:text-3xl max-w-[900px] titleRef font-normal font-portfolio_bold1">
+             <h4 className="text-lg md:text-3xl max-w-[900px] titleRef text-[var(--dark-grey)] font-normal font-portfolio_bold1">
               <AnimateTextWord>{heroWords3}</AnimateTextWord>
             </h4>
             <Link
