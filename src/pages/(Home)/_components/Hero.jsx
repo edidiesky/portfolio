@@ -45,7 +45,7 @@ export default function Hero() {
               className="font-normal hero_text2 text_background flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
                 text-5xl md:text-6xl lg:text-8xl
-                w-full leading-[.8] font-portfolio_bold"
+                w-full leading-[1.1] font-portfolio_bold"
             >
               {/* A Software Developer who crafts captivating digital experiences. */}
               {heroWords1.split(" ").map((x, index) => {
@@ -66,7 +66,7 @@ export default function Hero() {
                 );
               })}
             </span>
-             <h4 className="text-lg md:text-3xl max-w-[900px] titleRef text-[var(--dark-grey)] font-normal font-portfolio_bold1">
+             <h4 className="text-2xl md:text-3xl max-w-[900px] titleRef text-[var(--dark-grey)] font-normal font-portfolio_bold1">
               <AnimateTextWord>{heroWords3}</AnimateTextWord>
             </h4>
             <Link
