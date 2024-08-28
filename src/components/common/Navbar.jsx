@@ -62,7 +62,7 @@ const Navbar = ({ type }) => {
                   <Link
                     key={index}
                     href={`/${link?.path}`}
-                    className="text-lg text-[var(--dark-grey)] font-portfolio_regular"
+                    className="text-lg hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_regular"
                   >
                     {link?.title}
                   </Link>
@@ -70,7 +70,7 @@ const Navbar = ({ type }) => {
               })}
               <Link
                 href={`mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!`}
-                className="text-lg text-[var(--dark-grey)] font-portfolio_regular"
+                className="text-lg hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_regular"
               >
                 Contact Me
               </Link>
