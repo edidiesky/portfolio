@@ -39,13 +39,13 @@ const Text = ({ x, index, setMenu }) => {
         exit={"exit"}
         custom={index}
         key={index}
-        className="text-start h-24 overflow-hidden w-full z-20 
+        className="text-start h-20 overflow-hidden w-full z-20 
       relative font-normal text-white uppercase family2"
       >
         <Link
           onClick={() => setMenu(false)}
           href={`${x?.path}`}
-          className="text-6xl lg:text-7xl font-portfolio_bold w-full
+          className="text-5xl font-portfolio_bold w-full
          z-20 font-bold text-white uppercase family2"
         >
           <AnimateText color={x?.color}>{x?.title}</AnimateText>
