@@ -106,7 +106,7 @@ const Footer = () => {
             <div className="flex justify-end gap-8 items-center">
               {socialsList?.map((skill, index) => {
                 return (
-                  <Link href={`${skill?.path}`} className="text-2xl md:text-4xl text-white">
+                  <Link key={index} href={`${skill?.path}`} className="text-2xl md:text-4xl text-white">
                     {skill?.icon}
                   </Link>
                 );
