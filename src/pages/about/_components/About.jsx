@@ -1,140 +1,66 @@
 "use client";
 import React, { useRef } from "react";
-import { opacity, slideup, smallslideup } from "@/constants/utils/framer";
-import { motion, useInView } from "framer-motion";
+import Word from "@/components/animations/Word";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  aboutText1,
+  ctatext5,
+  aboutText2,
+  ctatext3,
+} from "@/constants/data/text";
+import AnimateTextWord from "@/components/animations/AnimateTextWord";
+
 export default function About() {
-  const ctaText_1 = useRef(null);
-  const ctaText_2 = useRef(null);
-  const ctaText_3 = useRef(null);
-  const ctaText_4 = useRef(null);
-  const inView = useInView(ctaText_1, {
-    margin: "0px 100px -50px 0px",
-  });
-  const inView4 = useInView(ctaText_4, {
-    margin: "0px 100px -50px 0px",
-  });
-  const inView2 = useInView(ctaText_2, {
-    margin: "0px 100px -50px 0px",
-  });
-  const inView3 = useInView(ctaText_3, {
-    margin: "0px 100px -50px 0px",
-  });
   const ctatext1 =
     "I am passionate about web development and the ideas it postulates. I love working at the mid-section of beautiful user-friendly interfaces. I also can create memorable web experiences.";
-  const ctatext5 =
-    "I am Edidiong Victor Essien and I am a self-learned software developer, dedicated in creating appealing user-interfaces for industries since 2021";
   const ctaText2 =
     "Not forgetting I am also passionate about mathematics, physics and diodes (electronic engineering). And also, I despise Politics";
-  const ctaText6 =
-    "WHEN I AM NOT DEVELOPING WEB INTERFACES I AM WORKING AND RESEARCHING  ON MY ENGINERRING THESIS";
-
-  const ctatext3 = `Having background in design, I work closely with design focused teams to build websites and microsites for companies and individuals. I have years of experience working and  collaborating on product teams and leading engineering efforts.`;
 
   return (
-    <div data-scroll className="py-32 z-50 flex items-end justify-end">
-      <div className="w-[90%] lg:w-[70%] justify-end items-start mx-auto md:px-4 m-auto max-w-custom_1 grid grid-cols-1 lg:grid-cols-custom_4 gap-4 ">
-        <div className="w-[260px]">
-          <div className="text-6xl text-text_dark_1 font-portfolio_bold1 w-full font-normal uppercase">
-            <span>02/</span>
-          </div>
-        </div>
+    <div data-scroll className="py-32 z-50 flex flex-col gap-24">
+      <div className="w-[90%] lg:w-[70%] justify-end items-start mx-auto md:px-4 m-auto max-w-custom grid grid-cols-1 gap-4 ">
         <div className="w-[100%] flex flex-col items-end justify-end  gap-16">
-          <h4
-            ref={ctaText_4}
-            className=" w-full uppercase text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1 "
-          >
-            {ctatext5.split(" ").map((x, index) => {
-              return (
-                <div key={index} className="inline-flex hide relative">
-                  <motion.div
-                    variants={slideup}
-                    custom={index}
-                    initial="initial"
-                    animate={inView4 ? "animate" : "exit"}
-                  >
-                    {x}
-                  </motion.div>
-                </div>
-              );
-            })}
+          <h4 className=" w-full uppercase text-3xl md:text-4xl leading-[1.4] text_background">
+            <Word>{ctatext1}</Word>
           </h4>
-          <h4
-            ref={ctaText_1}
-            className=" w-full uppercase text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1 "
-          >
-            {ctatext1.split(" ").map((x, index) => {
-              return (
-                <span key={index} className="inline-flex hide relative">
-                  <motion.span
-                    variants={slideup}
-                    custom={index}
-                    initial="initial"
-                    animate={inView ? "animate" : "exit"}
-                  >
-                    {x}
-                  </motion.span>
-                </span>
-              );
-            })}
+          <h4 className=" w-full uppercase text-3xl md:text-4xl leading-[1.4] text_background">
+            <Word>{ctaText2}</Word>
           </h4>
-          <h4
-            ref={ctaText_2}
-            className=" w-full uppercase text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px]  leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1 "
-          >
-            {ctaText2.split(" ").map((x, index) => {
-              return (
-                <span key={index} className="inline-flex hide relative">
-                  <motion.span
-                    variants={slideup}
-                    custom={index}
-                    initial="initial"
-                    animate={inView2 ? "animate" : "exit"}
-                  >
-                    {x}
-                  </motion.span>
-                </span>
-              );
-            })}
+        </div>
+      </div>
+      <div
+        className="w-[90%] lg:w-[70%] justify-end items-end mx-auto
+       max-w-custom grid grid-cols-1 lg:grid-cols-custom gap-12 md:gap-24"
+      >
+        <div
+          // ref={imageRef}
+          className="md:w-[400px] h-full"
+        >
+          <Image
+            alt="Cotion"
+            width={0}
+            sizes="100vw"
+            height={0}
+            loading="lazy"
+            src={"/profile_6.JPG"}
+            className="w-full hero_images h-full object-cover"
+          />
+        </div>
+        <div className="flex flex-col gap-8">
+          <h4 className="w-full font-portfolio_normal uppercase text_background 
+          text-lg lg:text-xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
+            <Word>{ctatext5}</Word>
           </h4>
-          <div className="w-full lg:w-[100%] grid-cols-1 grid py-5 gap-12 sm:grid-cols-custom_2">
-            <div className="w-full flex-col gap-12">
-              <div
-                // ref={imageRef}
-                className="w-[100%] h-full"
-              >
-                <img
-                  src={"./profile_6.JPG"}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div ref={ctaText_3} className="w-full flex flex-col gap-16">
-              <h5 className="about_text1 w-full text-3xl md:text-2xl  leading-[1.6] font-normal text-text_dark_1 font-portfolio_bold1 uppercase">
-                A blend of Software Engineering and Electrical engineering.
-              </h5>
-              <h4 className=" w-full text-3xl md:text-xl  flex flex-wrap gap-x-[8px] gap-y-[8px]  items-start leading-[1.2] font-normal font-portfolio_bold1 uppercase text-text_dark_1 ">
-                {/* ctatext3 */}
-                {ctatext3.split(" ").map((x, index) => {
-                  return (
-                    <span
-                      key={index}
-                      className="inline-flex hide relative text-start"
-                    >
-                      <motion.span
-                        variants={smallslideup}
-                        custom={index}
-                        initial="initial"
-                        animate={inView3 ? "animate" : "exit"}
-                      >
-                        {x}
-                      </motion.span>
-                    </span>
-                  );
-                })}
-              </h4>
-            </div>
-          </div>
+          <h4 className="w-full font-portfolio_normal uppercase text_background text-lg lg:text-xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
+            <Word>{aboutText1}</Word>
+          </h4>
+          <Link
+            href={"/about"}
+            className="underline w-full uppercase text-xl lg:text-2xl text_background text-text_dark_1"
+          >
+            <AnimateTextWord>More About Me and Services</AnimateTextWord>
+          </Link>
         </div>
       </div>
     </div>

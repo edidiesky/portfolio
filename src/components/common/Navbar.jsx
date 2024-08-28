@@ -7,11 +7,11 @@ import Menu from "./Menu";
 import Link from "next/link";
 // import { Link } from """;
 const linklist = [
-  {
-    title: "Home",
-    path: "",
-    color: "#FF00B0",
-  },
+  // {
+  //   title: "Home",
+  //   path: "",
+  //   color: "#FF00B0",
+  // },
   {
     title: "Works",
     path: "work",

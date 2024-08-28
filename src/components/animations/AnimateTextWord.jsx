@@ -32,25 +32,27 @@ const AnimateTextWord = ({ children, type }) => {
     );
   }
   return (
-    <span
-      ref={AnimateTextRef}
-      className="flex  flex-wrap w-full items-center relative"
-    >
-      {children?.split("").map((data, index) => {
-        return (
-          <div key={index} className="inline-flex hide relative">
-            <motion.span
-              variants={slideup}
-              custom={index}
-              initial="initial"
-              animate={inView ? "animate" : "exit"}
-            >
-              {data === " " ? "\u00A0" : data}
-            </motion.span>
-          </div>
-        );
-      })}
-    </span>
+    <div className="w-full flex">
+      <div
+        ref={AnimateTextRef}
+        className="flex flex-wrap w-full items-center relative"
+      >
+        {children?.split("").map((data, index) => {
+          return (
+            <span key={index} className="inline-flex hide relative">
+              <motion.span
+                variants={slideup}
+                custom={index}
+                initial="initial"
+                animate={inView ? "animate" : "exit"}
+              >
+                {data === " " ? "\u00A0" : data}
+              </motion.span>
+            </span>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 

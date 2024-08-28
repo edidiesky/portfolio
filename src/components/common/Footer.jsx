@@ -49,7 +49,7 @@ const Footer = () => {
               </span>
               <span className="text-lg md:text-end uppercase">VICTOR ©2024</span>
             </div>
-            <h1 className="text-5xl md:text-6xl text_background">
+            <h1 className="text-5xl py-8 md:py-12 md:text-6xl text_background">
               why don't you give a thumb up to hi@victor.com
             </h1>
           </div>
