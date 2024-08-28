@@ -1,14 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import Magnetic from "@/components/animations/Magnetic";
-import { motion, useInView } from "framer-motion";
-import { projectdata3 } from "@/constants/data/projectdata";
-import { scaleAnimations, slideup2 } from "@/constants/utils/framer";
 import WorkList from "@/components/common/WorkList";
-import gsap from "gsap";
-import AnimateTextWord from "@/components/animations/AnimateTextWord";
-
 const Work = () => {
   return (
     <>
@@ -17,19 +9,6 @@ const Work = () => {
           <WorkList />
         </div>
       </div>
-      {/* <div className="w-full">
-        <div className="max-w-custom flex items-center justify-center mx-auto w-[90%]">
-          <Link
-            href={
-              "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
-            }
-            className="w-[200px] md:w-[240px] h-[80px] font-portfolio_regular md:h-[85px] flex items-center bg-[#fff] justify-center 
-            text-[var(--dark-1)] text-lg md:text-lg rounded-[60px] overflow-hidden"
-          >
-            <Magnetic bgColor={"#d1d1d1"}>View More Works</Magnetic>
-          </Link>
-        </div>
-      </div> */}
     </>
   );
 };

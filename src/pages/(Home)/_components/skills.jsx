@@ -33,7 +33,7 @@ const Skills = () => {
                   </AnimateTextWord>
                   <div className="w-full h-[2px] bg-[rgba(255,255,255,.3)]"></div>
                 </h4>
-                <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 md:gap-y-20">
                   {skillslist?.map((skill, index) => {
                     return (
                       <div
@@ -51,6 +51,8 @@ const Skills = () => {
                         </div>
                         <h4 className="text-xl font-normal text-[var(--light-grey)] font-portfolio_normal">
                           {skill?.title}
+
+                          <span className="text-base block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">{skill?.role}</span>
                         </h4>
                       </div>
                     );
@@ -65,16 +67,15 @@ const Skills = () => {
         <div className="w-[100px]"></div>
         <div className="w-full flex flex-col gap-16">
           <div className="w-full grid md:grid-cols-custom gap-16">
-            <div className="w-full grid lg:grid-cols-2 gap-8">
-              <div className="w-full"></div>
-              <h4 className=" w-full uppercase text-lg lg:text-xl leading-[1.4] text-text_dark_1 ">
+            <div className="w-full grid gap-8">
+              <h4 className=" w-full uppercase text-2xl max-w-[600px] lg:text-3xl leading-[1.4] text-text_dark_1 ">
                 <Word>{skillDescriptionText2}</Word>
               </h4>
             </div>
             <div className="w-[160px]"></div>
           </div>
           <div className="w-full grid grid-cols-1 gap-4">
-            <h4 className="w-full text-start uppercase text-lg text-dark opacity-[.4]">
+            <h4 className="w-full text-start uppercase text-xl md:text-2xl text-dark opacity-[.4]">
               <AnimateTextWord>Work experience</AnimateTextWord>
             </h4>
             <div className="w-full grid grid-cols-1 gap-4">

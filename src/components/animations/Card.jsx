@@ -11,7 +11,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
   const scale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const cardScale = useTransform(progress, range, [1, targetScale]);
   return (
-    <div className="w-full h-[100vh] sticky top-0 flex items-center justify-center">
+    <div className="w-full h-screen sticky top-0 left-0 flex items-center justify-center">
       <motion.div
         ref={containerRef}
         style={{
@@ -38,7 +38,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
               <FaArrowTrendUp className="text-4xl md:text-5xl" />
             </div>
           </div>
-          <div className="w-full relative h-[700px] overflow-hidden rounded-xl">
+          <div className="w-full relative overflow-hidden rounded-xl">
             <motion.div
               style={{ scale }}
               className="w-full relative overflow-hidden"

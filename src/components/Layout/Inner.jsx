@@ -98,7 +98,7 @@ export default function Layout({ children, type }) {
           className=""
         >
           <Navbar />
-          <div className="w-full overflow-hidden">{children}</div>
+          <div className="w-full">{children}</div>
           <Footer />
         </motion.div>
       </motion.div>

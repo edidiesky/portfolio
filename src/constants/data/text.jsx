@@ -14,55 +14,66 @@ export const ctatext3 = `I am your guy to go to! I can work and communicate effe
 
 export const skillslist = [
   {
+    role: "frontend development",
     title: "TYPESCRIPT",
     icons: "/icons/typescript.png",
   },
   {
+    role: "Database Management",
     title: "PRISMA",
     icons: "/icons/prisma.png",
   },
   {
+    role: "Developing wordclass apps",
     title: "JAVASCRIPT",
     icons: "/icons/javascript.png",
   },
   {
+    role: "backend development",
     title: "NODEJS",
     icons: "/icons/nodejs.png",
   },
   {
+    role: "backend development",
     title: "EXPRESSJS",
     icons: "/icons/express.png",
   },
   {
+    role: "frontend development",
     title: "REACT",
     icons: "/icons/react.png",
   },
-    {
+  {
+    role: "full-stack development",
     title: "NEXTJS",
     icons: "/icons/nextjs.png",
   },
   {
+    role: "Production Versioning",
     title: "GIT",
     icons: "/icons/git.png",
   },
   {
+    role: "Automated Testing",
     title: "JEST",
     icons: "/icons/jest.png",
   },
 
   {
+    role: "States Management",
     title: "REDUX",
     icons: "/icons/express.png",
   },
-    {
+  {
+    role: "Styling frontend application",
     title: "CSS",
     icons: "/icons/css.png",
   },
   {
+    role: "Consistent styling",
     title: "TAILWIND.CSS",
     icons: "/icons/tailwind.png",
   },
-
 ];
 
 export const InterpersonalSkillList = [
