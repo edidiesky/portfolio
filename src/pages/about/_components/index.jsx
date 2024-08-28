@@ -9,11 +9,11 @@ import Skills from "@/pages/(Home)/_components/skills";
 
 export default function AboutIndex() {
   return (
-    <div>
+    <div className="z-[40000] relative">
       <Hero />
       <About />
-      <Skills/>
-      <Footer/>
+      <Skills />
+      <Footer />
     </div>
   );
 }

@@ -5,9 +5,9 @@ import Footer from "@/components/common/Footer";
 
 export default function WorkDetails({params}) {
   return (
-    <div>
+    <div className="z-[40000] relative">
       <Hero />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import WorkList from "@/components/common/WorkList"
+import WorkList from "@/components/common/WorkList";
 export default function Hero() {
   const heroWords1 =
     "I help startups and series A—D teams to establish a strong connection between their product and customers";
@@ -32,13 +32,13 @@ export default function Hero() {
         className="py-32 relative flex items-center justify-center"
       >
         <div
-          className="w-[90%] md:w-[85%] mx-auto flex flex-col gap-48
+          className="w-[95%] mx-auto flex flex-col gap-48
          px-2 max-w-custom"
         >
           <span
             data-scroll
             data-scroll-speed="2"
-            className="font-normal hero_text2 text_background flex flex-wrap
+            className="font-normal md:px-16 hero_text2 text_background flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
                 text-5xl md:text-6xl lg:text-7xl
                 w-full leading-[.8] font-portfolio_bold"
@@ -62,11 +62,12 @@ export default function Hero() {
               );
             })}
           </span>
-          <div className="w-[100%] md:w-[95%] mx-auto">
+          <div className="w-[100%] mx-auto">
             <WorkList
-            // setMousePosition={setMousePosition}
-            // setTab={setTab}
-            // tab={tab}
+              type="work"
+              // setMousePosition={setMousePosition}
+              // setTab={setTab}
+              // tab={tab}
             />
           </div>
         </div>

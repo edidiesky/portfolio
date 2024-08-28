@@ -10,14 +10,13 @@ const WorkList = ({ index, setTab, tab, type }) => {
     target: containerRef,
     offset: ["start start", "end end"],
   });
-  if (type === "home") {
+  if (type === "work") {
     return (
       <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-24 justify-between">
-        {projectdata3.slice(0, 8).map((x, index) => {
+        {projectdata3.map((x, index) => {
           return (
             <ProjectCard
-              setTab={setTab}
-              tab={tab}
+        
               project={x}
               key={index}
               index={index}
