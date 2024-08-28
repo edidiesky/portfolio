@@ -7,13 +7,14 @@ import Magnetic from "@/components/animations/Magnetic";
 export default function Hero() {
   const container = useRef(null);
 
-  const heroWords1 = "I am Victor a Software Developer specialized in creating crisp and catchy user experience";
+  const heroWords1 =
+    "I am Victor a Software Developer specialized in creating crisp and catchy user experience";
   const heroWords2 = `Victor Essien`;
   const heroWords3 = `I help tech companies in leveraging their products by creating user-friendly and visually appealing cross-platform applications that fit with their business goals.`;
   const heroTextslideup1 = {
     initial: {
       opacity: 0,
-      y: '100%',
+      y: "100%",
     },
     animate: (i) => ({
       opacity: 1,
@@ -27,7 +28,7 @@ export default function Hero() {
     exit: {
       opacity: 0,
       // y: '100%',
-      y: '100%',
+      y: "100%",
     },
   };
 
@@ -66,20 +67,20 @@ export default function Hero() {
                 );
               })}
             </span>
-             <h4 className="text-2xl md:text-3xl max-w-[900px] leading-[1.2] titleRef text-[var(--dark-grey)] font-normal font-portfolio_bold1">
+            <h4 className="text-2xl md:text-3xl max-w-[900px] leading-[1.2] titleRef text-[var(--dark-grey)] font-normal font-portfolio_bold1">
               <AnimateTextWord>{heroWords3}</AnimateTextWord>
             </h4>
             <Link
+              style={{ transition: "all .4s" }}
               href={
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
               className="w-[270px] open_to_work h-[80px] flex items-center
-                   justify-center text-[#000] text-xl font-bold rounded-full font-portfolio_regular overflow-hidden
+                   justify-center text-[#000] hover:text-[#Fff] text-xl font-bold rounded-full font-portfolio_regular overflow-hidden
                     bg-[#fff]"
             >
-              <Magnetic bgColor={"#2638a9"}>Open to Work!</Magnetic>
+              <Magnetic bgColor={"var(--primary)"}>Open to Work!</Magnetic>
             </Link>
-           
           </div>
         </div>
       </div>
