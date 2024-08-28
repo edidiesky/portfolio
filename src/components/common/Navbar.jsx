@@ -32,12 +32,12 @@ const Navbar = ({ type }) => {
 
       <div className="w-full py-4">
         <div
-          className={`w-[95%] md:w-[85%] border-b border-[rgba(255,255,255,.2)] mx-auto max-w-custom ${
+          className={`w-[95%] lg:w-[85%] border-b border-[rgba(255,255,255,.2)] mx-auto max-w-custom ${
             type === "contact" ? "text-white" : "text-text_dark_1"
           } flex items-center justify-space gap-4 py-6`}
         >
           <div className="flex items-center gap-2">
-            <h4 className="relative z-50 text-2xl md:w-[300px] w-full overflow-hidden font-portfolio_bold1">
+            <h4 className="relative z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
               <motion.span
                 animate={{ top: active ? "-100%" : "0" }}
                 transition={{ duration: 0.5, ease: [0.75, 0, 0.24, 1] }}
@@ -45,7 +45,7 @@ const Navbar = ({ type }) => {
               >
                 <Link
                   href={"/"}
-                  className="text-xl md:text-2xl text-[var(--light-grey)] w-full font-portfolio_bold"
+                  className="text-xl lg:text-2xl text-[var(--light-grey)] w-full font-portfolio_bold"
                 >
                   Victor Essien
                 </Link>
@@ -54,7 +54,7 @@ const Navbar = ({ type }) => {
           </div>
 
           <div className="flex flex-1 items-center justify-end">
-            <div className="hidden md:flex item-center justify-end flex-1 gap-12">
+            <div className="hidden lg:flex item-center justify-end flex-1 gap-12">
               {linklist?.map((link, index) => {
                 return (
                   <Link
@@ -81,7 +81,7 @@ const Navbar = ({ type }) => {
             </div>
             <div
               onClick={() => setMenu(true)}
-              className="w-16 cursor-pointer text-3xl bg-[#242424ed] text-white h-16 flex md:hidden rounded-full items-center justify-center"
+              className="w-16 cursor-pointer text-3xl bg-[#242424ed] text-white h-16 flex lg:hidden rounded-full items-center justify-center"
             >
               <HiBars3BottomRight />
             </div>

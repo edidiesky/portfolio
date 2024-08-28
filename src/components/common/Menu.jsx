@@ -66,7 +66,7 @@ const Sidebar = ({ menu, setMenu }) => {
       animate={menu ? "open" : "close"}
       style={{ width: "100vw", zIndex: 200 }}
       ref={menuref}
-      className="bg-[#988871] z-[50000] fixed top-0 w-full h-[100vh] left-0 right-0 flex items-center justify-center"
+      className="bg-[var(--primary)] z-[50000] fixed top-0 w-full h-[100vh] left-0 right-0 flex items-center justify-center"
     >
       <div
         onClick={() => setMenu(!menu)}
