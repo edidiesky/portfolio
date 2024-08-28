@@ -9,7 +9,7 @@ import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
 export default function Cta() {
   return (
-    <div data-scroll className="py-12 lg:py-20 z-50 flex items-end justify-end">
+    <div data-scroll className="py-12 mt-20 md:mt-40 lg:py-20 z-50 flex items-end justify-end">
       <div
         className="w-[90%] justify-end items-end mx-auto
        max-w-custom grid grid-cols-1 lg:grid-cols-custom gap-12 md:gap-24"
