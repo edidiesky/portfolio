@@ -5,8 +5,10 @@ import Footer from "@/components/common/Footer";
 
 export default function WorkDetails({params}) {
   return (
-    <div className="z-[40000] relative">
-      <Hero />
+    <div className="relative">
+      <div className='z-10 w-full'>
+        <Hero />
+      </div>
       {/* <Footer /> */}
     </div>
   );
