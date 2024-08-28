@@ -56,10 +56,13 @@ function WorkTitle() {
             </span>
             <div className="flex md:justify-end md:items-center">
               <Link
+              style={{
+                transition:"all .4s"
+              }}
                 href={`${workDetails?.website}`}
                 target="_blank"
-                className="md:w-40 w-36 h-18 md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
-                 bg-[var(--primary)] justify-center text-lg md:text-base text-white"
+                className="md:w-40 w-36 h-18 hover:text-white md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
+                 bg-[#fff] justify-center text-lg md:text-base text-[#000]"
               >
                 <Magnetic bgColor={"var(--grey-1)"}>
                   <span className="flex items-center justify-center gap-2">

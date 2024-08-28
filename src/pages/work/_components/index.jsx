@@ -5,7 +5,7 @@ import Footer from "@/components/common/Footer";
 
 export default function WorkPage() {
   return (
-    <div className="z-[40000] relative">
+    <div className="z-[40000] relative"avba>
       <Hero />
       <Footer />
     </div>

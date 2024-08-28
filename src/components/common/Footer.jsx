@@ -29,7 +29,7 @@ const Footer = () => {
 
     {
       title: "Contact",
-      path: "contact",
+      path: "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!",
       color: "#FF00B0",
     },
   ];

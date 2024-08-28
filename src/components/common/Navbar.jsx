@@ -7,11 +7,7 @@ import Menu from "./Menu";
 import Link from "next/link";
 // import { Link } from """;
 const linklist = [
-  // {
-  //   title: "Home",
-  //   path: "",
-  //   color: "#FF00B0",
-  // },
+
   {
     title: "Works",
     path: "work",
@@ -23,11 +19,7 @@ const linklist = [
     color: "#FFC700",
   },
 
-  {
-    title: "Contact",
-    path: "contact",
-    color: "#FF00B0",
-  },
+
 ];
 const Navbar = ({ type }) => {
   const [active, setActive] = useState(false);
@@ -73,12 +65,18 @@ const Navbar = ({ type }) => {
                 return (
                   <Link
                     href={`/${link?.path}`}
-                    className="text-lg text-[var(--light-grey)] font-portfolio_regular"
+                    className="text-lg text-[var(--dark-grey)] font-portfolio_regular"
                   >
                     {link?.title}
                   </Link>
                 );
               })}
+              <Link
+                href={`mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!`}
+                className="text-lg text-[var(--dark-grey)] font-portfolio_regular"
+              >
+                Contact Me
+              </Link>
               <Link
                 href={`www.linkedin.com/in/victorezekielessien`}
                 className="text-lg text-[var(--primary)] font-portfolio_regular"
