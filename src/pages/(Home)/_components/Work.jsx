@@ -4,7 +4,7 @@ import WorkList from "@/components/common/WorkList";
 const Work = () => {
   return (
     <>
-      <div className="py-20 md:pb-96 mb-20 md:mb-64 w-full relative">
+      <div className="py-20 md:pb-96 pb-24 mb-40 md:mb-64 w-full relative">
         <div className="w-[100%] md:w-[90%] flex flex-col gap-12 mx-auto">
           <WorkList />
         </div>
