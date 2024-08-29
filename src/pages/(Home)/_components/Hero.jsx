@@ -8,8 +8,7 @@ export default function Hero() {
   const container = useRef(null);
 
   const heroWords1 =
-    "I am Victor a Software Developer specialized in creating crisp and catchy user experience";
-  const heroWords2 = `Victor Essien`;
+    "I’m Victor, a Software Developer specializing in crafting engaging and memorable user experiences.";
   const heroWords3 = `I help tech companies in leveraging their products by creating user-friendly and visually appealing cross-platform applications that fit with their business goals.`;
   const heroTextslideup1 = {
     initial: {
