@@ -38,7 +38,7 @@ const variants = {
   close: {
     height: 0,
     transition: { duration: 1.2, ease: [0.62, 0.05, 0.01, 0.99], delay: 0.9 },
-    top: "-100%",
+    top: "-180%",
   },
 };
 
@@ -66,7 +66,7 @@ const Sidebar = ({ menu, setMenu }) => {
       animate={menu ? "open" : "close"}
       style={{ width: "100vw" }}
       ref={menuref}
-      className="bg-[var(--primary)] z-[100000] fixed top-0 w-full h-[100vh] left-0 right-0 flex items-center justify-center"
+      className="bg-[var(--primary)] z-[100000] md:hidden fixed top-0 w-full h-[100vh] left-0 right-0 flex items-center justify-center"
     >
       <div
         onClick={() => setMenu(!menu)}
@@ -79,7 +79,7 @@ const Sidebar = ({ menu, setMenu }) => {
       <div className="h-full z-20 w-[90%] max-w-custom_1 py-20 mx-auto flex items-start justify-center flex-col gap-12">
         <AnimatePresence mode="wait">
           {menu && (
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col">
               {linklist?.map((x, index) => {
                 return (
                   <Text
@@ -107,21 +107,21 @@ const Sidebar = ({ menu, setMenu }) => {
               <Link
                 style={{ transition: "all .5s" }}
                 href={"github.com/edidiesky"}
-                className="w-16 h-16 hover:-translate-y-4 hover:bg-[#363636] flex text-5xl cursor-pointer md:text-xl items-center rounded-full text-white justify-center"
+                className="w-16 h-16 hover:-translate-y-4  flex text-5xl cursor-pointer md:text-lg items-center rounded-full text-[#000] justify-center"
               >
                 <FaGithubAlt />
               </Link>
               <Link
                 style={{ transition: "all .5s" }}
                 href={"https://twitter.com/edidiesky"}
-                className="w-16 h-16 hover:-translate-y-4 hover:bg-[#363636] flex text-5xl cursor-pointer md:text-xl items-center rounded-full text-white justify-center"
+                className="w-16 h-16 hover:-translate-y-4  flex text-5xl cursor-pointer md:text-lg items-center rounded-full text-[#000] justify-center"
               >
                 <FaTwitter />
               </Link>{" "}
               <Link
                 style={{ transition: "all .5s" }}
                 href={"https://www.linkedin.com/in/victor-essien-379b03319/"}
-                className="w-16 h-16 hover:-translate-y-4 hover:bg-[#363636] flex text-5xl cursor-pointer md:text-xl items-center rounded-full text-white justify-center"
+                className="w-16 h-16 hover:-translate-y-4  flex text-5xl cursor-pointer md:text-lg items-center rounded-full text-[#000] justify-center"
               >
                 <FaLinkedinIn />
               </Link>

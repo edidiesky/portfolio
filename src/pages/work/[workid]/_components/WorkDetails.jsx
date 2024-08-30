@@ -43,13 +43,13 @@ function WorkTitle() {
   return (
     <div className="grid w-full max-w-custom_1 mx-auto grid-cols-1 justify-between gap-y-8 gap-x-12">
       <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-12 mx-auto">
-        <div className="flex gap-4 items-end">
+        <div className="flex gap-4 md:flex-row flex-col  items-end">
           <span
             data-scroll
             data-scroll-speed="2"
             // titleRef
             className="font-normal flex 
-            text-start lg:text-start text-6xl md:text-8xl w-full leading-[1.4] text_background"
+            text-start lg:text-start text-6xl md:text-8xl leading-[1.4] text_background"
           >
             {workDetails?.mainTitle}{" "}
           </span>
@@ -59,7 +59,7 @@ function WorkTitle() {
             }}
             href={`${workDetails?.website}`}
             target="_blank"
-            className="md:w-40 w-36 h-18 hover:text-white md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
+            className="md:w-40 w-40 h-16 hover:text-white md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
                  bg-[#fff] justify-center text-lg md:text-base text-[#000]"
           >
             <Magnetic bgColor={"var(--grey-1)"}>
@@ -74,32 +74,32 @@ function WorkTitle() {
             <div className="w-full grid grid-cols-1 md:items-center justify-between gap-8">
               <span
                 className="font-normal flex 
-            text-start lg:text-start text-3xl md:text-4xl w-full leading-[1.4] text_background"
+            text-start lg:text-start text-2xl md:text-4xl w-full leading-[1.4] text_background"
               >
              
                 {workDetails?.shortDescription}.
               </span>
             </div>
-            <div className="grid grid-cols-3 gap-6 md:gap-8">
+            <div className="grid md:grid-cols-3 gap-6 md:gap-8">
               <div className="w-full flex flex-col gap-4">
-                <h4 className="text-[10px] md:text-2xl text_background w-full font-portfolio_regular md:w-[250px] pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
+                <h4 className="text-lg md:text-2xl text_background w-full font-portfolio_regular md:w-[250px] pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
                   Role & Services:
                 </h4>
                 <div className="w-full gap-2 flex items-center">
                   <div className="flex items-start">
-                    <span className="text-[12px] md:text-base text-start  leading-[1] font-portfolio_regular">
+                    <span className="text-base text-start  leading-[1] font-portfolio_regular">
                       {workDetails?.role}
                     </span>
                   </div>
                 </div>
               </div>
               <div className="w-full flex flex-col gap-4">
-                <h4 className="text-[10px] md:text-2xl text_background w-full md:w-[250px] font-portfolio_regular pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
+                <h4 className="text-lg md:text-2xl text_background w-full md:w-[250px] font-portfolio_regular pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
                   Location & Year
                 </h4>
                 <div className="w-full gap-2 flex items-start">
                   <div className="flex items-start ">
-                    <span className="text-[12px] md:text-base text-start  leading-[1] font-portfolio_regular">
+                    <span className="text-base text-start  leading-[1] font-portfolio_regular">
                       Lagos, Nigeria © {workDetails?.period}
                     </span>
                   </div>
@@ -107,7 +107,7 @@ function WorkTitle() {
               </div>
               {workDetails?.github && (
                 <div className="w-full flex flex-col gap-4">
-                  <h4 className="text-[10px] md:text-2xl text_background w-full md:w-[250px] font-portfolio_regular  pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
+                  <h4 className="text-lg md:text-2xl text_background w-full md:w-[250px] font-portfolio_regular  pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
                     Github
                   </h4>
                   <div className="w-full gap-2 flex items-start">
@@ -116,7 +116,7 @@ function WorkTitle() {
                         target="_blank"
                         style={{ textDecoration: "underline" }}
                         href={`${workDetails?.github}`}
-                        className="text-[12px] md:text-base text-start  leading-[1] font-portfolio_regular"
+                        className="text-base text-start  leading-[1] font-portfolio_regular"
                       >
                         View Code
                       </Link>
