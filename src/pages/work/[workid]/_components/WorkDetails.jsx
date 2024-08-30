@@ -43,7 +43,7 @@ function WorkTitle() {
   return (
     <div className="grid w-full max-w-custom_1 mx-auto grid-cols-1 justify-between gap-y-8 gap-x-12">
       <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-12 mx-auto">
-        <div className="flex gap-4 md:flex-row flex-col  items-end">
+        <div className="flex gap-4 md:flex-row flex-col justify-between  items-end">
           <span
             data-scroll
             data-scroll-speed="2"
@@ -146,7 +146,7 @@ function WorkOverview() {
   return (
     <div className="w-full">
       <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-16 mx-auto">
-        <div className="w-full md:w-[800px] mx-auto flex flex-col gap-6">
+        <div className="w-[80%] mx-auto flex flex-col gap-6">
           <span
             data-scroll
             data-scroll-speed="2"
@@ -194,7 +194,7 @@ function MyRoleInWork() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
       <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-6 mx-auto">
-        <div className="w-full md:w-[800px] mx-auto flex flex-col gap-6  -mb-10">
+        <div className="w-[80%] mx-auto flex flex-col gap-6  -mb-10">
           <span
             data-scroll
             data-scroll-speed="2"
@@ -257,7 +257,7 @@ function WorkFeatures() {
             );
           })}
         </div>
-        <div className="w-full md:w-[800px] mx-auto  flex flex-col gap-6">
+        <div className="w-[80%] mx-auto  flex flex-col gap-6">
           <span
             data-scroll
             data-scroll-speed="2"
@@ -312,7 +312,7 @@ function WorkUI() {
               );
             })}
           </div>
-          <div className="w-full md:w-[755px] mx-auto flex flex-col gap-6">
+          <div className="w-[80%] mx-auto flex flex-col gap-6">
             <span
               data-scroll
               data-scroll-speed="2"
