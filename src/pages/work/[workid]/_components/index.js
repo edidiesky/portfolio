@@ -6,7 +6,7 @@ import Footer from "@/components/common/Footer";
 export default function WorkDetails({params}) {
   return (
     <div className="relative">
-      <div className='z-10 w-full'>
+      <div className='z-30 w-full'>
         <Hero />
       </div>
       {/* <Footer /> */}

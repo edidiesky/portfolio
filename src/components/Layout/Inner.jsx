@@ -99,7 +99,7 @@ export default function Layout({ children, type }) {
         >
           <Navbar />
           <div className="w-full">{children}</div>
-          {/* <Footer /> */}
+          <Footer />
         </motion.div>
       </motion.div>
     </LayOutStyles>

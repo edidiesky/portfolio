@@ -18,7 +18,9 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/TastyTrove",
     period: "2024",
     year: "2024",
-    color:"#fff",
+    color: "#fff",
+    shortDescription:
+      "Developed a fully functional restaurant marketplace, TastyTrove. Created a platform that provides menus and enhances communication between sellers of a menu and their customers",
     backGroundColor: "#318AFC",
     roleDescription:
       "The role I took in developing involves developing it as a restaurant marketplace. I took pride in developing this application from the server side to the client side. I had to progress further by writing Frontend unit tests using Cypress.",
@@ -63,7 +65,9 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/ZyncLuxury",
     period: "2023",
     year: "2023",
-    color:"#000",
+    color: "#000",
+    shortDescription:
+      "Developed a fully responsive web product, ZyncLuxury. Built a platform that bridges the gap between realtors and their clients, and tends to enhances communication and simplifies the booking process.",
     backGroundColor: "#FFFFFF",
     roleDescription:
       "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
@@ -108,7 +112,9 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/TattooVerse",
     period: "2020",
     year: "2020",
-    color:"#000",
+    color: "#000",
+    shortDescription:
+      "Developed a fully responsive and intuitive web product, TattooVerse. Created a platform that bridge the aspect of communications of tattoo artiste works to match the taste of their clients",
     backGroundColor: "#B3FFCB",
     roleDescription:
       "The role I took in developing TattooVerse involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
@@ -146,7 +152,9 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/Twizle-Social-Platform",
     period: "2021",
     year: "2021",
-    color:"#000",
+    color: "#000",
+    shortDescription:
+      "Developed a fully functional social service, Twizzle. Twizzle aims to simplify the act of communication between an admirable set of people with its intuitive UI and functionalities",
     backGroundColor: "#f0f3ec",
     roleDescription:
       "The role I took in developing Twizzle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
@@ -191,12 +199,14 @@ export const projectdata3 = [
     github: "https://github.com/edidiesky/cardealer",
     period: "2020",
     year: "2020",
-    color:"#000",
+    color: "#000",
+    shortDescription:
+      "Developed a fully functional SAAS product, Vaada. Created a platform that bridge the gap between car dealers and their clients, providing a platform that enhances communication and simplifies the booking process.",
     backGroundColor: "var(--primary)",
     roleDescription:
       "The role I took in developing Vaada involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
     mainImage: "/images/car/image_1.jpeg",
-    mainTitle: "Car Dealership",
+    mainTitle: "Vaada",
     overview: {
       color: "#bbacaf",
       Description: [

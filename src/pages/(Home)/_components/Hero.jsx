@@ -8,8 +8,8 @@ export default function Hero() {
   const container = useRef(null);
 
   const heroWords1 =
-    "I’m Victor, a Software Developer specializing in crafting remarkable user experiences.";
-  const heroWords3 = `I help tech companies in leveraging their products by creating user-friendly and visually appealing cross-platform applications that fit with their business goals.`;
+    "I’m Victor, a Software Developer specialized in build amazing user experiences.";
+  const heroWords3 = `I help tech companies in leveraging their products by creating user-build and visually appealing cross-platform applications that fit with their business goals.`;
   const heroTextslideup1 = {
     initial: {
       opacity: 0,
@@ -35,16 +35,16 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="min-h-[80vh] py-40 relative flex items-center justify-center"
+        className="min-h-[70vh] py-28 md:py-40 relative flex items-center justify-center"
       >
         <div className="w-[90%] md:px-8 mx-auto max-w-custom">
           <div className="flex w-full flex-col gap-8">
             <span
               data-scroll
               data-scroll-speed="2"
-              className="font-normal hero_text2 text_background flex flex-wrap
+              className="font-normal hero_text2 max-w-[1000px] text_background flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
-                text-5xl md:text-6xl lg:text-8xl
+                text-5xl md:text-6xl lg:text-[89px]
                 w-full leading-[1.1] font-portfolio_bold"
             >
               {/* A Software Developer who crafts captivating digital experiences. */}
@@ -75,10 +75,10 @@ export default function Hero() {
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
               className="w-[270px] open_to_work h-[80px] flex items-center
-                   justify-center text-[#000] hover:text-[#Fff] text-xl font-bold rounded-full font-portfolio_regular overflow-hidden
+                   justify-center text-[#000] hover:text-[#Fff] text-xl font-semibold rounded-full font-portfolio_regular overflow-hidden
                     bg-[#fff]"
             >
-              <Magnetic bgColor={"var(--primary)"}>Open to Work!</Magnetic>
+              <Magnetic bgColor={"var(--primary)"}>Contact Me!</Magnetic>
             </Link>
           </div>
         </div>

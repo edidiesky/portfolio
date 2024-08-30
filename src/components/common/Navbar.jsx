@@ -26,7 +26,7 @@ const Navbar = ({ type }) => {
       style={{
         backdropFilter: "blur(54px)",
       }}
-      className="w-full z-[40000] sticky left-0 top-0 bg-[rgb(0 0 0 / 32%)]"
+      className="w-full z-[40000] sticky  border-b border-[rgba(255,255,255,.1)] left-0 top-0 bg-[rgb(0 0 0 / 32%)]"
     >
       <AnimatePresence mode="wait">
         {<Menu setMenu={setMenu} menu={menu} />}
@@ -34,7 +34,7 @@ const Navbar = ({ type }) => {
 
       <div className="w-full py-0 md:py-4 z-[4000] ">
         <div
-          className={`w-[95%] lg:w-[85%] border-b border-[rgba(255,255,255,.2)] mx-auto max-w-custom ${
+          className={`w-[95%] lg:w-[85%] mx-auto max-w-custom ${
             type === "contact" ? "text-white" : "text-text_dark_1"
           } flex items-center justify-space gap-4 py-4`}
         >
