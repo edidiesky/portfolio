@@ -32,11 +32,11 @@ const Navbar = ({ type }) => {
         {<Menu setMenu={setMenu} menu={menu} />}
       </AnimatePresence>
 
-      <div className="w-full py-2 md:py-4 z-[4000] ">
+      <div className="w-full py-0 md:py-4 z-[4000] ">
         <div
           className={`w-[95%] lg:w-[85%] border-b border-[rgba(255,255,255,.2)] mx-auto max-w-custom ${
             type === "contact" ? "text-white" : "text-text_dark_1"
-          } flex items-center justify-space gap-4 py-6`}
+          } flex items-center justify-space gap-4 py-4`}
         >
           <div className="flex items-center gap-2">
             <h4 className="relative z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
@@ -83,7 +83,7 @@ const Navbar = ({ type }) => {
             </div>
             <div
               onClick={() => setMenu(true)}
-              className="w-16 cursor-pointer text-3xl bg-[#242424ed] text-white h-16 flex lg:hidden rounded-full items-center justify-center"
+              className="cursor-pointer text-2xl text-white flex lg:hidden rounded-full items-center justify-center"
             >
               <HiBars3BottomRight />
             </div>

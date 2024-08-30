@@ -8,7 +8,7 @@ export default function Hero() {
   const container = useRef(null);
 
   const heroWords1 =
-    "I’m Victor, a Software Developer specializing in crafting engaging and memorable user experiences.";
+    "I’m Victor, a Software Developer specializing in crafting remarkable user experiences.";
   const heroWords3 = `I help tech companies in leveraging their products by creating user-friendly and visually appealing cross-platform applications that fit with their business goals.`;
   const heroTextslideup1 = {
     initial: {
@@ -66,7 +66,7 @@ export default function Hero() {
                 );
               })}
             </span>
-            <h4 className="text-2xl md:text-3xl max-w-[900px] leading-[1.2] titleRef text-[var(--dark-grey)] font-normal font-portfolio_bold1">
+            <h4 className="text-2xl md:text-3xl max-w-[900px] leading-[1.2] titleRef text-[#fff] font-normal font-portfolio_bold1">
               <AnimateTextWord>{heroWords3}</AnimateTextWord>
             </h4>
             <Link

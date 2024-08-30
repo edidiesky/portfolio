@@ -35,12 +35,12 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className="relative blur-0 bg-[#000] z-[40000] pb-12 pt-12 md:pt-20 flex flex-col justify-between">
+      <div className="relative  w-full hide blur-0 bg-[#000] z-[40000] pb-12 pt-12 md:pt-20 flex flex-col justify-between">
         <div className="w-[95%] md:w-[90%] max-w-custom mx-auto flex flex-col items-center gap-16">
           {/* top side */}
           <div className="flex flex-col gap-12 w-full">
             <div
-              className="py-6 border-t grid md:grid-cols-2 items-center justify-between border-[rgba(255,255,255,.3)] border-b text-2xl 
+              className="py-6 border-t grid md:grid-cols-2 w-full items-center justify-between border-[rgba(255,255,255,.3)] border-b text-2xl 
             text-[var(--light-grey)]"
             >
               <span className="text-base text-white uppercase">
@@ -49,11 +49,11 @@ const Footer = () => {
               </span>
               <span className="text-lg md:text-end uppercase">VICTOR ©2024</span>
             </div>
-            <h1 className="text-5xl py-8 md:py-12 md:text-6xl text_background">
+            <h1 className="text-5xl w-full py-8 md:py-12 md:text-6xl text_background">
               why don&lsquo;t you give a thumb up to hi@victor.com
             </h1>
           </div>
-          <div className="w-full flex items-center justify-center">
+          <div className="w-full overflow-hidden flex items-center justify-center">
             <Link
               style={{ transition: "all .5s" }}
               href={

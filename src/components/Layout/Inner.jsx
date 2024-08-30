@@ -77,7 +77,7 @@ export default function Layout({ children, type }) {
         initial="initial"
         animate="enter"
         exit="exit"
-        className="page"
+        className="page w-full "
       >
         <div className="w-full z-[10] fixed top-0 left-0 min-h-screen grid grid-cols-4 md:grid-cols-9">
           <div className="background_line h-full w-[1px]"></div>
@@ -89,17 +89,17 @@ export default function Layout({ children, type }) {
           <div className="background_line h-full w-[1px] hidden md:flex"></div>
           <div className="background_line h-full w-[1px] hidden md:flex"></div>
           <div className="background_line h-full w-[1px] hidden md:flex"></div>
-        </div>
+        </div> 
         <motion.div
           variants={opacityVariants}
           initial="initial"
           animate="enter"
           exit="exit"
-          className=""
+          className="w-full grid grid-cols-1"
         >
           <Navbar />
           <div className="w-full">{children}</div>
-          <Footer />
+          {/* <Footer /> */}
         </motion.div>
       </motion.div>
     </LayOutStyles>
@@ -107,6 +107,7 @@ export default function Layout({ children, type }) {
 }
 const ContactLayOutStyles = styled.div`
   background-color: black;
+  width: 100%;
   .page {
     background-color: #000;
   }

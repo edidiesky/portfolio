@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@200..800&display=swap");
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 body,
 html {
@@ -12,6 +25,7 @@ html {
   font-family: "Manrope", apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: var(--white);
+  
 }
 :root {
   --pink: #f3e1d9;

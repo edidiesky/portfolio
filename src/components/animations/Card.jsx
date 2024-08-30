@@ -18,7 +18,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
           scale: cardScale,
           background: `${data?.backGroundColor}`,
           color: `${data?.color}`,
-          top: `calc(50vh + ${index * 30}px) `,
+          top: `calc(45vh + ${index * 30}px) `,
         }}
         className="flex flex-col gap-4 p-[20px] rounded-[20px] relative w-full"
       >
