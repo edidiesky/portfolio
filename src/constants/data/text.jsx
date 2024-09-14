@@ -179,4 +179,4 @@ export const experienceList = [
 export const skillDescriptionText =
   "My skills range from conceptual design to technical implementation, enabling me to transfer unique designs  into the digital realm, where they can be admired by a broad audience.";
 export const skillDescriptionText2 =
-  "Beyond freelancing,I also gained valuable experience,in roles demanding full time role and freelancing,at various companies for which I am very grateful.";
+  "Beyond freelancing, I have also gained valuable experience, in roles demanding full time role and freelancing, at various companies for which I am very grateful.";
