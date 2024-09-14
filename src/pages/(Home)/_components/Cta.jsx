@@ -42,7 +42,7 @@ export default function Cta() {
         >
           <ing
             alt="Cotion"
-            src={"/images/profile_6.jpg"}
+            src={"/images/profile_6.JPG"}
             className="w-full hero_images h-full object-cover"
           />
         </div>

@@ -9,7 +9,7 @@ export default function Hero() {
 
   const heroWords1 =
     "I’m Victor, a software developer fascinated in Crafting Scalable, Production-Ready Web Applications";
-  const heroWords3 = `I help tech companies in leveraging their products by creating user-build and visually appealing cross-platform applications that fit with their business goals.`;
+  const heroWords3 = `I help tech companies in leveraging their products by creating user-centric and visually appealing cross-platform applications that fit with their business goals.`;
   const heroTextslideup1 = {
     initial: {
       opacity: 0,

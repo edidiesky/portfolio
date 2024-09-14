@@ -52,7 +52,7 @@ const Navbar = ({ type }) => {
               sizes="100vw"
               height={0}
               loading="lazy"
-              src={"/images/profile_6.jpg"}
+              src={"/images/profile_6.JPG"}
               className="w-[60px] rounded-full h-[60px] object-cover"
             />
             <h4 className="relative z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
