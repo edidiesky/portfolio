@@ -40,9 +40,9 @@ export default function Cta() {
           // ref={imageRef}
           className="md:w-[400px] h-full"
         >
-          <ing
+          <img
             alt="Cotion"
-            src={"/images/profile_6.JPG"}
+            src={"/images/profile_6.jpg"}
             className="w-full hero_images h-full object-cover"
           />
         </div>
