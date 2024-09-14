@@ -92,9 +92,9 @@ const Skills = () => {
                       <span className="flex justify-start md:items-center gap-4">
                         {skill?.date}
                       </span>
-                      <span className="text_background flex flex-col md:items-center justify-start gap-1">
-                        <span className="text-3xl">{skill?.title}</span>
-                        <span className="text-lg">{skill?.position}</span>
+                      <span className="text_background flex flex-col md:items-center md:justify-center gap-1">
+                        <span className="text-3xl md:text-center">{skill?.title}</span>
+                        <span className="text-lg md:text-center">{skill?.position}</span>
                       </span>
                       <span className="flex text-base text_background justify-end items-center gap-4">
                         {skill?.role}
