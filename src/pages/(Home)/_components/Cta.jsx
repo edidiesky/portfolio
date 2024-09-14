@@ -31,7 +31,7 @@ export default function Cta() {
           </h4>
           <Link
             href={"/about"}
-            className="underline w-full uppercase text-xl lg:text-2xl text_background text-text_dark_1"
+            className="underline w-full font-bold uppercase text-xl lg:text-2xl text_background text-text_dark_1"
           >
             <AnimateTextWord>More About Me and Services</AnimateTextWord>
           </Link>
