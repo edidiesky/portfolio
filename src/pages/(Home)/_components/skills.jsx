@@ -49,10 +49,10 @@ const Skills = () => {
                           />
                           <img src={skill?.icons} alt="" className="z-20" />
                         </div>
-                        <h4 className="text-base md:text-xl font-normal text-[var(--light-grey)] font-portfolio_normal">
+                        <h4 className="text-lg md:text-xl font-bold text-[var(--light-grey)] font-portfolio_normal">
                           {skill?.title}
 
-                          <span className="text-sm md:text-base block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
+                          <span className="text-base md:text-lg block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
                             {skill?.role}
                           </span>
                         </h4>
@@ -65,7 +65,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] md:px-4 md:pt-16 m-auto max-w-custom grid gap-16">
+      <div className="w-[90%] md:w-[78%] md:px-4 md:pt-16 m-auto max-w-custom grid gap-16">
         <div className="w-[100px]"></div>
         <div className="w-full flex flex-col gap-16">
           <div className="w-full grid md:grid-cols-custom gap-16">
