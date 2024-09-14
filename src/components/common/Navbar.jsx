@@ -45,7 +45,7 @@ const Navbar = ({ type }) => {
             type === "contact" ? "text-white" : "text-text_dark_1"
           } flex items-center justify-space gap-4 py-4`}
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             <Image
               alt="Cotion"
               width={0}
@@ -53,7 +53,7 @@ const Navbar = ({ type }) => {
               height={0}
               loading="lazy"
               src={"/images/profile_6.jpg"}
-              className="w-[60px] rounded-full h-[60px] object-cover"
+              className="w-[50px] rounded-full h-[50px] object-cover"
             />
             <h4 className="relative z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
               <motion.span
