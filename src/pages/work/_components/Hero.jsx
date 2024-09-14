@@ -32,13 +32,13 @@ export default function Hero() {
         className="py-32 relative flex items-center justify-center"
       >
         <div
-          className="w-[95%] mx-auto flex flex-col gap-48
+          className="w-[95%] md:w-[80%] mx-auto flex flex-col gap-48
          px-2 max-w-custom"
         >
           <span
             data-scroll
             data-scroll-speed="2"
-            className="font-normal md:px-16 hero_text2 text_background flex flex-wrap
+            className="font-normal max-w-[1200px] hero_text2 text_background flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
                 text-5xl md:text-6xl lg:text-7xl
                 w-full leading-[.8] font-portfolio_bold"

@@ -42,7 +42,7 @@ function WorkTitle() {
   // console.log(workDetails)
   return (
     <div className="grid w-full max-w-custom_1 mx-auto grid-cols-1 justify-between gap-y-8 gap-x-12">
-      <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-12 mx-auto">
+      <div className="flex w-[90%] md:w-[80%] max-w-custom flex-col gap-12 mx-auto">
         <div className="flex gap-4 md:flex-row flex-col justify-between  items-end">
           <span
             data-scroll
@@ -145,7 +145,7 @@ function WorkOverview() {
   const overviewText = `${workDetails?.overview?.Description}`;
   return (
     <div className="w-full">
-      <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-16 mx-auto">
+      <div className="flex w-[90%] md:w-[80%] max-w-custom flex-col gap-16 mx-auto">
         <div className="w-[80%] mx-auto flex flex-col gap-6">
           <span
             data-scroll
@@ -193,7 +193,7 @@ function MyRoleInWork() {
   const overviewText2 = workDetails?.roleDescription;
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
-      <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-6 mx-auto">
+      <div className="flex w-[90%] md:w-[80%] max-w-custom flex-col gap-6 mx-auto">
         <div className="w-[80%] mx-auto flex flex-col gap-6  -mb-10">
           <span
             data-scroll
@@ -247,7 +247,7 @@ function WorkFeatures() {
   const overviewText2 = workDetails?.features?.Description[0];
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto  gap-y-8 gap-x-12">
-      <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-16 mx-auto">
+      <div className="flex w-[90%] md:w-[80%] max-w-custom flex-col gap-16 mx-auto">
         <div className="grid grid-cols-1 gap-1">
           {workDetails?.features?.images?.map((image, index) => {
             return (
@@ -301,7 +301,7 @@ function WorkUI() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
-      <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-12 mx-auto">
+      <div className="flex w-[90%] md:w-[80%] max-w-custom flex-col gap-12 mx-auto">
         <div className="flex flex-col gap-12 w-full">
           <div className="grid grid-cols-1 gap-1">
             {workDetails?.ui?.images?.map((image, index) => {
@@ -342,7 +342,7 @@ function NextWork() {
   // console.log(works);
   return (
     <div className="w-full pt-8">
-      <div className="flex w-[90%] md:w-[85%] max-w-custom flex-col gap-8 mx-auto">
+      <div className="flex w-[90%] md:w-[80%] max-w-custom flex-col gap-8 mx-auto">
         <h4 className="text-4xl">
           <AnimateTextWord type={"largeText"}>
             See More Projects ⭐️

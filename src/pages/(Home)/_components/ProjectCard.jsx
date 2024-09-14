@@ -12,7 +12,7 @@ const ProjectCard = ({ project, index, type }) => {
             key={index}
             className="w-full group flex items-center relative flex-col gap-4"
           >
-            <div className="w-full h-[240px] overflow-hidden">
+            <div className="w-full h-[200px] overflow-hidden">
               <img
                 style={{ transition: "all .6s var(--primary-curve)" }}
                 src={project?.mainImage}
@@ -60,7 +60,7 @@ const ProjectCard = ({ project, index, type }) => {
         <div
           style={{ transition: "all .3s ease-out" }}
           key={index}
-          className="w-full group h-[600px] rounded-[20px] overflow-hidden hover:rounded-[50%]
+          className="w-full group h-[500px] rounded-[20px] overflow-hidden hover:rounded-[50%]
            flex items-center relative flex-col gap-12"
         >
           <div

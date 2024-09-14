@@ -12,7 +12,7 @@ const WorkList = ({ index, setTab, tab, type }) => {
   });
   if (type === "work") {
     return (
-      <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-24 justify-between">
+      <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-20 justify-between">
         {projectdata3.map((x, index) => {
           return (
             <ProjectCard
