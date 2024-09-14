@@ -26,7 +26,7 @@ const Navbar = ({ type }) => {
       style={{
         backdropFilter: "blur(54px)",
       }}
-      className="w-full z-[40000] sticky py-4 md:py-0 border-b border-[rgba(255,255,255,.1)] left-0 top-0 bg-[rgb(0 0 0 / 32%)]"
+      className="w-full z-[40000] py-4 md:py-0 border-b border-[rgba(255,255,255,.1)] left-0 top-0 bg-[rgb(0 0 0 / 32%)]"
     >
       <AnimatePresence mode="wait">
         {<Menu setMenu={setMenu} menu={menu} />}

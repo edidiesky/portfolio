@@ -27,7 +27,7 @@ const WorkList = ({ index, setTab, tab, type }) => {
     );
   }
   return (
-    <div ref={containerRef} className="w-full relative">
+    <div ref={containerRef} className="w-full md:w-[85%] mx-auto relative">
       {/* {projectdata3.map((x, index) => {
         return (
           <ProjectCard

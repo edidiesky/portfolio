@@ -8,7 +8,7 @@ export default function Hero() {
   const container = useRef(null);
 
   const heroWords1 =
-    "I’m Victor, a software developer obsessed in build amazing user experiences.";
+    "I’m Victor, a software developer fascinated in building crisp and amazing user experiences.";
   const heroWords3 = `I help tech companies in leveraging their products by creating user-build and visually appealing cross-platform applications that fit with their business goals.`;
   const heroTextslideup1 = {
     initial: {
@@ -42,13 +42,13 @@ export default function Hero() {
             <span
               data-scroll
               data-scroll-speed="2"
-              className="font-normal hero_text2 max-w-[1000px] text_background flex flex-wrap
-                 gap-[8px] lg:gap-[12px] items-center justify-start 
-                text-5xl md:text-6xl lg:text-[89px]
+              className="font-normal hero_text2 max-w-[1200px] text_background flex flex-wrap
+                 gap-[8px] lg:gap-[13px] items-center justify-start 
+                text-5xl md:text-6xl lg:text-[80px]
                 w-full leading-[1.1] font-portfolio_bold"
             >
               {/* A Software Developer who crafts captivating digital experiences. */}
-              {heroWords1.split(" ").map((x, index) => {
+              {heroWords1.split(" ").map((data, index) => {
                 return (
                   <span
                     key={index}
@@ -60,7 +60,7 @@ export default function Hero() {
                       initial="initial"
                       animate={"animate"}
                     >
-                      {x}
+                      {data === " " ? "\u00A0" : data}
                     </motion.span>
                   </span>
                 );
@@ -75,7 +75,7 @@ export default function Hero() {
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
               className="w-[270px] open_to_work h-[80px] flex items-center
-                   justify-center text-[#000] hover:text-[#Fff] text-xl font-semibold rounded-full font-portfolio_regular overflow-hidden
+                   justify-center text-[#000] hover:text-[#Fff] text-xl font-normal rounded-full font-portfolio_regular overflow-hidden
                     bg-[#fff]"
             >
               <Magnetic bgColor={"var(--primary)"}>Contact Me!</Magnetic>
