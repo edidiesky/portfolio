@@ -2,18 +2,23 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiBars3BottomRight } from "react-icons/hi2";
-
+import Magnetic from "@/components/animations/Magnetic";
 import Menu from "./Menu";
 import Link from "next/link";
 // import { Link } from """;
 const linklist = [
+  {
+    title: "Home",
+    path: "",
+    color: "#00FAFF",
+  },
   {
     title: "Works",
     path: "work",
     color: "#00FAFF",
   },
   {
-    title: "About",
+    title: "About Victor",
     path: "about",
     color: "#FFC700",
   },
@@ -55,7 +60,7 @@ const Navbar = ({ type }) => {
             </h4>
           </div>
 
-          <div className="flex flex-1 items-center justify-end">
+          <div className="flex flex-1 items-center justify-center">
             <div className="hidden lg:flex item-center justify-end flex-1 gap-12">
               {linklist?.map((link, index) => {
                 return (
@@ -68,12 +73,7 @@ const Navbar = ({ type }) => {
                   </Link>
                 );
               })}
-              <Link
-                href={`mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!`}
-                className="text-lg hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_regular"
-              >
-                Contact Me
-              </Link>
+
               <Link
                 href={`www.linkedin.com/in/victorezekielessien`}
                 className="text-lg text-[var(--primary)] font-portfolio_regular"
@@ -81,6 +81,17 @@ const Navbar = ({ type }) => {
                 linkedln
               </Link>
             </div>
+          </div>
+          <div className="flex flex-1 items-center justify-end gap-4">
+            <Link
+              style={{
+                transition: "all .6s",
+              }}
+              href={`mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!`}
+              className="text-lg w-[180px] h-[50px] rounded-full border hover:text-[#000] text-[var(--light-grey)] font-portfolio_regular"
+            >
+              <Magnetic bgColor={"#fff"}>Contact Me!</Magnetic>
+            </Link>
             <div
               onClick={() => setMenu(true)}
               className="cursor-pointer text-2xl text-white flex lg:hidden rounded-full items-center justify-center"

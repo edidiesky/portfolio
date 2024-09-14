@@ -37,14 +37,14 @@ export default function Hero() {
         data-scroll
         className="min-h-[70vh] py-28 md:py-40 relative flex items-center justify-center"
       >
-        <div className="w-[90%] md:px-8 mx-auto max-w-custom">
+        <div className="w-[90%] md:w-[80%] md:px-4 mx-auto max-w-custom">
           <div className="flex w-full flex-col gap-8">
             <span
               data-scroll
               data-scroll-speed="2"
               className="font-normal hero_text2 max-w-[1200px] text_background flex flex-wrap
                  gap-[8px] lg:gap-[13px] items-center justify-start 
-                text-5xl md:text-6xl lg:text-[80px]
+                text-5xl md:text-6xl lg:text-7xl
                 w-full leading-[1.1] font-portfolio_bold"
             >
               {/* A Software Developer who crafts captivating digital experiences. */}
