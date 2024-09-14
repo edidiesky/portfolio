@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
-          href="/profile_6.jpg"
+          href="/images/profile_6.jpg"
           style={{ width: "60px", height: "60px", borderRadius: "50%" }}
         />
       </Head>

@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import Magnetic from "@/components/animations/Magnetic";
@@ -44,6 +46,15 @@ const Navbar = ({ type }) => {
           } flex items-center justify-space gap-4 py-4`}
         >
           <div className="flex items-center gap-2">
+            <Image
+              alt="Cotion"
+              width={0}
+              sizes="100vw"
+              height={0}
+              loading="lazy"
+              src={"/images/profile_6.jpg"}
+              className="w-[60px] rounded-full h-[60px] object-cover"
+            />
             <h4 className="relative z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
               <motion.span
                 animate={{ top: active ? "-100%" : "0" }}
@@ -61,7 +72,7 @@ const Navbar = ({ type }) => {
           </div>
 
           <div className="flex flex-1 items-center justify-center">
-            <div className="hidden lg:flex item-center justify-end flex-1 gap-12">
+            <div className="hidden lg:flex item-center justify-end flex-1 gap-8">
               {linklist?.map((link, index) => {
                 return (
                   <Link

@@ -9,7 +9,10 @@ import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
 export default function Cta() {
   return (
-    <div data-scroll className="py-12 mt-20 md:mt-40 lg:py-20 z-50 flex items-end justify-end">
+    <div
+      data-scroll
+      className="py-12 mt-20 md:mt-40 lg:py-20 z-50 flex items-end justify-end"
+    >
       <div
         className="w-[90%] md:w-[78%] justify-end items-end mx-auto
        max-w-custom grid grid-cols-1 lg:grid-cols-custom gap-12 md:gap-24"
@@ -37,13 +40,9 @@ export default function Cta() {
           // ref={imageRef}
           className="md:w-[400px] h-full"
         >
-          <Image
+          <ing
             alt="Cotion"
-            width={0}
-            sizes="100vw"
-            height={0}
-            loading="lazy"
-            src={"/profile_6.JPG"}
+            src={"/images/profile_6.jpg"}
             className="w-full hero_images h-full object-cover"
           />
         </div>
