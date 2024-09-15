@@ -5,9 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ctatext4,
-  ctatext5,
-  aboutText2,
-  ctatext3,
 } from "@/constants/data/text";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
@@ -21,10 +18,7 @@ export default function About() {
     <div data-scroll className="py-32 z-50 flex flex-col gap-24">
       <div className="w-[90%] lg:w-[78%] justify-end items-start mx-auto md:px-4 m-auto max-w-custom grid grid-cols-1 gap-4 ">
         <div className="w-[100%] flex flex-col items-end justify-end  gap-16">
-          <h3
-           
-            className="relative w-full font-normal max-w-[800px] text-3xl md:text-5xl leading-[1.5] text_background"
-          >
+          <h3 className="relative w-full font-normal max-w-[800px] text-3xl md:text-5xl leading-[1.5] text_background">
             <Word>{ctatext1}</Word>
           </h3>
           <h3
@@ -43,19 +37,17 @@ export default function About() {
           // ref={imageRef}
           className="md:w-[400px] h-full"
         >
-          <Image
+          <img
             alt="Cotion"
-            width={0}
-            sizes="100vw"
-            height={0}
-            loading="lazy"
-            src={"/profile_6.JPG"}
-            className="w-full hero_images h-full object-cover"
+            src={"/images/profile_6.jpg"}
+            className="w-[50px] rounded-full h-[50px] object-cover"
           />
         </div>
         <div className="flex flex-col gap-8">
-          <h4 className="w-full font-portfolio_normal font-normal text_background text-xl
-           lg:text-3xl leading-[1.2]">
+          <h4
+            className="w-full font-portfolio_normal font-normal text_background text-xl
+           lg:text-3xl leading-[1.2]"
+          >
             <Word>{ctatext4}</Word>
           </h4>
           <Link

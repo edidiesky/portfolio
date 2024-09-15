@@ -26,7 +26,6 @@ const linklist = [
   },
 ];
 const Navbar = ({ type }) => {
-  const [active, setActive] = useState(false);
   const [menu, setMenu] = useState(false);
   return (
     <div
