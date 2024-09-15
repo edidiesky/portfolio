@@ -11,7 +11,7 @@ export default function Cta() {
   return (
     <div
       data-scroll
-      className="py-12 mt-20 md:mt-40 lg:py-20 z-50 flex items-end justify-end"
+      className="py-12 mt-20 md:mt-40 lg:py-20 z-[500000] flex items-end justify-end"
     >
       <div
         className="w-[90%] md:w-[78%] justify-end items-end mx-auto
@@ -31,7 +31,7 @@ export default function Cta() {
           </h4>
           <Link
             href={"/about"}
-            className="underline w-full font-bold uppercase text-xl lg:text-2xl text_background text-text_dark_1"
+            className="underline z-[4000] w-full font-bold uppercase text-xl lg:text-2xl text_background text-text_dark_1"
           >
             <AnimateTextWord>More About Me and Services</AnimateTextWord>
           </Link>

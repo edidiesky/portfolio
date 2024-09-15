@@ -9,7 +9,7 @@ import Footer from "@/components/common/Footer";
 export default function HomeIndex() {
   return (
     <div className="relative w-full">
-      <div className="w-full z-[40]">
+      <div className="w-full z-[60] relative">
         <Hero />
 
         <Work />
