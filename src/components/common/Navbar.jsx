@@ -51,19 +51,13 @@ const Navbar = ({ type }) => {
               src={"/images/profile_6.jpg"}
               className="w-[50px] rounded-full h-[50px] object-cover"
             />
-            <h4 className="relative z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
-              <motion.span
-                animate={{ top: active ? "-100%" : "0" }}
-                transition={{ duration: 0.5, ease: [0.75, 0, 0.24, 1] }}
-                className="w-full h-full flex items-center flex-col relative"
+            <h4 className="relative  md:flex hidden z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
+              <Link
+                href={"/"}
+                className="text-xl lg:text-2xl text-[var(--light-grey)] w-full font-portfolio_bold"
               >
-                <Link
-                  href={"/"}
-                  className="text-xl lg:text-2xl text-[var(--light-grey)] w-full font-portfolio_bold"
-                >
-                  Victor Essien
-                </Link>
-              </motion.span>
+                Victor Essien
+              </Link>
             </h4>
           </div>
 
