@@ -41,7 +41,7 @@ export default function Hero() {
             className="font-normal max-w-[1200px] hero_text2 text_background flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
                 text-5xl md:text-6xl lg:text-7xl
-                w-full leading-[.8] font-portfolio_bold"
+                w-full leading-[1.2] font-portfolio_bold"
           >
             {/* A Software Developer who crafts captivating digital experiences. */}
             {heroWords1.split(" ").map((x, index) => {
