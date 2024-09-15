@@ -46,12 +46,8 @@ const Navbar = ({ type }) => {
           } flex items-center justify-space gap-4 py-4`}
         >
           <div className="flex items-center gap-4">
-            <Image
+            <img
               alt="Cotion"
-              width={0}
-              sizes="100vw"
-              height={0}
-              loading="lazy"
               src={"/images/profile_6.jpg"}
               className="w-[50px] rounded-full h-[50px] object-cover"
             />

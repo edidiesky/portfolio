@@ -18,8 +18,11 @@ const Skills = () => {
           <div className="w-full grid md:grid-cols-custom gap-16">
             <div className="w-full grid lg:grid-cols-1 gap-8">
               <div className="w-full"></div>
-              <h4 className=" w-full  max-w-[600px] flex items-center gap-4 text-2xl lg:text-3xl font-semibold leading-[1.4] text-text_dark_1 ">
-                <Word>{aboutText1}</Word>
+              <h4
+                className=" w-full  max-w-[516px] flex text_background items-center gap-4 text-xl
+               lg:text-3xl font-normal leading-[1.4] text-text_dark_1 "
+              >
+                <AnimateTextWord>{aboutText1}</AnimateTextWord>
               </h4>
             </div>
             <div className="w-[100px]"></div>
@@ -27,11 +30,14 @@ const Skills = () => {
           <div className="w-full flex flex-col gap-20">
             <div className="w-full grid md:grid-cols-1 gap-12">
               <div className="w-full flex flex-col gap-16">
-                <h4 className="w-full text-start uppercase flex items-center text-2xl md:text-3xl text-[var(--light-grey)]">
+                <h4
+                  className="w-full text-start uppercase text_background
+                 flex items-center text-2xl md:text-3xl text-[var(--light-grey)]"
+                >
                   <AnimateTextWord type={"largeText"}>
                     My Tech Stack
                   </AnimateTextWord>
-                  <div className="w-full h-[2px] bg-[rgba(255,255,255,.3)]"></div>
+                  {/* <div className="w-full h-[2px] bg-[rgba(255,255,255,.3)]"></div> */}
                 </h4>
                 <div className="w-full grid grid-cols-2 md:grid-cols-4 md:items-center gap-x-8 gap-y-12 md:gap-y-20">
                   {skillslist?.map((skill, index) => {
@@ -52,7 +58,7 @@ const Skills = () => {
                         <h4 className="text-lg md:text-xl font-bold text-[var(--light-grey)] font-portfolio_normal">
                           {skill?.title}
 
-                          <span className="text-base md:text-lg block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
+                          <span className="text-base capitalize md:text-lg block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
                             {skill?.role}
                           </span>
                         </h4>
@@ -93,8 +99,12 @@ const Skills = () => {
                         {skill?.date}
                       </span>
                       <span className="text_background flex flex-col md:items-center md:justify-center gap-1">
-                        <span className="text-3xl md:text-center">{skill?.title}</span>
-                        <span className="text-lg md:text-center">{skill?.position}</span>
+                        <span className="text-3xl md:text-center">
+                          {skill?.title}
+                        </span>
+                        <span className="text-lg md:text-center">
+                          {skill?.position}
+                        </span>
                       </span>
                       <span className="flex text-base text_background justify-end items-center gap-4">
                         {skill?.role}
