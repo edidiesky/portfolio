@@ -92,8 +92,8 @@ const Skills = () => {
                   return (
                     <div
                       key={index}
-                      className="w-full capitalize flex items-center gap-4 justify-between
-                       text-sm md:text-base lg:text-2xl font-normal border-b border-[rgba(255,255,255,.1)] py-8 md:py-12 font-portfolio_normal text-grey"
+                      className="w-full flex md:flex-row flex-col md:items-center gap-4 justify-between
+                       text-sm md:text-base lg:text-2xl font-normal border-b border-[rgba(255,255,255,.1)] py-8 md:py-12 font-portfolio_regular text-grey"
                     >
                       <div className="flex-1 flex flex-col gap-3">
                         <span className="text-3xl">
@@ -102,7 +102,7 @@ const Skills = () => {
                             {skill?.position}
                           </span>
                         </span>
-                        <span className="flex max-w-[600px] text-base text_background gap-4">
+                        <span className="flex  font-portfolio_normal max-w-[600px] text-base text_background gap-4">
                           {skill?.role}
                         </span>
                       </div>

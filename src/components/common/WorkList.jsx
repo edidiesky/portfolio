@@ -53,7 +53,7 @@ const WorkList = ({ index, setTab, tab, type }) => {
     //     );
     //   })}
     // </div>
-    <div className="w-full relative grid grid-cols-1 md:grid-cols-1 gap-x-4 gap-y-20 justify-between">
+    <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">
       {projectdata3.map((x, index) => {
         return <Card data={x} key={index} index={index} />;
       })}

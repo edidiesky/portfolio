@@ -22,9 +22,9 @@ export default function Cta() {
             <Word>{ctatext5}</Word>
           </h4> */}
           <h4
-            className="w-full font-portfolio_normal
+            className="w-full
            text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px]
-            gap-y-[8px] leading-[1.2] font-portfolio_bold1 
+            gap-y-[8px] leading-[1.2] font-portfolio_regular
             font-normal"
           >
             <Word>{ctatext4}</Word>
