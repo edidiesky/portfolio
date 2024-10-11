@@ -32,10 +32,10 @@ const Card = ({ data, index, progress, targetScale, range }) => {
   //             <span className="text-2xl">{data?.role}</span>
   //           </div>
   //           <div className="w-full flex items-center justify-between">
-  //             <h2 className="text-dark font-portfolio_bold w-full text-3xl md:text-4xl">
+  //             <h2 className="text-dark font-portfolio_bold w-full text-3xl lg:text-4xl">
   //               {data?.mainTitle}
   //             </h2>
-  //             <FaArrowTrendUp className="text-4xl md:text-5xl" />
+  //             <FaArrowTrendUp className="text-4xl lg:text-5xl" />
   //           </div>
   //         </div>
   //         <div className="w-full relative overflow-hidden rounded-xl">
@@ -61,7 +61,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
           className="flex flex-col group w-full gap-8"
           href={`/work/${data?.mainTitle}`}
         >
-          <div className="w-full h-[380px] rounded-lg md:h-[560px] overflow-hidden">
+          <div className="w-full h-[380px] rounded-lg lg:h-[560px] overflow-hidden">
             <div
               style={{
                 transition: "all .3s",
@@ -77,10 +77,10 @@ const Card = ({ data, index, progress, targetScale, range }) => {
           </div>
           <div className="flex flex-col gap-4 pb-4 border-b border-[rgba(0,0,0,.2)]">
             <div className="w-full flex items-center justify-between">
-              <h2 className="text-dark font-portfolio_regular w-full text-2xl md:text-3xl">
+              <h2 className="text-dark font-portfolio_regular w-full text-2xl lg:text-3xl">
                 {data?.mainTitle}
               </h2>
-              <span className="text-lg md:text-xl font-portfolio_normal">
+              <span className="text-lg lg:text-xl font-portfolio_normal">
                 {data?.year}
               </span>
             </div>

@@ -5,7 +5,7 @@ const Work = () => {
   return (
     <>
       <div className="py-12 w-full relative">
-        <div className="w-[90%] flex flex-col gap-12 mx-auto">
+        <div className="w-[90%] max-w-custom_1 flex flex-col gap-12 mx-auto">
           <WorkList />
         </div>
       </div>
