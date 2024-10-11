@@ -40,7 +40,7 @@ export default function About() {
           <img
             alt="Cotion"
             src={"/images/profile_6.jpg"}
-            className="w-[50px] rounded-full h-[50px] object-cover"
+            className="object-cover"
           />
         </div>
         <div className="flex flex-col gap-8">
@@ -52,7 +52,7 @@ export default function About() {
           </h4>
           <Link
             href={"/about"}
-            className="underline w-full font-normal text-2xl lg:text-3xl text_background text-text_dark_1"
+            className="underline w-full font-portfolio_normal text-2xl lg:text-3xl text_background text-text_dark_1"
           >
             <AnimateTextWord>More About Me and Services</AnimateTextWord>
           </Link>

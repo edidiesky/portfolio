@@ -49,7 +49,7 @@ function WorkTitle() {
             data-scroll-speed="2"
             // titleRef
             className="font-normal flex 
-            text-start lg:text-start text-6xl md:text-8xl leading-[1.4] text_background"
+            text-start lg:text-start text-5xl md:text-7xl leading-[1.4] text_background"
           >
             {workDetails?.mainTitle}{" "}
           </span>
@@ -74,7 +74,7 @@ function WorkTitle() {
             <div className="w-full grid grid-cols-1 md:items-center justify-between gap-8">
               <span
                 className="font-normal flex 
-            text-start lg:text-start text-2xl md:text-4xl w-full leading-[1.4] text_background"
+            text-start lg:text-start text-xl md:text-3xl w-full leading-[1.4] text_background"
               >
              
                 {workDetails?.shortDescription}.
@@ -82,7 +82,7 @@ function WorkTitle() {
             </div>
             <div className="grid md:grid-cols-3 gap-6 md:gap-8">
               <div className="w-full flex flex-col gap-4">
-                <h4 className="text-lg md:text-2xl text_background w-full font-portfolio_regular md:w-[250px] pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
+                <h4 className="text-lg md:text-xl text_background w-full font-portfolio_regular md:w-[250px] pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
                   Role & Services:
                 </h4>
                 <div className="w-full gap-2 flex items-center">
@@ -94,7 +94,7 @@ function WorkTitle() {
                 </div>
               </div>
               <div className="w-full flex flex-col gap-4">
-                <h4 className="text-lg md:text-2xl text_background w-full md:w-[250px] font-portfolio_regular pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
+                <h4 className="text-lg md:text-xl text_background w-full md:w-[250px] font-portfolio_regular pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
                   Location & Year
                 </h4>
                 <div className="w-full gap-2 flex items-start">
@@ -107,7 +107,7 @@ function WorkTitle() {
               </div>
               {workDetails?.github && (
                 <div className="w-full flex flex-col gap-4">
-                  <h4 className="text-lg md:text-2xl text_background w-full md:w-[250px] font-portfolio_regular  pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
+                  <h4 className="text-lg md:text-xl text_background w-full md:w-[250px] font-portfolio_regular  pb-2 md:pb-4 border-b border-[rgba(255,255,255,.2)]">
                     Github
                   </h4>
                   <div className="w-full gap-2 flex items-start">
@@ -127,7 +127,7 @@ function WorkTitle() {
             </div>
           </div>
         </div>
-        <div className="w-full relative flex">
+        <div className="w-full mt-8 relative flex">
           <img
             src={workDetails?.mainImage}
             alt=""
@@ -215,7 +215,7 @@ function MyRoleInWork() {
                 <div className="flex-1 gap-2 flex items-start">
                   <div className="flex items-start ">
                     <span
-                      className="text-lg flex flex-wrap items-center gap-2 md:text-2xl text_background font-normal text-start
+                      className="text-base flex flex-wrap items-center gap-2 md:text-lg text_background font-normal text-start
                      leading-[1] font-portfolio_regular text-white"
                     >
                       {workDetails?.technologyUsed?.map((tools, index) => {
