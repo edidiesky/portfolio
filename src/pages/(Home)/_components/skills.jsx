@@ -55,7 +55,7 @@ const Skills = () => {
                           />
                           <img src={skill?.icons} alt="" className="z-20" />
                         </div>
-                        <h4 className="text-lg md:text-xl font-bold text-[var(--light-grey)] font-portfolio_normal">
+                        <h4 className="text-lg md:text-xl text-[var(--light-grey)] font-portfolio_normal">
                           {skill?.title}
 
                           <span className="text-base capitalize md:text-lg block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
@@ -76,7 +76,7 @@ const Skills = () => {
         <div className="w-full flex flex-col gap-16">
           <div className="w-full grid md:grid-cols-custom gap-16">
             <div className="w-full grid gap-8">
-              <h4 className=" w-full  font-semibold  text-2xl max-w-[600px] lg:text-3xl leading-[1.4] text-text_dark_1 ">
+              <h4 className=" w-full text-2xl max-w-[600px] lg:text-3xl leading-[1.4] text-text_dark_1 ">
                 <Word>{skillDescriptionText2}</Word>
               </h4>
             </div>
