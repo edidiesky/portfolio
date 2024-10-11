@@ -48,12 +48,12 @@ const Navbar = ({ type }) => {
             <img
               alt="Cotion"
               src={"/images/profile_6.jpg"}
-              className="w-[50px] rounded-full h-[50px] object-cover"
+              className="w-[45px] rounded-full h-[45px] object-cover"
             />
             <h4 className="relative  md:flex hidden z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
               <Link
                 href={"/"}
-                className="text-xl lg:text-2xl text-[var(--light-grey)] w-full font-portfolio_bold"
+                className="text-lg lg:text-xl text-[var(--light-grey)] w-full font-portfolio_regular"
               >
                 Victor Essien
               </Link>
@@ -61,13 +61,13 @@ const Navbar = ({ type }) => {
           </div>
 
           <div className="flex flex-1 items-center justify-center">
-            <div className="hidden lg:flex item-center justify-end flex-1 gap-8">
+            <div className="hidden lg:flex item-center justify-end flex-1 gap-8 md:gap-12">
               {linklist?.map((link, index) => {
                 return (
                   <Link
                     key={index}
                     href={`/${link?.path}`}
-                    className="text-lg hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_regular"
+                    className="text-base hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_regular"
                   >
                     {link?.title}
                   </Link>
@@ -76,7 +76,7 @@ const Navbar = ({ type }) => {
 
               <Link
                 href={`www.linkedin.com/in/victorezekielessien`}
-                className="text-lg text-[var(--primary)] font-portfolio_regular"
+                className="text-base text-[var(--primary)] font-portfolio_regular"
               >
                 Linkedin
               </Link>
@@ -88,7 +88,7 @@ const Navbar = ({ type }) => {
                 transition: "all .6s",
               }}
               href={`mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!`}
-              className="text-lg w-[180px] h-[50px] rounded-full border hover:text-[#000] text-[var(--light-grey)] font-portfolio_regular"
+              className="text-base w-[150px] h-[50px] rounded-full border hover:text-[#000] text-[var(--light-grey)] font-portfolio_regular"
             >
               <Magnetic bgColor={"#fff"}>Contact Me!</Magnetic>
             </Link>

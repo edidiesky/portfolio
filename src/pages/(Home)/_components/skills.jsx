@@ -55,10 +55,10 @@ const Skills = () => {
                           />
                           <img src={skill?.icons} alt="" className="z-20" />
                         </div>
-                        <h4 className="text-lg md:text-xl text-[var(--light-grey)] font-portfolio_normal">
+                        <h4 className="text-lg md:text-xl text-[var(--light-grey)] font-portfolio_regular">
                           {skill?.title}
 
-                          <span className="text-base capitalize md:text-lg block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
+                          <span className="text-base capitalize md:text-lg block font-portfolio_normal font-normal text-[var(--dark-grey)] pt-3">
                             {skill?.role}
                           </span>
                         </h4>
