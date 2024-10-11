@@ -66,9 +66,7 @@ export const projectdata3 = [
     period: "2023",
     year: "2023",
     color: "#000",
-    shortDescription:
-      "Developed a fully responsive web product, ZyncLuxury. Built a platform that bridges the gap between realtors and their clients, and tends to enhances communication and simplifies the booking process.",
-    backGroundColor: "#FFFFFF",
+    shortDescription:"ZyncLuxury is a web platform that offers luxurious home lisitngs for home lovers. It is Built with NodeJS, ReactJS, Prisma ORM, and MongoDB", backGroundColor: "#FFFFFF",
     roleDescription:
       "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
     mainImage: "/images/zync/image_1.jpeg",

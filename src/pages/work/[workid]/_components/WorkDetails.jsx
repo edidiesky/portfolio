@@ -78,7 +78,7 @@ function WorkTitle() {
               className="md:w-40 w-40 h-16 hover:text-white md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
                  bg-[#fff] justify-center text-lg md:text-base text-[#000]"
             >
-              <Magnetic bgColor={"var(--grey-1)"}>
+              <Magnetic bgColor={"#eee"}>
                 <span className="flex items-center justify-center gap-2">
                   Live Site <GoArrowUpRight fontSize={"20px"} />
                 </span>
