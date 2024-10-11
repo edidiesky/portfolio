@@ -3,9 +3,7 @@ import React, { useRef } from "react";
 import Word from "@/components/animations/Word";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ctatext4,
-} from "@/constants/data/text";
+import { ctatext4, aboutText2 } from "@/constants/data/text";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
 export default function About() {
@@ -18,12 +16,12 @@ export default function About() {
     <div data-scroll className="py-32 z-50 flex flex-col gap-24">
       <div className="w-[90%] justify-end items-start mx-auto md:px-4 m-auto max-w-custom grid grid-cols-1 gap-4 ">
         <div className="w-[100%] flex flex-col items-end justify-end  gap-16">
-          <h3 className="relative w-full font-normal max-w-[800px] text-3xl md:text-5xl leading-[1.5] text_background">
+          <h3 className="relative w-full font-normal max-w-[800px] text-2xl md:text-4xl leading-[1.5]">
             <Word>{ctatext1}</Word>
           </h3>
           <h3
             // style={{ lineHeight: "1.4 !important" }}
-            className="relative w-full font-normal max-w-[800px] leading-[1.5] text-3xl md:text-5xl text_background"
+            className="relative w-full font-normal max-w-[800px] leading-[1.5] text-2xl md:text-4xl"
           >
             <Word>{ctaText2}</Word>
           </h3>
@@ -45,14 +43,22 @@ export default function About() {
         </div>
         <div className="flex flex-col gap-8">
           <h4
-            className="w-full font-portfolio_normal font-normal text_background text-xl
+            className="w-full
+            text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
+            gap-y-[8px] leading-[1.2] font-portfolio_normal
+            font-normal"
+          >
+            <Word>{aboutText2}</Word>
+          </h4>
+          <h4
+            className="w-full font-portfolio_normal font-normal text-xl
            lg:text-3xl leading-[1.2]"
           >
             <Word>{ctatext4}</Word>
           </h4>
           <Link
             href={"/about"}
-            className="underline w-full font-portfolio_normal text-2xl lg:text-3xl text_background text-text_dark_1"
+            className="underline w-full font-portfolio_normal text-2xl lg:text-3xl text-text_dark_1"
           >
             <AnimateTextWord>More About Me and Services</AnimateTextWord>
           </Link>

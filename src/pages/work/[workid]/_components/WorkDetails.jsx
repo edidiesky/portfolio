@@ -52,21 +52,39 @@ function WorkTitle() {
           >
             {workDetails?.mainTitle}{" "}
           </span>
-          <Link
-            style={{
-              transition: "all .4s",
-            }}
-            href={`${workDetails?.website}`}
-            target="_blank"
-            className="md:w-40 w-40 h-16 hover:text-white md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
+          {!workDetails?.website ? (
+            <Link
+              style={{
+                transition: "all .4s",
+              }}
+              href={`#`}
+              target="_blank"
+              className="md:w-40 w-40 h-16 hover:text-[#000] md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
                  bg-[#fff] justify-center text-lg md:text-base text-[#000]"
-          >
-            <Magnetic bgColor={"var(--grey-1)"}>
-              <span className="flex items-center justify-center gap-2">
-                Live Site <GoArrowUpRight fontSize={"20px"} />
-              </span>
-            </Magnetic>
-          </Link>
+            >
+              <Magnetic bgColor={"#eee"}>
+                <span className="flex items-center justify-center gap-2">
+                  Coming Soon
+                </span>
+              </Magnetic>
+            </Link>
+          ) : (
+            <Link
+              style={{
+                transition: "all .4s",
+              }}
+              href={`${workDetails?.website}`}
+              target="_blank"
+              className="md:w-40 w-40 h-16 hover:text-white md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
+                 bg-[#fff] justify-center text-lg md:text-base text-[#000]"
+            >
+              <Magnetic bgColor={"var(--grey-1)"}>
+                <span className="flex items-center justify-center gap-2">
+                  Live Site <GoArrowUpRight fontSize={"20px"} />
+                </span>
+              </Magnetic>
+            </Link>
+          )}
         </div>
         <div className="w-full mx-auto flex pt-24 flex-col gap-12">
           <div className="flex flex-col gap-12 w-full ">
@@ -75,7 +93,6 @@ function WorkTitle() {
                 className="font-normal flex 
             text-start lg:text-start text-xl md:text-3xl w-full leading-[1.4] text_background"
               >
-             
                 {workDetails?.shortDescription}.
               </span>
             </div>
@@ -256,7 +273,7 @@ function WorkFeatures() {
             );
           })}
         </div>
-        <div className="w-[80%] mx-auto  flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
           <span
             data-scroll
             data-scroll-speed="2"
@@ -348,7 +365,7 @@ function NextWork() {
           </AnimateTextWord>
         </h4>
         <div className="w-full grid md:grid-cols-3 gap-4">
-          {works?.slice(0,3)?.map((work, index) => {
+          {works?.slice(0, 3)?.map((work, index) => {
             return (
               <ProjectCard
                 type={"smallcard"}

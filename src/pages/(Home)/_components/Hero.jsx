@@ -45,7 +45,7 @@ export default function Hero() {
               className="font-normal hero_text2 max-w-[1200px] text_background flex flex-wrap
                  gap-[8px] lg:gap-[13px] items-center justify-start 
                 text-4xl md:text-6xl lg:text-7xl
-                w-full leading-[1.2] font-portfolio_regular"
+                w-full leading-[1.2] font-portfolio_bold"
             >
               {/* A Software Developer who crafts captivating digital experiences. */}
               {heroWords1.split(" ").map((data, index) => {
@@ -75,10 +75,10 @@ export default function Hero() {
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
               className="w-[200px] md:w-[200px] open_to_work h-[50px] md:h-[60px] flex items-center
-                   justify-center text-[#000] hover:text-[#Fff] text-base md:text-lg font-normal rounded-full font-portfolio_regular overflow-hidden
+                   justify-center text-[#000] text-base md:text-lg font-normal rounded-full font-portfolio_regular overflow-hidden
                     bg-[#fff]"
             >
-              <Magnetic bgColor={"var(--primary)"}>Contact Me!</Magnetic>
+              <Magnetic bgColor={"#dcdcdc"}>Contact Me!</Magnetic>
             </Link>
           </div>
         </div>

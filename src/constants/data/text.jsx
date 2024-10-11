@@ -7,7 +7,7 @@ export const aboutText1 =
 
 
 export const aboutText2 =
-  "Hi I am Victor, a full-stack developer from Nigeria. Developing technological interactive solutions for end users is one of the few stuff that takes my time throughout the day. When I'm not developing new web experiences, I'm either reading or watching football";
+  "Hi! I am Victor, a full-stack developer from Nigeria. Developing technological interactive solutions for end-users is one of the few stuff that takes my time throughout the day. When I'm not developing new web experiences, I'm either reading or watching football";
 export const ctatext5 =
   "I am Victor Essien and I am a self-learned software developer, dedicated in creating appealing user-interfaces for industries since 2020";
 

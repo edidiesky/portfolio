@@ -90,7 +90,7 @@ const Navbar = ({ type }) => {
               href={`mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!`}
               className="text-base w-[150px] h-[50px] rounded-full bg-white hover:text-[#000] text-[#000] font-portfolio_regular"
             >
-              <Magnetic bgColor={"#ffffff88"}>Contact Me!</Magnetic>
+              <Magnetic bgColor={"#eee"}>Contact Me!</Magnetic>
             </Link>
             <div
               onClick={() => setMenu(true)}
