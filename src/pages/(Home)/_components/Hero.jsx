@@ -37,7 +37,7 @@ export default function Hero() {
         data-scroll
         className="min-h-[70vh] py-28 md:py-40 relative flex items-center justify-center"
       >
-        <div className="w-[90%] md:w-[80%] md:px-4 mx-auto max-w-custom">
+        <div className="w-[90%]  md:px-4 mx-auto max-w-custom">
           <div className="flex w-full flex-col gap-8">
             <span
               data-scroll

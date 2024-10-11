@@ -12,16 +12,9 @@ const WorkList = ({ index, setTab, tab, type }) => {
   });
   if (type === "work") {
     return (
-      <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-20 justify-between">
+      <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 md:gap-y-16">
         {projectdata3.map((x, index) => {
-          return (
-            <ProjectCard
-        
-              project={x}
-              key={index}
-              index={index}
-            />
-          );
+          return <Card data={x} key={index} index={index} />;
         })}
       </div>
     );

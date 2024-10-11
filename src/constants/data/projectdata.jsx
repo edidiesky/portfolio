@@ -19,8 +19,7 @@ export const projectdata3 = [
     period: "2024",
     year: "2024",
     color: "#fff",
-    shortDescription:
-      "Developed a fully functional restaurant marketplace, TastyTrove. Created a platform that provides menus and enhances communication between sellers of a menu and their customers",
+    shortDescription:"TastyTrove is a dynamic marketplace for food lovers and sellers. It is built with NodeJS, ReactJs and MongoDb. Tests using Cypress were written to test for edge cases in the application",  
     backGroundColor: "#318AFC",
     roleDescription:
       "The role I took in developing involves developing it as a restaurant marketplace. I took pride in developing this application from the server side to the client side. I had to progress further by writing Frontend unit tests using Cypress.",

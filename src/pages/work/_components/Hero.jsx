@@ -32,7 +32,7 @@ export default function Hero() {
         className="py-32 relative flex items-center justify-center"
       >
         <div
-          className="w-[95%] md:w-[80%] mx-auto flex flex-col gap-48
+          className="w-[90%] mx-auto flex flex-col gap-48
          px-2 max-w-custom"
         >
           <span
@@ -63,12 +63,7 @@ export default function Hero() {
             })}
           </span>
           <div className="w-[100%] mx-auto">
-            <WorkList
-              type="work"
-              // setMousePosition={setMousePosition}
-              // setTab={setTab}
-              // tab={tab}
-            />
+            <WorkList type={"work"} />
           </div>
         </div>
       </div>

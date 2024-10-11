@@ -21,6 +21,11 @@ export const skillslist = [
     icons: "/icons/typescript.png",
   },
   {
+    role: "backend development",
+    title: "GO",
+    icons: "/icons/go.png",
+  },
+  {
     role: "Database Management",
     title: "PRISMA",
     icons: "/icons/prisma.png",

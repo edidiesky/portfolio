@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <>
       <div className="relative  w-full hide blur-0 bg-[#000] z-[40000] pb-12 pt-12 md:pt-20 flex flex-col justify-between">
-        <div className="w-[95%] md:w-[80%] max-w-custom mx-auto flex flex-col items-center gap-16">
+        <div className="w-[95%] max-w-custom mx-auto flex flex-col items-center gap-16">
           {/* top side */}
           <div className="flex flex-col gap-12 w-full">
             <div

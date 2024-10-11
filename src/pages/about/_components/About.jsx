@@ -16,7 +16,7 @@ export default function About() {
 
   return (
     <div data-scroll className="py-32 z-50 flex flex-col gap-24">
-      <div className="w-[90%] lg:w-[78%] justify-end items-start mx-auto md:px-4 m-auto max-w-custom grid grid-cols-1 gap-4 ">
+      <div className="w-[90%] justify-end items-start mx-auto md:px-4 m-auto max-w-custom grid grid-cols-1 gap-4 ">
         <div className="w-[100%] flex flex-col items-end justify-end  gap-16">
           <h3 className="relative w-full font-normal max-w-[800px] text-3xl md:text-5xl leading-[1.5] text_background">
             <Word>{ctatext1}</Word>
@@ -30,7 +30,7 @@ export default function About() {
         </div>
       </div>
       <div
-        className="w-[90%] lg:w-[78%] justify-end items-end mx-auto
+        className="w-[90%] justify-end items-end mx-auto
        max-w-custom grid grid-cols-1 lg:grid-cols-custom gap-12 md:gap-24"
       >
         <div

@@ -14,17 +14,17 @@ export default function Cta() {
       className="py-12 mt-20 md:mt-40 lg:py-20 z-[500000] flex items-end justify-end"
     >
       <div
-        className="w-[90%] md:w-[78%] justify-end items-end mx-auto
+        className="w-[90%] justify-end items-end mx-auto
        max-w-custom grid grid-cols-1 lg:grid-cols-custom gap-12 md:gap-24"
       >
         <div className="flex flex-col gap-8">
-          {/* <h4 className="w-full font-portfolio_normal uppercase text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
+          {/* <h4 className="w-full font-portfolio_normal uppercase text_background text-xl lg:text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
             <Word>{ctatext5}</Word>
           </h4> */}
           {/* aboutText2 */}
           <h4
             className="w-full
-            text-2xl lg:text-3xl flex flex-wrap gap-x-[8px]
+            text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
             gap-y-[8px] leading-[1.2] font-portfolio_normal
             font-normal"
           >
@@ -32,7 +32,7 @@ export default function Cta() {
           </h4>
           <h4
             className="w-full
-            text-2xl lg:text-3xl flex flex-wrap gap-x-[8px]
+            text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
             gap-y-[8px] leading-[1.2] font-portfolio_normal
             font-normal"
           >
