@@ -56,12 +56,12 @@ const Card = ({ data, index, progress, targetScale, range }) => {
   // );
   return (
     <div className="w-full flex items-center justify-center">
-      <div className="flex flex-col gap-4 p-[20px]  relative w-full">
+      <div className="flex flex-col gap-4 relative w-full">
         <Link
           className="flex flex-col group w-full gap-8"
           href={`/work/${data?.mainTitle}`}
         >
-          <div className="w-full h-[350px] md:h-[500px] overflow-hidden">
+          <div className="w-full h-[350px] rounded-lg md:h-[500px] overflow-hidden">
             <div
               style={{
                 transition: "all .3s",

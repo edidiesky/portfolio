@@ -5,8 +5,9 @@ import { FaHashnode } from "react-icons/fa6";
 export const aboutText1 =
   "Intrigued with web technologies. I love developing creative and user friendly interfaces. I can build memorable web experience";
 
+
 export const aboutText2 =
-  "When I'm not developing new web experiences, I'm either reading or watching football";
+  "Hi I am Victor, a full-stack developer from Nigeria. Developing technological interactive solutions for end users is one of the few stuff that takes my time throughout the day. When I'm not developing new web experiences, I'm either reading or watching football";
 export const ctatext5 =
   "I am Victor Essien and I am a self-learned software developer, dedicated in creating appealing user-interfaces for industries since 2020";
 
@@ -160,11 +161,11 @@ export const experienceList = [
     location: " United States",
   },
   {
-    title: "Outset.ai",
+    title: "One Key",
     position: "Frontend Engineer",
     date: "August 2020 - May 2021",
     role: " Coordinated with backend developers to align API requirements and data formats, reducing integration issues by 30% and ensuring a seamless user experience",
-    location: "Canada, Ontario",
+    location: "NewYork, United States",
   },
 
   {

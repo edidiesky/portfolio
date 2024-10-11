@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { ctatext4 } from "@/constants/data/text";
+import { ctatext4, aboutText2 } from "@/constants/data/text";
 import Word from "@/components/animations/Word";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
@@ -21,6 +21,15 @@ export default function Cta() {
           {/* <h4 className="w-full font-portfolio_normal uppercase text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
             <Word>{ctatext5}</Word>
           </h4> */}
+          {/* aboutText2 */}
+          <h4
+            className="w-full
+           text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px]
+            gap-y-[8px] leading-[1.2] font-portfolio_regular
+            font-normal"
+          >
+            <Word>{aboutText2}</Word>
+          </h4>
           <h4
             className="w-full
            text_background text-2xl lg:text-3xl flex flex-wrap gap-x-[8px]

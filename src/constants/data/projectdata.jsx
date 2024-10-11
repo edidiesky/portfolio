@@ -104,46 +104,52 @@ export const projectdata3 = [
       images: ["/images/zync/image_5.jpeg"],
     },
   },
-  // tattoo
   {
-    id: 43,
-    website: "https://tattooverse.vercel.app/",
-    role: "Frontend Development",
-    github: "https://github.com/edidiesky/TattooVerse",
-    period: "2020",
-    year: "2020",
-    color: "#000",
+    id: 41,
+    website: "",
+    role: "Full-Stack Development",
+    github: "https://github.com/edidiesky/hirehalo",
+    period: "2024",
+    year: "2024",
+    color: "#fff",
     shortDescription:
-      "Developed a fully responsive and intuitive web product, TattooVerse. Created a platform that bridge the aspect of communications of tattoo artiste works to match the taste of their clients",
-    backGroundColor: "#B3FFCB",
+      "Developed a fully functional restaurant marketplace, TastyTrove. Created a platform that provides menus and enhances communication between sellers of a menu and their customers",
+    backGroundColor: "#318AFC",
     roleDescription:
-      "The role I took in developing TattooVerse involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
-    mainImage: "/images/tattoo/image_1.jpeg",
-    mainTitle: "TattooVerse",
+      "The role I took in developing involves developing it as a restaurant marketplace. I took pride in developing this application from the server side to the client side. I had to progress further by writing Frontend unit tests using Cypress.",
+    mainImage: "/images/hirehalo/home.jpeg",
+    mainTitle: "HireHalo",
     overview: {
       color: "#bbacaf",
       Description: [
-        "TattooVerse is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
+        "HireHalo is a real-time restaurant marketplace, where users can see menu listing, buy them, chat with the chef or sellers of the menu, pay using flutter wave payment and also see there orders listing. I Built it with cutting-edge technologies, it provides Selllers with a seamless environment to connect, engage, with buyers their thoughts in real-time.",
       ],
-      images: ["/images/tattoo/image_2.jpeg"],
+      images: [""],
     },
-    technologyUsed: ["NextJS", "Tailwind Css"],
+    technologyUsed: [
+      "Typescript",
+      "Node.js",
+      "Prisma",
+      "Socket.io",
+      "Tailwind",
+      "MongoDb",
+      "Express.js",
+    ],
     features: {
       color: "#977f60",
       Description: [
-        "TattooVerse platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
-        "TattooVerse allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
+        "HireHalo platform redefines the concept of social food marketplace where users can see menu listing, buy them, chat with the chef or sellers of the menu, pay using flutter wave payment and also see there orders listing real-time chat systems.",
+        "HireHalo allows Sellers to communicate with buyers, see notifications, see revenue, carry out managment or inventory on their products in a dynamic and interactive manner.",
       ],
-      images: ["/images/tattoo/image_2.jpeg", "/images/tattoo/image_3.jpeg"],
+      images: [""],
     },
     ui: {
       color: "#977f60",
       description:
-        "TattooVerse is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/tattoo/image_4.jpeg"],
+        "HireHalo is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      images: [""],
     },
   },
-
   // twizzle
   {
     id: 4156,
@@ -191,6 +197,46 @@ export const projectdata3 = [
       images: ["/images/twizle/image_2.jpeg"],
     },
   },
+  // tattoo
+  {
+    id: 43,
+    website: "https://tattooverse.vercel.app/",
+    role: "Frontend Development",
+    github: "https://github.com/edidiesky/TattooVerse",
+    period: "2020",
+    year: "2020",
+    color: "#000",
+    shortDescription:
+      "Developed a fully responsive and intuitive web product, TattooVerse. Created a platform that bridge the aspect of communications of tattoo artiste works to match the taste of their clients",
+    backGroundColor: "#B3FFCB",
+    roleDescription:
+      "The role I took in developing TattooVerse involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
+    mainImage: "/images/tattoo/image_1.jpeg",
+    mainTitle: "TattooVerse",
+    overview: {
+      color: "#bbacaf",
+      Description: [
+        "TattooVerse is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
+      ],
+      images: ["/images/tattoo/image_2.jpeg"],
+    },
+    technologyUsed: ["NextJS", "Tailwind Css"],
+    features: {
+      color: "#977f60",
+      Description: [
+        "TattooVerse platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
+        "TattooVerse allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
+      ],
+      images: ["/images/tattoo/image_2.jpeg", "/images/tattoo/image_3.jpeg"],
+    },
+    ui: {
+      color: "#977f60",
+      description:
+        "TattooVerse is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      images: ["/images/tattoo/image_4.jpeg"],
+    },
+  },
+
   // Car
   {
     id: 4356,
