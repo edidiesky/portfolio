@@ -19,7 +19,8 @@ export const projectdata3 = [
     period: "2024",
     year: "2024",
     color: "#fff",
-    shortDescription:"TastyTrove is a dynamic marketplace for food lovers and sellers. It is built with NodeJS, ReactJs and MongoDb. Tests using Cypress were written to test for edge cases in the application",  
+    shortDescription:
+      "TastyTrove is a dynamic marketplace for food lovers and sellers. It is built with NodeJS, ReactJs and MongoDb. Tests using Cypress were written to test for edge cases in the application",
     backGroundColor: "#318AFC",
     roleDescription:
       "The role I took in developing involves developing it as a restaurant marketplace. I took pride in developing this application from the server side to the client side. I had to progress further by writing Frontend unit tests using Cypress.",
@@ -112,7 +113,7 @@ export const projectdata3 = [
     year: "2024",
     color: "#fff",
     shortDescription:
-      "Developed a fully functional restaurant marketplace, TastyTrove. Created a platform that provides menus and enhances communication between sellers of a menu and their customers",
+      "HireHalo is a platform which connects job seekers to wide range of remote job opportunites. I built Hirehalo with Go, NextJs,MongoDB, and Typescript.",
     backGroundColor: "#318AFC",
     roleDescription:
       "The role I took in developing involves developing it as a restaurant marketplace. I took pride in developing this application from the server side to the client side. I had to progress further by writing Frontend unit tests using Cypress.",
@@ -121,24 +122,23 @@ export const projectdata3 = [
     overview: {
       color: "#bbacaf",
       Description: [
-        "HireHalo is a real-time restaurant marketplace, where users can see menu listing, buy them, chat with the chef or sellers of the menu, pay using flutter wave payment and also see there orders listing. I Built it with cutting-edge technologies, it provides Selllers with a seamless environment to connect, engage, with buyers their thoughts in real-time.",
+        "HireHalo is a platform which connects job seekers to wide range of remote job opportunites. It also creates rooms for startups to pitch their products and create jobs for their potential candidates, and also find the right talent for the posted jobs. Hirehalo is all about connecting job seekers to their dream jobs and Opportunities. I built Hirehalo with Go, NextJs,MongoDB, and Typescript.",
       ],
       images: [""],
     },
     technologyUsed: [
       "Typescript",
-      "Node.js",
-      "Prisma",
+      "Go",
+      "NextJS",
       "Socket.io",
       "Tailwind",
       "MongoDb",
-      "Express.js",
     ],
     features: {
       color: "#977f60",
       Description: [
-        "HireHalo platform redefines the concept of social food marketplace where users can see menu listing, buy them, chat with the chef or sellers of the menu, pay using flutter wave payment and also see there orders listing real-time chat systems.",
-        "HireHalo allows Sellers to communicate with buyers, see notifications, see revenue, carry out managment or inventory on their products in a dynamic and interactive manner.",
+        "Hirehalo is all about connecting job seekers to their dream jobs and Opportunities.",
+        " It also creates rooms for startups to pitch their products and create jobs for their potential candidates, and also find the right talent for the posted jobs. ",
       ],
       images: [""],
     },

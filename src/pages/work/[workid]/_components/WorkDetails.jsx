@@ -2,7 +2,6 @@
 import React, { useRef, useState } from "react";
 import { projectdata3 } from "@/constants/data/projectdata";
 import Link from "next/link";
-import { opacity, slideup, slideup2 } from "@/constants/utils/framer";
 import { useRouter } from "next/router";
 import { GoArrowUpRight } from "react-icons/go";
 import { motion, useInView } from "framer-motion";
@@ -17,7 +16,7 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="py-8 w-full overflow-hidden relative flex items-center justify-center"
+        className="py-8 md:pt-48 w-full overflow-hidden relative flex items-center justify-center"
       >
         <div className="w-full px-2 flex flex-col gap-12 md:gap-16 ">
           {/* title */}
@@ -42,7 +41,7 @@ function WorkTitle() {
   // console.log(workDetails)
   return (
     <div className="grid w-full max-w-custom_1 mx-auto grid-cols-1 justify-between gap-y-8 gap-x-12">
-      <div className="flex w-[90%] max-w-custom flex-col gap-12 mx-auto">
+      <div className="flex w-[90%] max-w-custom flex-col gap-8 mx-auto">
         <div className="flex gap-4 md:flex-row flex-col justify-between  items-end">
           <span
             data-scroll
@@ -69,7 +68,7 @@ function WorkTitle() {
             </Magnetic>
           </Link>
         </div>
-        <div className="w-full mx-auto flex pt-24 flex-col gap-20">
+        <div className="w-full mx-auto flex pt-24 flex-col gap-12">
           <div className="flex flex-col gap-12 w-full ">
             <div className="w-full grid grid-cols-1 md:items-center justify-between gap-8">
               <span
