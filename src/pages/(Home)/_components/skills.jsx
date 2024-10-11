@@ -92,22 +92,22 @@ const Skills = () => {
                   return (
                     <div
                       key={index}
-                      className="w-full capitalize grid md:grid-cols-3 items-center gap-4 justify-between
-                       text-sm md:text-base lg:text-2xl font-normal border-b border-[rgba(255,255,255,.1)] py-8 md:py-20 font-portfolio_normal text-grey"
+                      className="w-full capitalize flex items-center gap-4 justify-between
+                       text-sm md:text-base lg:text-2xl font-normal border-b border-[rgba(255,255,255,.1)] py-8 md:py-12 font-portfolio_normal text-grey"
                     >
-                      <span className="flex justify-start md:items-center gap-4">
+                      <div className="flex-1 flex flex-col gap-3">
+                        <span className="text-3xl">
+                          {skill?.title}{" "} as {" "}
+                          <span className="">
+                            {skill?.position}
+                          </span>
+                        </span>
+                        <span className="flex max-w-[600px] text-base text_background gap-4">
+                          {skill?.role}
+                        </span>
+                      </div>
+                      <span className="text-end">
                         {skill?.date}
-                      </span>
-                      <span className="text_background flex flex-col md:items-center md:justify-center gap-1">
-                        <span className="text-3xl md:text-center">
-                          {skill?.title}
-                        </span>
-                        <span className="text-lg md:text-center">
-                          {skill?.position}
-                        </span>
-                      </span>
-                      <span className="flex text-base text_background justify-end items-center gap-4">
-                        {skill?.role}
                       </span>
                     </div>
                   );

@@ -44,7 +44,7 @@ export default function Hero() {
               data-scroll-speed="2"
               className="font-normal hero_text2 max-w-[1200px] text_background flex flex-wrap
                  gap-[8px] lg:gap-[13px] items-center justify-start 
-                text-5xl md:text-6xl lg:text-7xl
+                text-4xl md:text-6xl lg:text-7xl
                 w-full leading-[1.2] font-portfolio_bold"
             >
               {/* A Software Developer who crafts captivating digital experiences. */}
@@ -74,7 +74,7 @@ export default function Hero() {
               href={
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="w-[270px] open_to_work h-[80px] flex items-center
+              className="w-[240px] open_to_work h-[80px] flex items-center
                    justify-center text-[#000] hover:text-[#Fff] text-xl font-normal rounded-full font-portfolio_regular overflow-hidden
                     bg-[#fff]"
             >

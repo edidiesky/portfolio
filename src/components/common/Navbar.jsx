@@ -20,7 +20,7 @@ const linklist = [
     color: "#00FAFF",
   },
   {
-    title: "About Victor",
+    title: "About",
     path: "about",
     color: "#FFC700",
   },
@@ -78,7 +78,7 @@ const Navbar = ({ type }) => {
                 href={`www.linkedin.com/in/victorezekielessien`}
                 className="text-lg text-[var(--primary)] font-portfolio_regular"
               >
-                linkedln
+                Linkedin
               </Link>
             </div>
           </div>

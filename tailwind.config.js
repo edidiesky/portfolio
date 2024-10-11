@@ -20,11 +20,11 @@ module.exports = {
         custom_2: "auto 1fr",
       },
       // Blog_Styles
-      fontFamily: {
-        portfolio_normal: ["Manrope", "sans-serif"],
-        portfolio_bold: ["Manrope", "sans-serif"],
-        portfolio_regular: ["DM Mono", "sans-serif"],
-      },
+      // fontFamily: {
+      //   portfolio_normal: ["Karla", "sans-serif"],
+      //   portfolio_bold: ["Karla", "sans-serif"],
+      //   portfolio_regular: ["Karla", "sans-serif"],
+      // },
       colors: {
         light_grey: "#eee",
       },
