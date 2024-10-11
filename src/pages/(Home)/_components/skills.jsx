@@ -58,7 +58,7 @@ const Skills = () => {
                         <h4 className="text-lg md:text-xl text-[var(--light-grey)] font-portfolio_regular">
                           {skill?.title}
 
-                          <span className="text-base capitalize md:text-lg block font-portfolio_normal font-normal text-[var(--dark-grey)] pt-3">
+                          <span className="text-base capitalize md:text-lg block font-portfolio_regular font-normal text-[var(--dark-grey)] pt-3">
                             {skill?.role}
                           </span>
                         </h4>
@@ -102,7 +102,7 @@ const Skills = () => {
                             {skill?.position}
                           </span>
                         </span>
-                        <span className="flex  font-portfolio_normal max-w-[600px] text-base text_background gap-4">
+                        <span className="flex-1 max-w-[600px] text-base text_background gap-4">
                           {skill?.role}
                         </span>
                       </div>

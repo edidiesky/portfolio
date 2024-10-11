@@ -1,7 +1,7 @@
 import React, { useMemo, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 const Word = ({ children }) => {
-  const words = children?.split("");
+  const words = children?.split(" ");
   const text_1_ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -10,7 +10,7 @@ const Word = ({ children }) => {
   });
 
   return (
-    <span ref={text_1_ref} className="w-full flex flex-wrap items-center">
+    <span ref={text_1_ref} className="w-full gap-[6px] flex flex-wrap items-center">
       {words?.map((word, index) => {
         return (
           <OpacityText
