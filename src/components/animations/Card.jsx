@@ -85,7 +85,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
               <h3 className="text-dark font-portfolio_regular w-full text-xl lg:text-2xl">
                 {data?.role}
               </h3>
-              <span className="text-lg lg:text-xl font-portfolio_normal">
+              <span className="text-lg lg:text-xl font-portfolio_regular text-[#777]">
                 {data?.year}
               </span>
             </div>
