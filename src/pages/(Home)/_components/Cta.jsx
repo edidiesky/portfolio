@@ -53,27 +53,6 @@ export default function Cta() {
             className="w-full hero_images h-full object-cover"
           />
         </div>
-        {/* <div className="w-[100%] flex flex-col items-end justify-end gap-16"> */}
-        {/* <div className="w-full grid-cols-1 grid py-5 gap-12 sm:grid-cols-custom_2">
-            <div className="w-[300px] flex-col gap-12">
-             
-            </div>
-            <div className="w-full flex flex-col gap-8">
-              <h4 className="w-full uppercase text-xl lg:text-2xl text-text_dark_1">
-                <AnimateTextWord>{ctatext5}</AnimateTextWord>
-              </h4>
-              <h4 className="w-full uppercase text-xl lg:text-2xl text-text_dark_1">
-                <AnimateTextWord>{ctatext3}</AnimateTextWord>
-              </h4>
-              <Link
-                href={"/about"}
-                className="underline w-full uppercase text-xl lg:text-2xl text-text_dark_1"
-              >
-                <AnimateTextWord>More About Me and Services</AnimateTextWord>
-              </Link>
-            </div>
-          </div> */}
-        {/* </div> */}
       </div>
     </div>
   );
