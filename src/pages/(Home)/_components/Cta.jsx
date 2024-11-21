@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { ctatext4, aboutText2 } from "@/constants/data/text";
+import { ctatext4, aboutText2, ctatext1 } from "@/constants/data/text";
 import Word from "@/components/animations/Word";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
@@ -11,47 +11,81 @@ export default function Cta() {
   return (
     <div
       data-scroll
-      className="py-12 mt-20 md:mt-40 lg:py-20 z-[500000] flex items-end justify-end"
+      className="py-24 lg:py-32 z-[500000] flex flex-col items-end justify-end"
     >
-      <div
-        className="w-[90%] justify-end items-end mx-auto
-       max-w-custom grid grid-cols-1 lg:grid-cols-custom gap-12 md:gap-24"
-      >
-        <div className="flex flex-col gap-8">
-          {/* <h4 className="w-full font-portfolio_normal uppercase text_background text-xl lg:text-3xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.2] font-portfolio_bold1 font-medium text-text_dark_1">
-            <Word>{ctatext5}</Word>
-          </h4> */}
-          {/* aboutText2 */}
-          <h4
-            className="w-full
-            text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
+      <div className="w-[90%] max-w-custom mx-auto flex flex-col gap-20 md:gap-32 items-end justify-end">
+        <h4 className="text-5xl md:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
+          <div className="md:max-w-[500px]">
+            {" "}
+            <AnimateTextWord type="largeText">
+              Few things About Me
+            </AnimateTextWord>{" "}
+          </div>
+          {/* <sup className="text-2xl md:text-4xl">4</sup> */}
+          <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
+            <div className="w-full"></div>
+            <span className="block text-xl text_background max-w-[500px] capitalize md:text-3xl">
+              <AnimateTextWord>
+                Featured projects that have been meticulously crafted with
+                passion to drive results and impact
+              </AnimateTextWord>
+            </span>
+          </div>
+        </h4>
+        <div className="w-[90%] lg:w-[850px] flex-col flex gap-12 md:gap-20">
+          <div className="flex flex-col gap-12 w-full">
+            <h4
+              className="w-full
+            text-3xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]
             gap-y-[8px] leading-[1.2] font-portfolio_regular"
-          >
-            <Word>{aboutText2}</Word>
-          </h4>
-          <h4
-            className="w-full
-            text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
+            >
+              <Word>{aboutText2}</Word>
+            </h4>
+            <h4
+              className="w-full
+            text-4xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]
             gap-y-[8px] leading-[1.2] font-portfolio_regular"
-          >
-            <Word>{ctatext4}</Word>
-          </h4>
-          <Link
-            href={"/about"}
-            className="underline z-[4000] w-full font-portfolio_regular uppercase text-xl lg:text-2xl text-text_dark_1"
-          >
-            <AnimateTextWord>More About Me and Services</AnimateTextWord>
-          </Link>
-        </div>
-        <div
-          // ref={imageRef}
-          className="md:w-[400px] h-full"
-        >
-          <img
-            alt="Cotion"
-            src={"/images/profile_6.jpg"}
-            className="w-full hero_images h-full object-cover"
-          />
+            >
+              <Word>{ctatext1}</Word>
+            </h4>
+          </div>
+
+          <div className="w-full pt-4 mx-auto items-center max-w-custom grid grid-cols-1 lg:grid-cols-custom_2 gap-8 md:gap-16">
+            <div
+              // ref={imageRef}
+              className="md:w-[300px] flex flex-col gap-4"
+            >
+              <h4
+                className="w-full
+            text-xl lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular"
+              >
+                <AnimateTextWord>
+                  A Fussion of Engineering and Passion
+                </AnimateTextWord>
+              </h4>
+              <Image
+                width={180}
+                height={160}
+                alt="Cotion"
+                src={"/eddy.jpeg"}
+                className="md:w-[250px] object-cover"
+              />
+            </div>
+            <div className="flex flex-col gap-8">
+              <h4
+                className="w-full
+            text-xl lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular"
+              >
+                <AnimateTextWord>{ctatext4}</AnimateTextWord>
+              </h4>
+              <Link
+                href={"/about"}
+                className="underline z-[4000] w-full font-portfolio_regular text-xl lg:text-2xl text-text_dark_1"
+              >
+                <AnimateTextWord>More About Me and Services</AnimateTextWord>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

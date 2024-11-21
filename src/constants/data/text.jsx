@@ -5,15 +5,17 @@ import { FaHashnode } from "react-icons/fa6";
 export const aboutText1 =
   "Intrigued with web technologies. I love developing creative and user friendly interfaces. I can build memorable web experience";
 
-
 export const aboutText2 =
-  "Hi! I am Victor, a full-stack developer from Nigeria. Developing technological interactive solutions for end-users is one of the few stuff that takes my time throughout the day. When I'm not developing new web experiences, I'm either reading or watching football";
+  "Hi there! I'm Victor, a passionate Software Developer with 4+ years of experience. I specialize in helping startups achieve their goals by building products and experiences that are intuitive, user-centric, and optimized for high conversion rates";
 export const ctatext5 =
   "I am Victor Essien and I am a self-learned software developer, dedicated in creating appealing user-interfaces for industries since 2020";
 
+export const ctatext1 =
+  "When I'm not building or exploring new web experiences, I'm probably playing games or watching football.";
 export const ctatext3 = `I am your guy to go to! I can work and communicate effectively with design focused teams to build web applications. I have years of experience collaborating with product teams.`;
-export const ctatext4 = 
-'I have specialized skills that can act as a catalyst for the growth of businesses. From automated testing, to building reuseable components, and to carrying out special effects enriching the overall user experience'
+export const ctatext4 =
+  "Throughout my career, I’ve honed my skills in crafting scalable and user-friendly solutions using React, Go, Node.js, Next.js, TypeScript, and Svelte. My passion for learning has also driven me to explore DevOps, leveraging tools like GitHub Actions and Jenkins to streamline CI/CD pipelines for large-scale enterprise solutions.";
+
 export const skillslist = [
   {
     role: "frontend development",
