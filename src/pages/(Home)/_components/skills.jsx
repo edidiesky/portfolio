@@ -20,7 +20,7 @@ const Skills = () => {
               <div className="w-full"></div>
               <h4
                 className=" w-full  max-w-[616px] flex items-center gap-4 text-lg
-               lg:text-2xl font-portfolio_normal leading-[1.4] text-text_dark_1 "
+               lg:text-2xl font-portfolio_regular leading-[1.4] text-text_dark_1 "
               >
                 <AnimateTextWord>{aboutText1}</AnimateTextWord>
               </h4>
