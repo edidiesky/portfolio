@@ -27,7 +27,7 @@ export const LargeSlideUp = {
     opacity: 1,
     y: "0%",
     transition: {
-      duration: 1,
+      duration: .7,
       delay: i * 0.05,
       ease: [0.62, 0.05, 0.01, 0.99],
     },

@@ -5,7 +5,7 @@ const SmoothScroll = ({ children }) => {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 2,
-      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // https://easings.net
+      easing: (t) => Math.min(1, 1.001 - Math.pow(3, -10 * t)),
       direction: "vertical",
       smooth: true,
       smoothTouch: true,

@@ -159,18 +159,18 @@ export const experienceList = [
     location: "The Netherlands",
   },
   {
-    title: "Coba",
-    position: "Lead, Frontend Engineer",
+    title: "Outset.A",
+    position: "Frontend Engineer",
     date: "  January 2022 - August 2023",
     role: "Developed comprehensive test suites with Cypress, increasing test coverage from 60% to 85%, resulting in a 21.4% improvement in bug detection.",
     location: " United States",
   },
   {
-    title: "One Key",
+    title: "Palkeeper",
     position: "Frontend Engineer",
     date: "August 2020 - May 2021",
     role: " Coordinated with backend developers to align API requirements and data formats, reducing integration issues by 30% and ensuring a seamless user experience",
-    location: "NewYork, United States",
+    location: " United States",
   },
 
   {
