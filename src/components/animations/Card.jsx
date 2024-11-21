@@ -61,7 +61,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
           className="flex flex-col group w-full gap-8"
           href={`/work/${data?.mainTitle}`}
         >
-          <div className="w-full h-[350px] rounded-md lg:h-[480px] overflow-hidden">
+          <div className="w-full h-[350px] lg:h-[580px] overflow-hidden">
             <div
               style={{
                 transition: "all .3s",
@@ -75,11 +75,16 @@ const Card = ({ data, index, progress, targetScale, range }) => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-4 pb-4 border-b border-[rgba(0,0,0,.2)]">
-            <div className="w-full flex items-center justify-between">
+          <div className="flex flex-col gap-4 ">
+            <div className="w-full flex pb-4 md:pb-8 border-b border-[rgba(255,255,255,.09)] items-center justify-between">
               <h2 className="text-dark font-portfolio_regular w-full text-2xl lg:text-3xl">
                 {data?.mainTitle}
               </h2>
+            </div>
+            <div className="w-full flex items-center justify-between">
+              <h3 className="text-dark font-portfolio_regular w-full text-2xl lg:text-2xl">
+                {data?.role}
+              </h3>
               <span className="text-lg lg:text-xl font-portfolio_normal">
                 {data?.year}
               </span>
