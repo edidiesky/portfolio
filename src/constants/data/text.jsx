@@ -3,7 +3,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaHashnode } from "react-icons/fa6";
 export const aboutText1 =
-  "Intrigued with web technologies. I love developing creative and user friendly interfaces. I can build memorable web experience";
+  "Intrigued with web technologies. I love developing creative and user friendly interfaces. I can build memorable web experience for your end-users driving profit to your business";
 
 export const aboutText2 =
   "Hi there! I'm Victor, a passionate Software Developer with 4+ years of experience. I specialize in helping startups achieve their goals by building products and experiences that are intuitive, user-centric, and optimized for high conversion rates";
@@ -13,7 +13,11 @@ export const ctatext5 =
 export const ctatext1 =
   "When I'm not building or exploring new web experiences, I'm probably playing games or watching football.";
 export const ctatext3 = `I am your guy to go to! I can work and communicate effectively with design focused teams to build web applications. I have years of experience collaborating with product teams.`;
-export const ctatext4 =
+export const ctatext6 =
+  "What sets me apart is my belief in the power of collaboration and mentorship. I strongly believe that empowered teams build great products. Whether I’m creating dynamic front-end interfaces or architecting backend systems, I bring creativity, precision, and an unwavering focus on delivering impactful results.";
+export const ctatext7 =
+  "I'm currently open to new opportunities, particularly where I can make a meaningful difference. Let’s connect and discuss how I can contribute to your team! Feel free to reach me at victoressienscript@gmail.com.";
+  export const ctatext4 =
   "Throughout my career, I’ve honed my skills in crafting scalable and user-friendly solutions using React, Go, Node.js, Next.js, TypeScript, and Svelte. My passion for learning has also driven me to explore DevOps, leveraging tools like GitHub Actions and Jenkins to streamline CI/CD pipelines for large-scale enterprise solutions.";
 
 export const skillslist = [

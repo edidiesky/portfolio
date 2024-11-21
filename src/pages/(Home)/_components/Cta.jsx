@@ -3,7 +3,12 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { ctatext4, aboutText2, ctatext1 } from "@/constants/data/text";
+import {
+  ctatext4,
+  aboutText2,
+  ctatext1,
+  ctatext7,
+} from "@/constants/data/text";
 import Word from "@/components/animations/Word";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 
@@ -26,13 +31,13 @@ export default function Cta() {
             <div className="w-full"></div>
             <span className="block text-xl text_background max-w-[500px] capitalize md:text-3xl">
               <AnimateTextWord>
-                Featured projects that have been meticulously crafted with
-                passion to drive results and impact
+                Look into the lenses of a passionate software developer who seek
+                drive results and impact on startup products
               </AnimateTextWord>
             </span>
           </div>
         </h4>
-        <div className="w-[90%] lg:w-[850px] flex-col flex gap-12 md:gap-20">
+        <div className="w-[90%] lg:w-[900px] flex-col flex gap-12 md:gap-20">
           <div className="flex flex-col gap-12 w-full">
             <h4
               className="w-full
@@ -50,17 +55,17 @@ export default function Cta() {
             </h4>
           </div>
 
-          <div className="w-full pt-4 mx-auto items-center max-w-custom grid grid-cols-1 lg:grid-cols-custom_2 gap-8 md:gap-16">
+          <div className="w-full pt-4 md:w-[90%] items-center max-w-custom grid grid-cols-1 lg:grid-cols-custom_2 gap-8 md:gap-8">
             <div
               // ref={imageRef}
-              className="md:w-[300px] flex flex-col gap-4"
+              className="md:w-[300px] flex flex-col gap-4 md:gap-8"
             >
               <h4
                 className="w-full
             text-xl lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular"
               >
                 <AnimateTextWord>
-                  A Fussion of Engineering and Passion
+                  A Fusion of Product Engineering and Passion
                 </AnimateTextWord>
               </h4>
               <Image
@@ -71,16 +76,16 @@ export default function Cta() {
                 className="md:w-[250px] object-cover"
               />
             </div>
-            <div className="flex flex-col gap-8">
-              <h4
-                className="w-full
-            text-xl lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular"
-              >
+            <div className="flex flex-col gap-12">
+              <h4 className="w-full text_background text-lg lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular">
                 <AnimateTextWord>{ctatext4}</AnimateTextWord>
+              </h4>
+              <h4 className="w-full text_background text-lg lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular">
+                <AnimateTextWord>{ctatext7}</AnimateTextWord>
               </h4>
               <Link
                 href={"/about"}
-                className="underline z-[4000] w-full font-portfolio_regular text-xl lg:text-2xl text-text_dark_1"
+                className="underline text_background z-[4000] w-full font-portfolio_regular text-xl lg:text-2xl text-text_dark_1"
               >
                 <AnimateTextWord>More About Me and Services</AnimateTextWord>
               </Link>
