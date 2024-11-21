@@ -86,7 +86,7 @@ function WorkTitle() {
             </Link>
           )}
         </div>
-        <div className="w-full mx-auto flex pt-24 flex-col gap-12">
+        <div className="w-full mx-auto flex pt-12 flex-col gap-12">
           <div className="flex flex-col gap-12 w-full ">
             <div className="w-full grid grid-cols-1 md:items-center justify-between gap-8">
               <span
