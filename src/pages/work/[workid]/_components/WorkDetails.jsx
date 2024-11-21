@@ -143,12 +143,14 @@ function WorkTitle() {
             </div>
           </div>
         </div>
-        <div className="w-full mt-8 relative flex">
-          <img
-            src={workDetails?.mainImage}
-            alt=""
-            className="w-full object-cover"
-          />
+        <div className="w-full flex items-end justify-end">
+          <div className="w-full md:w-[500px] mt-8 relative flex">
+            <img
+              src={workDetails?.mainImage}
+              alt=""
+              className="w-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>

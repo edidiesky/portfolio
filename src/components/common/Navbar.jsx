@@ -67,7 +67,7 @@ const Navbar = ({ type }) => {
                   <Link
                     key={index}
                     href={`/${link?.path}`}
-                    className="text-lg hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_normal"
+                    className="text-lg hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_regular"
                   >
                     {link?.title}
                   </Link>
