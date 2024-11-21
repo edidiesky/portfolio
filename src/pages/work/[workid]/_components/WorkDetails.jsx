@@ -18,7 +18,7 @@ export default function Hero() {
         data-scroll
         className="py-8 md:pt-48 w-full overflow-hidden relative flex items-center justify-center"
       >
-        <div className="w-full px-2 flex flex-col gap-12 md:gap-16 ">
+        <div className="w-full md:w-[90%] max-w-custom mx-auto px-2 flex flex-col gap-12 md:gap-16 ">
           {/* title */}
           {WorkTitle()}
           {/* overview */}
@@ -90,8 +90,7 @@ function WorkTitle() {
           <div className="flex flex-col gap-12 w-full ">
             <div className="w-full grid grid-cols-1 md:items-center justify-between gap-8">
               <span
-                className="font-normal flex 
-            text-start lg:text-start text-xl md:text-3xl w-full leading-[1.4] text_background"
+                className="font-normal flex md:w-[900px] text-start lg:text-start text-xl md:text-3xl w-full leading-[1.4] text_background"
               >
                 {workDetails?.shortDescription}.
               </span>
@@ -143,8 +142,8 @@ function WorkTitle() {
             </div>
           </div>
         </div>
-        <div className="w-full flex items-end justify-end">
-          <div className="w-full md:w-[500px] mt-8 relative flex">
+        <div className="w-full md:w-[80%] mx-auto flex items-end justify-end">
+          <div className="w-full md:w-[950px] mt-8 relative flex">
             <img
               src={workDetails?.mainImage}
               alt=""
@@ -187,7 +186,7 @@ function WorkOverview() {
             {/* <div className="w-full"></div> */}
           </div>
         </div>
-        <div className="w-full relative mx-auto flex-col gap-12 mt-20 flex max-w-custom">
+        <div className="w-full relative mx-auto grid gap-12 mt-20 md:grid-cols-2 max-w-custom">
           {workDetails?.overview?.images?.map((image, index) => {
             return (
               <img
