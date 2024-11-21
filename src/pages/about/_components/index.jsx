@@ -5,6 +5,7 @@ import About from "./About";
 // import Skills from "./skills";
 import Footer from "@/components/common/Footer";
 import Skills from "@/pages/(Home)/_components/skills";
+import Cta from "@/pages/(Home)/_components/Cta";
 // import About from "@/pages/(Home)/_components/About";
 
 export default function AboutIndex() {
@@ -12,7 +13,8 @@ export default function AboutIndex() {
     <div className=" relative">
       <div className="w-full z-20">
         <Hero />
-        <About />
+        <Cta/>
+        {/* <About /> */}
         <Skills />
       </div>
       {/* <Footer /> */}

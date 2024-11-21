@@ -12,7 +12,7 @@ const Skills = () => {
     <div data-scroll className="py-20 flex flex-col gap-24">
       <div className="w-[90%] mx-auto max-w-custom grid gap-8">
         <div className="flex flex-col gap-24 justify-end">
-          <h4 className="text-5xl md:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
+          <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
             <div className="md:max-w-[500px]">
               {" "}
               <AnimateTextWord type="largeText">
@@ -59,7 +59,7 @@ const Skills = () => {
       <div className="w-[90%] mx-auto max-w-custom grid gap-8">
         <div className="w-[100px]"></div>
         <div className="w-full flex flex-col gap-8 md:gap-12">
-          <h4 className="text-5xl md:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
+          <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
             <div className="md:max-w-[500px]">
               {" "}
               <AnimateTextWord type="largeText">

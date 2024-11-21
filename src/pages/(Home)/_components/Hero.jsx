@@ -1,12 +1,10 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import Link from "next/link";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 import Magnetic from "@/components/animations/Magnetic";
 export default function Hero() {
-  const container = useRef(null);
-
   const heroWords1 =
     "I’m Victor, a software developer fascinated in Crafting Scalable, Production-Ready Web Applications";
   const heroWords3 = `I help tech companies in leveraging their products by creating user-centric and visually appealing cross-platform applications that fit with their business goals.`;
@@ -35,7 +33,7 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="min-h-[70vh] py-28 md:py-40 relative flex items-center justify-center"
+        className="min-h-[700px] py-28 md:py-32 relative flex items-center justify-center"
       >
         <div className="w-[90%]  md:px-4 mx-auto max-w-custom">
           <div className="flex w-full flex-col gap-8">
@@ -44,7 +42,7 @@ export default function Hero() {
               data-scroll-speed="2"
               className="font-normal hero_text2 max-w-[1200px] text_background flex flex-wrap
                  gap-[8px] lg:gap-[13px] items-center justify-start 
-                text-4xl md:text-6xl lg:text-7xl
+                text-4xl lg:text-7xl
                 w-full leading-[1.2] font-portfolio_bold"
             >
               {/* A Software Developer who crafts captivating digital experiences. */}

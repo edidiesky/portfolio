@@ -1,5 +1,4 @@
 "use client";
-import React, { useRef } from "react";
 import Word from "@/components/animations/Word";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,16 +12,13 @@ export default function About() {
     "Helping industries to rise above others in their niche is one of my healthy obsession I do bring and fascinated about.";
 
   return (
-    <div data-scroll className="py-32 z-50 flex flex-col gap-24">
+    <div data-scroll className="py-12 z-50 flex flex-col gap-24">
       <div className="w-[90%] justify-end items-start mx-auto md:px-4 m-auto max-w-custom grid grid-cols-1 gap-4 ">
         <div className="w-[100%] flex flex-col items-end justify-end  gap-16">
-          <h3 className="relative w-full font-portfolio_regular max-w-[800px] text-2xl md:text-4xl leading-[1.5]">
+          <h3 className="w-full max-w-[900px] text-2xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]  gap-y-[8px] leading-[1.2] font-portfolio_regular">
             <Word>{ctatext1}</Word>
           </h3>
-          <h3
-            // style={{ lineHeight: "1.4 !important" }}
-            className="relative w-full font-portfolio_regular max-w-[800px] leading-[1.5] text-2xl md:text-4xl"
-          >
+          <h3 className="w-full max-w-[900px] text-2xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]  gap-y-[8px] leading-[1.2] font-portfolio_regular">
             <Word>{ctaText2}</Word>
           </h3>
         </div>
@@ -35,10 +31,12 @@ export default function About() {
           // ref={imageRef}
           className="md:w-[400px] h-full"
         >
-          <img
+          <Image
+            width={180}
+            height={160}
             alt="Cotion"
-            src={"/images/profile_6.jpg"}
-            className="object-cover"
+            src={"/eddy.jpeg"}
+            className="md:w-[100%] object-cover"
           />
         </div>
         <div className="flex flex-col gap-8">
@@ -47,13 +45,13 @@ export default function About() {
             text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
             gap-y-[8px] leading-[1.2] font-portfolio_regular"
           >
-            <Word>{aboutText2}</Word>
+            <AnimateTextWord>{aboutText2}</AnimateTextWord>
           </h4>
           <h4
             className="w-full font-portfolio_regular text-xl
            lg:text-3xl leading-[1.2]"
           >
-            <Word>{ctatext4}</Word>
+            <AnimateTextWord>{ctatext4}</AnimateTextWord>
           </h4>
           <Link
             href={"/about"}

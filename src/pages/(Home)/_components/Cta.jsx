@@ -19,7 +19,7 @@ export default function Cta() {
       className="py-24 lg:py-32 z-[500000] flex flex-col items-end justify-end"
     >
       <div className="w-[90%] max-w-custom mx-auto flex flex-col gap-20 md:gap-32 items-end justify-end">
-        <h4 className="text-5xl md:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
+        <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
           <div className="md:max-w-[500px]">
             {" "}
             <AnimateTextWord type="largeText">
@@ -29,7 +29,7 @@ export default function Cta() {
           {/* <sup className="text-2xl md:text-4xl">4</sup> */}
           <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
             <div className="w-full"></div>
-            <span className="block text-xl text_background max-w-[500px] capitalize md:text-3xl">
+            <span className="block text-xl text_background max-w-[500px] capitalize md:text-2xl">
               <AnimateTextWord>
                 Look into the lenses of a passionate software developer who seek
                 drive results and impact on startup products
@@ -41,14 +41,14 @@ export default function Cta() {
           <div className="flex flex-col gap-12 w-full">
             <h4
               className="w-full
-            text-3xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]
+            text-2xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]
             gap-y-[8px] leading-[1.2] font-portfolio_regular"
             >
               <Word>{aboutText2}</Word>
             </h4>
             <h4
               className="w-full
-            text-4xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]
+            text-2xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]
             gap-y-[8px] leading-[1.2] font-portfolio_regular"
             >
               <Word>{ctatext1}</Word>

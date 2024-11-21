@@ -1,16 +1,8 @@
 "use client";
 import React, { useRef } from "react";
-import { opacity, slideup, smallslideup } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
+import AnimateTextWord from "@/components/animations/AnimateTextWord";
 export default function Hero() {
-  const container = useRef(null);
-  const imageRef = useRef(null);
-  const inView = useInView(container);
-
-  const container2 = useRef(null);
-  const inView2 = useInView(container2, {
-    margin: "0px 100px -50px 0px",
-  });
   const heroWords1 =
     "I am a Software Developer really obsessed in building top tech web applications";
   const heroTextslideup1 = {
@@ -34,14 +26,15 @@ export default function Hero() {
     },
   };
 
+  const heroWords3 = `I help tech companies in leveraging their products by creating user-centric and visually appealing cross-platform applications that fit with their business goals.`;
 
   return (
     <>
       <div
         data-scroll
-        className="min-h-[50vh] py-28 md:py-40 relative flex items-center justify-center"
+        className="min-h-[700px] py-28 md:py-28 relative flex items-center justify-center"
       >
-        <div className="w-[90%] mx-auto md:px-8 max-w-custom">
+        <div className="w-[90%] mx-auto max-w-custom">
           <div className="flex flex-col mx-auto items-center justify-between gap-y-8 gap-x-20">
             <div className="flex w-full flex-col gap-16 mx-auto">
               <span
@@ -71,6 +64,9 @@ export default function Hero() {
                   );
                 })}
               </span>
+              <h4 className="text-xl md:text-3xl max-w-[800px] font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
+                <AnimateTextWord>{heroWords3}</AnimateTextWord>
+              </h4>
             </div>
           </div>
         </div>

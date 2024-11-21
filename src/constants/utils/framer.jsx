@@ -28,7 +28,7 @@ export const LargeSlideUp = {
     y: "0%",
     transition: {
       duration: .7,
-      delay: i * 0.05,
+      delay: i * 0.09,
       ease: [0.62, 0.05, 0.01, 0.99],
     },
   }),
