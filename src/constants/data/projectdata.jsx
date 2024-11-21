@@ -161,7 +161,7 @@ export const projectdata3 = [
     backGroundColor: "#f0f3ec",
     roleDescription:
       "The role I took in developing Twizzle involves developing it by mirroring Twitter functionality. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
-    mainImage: "/images/twizle/image_3.jpeg",
+    mainImage: "/images/twizle/image_1.jpeg",
     mainTitle: "Social Platform",
     overview: {
       color: "#bbacaf",
@@ -185,13 +185,13 @@ export const projectdata3 = [
         "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, it mirrors the functionality and behavior of popular platforms like Twitter.",
         "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
-      images: ["/images/twizle/image_4.jpeg", "/images/twizle/image_2.jpeg"],
+      images: ["/images/twizle/image_5.jpeg", "/images/twizle/image_2.jpeg"],
     },
     ui: {
       color: "#977f60",
       description:
         "Twizzle is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/twizle/image_2.jpeg"],
+      images: ["/images/twizle/image_3.jpeg"],
     },
   },
   // tattoo
