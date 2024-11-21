@@ -32,7 +32,7 @@ export default function Cta() {
           <h4
             className="w-full
             text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
-            gap-y-[8px] leading-[1.2] font-portfolio_regularl"
+            gap-y-[8px] leading-[1.2] font-portfolio_regular"
           >
             <Word>{ctatext4}</Word>
           </h4>
