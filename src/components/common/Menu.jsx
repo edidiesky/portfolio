@@ -76,7 +76,7 @@ const Sidebar = ({ menu, setMenu }) => {
         <RxCross1 />
       </div>
 
-      <div className="h-full z-20 w-[90%] max-w-custom_1 py-20 mx-auto flex items-start justify-center flex-col gap-12">
+      <div className="h-full z-20 w-[90%] max-w-custom py-20 mx-auto flex items-start justify-center flex-col gap-12">
         <AnimatePresence mode="wait">
           {menu && (
             <div className="flex flex-col">

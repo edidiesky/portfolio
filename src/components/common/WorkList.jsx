@@ -2,14 +2,13 @@
 import { projectdata3 } from "@/constants/data/projectdata";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import ProjectCard from "@/pages/(Home)/_components/ProjectCard";
 import Card from "../animations/Card";
 const WorkList = ({ index, setTab, tab, type }) => {
   const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"],
-  });
+  // const { scrollYProgress } = useScroll({
+  //   target: containerRef,
+  //   offset: ["start start", "end end"],
+  // });
   if (type === "work") {
     return (
       <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 md:gap-y-16">

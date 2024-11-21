@@ -10,7 +10,7 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1200px",
       },
     },
     extend: {
@@ -29,9 +29,7 @@ module.exports = {
         light_grey: "#eee",
       },
       maxWidth: {
-        custom: "1204px",
-        custom_1: "1204px",
-        custom_2: "1204px",
+        custom: "1124px",
       },
     },
   },

@@ -40,7 +40,7 @@ function WorkTitle() {
   const workDetails = projectdata3.find((data) => data.mainTitle === workid);
   // console.log(workDetails)
   return (
-    <div className="grid w-full max-w-custom_1 mx-auto grid-cols-1 justify-between gap-y-8 gap-x-12">
+    <div className="grid w-full max-w-custom mx-auto grid-cols-1 justify-between gap-y-8 gap-x-12">
       <div className="flex w-[90%] max-w-custom flex-col gap-8 mx-auto">
         <div className="flex gap-4 md:flex-row flex-col justify-between  items-end">
           <span

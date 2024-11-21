@@ -6,7 +6,7 @@ const Work = () => {
   return (
     <>
       <div className="py-12 w-full relative">
-        <div className="w-[90%] max-w-custom_1 flex flex-col gap-12 md:gap-24 mx-auto">
+        <div className="w-[90%] max-w-custom flex flex-col gap-12 md:gap-24 mx-auto">
           <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
             <div className="md:max-w-[560px]">
               {" "}

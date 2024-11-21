@@ -61,7 +61,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
           className="flex flex-col group w-full gap-8"
           href={`/work/${data?.mainTitle}`}
         >
-          <div className="w-full h-[350px] lg:h-[580px] overflow-hidden">
+          <div className="w-full h-[380px] lg:h-[560px] overflow-hidden">
             <div
               style={{
                 transition: "all .3s",

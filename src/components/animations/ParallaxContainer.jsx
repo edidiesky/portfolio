@@ -12,7 +12,7 @@ const ParallaxContainer = () => {
     return (
       <div className="w-full flex flex-col">
         <div ref={containerRef} className="w-full">
-          <div className="w-[90%] mx-auto max-w-custom_1">
+          <div className="w-[90%] mx-auto max-w-custom">
             {projects.map((data, index) => {
               const targetScale = 1 - (projects.length - 1) * 0.05;
               return (
