@@ -118,7 +118,7 @@ export const socialsList = [
   {
     title: "Linkedin",
     subTitle: "@victorezekielessien",
-    path: "https://www.linkedin.com/in/victorezekielessien",
+    path: "https://www.linkedin.com/in/victorscript",
     icon: <FaLinkedin />,
   },
   {
