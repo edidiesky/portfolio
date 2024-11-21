@@ -36,7 +36,7 @@ export default function Cta() {
             </span>
           </div>
         </h4>
-        <div className="w-[90%] lg:w-[900px] flex-col flex gap-12 md:gap-20">
+        <div className="w-[100%] lg:w-[900px] flex-col flex gap-12 md:gap-20">
           <div className="flex flex-col gap-12 w-full">
             <h4
               className="w-full
@@ -54,10 +54,10 @@ export default function Cta() {
             </h4>
           </div>
 
-          <div className="w-full pt-4 md:w-[90%] items-center max-w-custom grid grid-cols-1 lg:grid-cols-custom_2 gap-8 md:gap-8">
+          <div className="w-full pt-4 lg:w-[90%] items-center max-w-custom grid grid-cols-1 lg:grid-cols-custom_2 gap-8 md:gap-8">
             <div
               // ref={imageRef}
-              className="md:w-[300px] flex flex-col gap-4 md:gap-8"
+              className="lg:w-[300px] flex flex-col gap-4 md:gap-8"
             >
               <h4
                 className="w-full
@@ -76,10 +76,10 @@ export default function Cta() {
               />
             </div>
             <div className="flex flex-col gap-12">
-              <h4 className="w-full text_background text-lg lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular">
+              <h4 className="w-full text_background text-xl lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular">
                 <AnimateTextWord>{ctatext4}</AnimateTextWord>
               </h4>
-              <h4 className="w-full text_background text-lg lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular">
+              <h4 className="w-full text_background text-xl lg:text-2xl flex flex-wrap gap-x-[8px] gap-y-[8px] leading-[1.1] font-portfolio_regular">
                 <AnimateTextWord>{ctatext7}</AnimateTextWord>
               </h4>
               <Link
