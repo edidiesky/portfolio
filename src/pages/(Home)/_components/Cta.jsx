@@ -25,22 +25,20 @@ export default function Cta() {
           <h4
             className="w-full
             text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
-            gap-y-[8px] leading-[1.2] font-portfolio_normal
-            font-normal"
+            gap-y-[8px] leading-[1.2] font-portfolio_regular"
           >
             <Word>{aboutText2}</Word>
           </h4>
           <h4
             className="w-full
             text-xl lg:text-3xl flex flex-wrap gap-x-[8px]
-            gap-y-[8px] leading-[1.2] font-portfolio_normal
-            font-normal"
+            gap-y-[8px] leading-[1.2] font-portfolio_regularl"
           >
             <Word>{ctatext4}</Word>
           </h4>
           <Link
             href={"/about"}
-            className="underline z-[4000] w-full font-portfolio_normal uppercase text-xl lg:text-2xl text-text_dark_1"
+            className="underline z-[4000] w-full font-portfolio_regular uppercase text-xl lg:text-2xl text-text_dark_1"
           >
             <AnimateTextWord>More About Me and Services</AnimateTextWord>
           </Link>
