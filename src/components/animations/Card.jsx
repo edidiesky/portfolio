@@ -82,7 +82,7 @@ const Card = ({ data, index, progress, targetScale, range }) => {
               </h2>
             </div>
             <div className="w-full flex items-center justify-between">
-              <h3 className="text-dark font-portfolio_regular w-full text-2xl lg:text-2xl">
+              <h3 className="text-dark font-portfolio_regular w-full text-xl lg:text-2xl">
                 {data?.role}
               </h3>
               <span className="text-lg lg:text-xl font-portfolio_normal">
