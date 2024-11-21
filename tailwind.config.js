@@ -29,9 +29,9 @@ module.exports = {
         light_grey: "#eee",
       },
       maxWidth: {
-        custom: "1504px",
-        custom_1: "1504px",
-        custom_2: "1504px",
+        custom: "1204px",
+        custom_1: "1204px",
+        custom_2: "1204px",
       },
     },
   },
