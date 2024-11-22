@@ -51,7 +51,7 @@ const Footer = () => {
                 VICTORSCRIPT©2024
               </span>
             </div>
-            <h1 className="text-5xl max-w-[700px] w-full uppercase py-8 md:py-12 md:text-6xl">
+            <h1 className="text-5xl max-w-[800px] w-full uppercase py-8 md:py-12 md:text-6xl">
               <AnimateTextWord>
                 why wont you give a thumb up to hi@VICTORSCRIPT.com
               </AnimateTextWord>
