@@ -165,7 +165,7 @@ export const experienceList = [
     location: "The Netherlands",
   },
   {
-    title: "Outset.A",
+    title: "Outset.AI",
     position: "Frontend Engineer",
     date: "  January 2022 - August 2023",
     role: "Developed comprehensive test suites with Cypress, increasing test coverage from 60% to 85%, resulting in a 21.4% improvement in bug detection.",
