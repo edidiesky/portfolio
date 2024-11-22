@@ -48,12 +48,12 @@ const Footer = () => {
                 battle, game, or other competition.{" "}
               </span>
               <span className="text-lg md:text-end uppercase">
-                VICTOR ©2024
+                VICTORSCRIPT©2024
               </span>
             </div>
-            <h1 className="text-5xl w-full uppercase py-8 md:py-12 md:text-6xl">
+            <h1 className="text-5xl max-w-[700px] w-full uppercase py-8 md:py-12 md:text-6xl">
               <AnimateTextWord>
-                why wont you give a thumb up to hi@victor.com
+                why wont you give a thumb up to hi@VICTORSCRIPT.com
               </AnimateTextWord>
             </h1>
           </div>
@@ -61,11 +61,11 @@ const Footer = () => {
             <Link
               style={{ transition: "all .5s" }}
               href={
-                "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
+                "mailto:victorscript@gmail.com?subject=Hey! lets work! Love your works!"
               }
               className="w-full md:w-[560px] text-[#fff] hover:text-[#000] text-lg md:text-3xl font-normal h-[100px] md:h-[150px] border rounded-full"
             >
-              <Magnetic bgColor={"#fff"}>VictorCanCode1000@gmail.com</Magnetic>
+              <Magnetic bgColor={"#fff"}>VICTORSCRIPT@gmail.com</Magnetic>
             </Link>
           </div>
           <div className="py-8 w-full flex items-center justify-between gap-8">
