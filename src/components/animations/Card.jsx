@@ -68,9 +68,10 @@ const Card = ({ data, index, progress, targetScale, range }) => {
               }}
               className="w-full relative h-full group-hover:scale-[1.1] scale-[1] "
             >
-              <Image
-                width={300}
-                height={300}
+              {/* Image width={300}
+              height={300}
+              src={data?.mainImage} */}
+              <img
                 src={data?.mainImage}
                 alt=""
                 className="w-full h-full object-cover"

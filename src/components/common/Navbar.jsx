@@ -53,7 +53,7 @@ const Navbar = ({ type }) => {
             <h4 className="relative  md:flex hidden z-50 text-2xl lg:w-[300px] w-full overflow-hidden font-portfolio_bold1">
               <Link
                 href={"/"}
-                className="text-lg lg:text-xl text-[var(--light-grey)] w-full font-portfolio_regular"
+                className="text-xl lg:text-2xl text-[var(--light-grey)] w-full font-portfolio_regular"
               >
                 Victor Essien
               </Link>
@@ -61,13 +61,13 @@ const Navbar = ({ type }) => {
           </div>
 
           <div className="flex flex-1 items-center justify-center">
-            <div className="hidden lg:flex item-center justify-end flex-1 gap-8 md:gap-12">
+            <div className="hidden lg:flex item-center justify-end flex-1 gap-12 md:gap-16">
               {linklist?.map((link, index) => {
                 return (
                   <Link
                     key={index}
                     href={`/${link?.path}`}
-                    className="text-lg hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_regular"
+                    className="text-lg lg:text-xl hover:text-[var(--primary)] text-[var(--light-grey)] font-portfolio_regular"
                   >
                     {link?.title}
                   </Link>
@@ -76,7 +76,7 @@ const Navbar = ({ type }) => {
 
               <Link
                 href={`www.linkedin.com/in/victorezekielessien`}
-                className="text-base text-[var(--primary)] font-portfolio_regular"
+                className="text-lg lg:text-xl text-[var(--primary)] font-portfolio_regular"
               >
                 Linkedin
               </Link>
@@ -88,7 +88,7 @@ const Navbar = ({ type }) => {
                 transition: "all .6s",
               }}
               href={`mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!`}
-              className="text-base w-[150px] h-[50px] rounded-full bg-white hover:text-[#000] text-[#000] font-portfolio_regular"
+              className="text-base w-[150px] h-[50px] lg:h-[56px] rounded-full bg-white hover:text-[#000] text-[#000] font-portfolio_regular"
             >
               <Magnetic bgColor={"#eee"}>Contact Me!</Magnetic>
             </Link>
