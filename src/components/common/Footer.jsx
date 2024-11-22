@@ -44,15 +44,19 @@ const Footer = () => {
             text-[var(--light-grey)]"
             >
               <span className="text-base md:text-lg text-white uppercase">
-                VICTOR | NOUN | a person who defeats an enemy or opponent in a
-                battle, game, or other competition.{" "}
+                <AnimateTextWord>
+                  VICTOR | NOUN | a person who defeats an enemy or opponent in a
+                  battle, game, or other competition.
+                </AnimateTextWord>
               </span>
               <span className="text-lg md:text-end uppercase">
-                VICTORSCRIPT©2024
+                <AnimateTextWord type={"largeText"}>
+                  VICTORSCRIPT©2024
+                </AnimateTextWord>
               </span>
             </div>
-            <h1 className="text-5xl max-w-[850px] w-full uppercase py-8 md:py-12 md:text-6xl">
-              <AnimateTextWord>
+            <h1 className="text-5xl max-w-[850px] leading-[1.3] w-full uppercase py-8 md:py-12 md:text-6xl">
+              <AnimateTextWord type={"largeText"}>
                 why wont you give a thumb up to hi@VICTORSCRIPT.com
               </AnimateTextWord>
             </h1>
