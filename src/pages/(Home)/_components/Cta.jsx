@@ -31,7 +31,7 @@ export default function Cta() {
             <span className="block text-xl text_background max-w-[500px] capitalize md:text-2xl">
               <AnimateTextWord>
                 Look into the lenses of a passionate software developer who seek
-                drive results and impact on startup products
+                drive to results and impact on startup products
               </AnimateTextWord>
             </span>
           </div>

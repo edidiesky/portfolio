@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import AnimateTextWord from "@/components/animations/AnimateTextWord";
 import { motion, useInView } from "framer-motion";
 import WorkList from "@/components/common/WorkList";
 export default function Hero() {
@@ -38,9 +39,9 @@ export default function Hero() {
           <span
             data-scroll
             data-scroll-speed="2"
-            className="font-normal max-w-[1200px] hero_text2 text_background flex flex-wrap
+            className="font-normal max-w-[1200px] hero_text2 flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
-                text-4xl lg:text-6xl lg:text-7xl
+                text-4xl lg:text-7xl
                 w-full leading-[1.2] font-portfolio_bold"
           >
             {/* A Software Developer who crafts captivating digital experiences. */}
@@ -62,7 +63,25 @@ export default function Hero() {
               );
             })}
           </span>
-          <div className="w-[100%] mx-auto">
+          <div className="w-[100%] flex flex-col gap-12 md:gap-24 mx-auto">
+            <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
+              <div className="md:max-w-[560px]">
+                {" "}
+                <AnimateTextWord type="largeText">
+                 Here are All of My Works
+                </AnimateTextWord>{" "}
+              </div>
+              {/* <sup className="text-2xl md:text-4xl">4</sup> */}
+              <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
+                <div className="w-full"></div>
+                <span className="block text-xl text_background max-w-[500px] capitalize md:text-3xl">
+                  <AnimateTextWord>
+                    All of my projects that have been meticulously crafted with
+                    passion to drive results and impact
+                  </AnimateTextWord>
+                </span>
+              </div>
+            </h4>
             <WorkList type={"work"} />
           </div>
         </div>

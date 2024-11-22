@@ -40,7 +40,7 @@ export default function Hero() {
               <span
                 data-scroll
                 data-scroll-speed="2"
-                className="font-normal hero_text2 text_background flex flex-wrap
+                className="font-normal hero_text2  flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
                 text-5xl md:text-5xl lg:text-7xl max-w-[1200px]
                 w-full leading-[1.2] font-portfolio_bold"
@@ -64,7 +64,7 @@ export default function Hero() {
                   );
                 })}
               </span>
-              <h4 className="text-xl md:text-3xl max-w-[800px] font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
+              <h4 className="text-xl md:text-3xl max-w-[800px] text_background font-portfolio_regular leading-[1.2] titleRef">
                 <AnimateTextWord>{heroWords3}</AnimateTextWord>
               </h4>
             </div>

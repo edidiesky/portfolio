@@ -1,7 +1,8 @@
 "use client";
+import Link from "next/link";
 import WorkList from "@/components/common/WorkList";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
-
+import Magnetic from "@/components/animations/Magnetic";
 const Work = () => {
   return (
     <>
@@ -26,6 +27,22 @@ const Work = () => {
             </div>
           </h4>
           <WorkList />
+          <div className="w-full flex mt-8 justify-between gap-8 items-center">
+            <span className="block text-xl text_background max-w-[500px] capitalize md:text-3xl">
+              <AnimateTextWord>
+                I still got more projects for your perusal!
+              </AnimateTextWord>
+            </span>
+            <Link
+              style={{ transition: "all .4s" }}
+              href={"/work" }
+              className="w-[200px] md:w-[230px] open_to_work h-[50px] md:h-[65px] flex items-center
+                   justify-center text-[#000] text-base md:text-lg font-normal rounded-full font-portfolio_regular overflow-hidden
+                    bg-[#fff]"
+            >
+              <Magnetic bgColor={"#dcdcdc"}>View More Works</Magnetic>
+            </Link>
+          </div>
         </div>
       </div>
     </>
@@ -33,19 +50,3 @@ const Work = () => {
 };
 
 export default Work;
-
-// <div className="flex w-full flex-col gap-4">
-//   <span
-//     data-scroll
-//     data-scroll-speed="2"
-//     // titleRef
-//     className="font-normal titleRef titleRef2 text-text_dark_1 flex flex-wrap gap-[10px]
-//         uppercase text-5xl xl:text-7xl"
-//   >
-//     {/* Projects */}
-//     <AnimateTextWord>Projects</AnimateTextWord>
-//   </span>
-//   <h4 className="max-w-[600px] w-full text-lg md:text-xl font-normal uppercase leading-[1.1] ">
-//     <AnimateTextWord>{heroWords}</AnimateTextWord>
-//   </h4>
-// </div>;

@@ -1,5 +1,4 @@
 "use client";
-import React, { useRef, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
@@ -40,7 +39,7 @@ export default function Hero() {
             <span
               data-scroll
               data-scroll-speed="2"
-              className="font-normal hero_text2 max-w-custom text_background flex flex-wrap
+              className="font-normal hero_text2 max-w-custom  flex flex-wrap
                  gap-[8px] lg:gap-[13px] items-center justify-start 
                 text-4xl lg:text-7xl
                 w-full leading-[1.2] font-portfolio_bold"
@@ -64,7 +63,7 @@ export default function Hero() {
                 );
               })}
             </span>
-            <h4 className="text-xl md:text-3xl max-w-[800px] font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
+            <h4 className="text-xl md:text-3xl text_background max-w-[800px] font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
               <AnimateTextWord>{heroWords3}</AnimateTextWord>
             </h4>
             <Link
@@ -72,7 +71,7 @@ export default function Hero() {
               href={
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="w-[200px] md:w-[200px] open_to_work h-[50px] md:h-[60px] flex items-center
+              className="w-[200px] md:w-[230px] open_to_work h-[50px] md:h-[65px] flex items-center
                    justify-center text-[#000] text-base md:text-lg font-normal rounded-full font-portfolio_regular overflow-hidden
                     bg-[#fff]"
             >
