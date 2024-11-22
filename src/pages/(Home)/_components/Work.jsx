@@ -18,7 +18,7 @@ const Work = () => {
             {/* <sup className="text-2xl md:text-4xl">4</sup> */}
             <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
               <div className="w-full"></div>
-              <span className="block text-xl text_background max-w-[500px] capitalize md:text-3xl">
+              <span className="block text-xl text_background max-w-[500px] capitalize lg:text-3xl">
                 <AnimateTextWord>
                   Featured projects that have been meticulously crafted with
                   passion to drive results and impact
@@ -28,7 +28,7 @@ const Work = () => {
           </h4>
           <WorkList />
           <div className="w-full flex mt-8 justify-between gap-8 items-center">
-            <span className="block text-xl text_background max-w-[500px] capitalize md:text-3xl">
+            <span className="block text-xl text_background max-w-[500px] capitalize lg:text-3xl">
               <AnimateTextWord>
                 I still got more projects for your perusal!
               </AnimateTextWord>

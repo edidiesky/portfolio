@@ -22,7 +22,7 @@ const Skills = () => {
             {/* <sup className="text-2xl md:text-4xl">4</sup> */}
             <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
               <div className="w-full"></div>
-              <span className="block text-xl text_background max-w-[600px] capitalize md:text-3xl">
+              <span className="block text-xl text_background max-w-[600px] capitalize lg:text-3xl">
                 <AnimateTextWord>{aboutText1}</AnimateTextWord>
               </span>
             </div>
@@ -69,7 +69,7 @@ const Skills = () => {
             {/* <sup className="text-2xl md:text-4xl">4</sup> */}
             <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
               <div className="w-full"></div>
-              <span className="block text-xl text_background max-w-[600px] capitalize md:text-3xl">
+              <span className="block text-xl text_background max-w-[600px] capitalize lg:text-3xl">
                 <AnimateTextWord>{skillDescriptionText2}</AnimateTextWord>
               </span>
             </div>
