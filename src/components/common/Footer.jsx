@@ -1,15 +1,10 @@
-import React, { useRef, useState } from "react";
+"use client"
 import Link from "next/link";
-
-import { useInView } from "framer-motion";
 import AnimateTextWord from "../animations/AnimateTextWord";
 import Magnetic from "../animations/Magnetic";
 import { socialsList } from "@/constants/data/text";
 const Footer = () => {
-  const container2 = useRef(null);
-  const inView2 = useInView(container2, {
-    margin: "0px 100px -50px 0px",
-  });
+ 
   const linklist = [
     {
       title: "Home",
