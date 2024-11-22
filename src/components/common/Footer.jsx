@@ -65,7 +65,7 @@ const Footer = () => {
               }
               className="w-full md:w-[560px] text-[#fff] hover:text-[#000] text-lg md:text-3xl font-normal h-[100px] md:h-[150px] border rounded-full"
             >
-              <Magnetic bgColor={"#fff"}>VICTORESSIENSCRIPT@gmail.com</Magnetic>
+              <Magnetic bgColor={"#fff"}>VICTORESSIENSCRIPT@GMAIL.COM</Magnetic>
             </Link>
           </div>
           <div className="py-8 w-full flex items-center justify-between gap-8">
