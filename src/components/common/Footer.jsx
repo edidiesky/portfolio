@@ -43,14 +43,18 @@ const Footer = () => {
               className="py-6 border-t grid md:grid-cols-2 w-full items-center justify-between border-[rgba(255,255,255,.3)] border-b text-2xl 
             text-[var(--light-grey)]"
             >
-              <span className="text-base text-white uppercase">
+              <span className="text-base md:text-lg text-white uppercase">
                 VICTOR | NOUN | a person who defeats an enemy or opponent in a
                 battle, game, or other competition.{" "}
               </span>
-              <span className="text-lg md:text-end uppercase">VICTOR ©2024</span>
+              <span className="text-lg md:text-end uppercase">
+                VICTOR ©2024
+              </span>
             </div>
-            <h1 className="text-5xl w-full py-8 md:py-12 md:text-6xl text_background">
-              why don&lsquo;t you give a thumb up to hi@victor.com
+            <h1 className="text-5xl w-full uppercase py-8 md:py-12 md:text-6xl">
+              <AnimateTextWord>
+                why wont you give a thumb up to hi@victor.com
+              </AnimateTextWord>
             </h1>
           </div>
           <div className="w-full overflow-hidden flex items-center justify-center">
@@ -87,7 +91,7 @@ const Footer = () => {
                 {linklist?.map((link, index) => {
                   return (
                     <Link
-                    key={index}
+                      key={index}
                       href={`/${link?.path}`}
                       className="text-lg text-[var(--light-grey)] font-portfolio_regular"
                     >
@@ -106,14 +110,17 @@ const Footer = () => {
             <div className="flex justify-end gap-8 items-center">
               {socialsList?.map((skill, index) => {
                 return (
-                  <Link key={index} href={`${skill?.path}`} className="text-2xl md:text-4xl text-white">
+                  <Link
+                    key={index}
+                    href={`${skill?.path}`}
+                    className="text-2xl md:text-4xl text-white"
+                  >
                     {skill?.icon}
                   </Link>
                 );
               })}
             </div>
           </div>
-
         </div>
       </div>
     </>
