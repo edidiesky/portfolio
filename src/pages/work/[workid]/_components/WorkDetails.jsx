@@ -3,11 +3,11 @@ import React, { useRef, useState } from "react";
 import { projectdata3 } from "@/constants/data/projectdata";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
+
 import { GoArrowUpRight } from "react-icons/go";
-import { motion, useInView } from "framer-motion";
 import Magnetic from "@/components/animations/Magnetic";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
-import Word from "@/components/animations/Word";
 import ProjectCard from "@/pages/(Home)/_components/ProjectCard";
 export default function Hero() {
   // text animation reveal
@@ -16,9 +16,9 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="py-8 md:pt-48 w-full overflow-hidden relative flex items-center justify-center"
+        className="py-16 md:pt-32 w-full overflow-hidden relative flex items-center justify-center"
       >
-        <div className="w-full md:w-[90%] max-w-custom mx-auto px-2 flex flex-col gap-12 md:gap-16 ">
+        <div className="w-full md:w-[90%] max-w-custom mx-auto px-2 flex flex-col gap-16 md:gap-32 ">
           {/* title */}
           {WorkTitle()}
           {/* overview */}
@@ -48,7 +48,7 @@ function WorkTitle() {
             data-scroll-speed="2"
             // titleRef
             className="font-normal flex 
-            text-start lg:text-start text-5xl md:text-7xl leading-[1.4] text_background"
+            text-start lg:text-start text-5xl md:text-7xl leading-[1.4] "
           >
             {workDetails?.mainTitle}{" "}
           </span>
@@ -75,10 +75,10 @@ function WorkTitle() {
               }}
               href={`${workDetails?.website}`}
               target="_blank"
-              className="md:w-40 w-40 h-16 hover:text-white md:h-16 font-portfolio_regular flex items-center gap-2 rounded-full
+              className="md:w-[170px] w-[180px] h-[50px] md:h-[65px] font-portfolio_regular flex items-center gap-2 rounded-full
                  bg-[#fff] justify-center text-lg md:text-base text-[#000]"
             >
-              <Magnetic bgColor={"#eee"}>
+              <Magnetic bgColor={"#b6b5b5"}>
                 <span className="flex items-center justify-center gap-2">
                   Live Site <GoArrowUpRight fontSize={"20px"} />
                 </span>
@@ -89,9 +89,7 @@ function WorkTitle() {
         <div className="w-full mx-auto flex pt-12 flex-col gap-12">
           <div className="flex flex-col gap-12 w-full ">
             <div className="w-full grid grid-cols-1 md:items-center justify-between gap-8">
-              <span
-                className="font-normal flex md:w-[900px] text-start lg:text-start text-xl md:text-3xl w-full leading-[1.4] text_background"
-              >
+              <span className="font-normal flex md:w-[900px] text_background text-start lg:text-start text-xl md:text-3xl w-full leading-[1.4]">
                 {workDetails?.shortDescription}.
               </span>
             </div>
@@ -142,11 +140,15 @@ function WorkTitle() {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-[80%] mx-auto flex items-end justify-end">
-          <div className="w-full md:w-[950px] mt-8 relative flex">
+        <div className="w-full mx-auto flex items-end justify-end">
+          <div className="w-full mt-8 relative flex">
+            {/*    <Image
+              width={300}
+              height={300}
+              src={workDetails?.mainImage} */}
             <img
               src={workDetails?.mainImage}
-              alt=""
+              alt="imagecontainer for Victor's project"
               className="w-full object-cover"
             />
           </div>
@@ -168,7 +170,7 @@ function WorkOverview() {
             data-scroll
             data-scroll-speed="2"
             // titleRef
-            className=" text-3xl md:text-4xl"
+            className=" text-3xl uppercase md:text-5xl"
           >
             <AnimateTextWord type={"largeText"}>Quick Intro</AnimateTextWord>
           </span>
@@ -177,7 +179,7 @@ function WorkOverview() {
               <div className="w-full gap-2 flex items-center">
                 <div className="flex items-start">
                   <h4 className=" w-full text-xl md:text-2xl text_background font-portfolio_regular">
-                    <Word>{overviewText}</Word>
+                    <AnimateTextWord>{overviewText}</AnimateTextWord>
                   </h4>
                 </div>
               </div>
@@ -186,17 +188,12 @@ function WorkOverview() {
             {/* <div className="w-full"></div> */}
           </div>
         </div>
-        <div className="w-full relative mx-auto grid gap-12 mt-20 md:grid-cols-2 max-w-custom">
-          {workDetails?.overview?.images?.map((image, index) => {
-            return (
-              <img
-                key={index}
-                src={image}
-                alt=""
-                className="w-full object-cover"
-              />
-            );
-          })}
+        <div className="w-full">
+          <img
+            src={workDetails?.overview?.images[0]}
+            alt="imagecontainer for Victor's project"
+            className="w-full object-cover"
+          />
         </div>
       </div>
     </div>
@@ -211,12 +208,12 @@ function MyRoleInWork() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto justify-between gap-y-8 gap-x-12">
       <div className="flex w-[90%] max-w-custom flex-col gap-6 mx-auto">
-        <div className="w-[80%] mx-auto flex flex-col gap-6  -mb-10">
+        <div className="lg:w-[80%] mx-auto flex flex-col gap-6  -mb-10">
           <span
             data-scroll
             data-scroll-speed="2"
             // titleRef
-            className="text-3xl md:text-4xl"
+            className="text-3xl md:text-5xl uppercase"
           >
             <AnimateTextWord type={"largeText"}> My Role</AnimateTextWord>
           </span>
@@ -255,31 +252,32 @@ function WorkFeatures() {
   const { workid } = router.query;
   const workDetails = projectdata3.find((data) => data.mainTitle === workid);
   const container3 = useRef(null);
-  const inView3 = useInView(container3, {
-    margin: "0px 100px -50px 0px",
-  });
-  const heroWords2 =
-    "A selected set of experiments I'm building as I navigate through ideas and technologies. I learn by testing out and building based on concepts and techniques.";
-
   const overviewText2 = workDetails?.features?.Description[0];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-custom_4 mx-auto  gap-y-8 gap-x-12">
+    <div className="grid grid-cols-1 mx-auto  gap-20">
+      <div className="w-full grid grid-cols-2 gap-4">
+        {workDetails?.gallery?.map((image, index) => {
+          return (
+            <div
+              key={index}
+              className="w-full min-h-[400px] md:min-h-[500px] relative flex"
+            >
+              <img
+                src={image}
+                alt="imagecontainer for Victor's project"
+                className="w-full object-cover"
+              />
+            </div>
+          );
+        })}
+      </div>
       <div className="flex w-[90%] max-w-custom flex-col gap-16 mx-auto">
-        <div className="grid grid-cols-1 gap-1">
-          {workDetails?.features?.images?.map((image, index) => {
-            return (
-              <div key={index} className="w-full relative flex">
-                <img src={image} alt="" className="w-full object-cover" />
-              </div>
-            );
-          })}
-        </div>
-        <div className="flex flex-col gap-6">
+        <div className="lg:w-[80%] mx-auto flex flex-col gap-6 ">
           <span
             data-scroll
             data-scroll-speed="2"
             // titleRef
-            className="text-3xl md:text-4xl"
+            className="text-3xl md:text-5xl uppercase"
           >
             <AnimateTextWord type={"largeText"}>Features</AnimateTextWord>
           </span>
@@ -307,13 +305,6 @@ function WorkUI() {
   const router = useRouter();
   const { workid } = router.query;
   const workDetails = projectdata3.find((data) => data.mainTitle === workid);
-  const container4 = useRef(null);
-  const inView4 = useInView(container4, {
-    margin: "0px 100px -50px 0px",
-  });
-  const heroWords =
-    "A selected set of experiments I'm building as I navigate through ideas and technologies. I learn by testing out and building based on concepts and techniques.";
-
   const overviewText5 = workDetails?.ui?.description;
 
   return (
@@ -324,26 +315,22 @@ function WorkUI() {
             {workDetails?.ui?.images?.map((image, index) => {
               return (
                 <div key={index} className="w-full relative flex">
-                  <img src={image} alt="" className="w-full object-cover" />
+                  <img
+                    src={image}
+                    alt="imagecontainer for Victor's project"
+                    className="w-full object-cover"
+                  />
                 </div>
               );
             })}
           </div>
           <div className="w-[80%] mx-auto flex flex-col gap-6">
-            <span
-              data-scroll
-              data-scroll-speed="2"
-              // titleRef
-              className="font-normal flex leading-[1] text-3xl md:text-4xl"
-            >
+            <span className="font-normal flex leading-[1] text-3xl md:text-5xl">
               <AnimateTextWord type={"largeText"}>
                 User-Centered Development
               </AnimateTextWord>
             </span>
-            <h4
-              ref={container4}
-              className="w-full mx-auto text-lg md:text-2xl text_background leading-[1.4] font-portfolio_regular "
-            >
+            <h4 className="w-full mx-auto text-lg md:text-2xl text_background leading-[1.4] font-portfolio_regular ">
               <AnimateTextWord>{overviewText5}</AnimateTextWord>
             </h4>
           </div>
@@ -360,7 +347,7 @@ function NextWork() {
   return (
     <div className="w-full pt-8">
       <div className="flex w-[90%] max-w-custom flex-col gap-8 mx-auto">
-        <h4 className="text-4xl">
+        <h4 className="text-5xl">
           <AnimateTextWord type={"largeText"}>
             See More Projects ⭐️
           </AnimateTextWord>

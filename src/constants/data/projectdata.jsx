@@ -1,13 +1,22 @@
-// Notion
-// Agency1
-// Car
-// Messenger
-// Fiverr
-// Airbnb
-// Food
-// Agency2
-// Twitter
-// Agency2
+
+// --- NEW PROJECTS LIST -----------
+// JIRA
+// MULTI-VENDOR 
+// MOBILE JOBBOARD RENTALS
+// MOBILE SOCIAL APP
+// MESSENGER APP
+// JOBBOARD APP
+// MOBILE HOME RENTALS
+// MOBILE FOOD RENTALS
+// TASTYTROVE APP
+// ZYNCLUXURY APP
+// MESSENGER APP
+// CARDEALER APP
+// TWIZLE APP
+// SASS LANDING PAGE
+// SASS LANDING PAGE2
+// SASS LANDING PAGE3
+
 
 export const projectdata3 = [
   // tastytrove
@@ -33,6 +42,7 @@ export const projectdata3 = [
       ],
       images: ["/images/trove/tasty_4.jpeg"],
     },
+    gallery: ["/images/zync/image_2.jpeg"],
     technologyUsed: [
       "Typescript",
       "Node.js",
@@ -66,7 +76,9 @@ export const projectdata3 = [
     period: "2023",
     year: "2023",
     color: "#000",
-    shortDescription:"ZyncLuxury is a web platform that offers luxurious home lisitngs for home lovers. It is Built with NodeJS, ReactJS, Prisma ORM, and MongoDB", backGroundColor: "#FFFFFF",
+    shortDescription:
+      "ZyncLuxury is a web platform that offers luxurious home lisitngs for home lovers. It is Built with NodeJS, ReactJS, Prisma ORM, and MongoDB",
+    backGroundColor: "#FFFFFF",
     roleDescription:
       "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
     mainImage: "/images/zync/image_1.jpeg",
@@ -78,9 +90,20 @@ export const projectdata3 = [
       ],
       images: ["/images/zync/image_4.jpeg"],
     },
+    gallery: [
+      "/images/zync/image_2.jpeg",
+      "/images/zync/image_3.jpeg",
+      "/images/zync/image_4.jpeg",
+      "/images/zync/image_5.jpeg",
+      "/images/zync/image_6.jpeg",
+      "/images/zync/image_7.jpeg",
+    ],
     technologyUsed: [
       "Typescript",
       "Node.js",
+      "Redis",
+      "Gsap",
+      "Cypress.io",
       "Typescript-Express.js",
       "Socket.io",
       "MongoDb",
@@ -124,6 +147,7 @@ export const projectdata3 = [
       ],
       images: [""],
     },
+    gallery: ["/images/zync/image_2.jpeg"],
     technologyUsed: [
       "Typescript",
       "Go",
@@ -170,6 +194,7 @@ export const projectdata3 = [
       ],
       images: ["/images/twizle/image_1.jpeg"],
     },
+    gallery: ["/images/zync/image_2.jpeg"],
     technologyUsed: [
       "Typescript",
       "Node.js",
@@ -217,6 +242,7 @@ export const projectdata3 = [
       ],
       images: ["/images/tattoo/image_2.jpeg"],
     },
+    gallery: ["/images/zync/image_2.jpeg"],
     technologyUsed: ["NextJS", "Tailwind Css"],
     features: {
       color: "#977f60",
@@ -257,6 +283,7 @@ export const projectdata3 = [
       ],
       images: ["/images/car/image_4.jpeg"],
     },
+    gallery: ["/images/zync/image_2.jpeg"],
     technologyUsed: [
       "Typescript",
       "Node.js",

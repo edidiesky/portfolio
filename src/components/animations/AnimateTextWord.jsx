@@ -7,6 +7,7 @@ const AnimateTextWord = ({ children, type }) => {
   const AnimateTextRef = useRef(null);
   const inView = useInView(AnimateTextRef, {
     margin: "0px 100px -120px 0px",
+    once:true
   });
   if (type === "largeText") {
     return (

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
-import { FaArrowTrendUp } from "react-icons/fa6";
+import Image from "next/image";
 const Card = ({ data, index, progress, targetScale, range }) => {
   // const containerRef = useRef(null);
   // const { scrollYProgress } = useScroll({
@@ -68,7 +68,9 @@ const Card = ({ data, index, progress, targetScale, range }) => {
               }}
               className="w-full relative h-full group-hover:scale-[1.1] scale-[1] "
             >
-              <img
+              <Image
+                width={300}
+                height={300}
                 src={data?.mainImage}
                 alt=""
                 className="w-full h-full object-cover"
