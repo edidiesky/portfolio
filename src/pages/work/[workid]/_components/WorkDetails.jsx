@@ -217,7 +217,7 @@ function MyRoleInWork() {
           >
             <AnimateTextWord type={"largeText"}> My Role</AnimateTextWord>
           </span>
-          <div className="grid grid-cols-1 gap-8">
+          <div className="grid grid-cols-1 gap-12">
             <span className=" w-full text-xl text-grey font-normal md:text-2xl text_background font-portfolio_regular">
               <AnimateTextWord>{overviewText2}</AnimateTextWord>
             </span>
@@ -255,12 +255,12 @@ function WorkFeatures() {
   const overviewText2 = workDetails?.features?.Description[0];
   return (
     <div className="grid grid-cols-1 mx-auto  gap-20">
-      <div className="w-full grid grid-cols-2 gap-4">
+      <div className="w-full grid md:grid-cols-2 gap-4">
         {workDetails?.gallery?.map((image, index) => {
           return (
             <div
               key={index}
-              className="w-full min-h-[400px] md:min-h-[500px] relative flex"
+              className="w-full min-h-[350px] md:min-h-[500px] relative flex"
             >
               <img
                 src={image}
