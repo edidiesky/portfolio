@@ -45,9 +45,7 @@ const Footer = () => {
                 </AnimateTextWord>
               </span>
               <span className="text-lg md:text-end uppercase">
-                <AnimateTextWord type={"largeText"}>
-                  VICTORSCRIPT©2024
-                </AnimateTextWord>
+                VICTORSCRIPT©2024
               </span>
             </div>
             <h1 className="text-5xl max-w-[850px] leading-[1.3] w-full uppercase py-8 md:py-12 md:text-6xl">
