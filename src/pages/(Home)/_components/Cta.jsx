@@ -7,6 +7,7 @@ import {
   aboutText2,
   ctatext1,
   ctatext7,
+  ctaText2,
 } from "@/constants/data/text";
 import Word from "@/components/animations/Word";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
@@ -44,6 +45,13 @@ export default function Cta() {
             gap-y-[8px] leading-[1.2] font-portfolio_regular"
             >
               <Word>{aboutText2}</Word>
+            </h4>
+            <h4
+              className="w-full
+            text-2xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]
+            gap-y-[8px] leading-[1.2] font-portfolio_regular"
+            >
+              <Word>{ctaText2}</Word>
             </h4>
             <h4
               className="w-full

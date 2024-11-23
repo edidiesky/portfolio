@@ -10,7 +10,8 @@ export default function About() {
     "I am passionate about web development and the ideas it postulates. I love working at the mid-section of beautiful user-friendly interfaces. I also can create memorable web experiences.";
   const ctaText2 =
     "Helping industries to rise above others in their niche is one of my healthy obsession I do bring and fascinated about.";
-
+const ctaText3 =
+  "I'm genuinely passionate about creating intutive interfaces and interraction that communicate with the end-users naturally.";
   return (
     <div data-scroll className="py-12 z-50 flex flex-col gap-24">
       <div className="w-[90%] justify-end items-start mx-auto md:px-4 m-auto max-w-custom grid grid-cols-1 gap-4 ">
@@ -18,6 +19,10 @@ export default function About() {
           <h3 className="w-full max-w-[900px] text-2xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]  gap-y-[8px] leading-[1.2] font-portfolio_regular">
             <Word>{ctatext1}</Word>
           </h3>
+          <h3 className="w-full max-w-[900px] text-2xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]  gap-y-[8px] leading-[1.2] font-portfolio_regular">
+            <Word>{ctaText3}</Word>
+          </h3>
+          {/* I'm genuinely passionate about creating intutive interfaces and interraction that communicate with the end-users naturally. */}
           <h3 className="w-full max-w-[900px] text-2xl lg:text-4xl flex uppercase flex-wrap gap-x-[8px]  gap-y-[8px] leading-[1.2] font-portfolio_regular">
             <Word>{ctaText2}</Word>
           </h3>

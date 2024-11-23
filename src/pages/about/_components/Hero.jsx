@@ -1,10 +1,10 @@
 "use client";
 import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 export default function Hero() {
   const heroWords1 =
-    "I am a Software Developer really obsessed in building top tech web applications";
+    "I am a Software Developer geninuely passionate about building top tech web applications";
   const heroTextslideup1 = {
     initial: {
       opacity: 0,
@@ -26,8 +26,9 @@ export default function Hero() {
     },
   };
 
-  const heroWords3 = `I help tech companies in leveraging their products by creating user-centric and visually appealing cross-platform applications that fit with their business goals.`;
-
+  const heroWords3 =
+    " I am geninuely passionate about helping startups elevate their businesses by providing valuable creative insights and delivering high-quality, high-performance solutions through my technological skills.";
+  // "I'm genuinely passionate about creating intutive interfaces and interraction that communicate with the end-users naturally."
   return (
     <>
       <div
@@ -42,7 +43,7 @@ export default function Hero() {
                 data-scroll-speed="2"
                 className="font-normal hero_text2  flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
-                text-5xl md:text-5xl lg:text-7xl max-w-[1200px]
+                text-5xl md:text-5xl lg:text-7xl max-w-[1100px]
                 w-full leading-[1.2] font-portfolio_bold"
               >
                 {/* A Software Developer who crafts captivating digital experiences. */}

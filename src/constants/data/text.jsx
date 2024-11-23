@@ -9,7 +9,8 @@ export const aboutText2 =
   "Hi there! I'm Victor, a passionate Software Developer with 4+ years of experience. I specialize in helping startups achieve their goals by building products and experiences that are intuitive, user-centric, and optimized for high conversion rates";
 export const ctatext5 =
   "I am Victor Essien and I am a self-learned software developer, dedicated in creating appealing user-interfaces for industries since 2020";
-
+export const ctaText2 = 
+  "I'm genuinely passionate about creating intutive interfaces and interactions that communicate with the end-users naturally."
 export const ctatext1 =
   "When I'm not building or exploring new web experiences, I'm probably playing games or watching football.";
 export const ctatext3 = `I am your guy to go to! I can work and communicate effectively with design focused teams to build web applications. I have years of experience collaborating with product teams.`;

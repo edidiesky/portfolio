@@ -48,9 +48,9 @@ const Footer = () => {
                 VICTORSCRIPT©2024
               </span>
             </div>
-            <h1 className="text-5xl max-w-[850px] leading-[1.3] w-full uppercase py-8 md:py-12 md:text-6xl">
-              <AnimateTextWord type={"largeText"}>
-                why wont you give a thumb up to hi@VICTORSCRIPT.com
+            <h1 className="text-4xl max-w-[850px] leading-[1.3] w-full uppercase py-8 md:py-12 md:text-6xl">
+              <AnimateTextWord >
+           FOR ANY COLLABORATIVE PROJECTS OR INQUIRIES, FEEL FREE TO REACH OUT TO ME.
               </AnimateTextWord>
             </h1>
           </div>
@@ -60,7 +60,7 @@ const Footer = () => {
               href={
                 "mailto:victoressienscript@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="w-full md:w-[580px] text-[#fff] hover:text-[#000] text-lg md:text-3xl font-normal h-[100px] md:h-[150px] border rounded-full"
+              className="w-full md:w-[900px] text-[#fff] hover:text-[#000] text-xl md:text-4xl font-normal h-[120px] md:h-[200px] border rounded-full"
             >
               <Magnetic bgColor={"#fff"}>VICTORESSIENSCRIPT@GMAIL.COM</Magnetic>
             </Link>
