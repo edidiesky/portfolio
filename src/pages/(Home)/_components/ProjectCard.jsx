@@ -22,7 +22,7 @@ const ProjectCard = ({ project, index, type }) => {
             </div>
             <div className="flex w-full flex-col gap-2">
               <h3
-                className="text-lg md:text-xl gap-4 flex items-start 
+                className="text-xl md:text-2xl gap-4 flex items-start 
                text-text_dark_1 flex-col justify-between font-portfolio_bold2"
               >
                 <span
@@ -36,7 +36,7 @@ const ProjectCard = ({ project, index, type }) => {
                 <span
                   data-scroll
                   data-scroll-speed="2"
-                  className="text-sm flex font-portfolio_regular
+                  className="text-base flex font-portfolio_regular
                     text=[var(--dark-1)] opacity-[0.4] items-center 
                     justify-between w-full"
                 >

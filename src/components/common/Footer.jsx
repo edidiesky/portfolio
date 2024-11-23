@@ -60,7 +60,7 @@ const Footer = () => {
               href={
                 "mailto:victoressienscript@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="w-full md:w-[900px] text-[#fff] hover:text-[#000] text-xl md:text-4xl font-normal h-[120px] md:h-[200px] border rounded-full"
+              className="w-full md:w-[900px] text-[#fff] hover:text-[#000] text-lg md:text-4xl font-normal h-[120px] md:h-[200px] border rounded-full"
             >
               <Magnetic bgColor={"#fff"}>VICTORESSIENSCRIPT@GMAIL.COM</Magnetic>
             </Link>

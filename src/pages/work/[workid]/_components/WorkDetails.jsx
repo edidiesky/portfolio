@@ -165,7 +165,7 @@ function WorkOverview() {
   return (
     <div className="w-full">
       <div className="flex w-[90%] max-w-custom flex-col gap-16 mx-auto">
-        <div className="w-[80%] mx-auto flex flex-col gap-6">
+        <div className="lg:w-[80%] mx-auto flex flex-col gap-6">
           <span
             data-scroll
             data-scroll-speed="2"
@@ -324,7 +324,7 @@ function WorkUI() {
               );
             })}
           </div>
-          <div className="w-[80%] mx-auto flex flex-col gap-6">
+          <div className="lg:w-[80%] mx-auto flex flex-col gap-6">
             <span className="font-normal flex leading-[1] text-3xl md:text-5xl">
               <AnimateTextWord type={"largeText"}>
                 User-Centered Development
