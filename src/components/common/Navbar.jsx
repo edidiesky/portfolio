@@ -75,7 +75,7 @@ const Navbar = ({ type }) => {
               })}
 
               <Link
-                href={`www.linkedin.com/in/victorezekielessien`}
+                href={`https://www.linkedin.com/in/victorscript`}
                 className="text-lg lg:text-xl text-[var(--primary)] font-portfolio_regular"
               >
                 Linkedin
