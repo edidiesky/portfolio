@@ -159,21 +159,21 @@ export const serviceslist = [
 
 export const experienceList = [
   {
-    title: "Bitnorm",
+    title: "Bitnorm As a",
     position: "Full-Stack Engineer",
     date: "November 2023 - April 2024 ",
     role: " Bridged the gap between frontend and backend, delivering a dynamic and personalized userexperience, tailored to each user and organization, resulting in a 25% increase in user satisfaction.",
     location: "The Netherlands",
   },
   {
-    title: "Outset.AI",
+    title: "Outset.AI As A",
     position: "Frontend Engineer",
     date: "  January 2022 - August 2023",
     role: "Developed comprehensive test suites with Cypress, increasing test coverage from 60% to 85%, resulting in a 21.4% improvement in bug detection.",
     location: " United States",
   },
   {
-    title: "Palkeeper",
+    title: "Palkeeper As A",
     position: "Frontend Engineer",
     date: "August 2020 - May 2021",
     role: " Coordinated with backend developers to align API requirements and data formats, reducing integration issues by 30% and ensuring a seamless user experience",
@@ -181,7 +181,7 @@ export const experienceList = [
   },
 
   {
-    title: "Trevlo Technologies Limited",
+    title: "Trevlo Technologies Limited As A",
     position: "Frontend Intern",
     date: "February 2019 - March 2020",
     role: "Learn and analyze design mockups to understand layout, color schemes, typography, and interactive elements, contributing to a 25% improvement in design implementation accuracy",

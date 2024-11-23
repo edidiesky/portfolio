@@ -83,19 +83,21 @@ const Skills = () => {
                     <div
                       key={index}
                       className="w-full flex md:flex-row flex-col md:items-center gap-4 justify-between
-                       text-sm md:text-base lg:text-2xl font-normal border-b border-[rgba(255,255,255,.1)] py-8 md:py-12 font-portfolio_regular text-grey"
+                       text-lg lg:text-2xl font-normal border-b border-[rgba(255,255,255,.1)] py-8 md:py-12 font-portfolio_regular text-grey"
                     >
                       <div className="flex-1 flex flex-col gap-3">
-                        <span className="text-3xl">
-                          {skill?.title} as{" "}
-                          <span className="">{skill?.position}</span>
-                        </span>
+                        <div className="text-3xl gap-2">
+                          <AnimateTextWord type="largeText">
+                            {skill?.title}
+                          </AnimateTextWord>
+                          <AnimateTextWord>{skill?.position}</AnimateTextWord>
+                        </div>
                         <span className="flex-1 max-w-[600px] text-base lg:text-lg text_background gap-4">
-                          {skill?.role}
+                          <AnimateTextWord>{skill?.role}</AnimateTextWord>
                         </span>
                       </div>
                       <span className="text-end">
-                        {skill?.date}
+                        <AnimateTextWord>{skill?.date}</AnimateTextWord>
                       </span>
                     </div>
                   );
