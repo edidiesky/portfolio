@@ -43,10 +43,10 @@ export const projectdata3 = [
       images: ["/images/trove/tasty_4.jpeg"],
     },
     gallery: [
-      "/images/tasty/tasty_2.jpeg",
-      "/images/tasty/tasty_5.jpeg",
-      "/images/tasty/tasty_7.jpeg",
-      "/images/tasty/tasty_3.jpeg",
+      "/images/trove/tasty_2.jpeg",
+      "/images/trove/tasty_5.jpeg",
+      "/images/trove/tasty_7.jpeg",
+      "/images/trove/tasty_3.jpeg",
     ],
     technologyUsed: [
       "Typescript",
@@ -63,13 +63,13 @@ export const projectdata3 = [
         "TastyTrove platform redefines the concept of social food marketplace where users can see menu listing, buy them, chat with the chef or sellers of the menu, pay using flutter wave payment and also see there orders listing real-time chat systems.",
         "TastyTrove allows Sellers to communicate with buyers, see notifications, see revenue, carry out managment or inventory on their products in a dynamic and interactive manner.",
       ],
-      images: ["/images/tasty/tasty_3.jpeg"],
+      images: ["/images/trove/tasty_3.jpeg"],
     },
     ui: {
       color: "#977f60",
       description:
         "TastyTrove is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
-      images: ["/images/tasty/tasty_5.jpeg"],
+      images: ["/images/trove/tasty_5.jpeg"],
     },
   },
   // ZyncLuxury
