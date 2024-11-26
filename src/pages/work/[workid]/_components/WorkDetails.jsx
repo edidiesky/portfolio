@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { projectdata3 } from "@/constants/data/projectdata";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -147,8 +147,8 @@ function WorkTitle() {
               height={300}
               src={workDetails?.mainImage} */}
             <Image
-              width={300}
-              height={300}
+              fill
+              // lazy
               src={workDetails?.mainImage}
               alt="imagecontainer for Victor's project"
               className="w-full object-cover"
@@ -192,8 +192,7 @@ function WorkOverview() {
         </div>
         <div className="w-full">
           <Image
-              width={300}
-              height={300}
+            fill
             src={workDetails?.overview?.images[0]}
             alt="imagecontainer for Victor's project"
             className="w-full object-cover"
@@ -255,7 +254,6 @@ function WorkFeatures() {
   const router = useRouter();
   const { workid } = router.query;
   const workDetails = projectdata3.find((data) => data.mainTitle === workid);
-  const container3 = useRef(null);
   const overviewText2 = workDetails?.features?.Description[0];
   return (
     <div className="grid grid-cols-1 mx-auto  gap-20">
@@ -267,8 +265,7 @@ function WorkFeatures() {
               className="w-full min-h-[350px] md:min-h-[500px] relative flex"
             >
               <Image
-              width={300}
-              height={300}
+               fill
                 src={image}
                 alt="imagecontainer for Victor's project"
                 className="w-full object-cover"
@@ -292,7 +289,6 @@ function WorkFeatures() {
               <div className="w-full gap-2 flex items-center">
                 <div className="flex items-start">
                   <h4
-                    ref={container3}
                     className=" w-full text-xl md:text-2xl text_background font-portfolio_regular"
                   >
                     <AnimateTextWord>{overviewText2}</AnimateTextWord>
@@ -322,8 +318,7 @@ function WorkUI() {
               return (
                 <div key={index} className="w-full relative flex">
                   <Image
-              width={300}
-              height={300}
+                    fill
                     src={image}
                     alt="imagecontainer for Victor's project"
                     className="w-full object-cover"
