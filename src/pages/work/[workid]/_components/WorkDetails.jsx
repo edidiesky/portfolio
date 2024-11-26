@@ -146,7 +146,9 @@ function WorkTitle() {
               width={300}
               height={300}
               src={workDetails?.mainImage} */}
-            <img
+            <Image
+              width={300}
+              height={300}
               src={workDetails?.mainImage}
               alt="imagecontainer for Victor's project"
               className="w-full object-cover"
@@ -189,7 +191,9 @@ function WorkOverview() {
           </div>
         </div>
         <div className="w-full">
-          <img
+          <Image
+              width={300}
+              height={300}
             src={workDetails?.overview?.images[0]}
             alt="imagecontainer for Victor's project"
             className="w-full object-cover"
@@ -262,7 +266,9 @@ function WorkFeatures() {
               key={index}
               className="w-full min-h-[350px] md:min-h-[500px] relative flex"
             >
-              <img
+              <Image
+              width={300}
+              height={300}
                 src={image}
                 alt="imagecontainer for Victor's project"
                 className="w-full object-cover"
@@ -315,7 +321,9 @@ function WorkUI() {
             {workDetails?.ui?.images?.map((image, index) => {
               return (
                 <div key={index} className="w-full relative flex">
-                  <img
+                  <Image
+              width={300}
+              height={300}
                     src={image}
                     alt="imagecontainer for Victor's project"
                     className="w-full object-cover"
