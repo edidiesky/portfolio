@@ -185,7 +185,7 @@ function WorkOverview() {
             {/* <div className="w-full"></div> */}
           </div>
         </div>
-        <div className="w-full min-h-[550px] lg:min-h-[750px] mt-8 relative">
+        <div className="w-full min-h-[550px] lg:min-h-[700px] mt-8 relative">
           <Image
             fill
             src={workDetails?.overview?.images[0]}
