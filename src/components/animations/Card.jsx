@@ -61,21 +61,18 @@ const Card = ({ data, index, progress, targetScale, range }) => {
           className="flex flex-col group w-full gap-8"
           href={`/work/${data?.mainTitle}`}
         >
-          <div className="w-full h-[380px] lg:h-[560px] overflow-hidden">
+          <div className="w-full h-[380px] lg:h-[580px] relative overflow-hidden">
             <div
               style={{
                 transition: "all .3s",
               }}
-              className="w-full relative h-full group-hover:scale-[1.1] scale-[1] "
+              className="w-full relative lg:h-[580px] group-hover:scale-[1.1] scale-[1] "
             >
-              {/* Image width={300}
-              height={300}
-              src={data?.mainImage} */}
               <Image
                 src={data?.mainImage}
                 alt=""
                 fill
-                className="w-full h-full object-cover"
+                className="w-full object-cover"
               />
             </div>
           </div>

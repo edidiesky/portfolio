@@ -141,14 +141,9 @@ function WorkTitle() {
           </div>
         </div>
         <div className="w-full mx-auto flex items-end justify-end">
-          <div className="w-full mt-8 relative flex">
-            {/*    <Image
-              width={300}
-              height={300}
-              src={workDetails?.mainImage} */}
+          <div className="w-full min-h-[550px] lg:min-h-[750px] mt-8 relative">
             <Image
               fill
-              // lazy
               src={workDetails?.mainImage}
               alt="imagecontainer for Victor's project"
               className="w-full object-cover"
@@ -190,7 +185,7 @@ function WorkOverview() {
             {/* <div className="w-full"></div> */}
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full min-h-[550px] lg:min-h-[750px] mt-8 relative">
           <Image
             fill
             src={workDetails?.overview?.images[0]}
@@ -316,7 +311,7 @@ function WorkUI() {
           <div className="grid grid-cols-1 gap-1">
             {workDetails?.ui?.images?.map((image, index) => {
               return (
-                <div key={index} className="w-full relative flex">
+                <div key={index} className="w-full min-h-[550px] lg:min-h-[750px] relative">
                   <Image
                     fill
                     src={image}
