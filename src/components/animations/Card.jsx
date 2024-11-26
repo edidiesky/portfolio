@@ -71,9 +71,10 @@ const Card = ({ data, index, progress, targetScale, range }) => {
               {/* Image width={300}
               height={300}
               src={data?.mainImage} */}
-              <img
+              <Image
                 src={data?.mainImage}
                 alt=""
+                fill
                 className="w-full h-full object-cover"
               />
             </div>
