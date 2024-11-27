@@ -1,7 +1,6 @@
-
 // --- NEW PROJECTS LIST -----------
 // JIRA
-// MULTI-VENDOR 
+// MULTI-VENDOR
 // MOBILE JOBBOARD RENTALS
 // MOBILE SOCIAL APP
 // MESSENGER APP
@@ -16,7 +15,6 @@
 // SASS LANDING PAGE
 // SASS LANDING PAGE2
 // SASS LANDING PAGE3
-
 
 export const projectdata3 = [
   // tastytrove
@@ -127,6 +125,56 @@ export const projectdata3 = [
       color: "#977f60",
       description:
         "ZyncLuxury is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
+      images: ["/images/zync/image_5.jpeg"],
+    },
+  },
+  {
+    id: 4,
+    website: "",
+    role: "Full-Stack Development",
+    github: "https://github.com/edidiesky/Messaging_App",
+    period: "2024",
+    year: "2024",
+    color: "#000",
+    shortDescription:
+      "NexChat seeks to improve and make messaging process in a team setting to be seamless and user-intutive. It is Built with NextJS, Redis, Typescript, Socket-IO, NodeJS, ReactJS, Prisma ORM, and MongoDB",
+    backGroundColor: "#FFFFFF",
+    roleDescription:
+      "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
+    mainImage: "/images/nexchat/image_1.jpeg",
+    mainTitle: "NexChat",
+    overview: {
+      color: "#bbacaf",
+      Description: [
+        "NexChat is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
+      ],
+      images: ["/images/nexchat/image_4.jpeg"],
+    },
+    gallery: [],
+    technologyUsed: [
+      "Typescript",
+      "Node.js",
+      "Redis",
+      "Gsap",
+      "Cypress.io",
+      "Typescript-Express.js",
+      "Socket.io",
+      "MongoDb",
+      "Express.js",
+      "Styled-components",
+    ],
+    features: {
+      color: "#977f60",
+      Description: [
+        "NexChat platform redefines the concept of resort and relaxation, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, a seamless booking system, home management by ADMIN",
+        "NexChat allows Users to see various Home listing, carry out a seamless payment using fluterr-wave payment system, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
+      ],
+      images: ["/images/zync/image_1.jpeg", "/images/zync/image_5.jpeg"],
+    },
+    ui: {
+      color: "#977f60",
+      description:
+        "NexChat is not left out from intuitive interfaces, responsive design, and efficient workflows enhance the overall user experience, making the platform easy and enjoyable to use.",
       images: ["/images/zync/image_5.jpeg"],
     },
   },

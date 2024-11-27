@@ -11,7 +11,9 @@ import AnimateTextWord from "@/components/animations/AnimateTextWord";
 import ProjectCard from "@/pages/(Home)/_components/ProjectCard";
 export default function Hero() {
   // text animation reveal
-
+  const router = useRouter();
+  const { workid } = router.query;
+  const workDetails = projectdata3.find((data) => data.mainTitle === workid);
   return (
     <>
       <div
@@ -22,11 +24,19 @@ export default function Hero() {
           {/* title */}
           {WorkTitle()}
           {/* overview */}
-          {WorkOverview()}
-          {MyRoleInWork()}
-          {WorkFeatures()}
-          {WorkUI()}
-          {NextWork()}
+          <>
+            {workDetails?.website ? (
+              <>
+                {WorkOverview()}
+                {MyRoleInWork()}
+                {WorkFeatures()}
+                {WorkUI()}
+                {NextWork()}
+              </>
+            ) : (
+              ""
+            )}
+          </>
         </div>
       </div>
       {/* {NextWork()} */}
@@ -260,7 +270,7 @@ function WorkFeatures() {
               className="w-full min-h-[350px] md:min-h-[500px] relative flex"
             >
               <Image
-               fill
+                fill
                 src={image}
                 alt="imagecontainer for Victor's project"
                 className="w-full object-cover"
@@ -283,9 +293,7 @@ function WorkFeatures() {
             <div className="w-full flex flex-col gap-12">
               <div className="w-full gap-2 flex items-center">
                 <div className="flex items-start">
-                  <h4
-                    className=" w-full text-xl md:text-2xl text_background font-portfolio_regular"
-                  >
+                  <h4 className=" w-full text-xl md:text-2xl text_background font-portfolio_regular">
                     <AnimateTextWord>{overviewText2}</AnimateTextWord>
                   </h4>
                 </div>
@@ -311,7 +319,10 @@ function WorkUI() {
           <div className="grid grid-cols-1 gap-1">
             {workDetails?.ui?.images?.map((image, index) => {
               return (
-                <div key={index} className="w-full min-h-[550px] lg:min-h-[750px] relative">
+                <div
+                  key={index}
+                  className="w-full min-h-[550px] lg:min-h-[750px] relative"
+                >
                   <Image
                     fill
                     src={image}
