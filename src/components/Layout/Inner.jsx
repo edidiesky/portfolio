@@ -33,36 +33,7 @@ const opacityVariants = {
 };
 
 export default function Layout({ children, type }) {
-  if (type === "contact") {
-    return (
-      <ContactLayOutStyles>
-        <motion.div
-          variants={slide}
-          initial="initial"
-          animate="enter"
-          exit="exit"
-          className="slide"
-        ></motion.div>
-        <motion.div
-          variants={perspective}
-          initial="initial"
-          animate="enter"
-          exit="exit"
-          className="page"
-        >
-          <motion.div
-            variants={opacityVariants}
-            initial="initial"
-            animate="enter"
-            exit="exit"
-          >
-            <Navbar type={"contact"} />
-            {children}
-          </motion.div>
-        </motion.div>
-      </ContactLayOutStyles>
-    );
-  }
+
   return (
     <LayOutStyles>
       <motion.div
