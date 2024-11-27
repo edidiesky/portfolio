@@ -82,7 +82,7 @@ export default function Hero() {
                 </span>
               </div>
             </h4>
-            <WorkList type={"work"} />
+            <WorkList/>
           </div>
         </div>
       </div>
