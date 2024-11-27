@@ -246,9 +246,14 @@ export const projectdata3 = [
       Description: [
         "Twizzle is a real-time social networking platform which offers a modern and interactive experience akin to popular platforms like Twitter. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript and Nodejs.",
       ],
-      images: ["/images/twizle/image_1.jpeg"],
+      images: ["/images/twizle/image_3.jpeg"],
     },
-    gallery: ["/images/zync/image_2.jpeg"],
+    gallery: [
+      "/images/twizle/image_4.jpeg",
+      "/images/twizle/image_2.jpeg",
+      "/images/twizle/image_3.jpeg",
+      "/images/twizle/image_1.jpeg",
+    ],
     technologyUsed: [
       "Typescript",
       "Node.js",
@@ -264,7 +269,7 @@ export const projectdata3 = [
         "Twizzle platform redefines the concept of social interaction, offering users a dynamic and engaging environment to connect and communicate. With features such as user authentication, real-time chat systems, tweet CRUD operations, and chain commenting using TypeScript, it mirrors the functionality and behavior of popular platforms like Twitter.",
         "Twizzle allows Users can create, read, update, and delete tweets, sharing their thoughts and engaging with content in a dynamic and interactive manner.",
       ],
-      images: ["/images/twizle/image_5.jpeg", "/images/twizle/image_2.jpeg"],
+      images: ["/images/twizle/image_5.jpeg"],
     },
     ui: {
       color: "#977f60",
@@ -320,8 +325,8 @@ export const projectdata3 = [
     website: "https://vaada.vercel.app/",
     role: "Full-Stack Development",
     github: "https://github.com/edidiesky/cardealer",
-    period: "2020",
-    year: "2020",
+    period: "2019",
+    year: "2019",
     color: "#000",
     shortDescription:
       "Developed a fully functional SAAS product, Vaada. Created a platform that bridge the gap between car dealers and their clients, providing a platform that enhances communication and simplifies the booking process.",
