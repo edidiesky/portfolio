@@ -48,7 +48,7 @@ const Card = ({ data, index, setMousePosition }) => {
             </h2>
           </div>
           <div className="w-full flex items-center justify-between">
-            <h3 className="text_background font-portfolio_regular w-full text-xl lg:text-2xl">
+            <h3 className="text_background font-portfolio_regular w-full text-lg lg:text-xl">
               {data?.role}
             </h3>
             <span className="text-lg lg:text-xl font-portfolio_regular text_background">
