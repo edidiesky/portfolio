@@ -128,6 +128,7 @@ export const projectdata3 = [
       images: ["/images/zync/image_5.jpeg"],
     },
   },
+  // NexChat
   {
     id: 4,
     website: "",
@@ -141,7 +142,7 @@ export const projectdata3 = [
     backGroundColor: "#FFFFFF",
     roleDescription:
       "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
-    mainImage: "/images/nexchat/image_1.jpeg",
+    mainImage: "/images/nexchat/image_2.jpeg",
     mainTitle: "NexChat",
     overview: {
       color: "#bbacaf",
