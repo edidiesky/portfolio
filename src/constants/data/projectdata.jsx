@@ -27,7 +27,7 @@ export const projectdata3 = [
     year: "2024",
     color: "#fff",
     shortDescription:
-      "TastyTrove is a dynamic marketplace for food lovers and sellers. It is built with NodeJS, ReactJs and MongoDb. Tests using Cypress were written to test for edge cases in the application",
+      "TastyTrove is an intuitive food-markeplace platform where users can sell and buy different foods based on their taste. It is built with NodeJS, Redis, Socket-IO, Framer-motion, ReactJs and MongoDb. Tests using Cypress were written to test for edge cases in the application",
     backGroundColor: "#318AFC",
     roleDescription:
       "The role I took in developing involves developing it as a restaurant marketplace. I took pride in developing this application from the server side to the client side. I had to progress further by writing Frontend unit tests using Cypress.",
@@ -80,7 +80,7 @@ export const projectdata3 = [
     year: "2023",
     color: "#000",
     shortDescription:
-      "ZyncLuxury is a web platform that offers luxurious home lisitngs for home lovers. It is Built with NodeJS, ReactJS, Prisma ORM, and MongoDB",
+      "ZyncLuxury offers a seamless and user-centered approach solution in offering luxurious homes for home lovers. It is built with NodeJS, Redis, Socket-IO, ReactJS, Prisma ORM, and MongoDB",
     backGroundColor: "#FFFFFF",
     roleDescription:
       "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
@@ -89,7 +89,7 @@ export const projectdata3 = [
     overview: {
       color: "#bbacaf",
       Description: [
-        "ZyncLuxury is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I Built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
+        "ZyncLuxury is a home of resort and relaxation; platform which offers a modern and interactive experience akin to luxury. I built it with cutting-edge technologies, it provides users with a seamless environment to connect, engage, and share thoughts in real-time. From user authentication to real-time chat systems",
       ],
       images: ["/images/zync/image_4.jpeg"],
     },
