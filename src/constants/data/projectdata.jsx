@@ -15,6 +15,8 @@
 // SASS LANDING PAGE
 // SASS LANDING PAGE2
 // SASS LANDING PAGE3
+// DISCORD
+// CANVA
 
 export const projectdata3 = [
   // tastytrove
