@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import WorkList from "@/components/common/WorkList";
 export default function Hero() {
   const heroWords1 =
@@ -30,7 +29,7 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="min-h-[50vh] py-28 md:py-40 relative flex items-center justify-center"
+        className="min-h-[60vh] py-28 md:py-40 relative flex items-center justify-center"
       >
         <div
           className="w-[90%] mx-auto flex flex-col gap-48
@@ -39,7 +38,7 @@ export default function Hero() {
           <span
             data-scroll
             data-scroll-speed="2"
-            className="font-normal max-w-[1200px] hero_text2 flex flex-wrap
+            className="font-normal max-w-[1100px] hero_text2 flex flex-wrap
                  gap-[8px] lg:gap-[12px] items-center justify-start 
                 text-4xl lg:text-7xl
                 w-full leading-[1.2] font-portfolio_bold"
