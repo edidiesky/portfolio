@@ -66,9 +66,7 @@ export default function Hero() {
             <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
               <div className="md:max-w-[560px]">
                 {" "}
-                <AnimateTextWord >
-                 Here are All of My Works
-                </AnimateTextWord>{" "}
+                <AnimateTextWord>Here are All of My Works</AnimateTextWord>{" "}
               </div>
               {/* <sup className="text-2xl md:text-4xl">4</sup> */}
               <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
@@ -81,7 +79,7 @@ export default function Hero() {
                 </span>
               </div>
             </h4>
-            <WorkList/>
+            <WorkList type={"work"} />
           </div>
         </div>
       </div>
