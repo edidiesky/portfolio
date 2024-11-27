@@ -74,7 +74,7 @@ function WorkTitle() {
             >
               <Magnetic bgColor={"#eee"}>
                 <span className="flex items-center justify-center gap-2">
-                  Coming Soon
+                  Work In Progress!
                 </span>
               </Magnetic>
             </Link>
