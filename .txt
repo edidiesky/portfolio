@@ -1,0 +1,79 @@
+   // <div ref={containerRef} className="w-full md:w-[85%] mx-auto relative">
+    //   {/* {projectdata3.map((x, index) => {
+    //     return (
+    //       <ProjectCard
+    //         setTab={setTab}
+    //         tab={tab}
+    //         project={x}
+    //         key={index}
+    //         index={index}
+    //       />
+    //     );
+    //   })} */}
+    //   {projectdata3.map((data, index) => {
+    //     const targetScale = 1 - (projectdata3.length - 1) * 0.009;
+    //     return (
+    //       <Card
+    //         progress={scrollYProgress}
+    //         targetScale={targetScale}
+    //         range={[index * 0.25, 1]}
+    //         data={data}
+    //         index={index}
+    //         key={`p_${index}`}
+    //       />
+    //     );
+    //   })}
+    // </div>
+
+
+      // const containerRef = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: containerRef,
+  //   offset: ["start end", "start start"],
+  // });
+  // const scale = useTransform(scrollYProgress, [0, 1], [2, 1]);
+  // const cardScale = useTransform(progress, range, [1, targetScale]);
+  // return (
+  //   <div className="w-full h-screen z-[400] sticky top-0 left-0 flex items-center justify-center">
+  //     <div
+  //       // ref={containerRef}
+  //       // style={{
+  //       //   scale: cardScale,
+  //       //   background: `${data?.backGroundColor}`,
+  //       //   color: `${data?.color}`,
+  //       //   top: `calc(25vh + ${index * 30}px) `,
+  //       // }}
+  //       className="flex flex-col gap-4 p-[20px] rounded-[20px] relative w-full"
+  //     >
+  //       <Link
+  //         className="flex flex-col w-full gap-4"
+  //         href={`/work/${data?.mainTitle}`}
+  //       >
+  //         <div className="flex flex-col gap-4 pb-4 border-b border-[rgba(0,0,0,.2)]">
+  //           <div className="w-full font-portfolio_regular flex items-center justify-between">
+  //             <span className="text-xl">{data?.year}</span>
+  //             <span className="text-2xl">{data?.role}</span>
+  //           </div>
+  //           <div className="w-full flex items-center justify-between">
+  //             <h2 className="text-dark font-portfolio_bold w-full text-3xl lg:text-4xl">
+  //               {data?.mainTitle}
+  //             </h2>
+  //             <FaArrowTrendUp className="text-4xl lg:text-5xl" />
+  //           </div>
+  //         </div>
+  //         <div className="w-full relative overflow-hidden rounded-xl">
+  //           <div
+  //             // style={{ scale }}
+  //             className="w-full relative overflow-hidden"
+  //           >
+  //             <img
+  //               src={data?.mainImage}
+  //               alt=""
+  //               className="w-full h-full rounded-xl object-cover"
+  //             />
+  //           </div>
+  //         </div>
+  //       </Link>
+  //     </div>
+  //   </div>
+  // );

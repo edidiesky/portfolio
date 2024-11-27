@@ -39,6 +39,9 @@ html {
   font-family: "Regular", serif;
   color: var(--white);
 }
+.scale_animation {
+  transition: transform .6s cubic-bezier(0.76, 0, 0.24, 1);
+}
 
 :root {
   --pink: #f3e1d9;

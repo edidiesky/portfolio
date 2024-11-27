@@ -22,7 +22,7 @@ export default function Cta() {
         <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
           <div className="md:max-w-[500px]">
             {" "}
-            <AnimateTextWord type="largeText">
+            <AnimateTextWord >
               Few things About Me
             </AnimateTextWord>{" "}
           </div>

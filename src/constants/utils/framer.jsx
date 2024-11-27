@@ -27,7 +27,7 @@ export const LargeSlideUp = {
     opacity: 1,
     y: "0%",
     transition: {
-      duration: .7,
+      duration: 0.7,
       delay: i * 0.09,
       ease: [0.62, 0.05, 0.01, 0.99],
     },
@@ -46,7 +46,7 @@ export const smallslideup = {
   animate: (i) => ({
     opacity: 1,
     y: "0%",
-    transition: { duration: .3, delay: i * 0.03 },
+    transition: { duration: 0.3, delay: i * 0.03 },
   }),
   exit: {
     opacity: 0,
@@ -81,7 +81,6 @@ export const slideup3 = {
     transition: {
       duration: 1,
       delay: i * 0.4,
-    
     },
   }),
   exit: {
@@ -90,28 +89,29 @@ export const slideup3 = {
   },
 };
 
-
 export const opacity = {
   initial: {
     opacity: 0,
   },
   animate: (i) => ({
     opacity: 1,
-    transition: { duration: .6, delay: i * 0.04 },
+    transition: { duration: 0.6, delay: i * 0.04 },
   }),
   exit: {
     opacity: 0,
   },
 };
 
-export const scaleAnimations = {
+export const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
+
   enter: {
     scale: 1,
     x: "-50%",
     y: "-50%",
     transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
   },
+
   closed: {
     scale: 0,
     x: "-50%",

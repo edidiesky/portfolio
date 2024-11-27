@@ -15,7 +15,7 @@ const Skills = () => {
           <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
             <div className="md:max-w-[500px]">
               {" "}
-              <AnimateTextWord type="largeText">
+              <AnimateTextWord >
                 My Tech Stack
               </AnimateTextWord>{" "}
             </div>
@@ -62,7 +62,7 @@ const Skills = () => {
           <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
             <div className="md:max-w-[500px]">
               {" "}
-              <AnimateTextWord type="largeText">
+              <AnimateTextWord >
                 Work experience
               </AnimateTextWord>{" "}
             </div>
@@ -87,7 +87,7 @@ const Skills = () => {
                     >
                       <div className="flex-1 flex flex-col gap-3">
                         <div className="text-3xl gap-2">
-                          <AnimateTextWord type="largeText">
+                          <AnimateTextWord >
                             {skill?.title}
                           </AnimateTextWord>
                           <AnimateTextWord>{skill?.position}</AnimateTextWord>

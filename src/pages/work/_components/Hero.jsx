@@ -67,7 +67,7 @@ export default function Hero() {
             <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
               <div className="md:max-w-[560px]">
                 {" "}
-                <AnimateTextWord type="largeText">
+                <AnimateTextWord >
                  Here are All of My Works
                 </AnimateTextWord>{" "}
               </div>

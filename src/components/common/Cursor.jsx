@@ -1,28 +1,69 @@
-import React, { useRef, useEffect } from "react";
-import { motion } from "framer-motion";
-
-const Cursor = () => {
+"use client";
+import React, { useEffect, useRef } from "react";
+import { projectdata3 } from "@/constants/data/projectdata";
+import Link from "next/link";
+import gsap from "gsap";
+const Cursor = ({ mouseposition }) => {
+  const labelRef = useRef(null);
   const mouseRef = useRef(null);
-
-  const handleMouseMovement = (e) => {
-    const { clientX, clientY } = e;
-    mouseRef.current.style.left = clientX + "px";
-    mouseRef.current.style.top = clientY + "px";
-  };
-
+  const webactive = projectdata3[mouseposition?.index]?.mainTitle;
   useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMovement);
+    const handleMouseMotion = (e) => {
+      const { pageX, pageY } = e;
+      gsap.to(mouseRef.current, {
+        left: pageX - 60,
+        top: pageY - 60,
+        duration: 0.9,
+        ease: "power3",
+      });
+
+      gsap.to(labelRef.current, {
+        left: pageX - 60,
+        top: pageY - 60,
+        duration: 0.55,
+        ease: "power3",
+      });
+    };
+
+    window.addEventListener("mousemove", handleMouseMotion);
     return () => {
-      window.removeEventListener("mousemove", handleMouseMovement);
+      window.removeEventListener("mousemove", handleMouseMotion);
     };
   }, []);
 
+  const website = webactive ? webactive : false;
+  console.log("mouseposition", mouseposition);
   return (
-    <motion.div
-      style={{ transition: "transform 1.5s cubic-bezier(0.76, 0, 0.24, 1)" }}
-      ref={mouseRef}
-      className="rounded-full bg-[#000] z-50 h-[20px] w-[20px] fixed"
-    />
+    <>
+      <div
+        ref={mouseRef}
+        style={{ left: 0, top: 0 }}
+        className={`w-[120px] z-[40] absolute h-[120px] rounded-full 
+          hidden pointer-events-none lg:flex items-center ${
+            mouseposition?.active
+              ? "scale_animation scale-100"
+              : "scale-0 scale_animation"
+          } justify-center text-white font-portfolio_bold bg-[#3e3aff]`}
+      ></div>
+      <div
+        ref={labelRef}
+        style={{ left: 0, top: 0 }}
+        className={`w-[120px] z-[40] absolute h-[120px] 
+        rounded-full hidden pointer-events-none lg:flex items-center ${
+          mouseposition?.active
+            ? "scale_animation scale-100"
+            : "scale-0 scale_animation"
+        } justify-center text-white font-portfolio_bold`}
+      >
+        {website ? (
+          <Link target="_blank" href={website}>
+            View
+          </Link>
+        ) : (
+          <span className="text-center w-full"> Work in Progress</span>
+        )}
+      </div>
+    </>
   );
 };
 
