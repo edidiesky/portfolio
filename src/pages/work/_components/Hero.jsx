@@ -29,7 +29,7 @@ export default function Hero() {
     <>
       <div
         data-scroll
-        className="min-h-[60vh] py-28 md:py-40 relative flex items-center justify-center"
+        className="min-h-[60vh] py-28 md:py-40  flex items-center justify-center"
       >
         <div
           className="w-[90%] mx-auto flex flex-col gap-48
@@ -48,7 +48,7 @@ export default function Hero() {
               return (
                 <span
                   key={index}
-                  className="flex hide relative items-center justify-start"
+                  className="flex hide  items-center justify-start"
                 >
                   <motion.span
                     variants={heroTextslideup1}
