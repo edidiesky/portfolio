@@ -29,7 +29,7 @@ module.exports = {
         light_grey: "#eee",
       },
       maxWidth: {
-        custom: "1184px",
+        custom: "1124px",
       },
     },
   },
