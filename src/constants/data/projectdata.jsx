@@ -301,8 +301,13 @@ export const projectdata3 = [
       ],
       images: ["/images/tattoo/image_2.jpeg"],
     },
-    gallery: ["/images/zync/image_2.jpeg"],
-    technologyUsed: ["NextJS", "Tailwind Css"],
+    gallery: [
+      "/images/tattoo/image_5.jpeg",
+      "/images/tattoo/image_4.jpeg",
+      "/images/tattoo/image_3.jpeg",
+      "/images/tattoo/image_2.jpeg",
+    ],
+    technologyUsed: ["NextJS", "Tailwind Css", 'Framer-Motion', "GSAP"],
     features: {
       color: "#977f60",
       Description: [
@@ -342,7 +347,12 @@ export const projectdata3 = [
       ],
       images: ["/images/car/image_4.jpeg"],
     },
-    gallery: ["/images/zync/image_2.jpeg"],
+    gallery: [
+      "/images/car/image_4.jpeg",
+      "/images/car/image_2.jpeg",
+      "/images/car/image_3.jpeg",
+      "/images/car/image_7.jpeg",
+    ],
     technologyUsed: [
       "Typescript",
       "Node.js",
