@@ -20,7 +20,7 @@ const WorkList = ({ type }) => {
 
   return (
     <>
-      <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 md:gap-y-24">
+      <div className="w-full relative grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16 md:gap-y-32">
         {projectdata3.slice(0, 4).map((x, index) => {
           return (
             <Card

@@ -13,7 +13,7 @@ const Cursor = ({ mouseposition }) => {
       gsap.to(mouseRef.current, {
         left: pageX - 60,
         top: pageY - 60,
-        duration: 0.9,
+        duration: 1,
         ease: "power3",
       });
 
