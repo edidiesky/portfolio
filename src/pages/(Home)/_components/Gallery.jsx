@@ -54,7 +54,7 @@ const Sliders = ({ GalleryImageList, progress }) => {
   const x = useTransform(
     progress,
     [0, 1],
-    [0, -200]
+    [0, -300]
   );
   return (
     <>
