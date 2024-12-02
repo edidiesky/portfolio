@@ -1,59 +1,28 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-
+import Image from "next/image";
 const GalleryImageList = [
-  "/images/car-1.jpg",
-  "/images/twitter_14.jpg",
-  "/images/car_10.jpg",
-  "/images/twitter_10.jpg",
-  "/images/airbnb_5.jpg",
-  "/images/airbnb_16.jpg",
-  "/images/quantify_1.jpg",
-  "/images/quantify_3.jpg",
-  "/images/car-1.jpg",
-  "/images/twitter_14.jpg",
-  "/images/car_10.jpg",
-  "/images/twitter_10.jpg",
-  "/images/airbnb_5.jpg",
-  "/images/airbnb_16.jpg",
-  "/images/quantify_1.jpg",
-  "/images/quantify_3.jpg",
-
-  "/images/car-1.jpg",
-  "/images/twitter_14.jpg",
-  "/images/car_10.jpg",
-  "/images/twitter_10.jpg",
-  "/images/airbnb_5.jpg",
-  "/images/airbnb_16.jpg",
-  "/images/quantify_1.jpg",
-  "/images/quantify_3.jpg",
-];
-
-const GalleryImageList2 = [
-  "/images/twitter_15.jpg",
-  "/images/twitter_3.jpg",
-  "/images/twitter_4.jpg",
-  "/images/twitter_14.jpg",
-  "/images/twitter_10.jpg",
-
-  "/images/twitter_14.jpg",
-
-  "/images/twitter_15.jpg",
-  "/images/twitter_3.jpg",
-  "/images/twitter_4.jpg",
-  "/images/twitter_14.jpg",
-  "/images/twitter_10.jpg",
-
-  "/images/twitter_14.jpg",
-
-  "/images/twitter_15.jpg",
-  "/images/twitter_3.jpg",
-  "/images/twitter_4.jpg",
-  "/images/twitter_14.jpg",
-  "/images/twitter_10.jpg",
-
-  "/images/twitter_14.jpg",
+  "/images/gallery/image_1.jpeg",
+  "/images/gallery/image_2.jpeg",
+  "/images/gallery/image_3.jpeg",
+  "/images/gallery/image_4.jpeg",
+  "/images/gallery/image_5.jpeg",
+  "/images/gallery/image_6.jpeg",
+  //   "/images/gallery/image_1.jpeg",
+  // "/images/gallery/image_2.jpeg",
+  // "/images/gallery/image_3.jpeg",
+  // "/images/gallery/image_4.jpeg",
+  // "/images/gallery/image_5.jpeg",
+  // "/images/gallery/image_6.jpeg",
+  // "/images/gallery/image_7.jpeg",
+  // "/images/gallery/image_8.jpeg",
+  // "/images/gallery/image_9.jpeg",
+  // "/images/gallery/image_10.jpeg",
+  // "/images/gallery/image_11.jpeg",
+  // "/images/gallery/image_12.jpeg",
+  // "/images/gallery/image_13.jpeg",
+  // "/images/gallery/image_1.jpeg",
 ];
 
 const Gallery = () => {
@@ -66,39 +35,32 @@ const Gallery = () => {
     <>
       <div
         data-scroll
-        className="w-full overflow-hidden py-16 flex flex-col gap-4"
+        className="w-full overflow-hidden py-8 pb-16 md:pb-32 flex flex-col gap-4"
       >
         <div ref={container} className="w-full flex flex-col gap-8">
           <Sliders
             GalleryImageList={GalleryImageList}
-            left={"-56%"}
+            // left={"-56%"}
             progress={scrollYProgress}
-            direction={"left"}
-          />
-          <Sliders
-            GalleryImageList={GalleryImageList2}
-            left={"-16%"}
-            progress={scrollYProgress}
-            direction={"right"}
+            // direction={"left"}
           />
         </div>
       </div>
     </>
   );
 };
-const Sliders = ({ GalleryImageList, left, progress, direction }) => {
-  const newdirection = direction === "left" ? -1 : 1;
+const Sliders = ({ GalleryImageList, progress }) => {
+  // const newdirection = direction === "left" ? -1 : 1;
   const x = useTransform(
     progress,
     [0, 1],
-    [-250 * newdirection, 250 * newdirection]
+    [0, -200]
   );
   return (
     <>
       <motion.div
-        style={{ left, x }}
-        data-scroll
-        className="relative w-full flex whitespace-nowrap gap-[20px]"
+        style={{ x }}
+        className="relative w-[190vw] flex gap-4"
       >
         {GalleryImageList?.map((image, index) => {
           return <ImageGallery key={index} images={image} />;
@@ -110,9 +72,9 @@ const Sliders = ({ GalleryImageList, left, progress, direction }) => {
 
 const ImageGallery = ({ images }) => {
   return (
-    <>
-      <img src={images} alt="" className="w-[300px] md:w-[400px] object-cover" />
-    </>
+    <div className="relative w-[500px] h-[360px]">
+      <Image src={images} alt="" fill className="w-full h-full object-cover" />
+    </div>
   );
 };
 

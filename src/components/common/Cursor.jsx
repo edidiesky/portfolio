@@ -32,7 +32,7 @@ const Cursor = ({ mouseposition }) => {
   }, []);
 
   const website = webactive ? webactive : false;
-  console.log("mouseposition", mouseposition);
+  // console.log("mouseposition", mouseposition);
   return (
     <>
       <div

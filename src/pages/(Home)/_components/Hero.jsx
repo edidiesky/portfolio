@@ -39,7 +39,7 @@ export default function Hero() {
             <span
               data-scroll
               data-scroll-speed="2"
-              className="font-normal hero_text2 max-w-custom  flex flex-wrap
+              className="font-normal hero_text2 capitalize max-w-custom  flex flex-wrap
                  gap-[8px] lg:gap-[13px] items-center justify-start 
                 text-4xl md:text-5xl lg:text-7xl
                 w-full leading-[1.2] font-portfolio_bold"
