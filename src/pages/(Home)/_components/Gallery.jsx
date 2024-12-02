@@ -5,9 +5,9 @@ import Image from "next/image";
 const GalleryImageList = [
   "/images/gallery/image_1.jpeg",
   "/images/gallery/image_2.jpeg",
-  "/images/gallery/image_3.jpeg",
-  "/images/gallery/image_4.jpeg",
-  "/images/gallery/image_5.jpeg",
+  "/images/gallery/image_7.jpeg",
+  "/images/gallery/image_8.jpeg",
+  "/images/gallery/image_12.jpeg",
   "/images/gallery/image_6.jpeg",
   //   "/images/gallery/image_1.jpeg",
   // "/images/gallery/image_2.jpeg",
