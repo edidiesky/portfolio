@@ -159,6 +159,13 @@ export const serviceslist = [
 
 export const experienceList = [
   {
+    title: "NextBud As a",
+    position: "Full-Stack Engineer",
+    date: "December 2024 - Present",
+    role: "Transformed 17+ Figma prototypes into pixel-perfect web applications with 8+ API connections. Developed reusable functional components across the application, increasing development efficiency by 60% and ensuring consistent UI/UX.",
+    location: "The United Kingdom",
+  },
+  {
     title: "Bitnorm As a",
     position: "Full-Stack Engineer",
     date: "November 2023 - April 2024 ",

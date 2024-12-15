@@ -140,7 +140,7 @@ export const projectdata3 = [
     year: "2024",
     color: "#000",
     shortDescription:
-      "NexChat seeks to improve and make messaging process in a team setting to be seamless and user-intutive. It is Built with NextJS, Redis, Typescript, Socket-IO, NodeJS, ReactJS, Prisma ORM, and MongoDB",
+      "NexChat seeks to create a decoupled messaging aplication fitted for a team setting. This application has a distributed system; it is seamless and user-intutive. It is Built with NextJS, Redis, Typescript, Socket-IO, NodeJS, ReactJS, Prisma ORM, and MongoDB",
     backGroundColor: "#FFFFFF",
     roleDescription:
       "The role I took in developing ZyncLuxury involves developing it as a home of resort and relaxation. I took pride in developing the application from the server side to the client side. I had to progress further by writing server side unit tests using Jest.",
@@ -156,6 +156,7 @@ export const projectdata3 = [
     gallery: [],
     technologyUsed: [
       "Typescript",
+      "NextJS",
       "Node.js",
       "Redis",
       "Gsap",
@@ -309,7 +310,7 @@ export const projectdata3 = [
       "/images/tattoo/image_3.jpeg",
       "/images/tattoo/image_2.jpeg",
     ],
-    technologyUsed: ["NextJS", "Tailwind Css", 'Framer-Motion', "GSAP"],
+    technologyUsed: ["NextJS", "Tailwind Css", "Framer-Motion", "GSAP"],
     features: {
       color: "#977f60",
       Description: [
