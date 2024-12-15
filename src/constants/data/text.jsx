@@ -160,28 +160,28 @@ export const serviceslist = [
 export const experienceList = [
   {
     title: "NextBud As a",
-    position: "Full-Stack Engineer",
+    position: "Full-Stack Engineer - The United Kingdom (Remote)",
     date: "December 2024 - Present",
     role: "Transformed 17+ Figma prototypes into pixel-perfect web applications with 8+ API connections. Developed reusable functional components across the application, increasing development efficiency by 60% and ensuring consistent UI/UX.",
     location: "The United Kingdom (Remote)",
   },
   {
     title: "Bitnorm As a",
-    position: "Full-Stack Engineer",
+    position: "Full-Stack Engineer - The Netherlands (Remote)",
     date: "November 2023 - April 2024 ",
     role: " Bridged the gap between frontend and backend, delivering a dynamic and personalized userexperience, tailored to each user and organization, resulting in a 25% increase in user satisfaction.",
     location: "The Netherlands (Remote)",
   },
   {
     title: "Outset.AI As A",
-    position: "Frontend Engineer",
+    position: "Frontend Engineer -  United States (Remote)",
     date: "  January 2022 - August 2023",
     role: "Developed comprehensive test suites with Cypress, increasing test coverage from 60% to 85%, resulting in a 21.4% improvement in bug detection.",
     location: " United States (Remote)",
   },
   {
     title: "Palkeeper As A",
-    position: "Frontend Engineer",
+    position: "Frontend Engineer -  United States (Remote)",
     date: "August 2020 - May 2021",
     role: " Coordinated with backend developers to align API requirements and data formats, reducing integration issues by 30% and ensuring a seamless user experience",
     location: " United States (Remote)",
@@ -189,7 +189,7 @@ export const experienceList = [
 
   {
     title: "Trevlo Technologies Limited As A",
-    position: "Frontend Intern",
+    position: "Frontend Intern - Imo State, Nigeria (Remote)",
     date: "February 2019 - March 2020",
     role: "Learn and analyze design mockups to understand layout, color schemes, typography, and interactive elements, contributing to a 25% improvement in design implementation accuracy",
     location: "Imo State, Nigeria (Remote)",

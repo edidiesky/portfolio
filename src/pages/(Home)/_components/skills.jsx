@@ -83,7 +83,7 @@ const Skills = () => {
                           <AnimateTextWord>{skill?.title}</AnimateTextWord>
                           <div className="flex items-center">
                             <AnimateTextWord>{skill?.position}</AnimateTextWord>
-                           - <AnimateTextWord>{skill?.location}</AnimateTextWord>{" "}
+                           {/* - <AnimateTextWord>{skill?.location}</AnimateTextWord>{" "} */}
                           </div>
                           {/* <div className="flex text-2xl items-center gap-[3px]">
                             
