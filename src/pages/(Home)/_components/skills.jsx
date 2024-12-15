@@ -2,10 +2,7 @@
 
 import AnimateTextWord from "@/components/animations/AnimateTextWord";
 import { aboutText1, skillDescriptionText2 } from "@/constants/data/text";
-import {
-  skillslist,
-  experienceList,
-} from "@/constants/data/text";
+import { skillslist, experienceList } from "@/constants/data/text";
 
 const Skills = () => {
   return (
@@ -15,9 +12,7 @@ const Skills = () => {
           <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
             <div className="md:max-w-[500px]">
               {" "}
-              <AnimateTextWord >
-                My Tech Stack
-              </AnimateTextWord>{" "}
+              <AnimateTextWord>My Tech Stack</AnimateTextWord>{" "}
             </div>
             {/* <sup className="text-2xl md:text-4xl">4</sup> */}
             <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
@@ -62,9 +57,7 @@ const Skills = () => {
           <h4 className="text-4xl lg:text-6xl uppercase w-full font-portfolio_regular leading-[1.2] titleRef text-[#fff]">
             <div className="md:max-w-[500px]">
               {" "}
-              <AnimateTextWord >
-                Work experience
-              </AnimateTextWord>{" "}
+              <AnimateTextWord>Work experience</AnimateTextWord>{" "}
             </div>
             {/* <sup className="text-2xl md:text-4xl">4</sup> */}
             <div className="w-full pt-3 lg:grid-cols-2 grid gap-4">
@@ -74,7 +67,7 @@ const Skills = () => {
               </span>
             </div>
           </h4>
-      
+
           <div className="w-full grid grid-cols-1 gap-2">
             <div className="w-full grid grid-cols-1 gap-4">
               <div className="w-full flex flex-col">
@@ -88,9 +81,11 @@ const Skills = () => {
                       <div className="flex-1 flex flex-col gap-3">
                         <div className="text-3xl gap-2">
                           <AnimateTextWord>{skill?.title}</AnimateTextWord>
-                          <AnimateTextWord>
-                            {skill?.position} {skill?.location} Remote
-                          </AnimateTextWord>
+                          <div className="flex items-center gap-[4px]">
+                            <AnimateTextWord>{skill?.position}</AnimateTextWord> -
+                            <AnimateTextWord>{skill?.location}</AnimateTextWord> -
+                            <AnimateTextWord>Remote</AnimateTextWord>
+                          </div>
                         </div>
                         <span className="flex-1 max-w-[600px] text-base lg:text-lg text_background gap-4">
                           <AnimateTextWord>{skill?.role}</AnimateTextWord>
