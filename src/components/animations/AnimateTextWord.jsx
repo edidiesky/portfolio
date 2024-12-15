@@ -36,7 +36,7 @@ const AnimateTextWord = ({ children, type }) => {
     <div className="w-full flex">
       <div
         ref={AnimateTextRef}
-        className="flex flex-wrap gap-[5px] w-full items-center relative"
+        className="flex flex-wrap gap-y-[4px] gap-x-[5px] w-full items-center relative"
       >
         {children?.split(" ").map((data, index) => {
           return (
