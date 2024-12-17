@@ -181,7 +181,7 @@ export const experienceList = [
   },
   {
     title: "Palkeeper As A",
-    position: "Frontend Engineer -  United States (Remote)",
+    position: "Frontend Engineer -  Lagos, Nigeria (Remote)",
     date: "August 2020 - May 2021",
     role: " Coordinated with backend developers to align API requirements and data formats, reducing integration issues by 30% and ensuring a seamless user experience",
     location: " United States (Remote)",
