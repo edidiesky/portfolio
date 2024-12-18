@@ -72,7 +72,7 @@ const Sliders = ({ GalleryImageList, progress }) => {
 
 const ImageGallery = ({ images }) => {
   return (
-    <div className="relative w-[500px] h-[360px]">
+    <div className="relative w-[500px] h-[250px] lg:h-[360px]">
       <Image src={images} alt="" fill className="w-full h-full object-cover" />
     </div>
   );
