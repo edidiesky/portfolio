@@ -85,7 +85,7 @@ function WorkTitle() {
               }}
               href={`${workDetails?.website}`}
               target="_blank"
-              className="md:w-[170px] w-[180px] h-[50px] md:h-[65px] font-portfolio_regular flex items-center gap-2 rounded-full
+              className=" md:w-[170px] w-[120px] h-[50px] md:h-[65px] font-portfolio_regular flex items-center gap-2 rounded-full
                  bg-[#fff] justify-center text-lg md:text-base text-[#000]"
             >
               <Magnetic bgColor={"#b6b5b5"}>
@@ -151,7 +151,7 @@ function WorkTitle() {
           </div>
         </div>
         <div className="w-full mx-auto flex items-end justify-end">
-          <div className="w-full min-h-[550px] lg:min-h-[750px] mt-8 relative">
+          <div className="w-full min-h-[350px] lg:min-h-[750px] mt-8 relative">
             <Image
               fill
               src={workDetails?.mainImage}
@@ -195,7 +195,7 @@ function WorkOverview() {
             {/* <div className="w-full"></div> */}
           </div>
         </div>
-        <div className="w-full min-h-[550px] lg:min-h-[700px] mt-8 relative">
+        <div className="w-full min-h-[350px] lg:min-h-[700px] mt-8 relative">
           <Image
             fill
             src={workDetails?.overview?.images[0]}
@@ -321,7 +321,7 @@ function WorkUI() {
               return (
                 <div
                   key={index}
-                  className="w-full min-h-[550px] lg:min-h-[750px] relative"
+                  className="w-full min-h-[350px] lg:min-h-[750px] relative"
                 >
                   <Image
                     fill

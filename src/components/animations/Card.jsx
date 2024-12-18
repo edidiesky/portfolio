@@ -31,7 +31,7 @@ const Card = ({ data, index, setMousePosition }) => {
             style={{
               transition: "all .3s",
             }}
-            className="w-full relative lg:h-[580px] group-hover:scale-[1.1] scale-[1] "
+            className="w-full relative h-[380px] lg:h-[580px] group-hover:scale-[1.1] scale-[1] "
           >
             <Image
               src={data?.mainImage}

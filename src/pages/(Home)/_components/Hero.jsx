@@ -71,7 +71,7 @@ export default function Hero() {
               href={
                 "mailto:essienedidiong1000@gmail.com?subject=Hey! lets work! Love your works!"
               }
-              className="w-[200px] md:w-[230px] open_to_work h-[50px] md:h-[65px] flex items-center
+              className="w-[180px] md:w-[230px] open_to_work h-[50px] md:h-[65px] flex items-center
                    justify-center text-[#000] text-base md:text-lg font-normal rounded-full font-portfolio_regular overflow-hidden
                     bg-[#fff]"
             >
