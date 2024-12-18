@@ -151,7 +151,7 @@ function WorkTitle() {
           </div>
         </div>
         <div className="w-full mx-auto flex items-end justify-end">
-          <div className="w-full min-h-[350px] lg:min-h-[750px] mt-8 relative">
+          <div className="w-full h-[350px] lg:min-h-[750px] mt-8 relative">
             <Image
               fill
               src={workDetails?.mainImage}
@@ -195,7 +195,7 @@ function WorkOverview() {
             {/* <div className="w-full"></div> */}
           </div>
         </div>
-        <div className="w-full min-h-[350px] lg:min-h-[700px] mt-8 relative">
+        <div className="w-full h-[350px] lg:min-h-[700px] mt-8 relative">
           <Image
             fill
             src={workDetails?.overview?.images[0]}
@@ -267,7 +267,7 @@ function WorkFeatures() {
           return (
             <div
               key={index}
-              className="w-full min-h-[350px] md:min-h-[500px] relative flex"
+              className="w-full h-[350px] md:min-h-[500px] relative flex"
             >
               <Image
                 fill
@@ -321,7 +321,7 @@ function WorkUI() {
               return (
                 <div
                   key={index}
-                  className="w-full min-h-[350px] lg:min-h-[750px] relative"
+                  className="w-full h-[350px] lg:min-h-[750px] relative"
                 >
                   <Image
                     fill
