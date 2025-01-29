@@ -159,6 +159,13 @@ export const serviceslist = [
 
 export const experienceList = [
   {
+    title: "Theralink As A",
+    position: "Backend Engineer -  Nigeria (Remote)",
+    date: "  January 2025 - Present",
+    role: "Developed a real-time chat API for secure patient-provider messaging using WebSockets (Socket.IO) and Redis Pub/Sub, ensuring instant communication across distributed servers. I also had to solve our WebSocket scalability issues by implementing Redis Pub/Sub to synchronize message broadcasting across multiple instances.",
+    location: "Nigeria (Remote)",
+  },
+  {
     title: "NextBud As a",
     position: "Full-Stack Engineer - The United Kingdom (Remote)",
     date: "December 2024 - Present",
@@ -172,17 +179,11 @@ export const experienceList = [
     role: " Bridged the gap between frontend and backend, delivering a dynamic and personalized userexperience, tailored to each user and organization, resulting in a 25% increase in user satisfaction.",
     location: "The Netherlands (Remote)",
   },
-  {
-    title: "Outset.AI As A",
-    position: "Frontend Engineer -  United States (Remote)",
-    date: "  January 2022 - August 2023",
-    role: "Developed comprehensive test suites with Cypress, increasing test coverage from 60% to 85%, resulting in a 21.4% improvement in bug detection.",
-    location: " United States (Remote)",
-  },
+
   {
     title: "Palkeeper As A",
     position: "Frontend Engineer -  Lagos, Nigeria (Remote)",
-    date: "August 2020 - May 2021",
+    date: "November 2021 - April 2022",
     role: " Coordinated with backend developers to align API requirements and data formats, reducing integration issues by 30% and ensuring a seamless user experience",
     location: " United States (Remote)",
   },
@@ -190,7 +191,7 @@ export const experienceList = [
   {
     title: "Trevlo Technologies Limited As A",
     position: "Frontend Intern - Imo State, Nigeria (Remote)",
-    date: "February 2019 - March 2020",
+    date: "February 2020 - March 2021",
     role: "Learn and analyze design mockups to understand layout, color schemes, typography, and interactive elements, contributing to a 25% improvement in design implementation accuracy",
     location: "Imo State, Nigeria (Remote)",
   },
